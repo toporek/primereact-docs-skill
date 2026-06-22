@@ -170,5 +170,5 @@ Slider component uses a native range input internally with `slider` role. The in
 | `right arrow` / `down arrow` | Increments the value.             |
 | `home`                       | Set the minimum value.            |
 | `end`                        | Set the maximum value.            |
-| `page up`                    | Increments the value byundefinedsteps. |
-| `page down`                  | Decrements the value byundefinedsteps. |
+| `page up`                    | Increments the value by 10 steps. |
+| `page down`                  | Decrements the value by 10 steps. |

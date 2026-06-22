@@ -339,8 +339,8 @@ The plugin also adds extended animation utilities that can be used with the styl
 | Class              | Property                            |
 | ------------------ | ----------------------------------- |
 | `animate-infinite` | animation-iteration-count: infinite |
-| `animate-once`     | animation-iteration-count:undefined       |
-| `animate-twice`    | animation-iteration-count:undefined       |
+| `animate-once`     | animation-iteration-count: 1        |
+| `animate-twice`    | animation-iteration-count: 2        |
 
 ### Direction
 

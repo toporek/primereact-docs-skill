@@ -44,7 +44,7 @@ export default function BasicDemo() {
 ## Features
 
 - Compound component API with sub-components: `Root`, `Meters`, `Meter`, `Labels`, `Label`, `Marker`, `Icon`, `Text`
-- Built-in color palette withundefinednamed colors that cycle automatically via `index`
+- Built-in color palette with 9 named colors that cycle automatically via `index`
 - Percentage calculation relative to configurable `min`/`max` bounds
 - Horizontal and vertical orientation for both meters and labels
 

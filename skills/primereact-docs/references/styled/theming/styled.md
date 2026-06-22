@@ -9,7 +9,7 @@ currently Aura, Material, Lara and Nora are the available built-in options.
 
 ![Architecture](https://primefaces.org/cdn/primevue/images/primevue-v4-styled-architecture.png)
 
-The core of the styled mode architecture is based on a concept named _design token_, a preset defines the token configuration inundefinedtiers; _primitive_, _semantic_ and _component_.
+The core of the styled mode architecture is based on a concept named _design token_, a preset defines the token configuration in 3 tiers; _primitive_, _semantic_ and _component_.
 
 ### Primitive Tokens
 
@@ -645,7 +645,7 @@ const primaryColor = $dt('primary.color');
 
 ### palette
 
-Returns shades and tints of a given color fromundefinedtoundefinedas an object.
+Returns shades and tints of a given color from 50 to 950 as an object.
 
 ```tsx
 import { palette } from '@primeuix/themes';

@@ -356,7 +356,7 @@ export default function VerticalDemo() {
 
 ### Min-Max
 
-Boundaries are configured with the `min` and `max` values whose defaults are`min`andundefinedrespectively.
+Boundaries are configured with the `min` and `max` values whose defaults are 0 and 100 respectively.
 
 ```tsx
 import {

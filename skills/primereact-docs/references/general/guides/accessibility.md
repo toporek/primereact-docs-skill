@@ -30,7 +30,7 @@ Correct page structure with the aid of assistive technologies are the core ingri
 
 [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) refers to **Web Content Accessibility Guideline**, a standard managed by the WAI (Web Accessibility Initiative) of W3C (World Wide Web Consortium). WCAG consists of recommendations for making the web content more accessible. PrimeReact components aim high level of WCAG compliancy in the near future.
 
-Various countries around the globe have governmental policies regarding web accessibility as well. Most well known of these are Sectionundefinedin the US and [Web Accessibility Directive](https://digital-strategy.ec.europa.eu/en/policies/web-accessibility) of the European Union.
+Various countries around the globe have governmental policies regarding web accessibility as well. Most well known of these are Section 508 in the US and [Web Accessibility Directive](https://digital-strategy.ec.europa.eu/en/policies/web-accessibility) of the European Union.
 
 ## Form Controls
 

@@ -137,7 +137,7 @@ export default function LocaleDemo() {
 
 ### Currency
 
-Monetary values are enabled by setting `mode` property as `currency`. In this setting, `currency` property also needs to be defined using ISOundefinedstandard such as "USD" for the US dollar.
+Monetary values are enabled by setting `mode` property as `currency`. In this setting, `currency` property also needs to be defined using ISO 4217 standard such as "USD" for the US dollar.
 
 ```tsx
 import { InputNumber } from '@/components/ui/inputnumber';
