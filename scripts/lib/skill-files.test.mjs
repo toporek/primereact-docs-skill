@@ -21,3 +21,13 @@ test('SKILL.md references the version guardrail and INDEX', () => {
   assert.match(body, /INDEX\.md/);
   assert.match(body, /package\.json/);
 });
+
+test('migration.md contains the rename map, theming change, and not-yet list', () => {
+  const body = readFileSync(join(SKILL, 'migration.md'), 'utf8');
+  assert.match(body, /Calendar.*DatePicker/);
+  assert.match(body, /Dropdown.*Select/);
+  assert.match(body, /@primeuix\/themes/);
+  assert.match(body, /resources\/themes/);
+  assert.match(body, /DataTable/);
+  assert.match(body, /package\.json/);
+});
