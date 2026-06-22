@@ -1,0 +1,11 @@
+{
+  "name": "primereact-docs",
+  "owner": { "name": "Pawel Topor", "url": "https://github.com/toporek" },
+  "plugins": [
+    {
+      "name": "primereact-docs",
+      "source": "./",
+      "description": "Local, daily-synced mirror of the PrimeReact v11 docs plus a v10->v11 version guardrail."
+    }
+  ]
+}

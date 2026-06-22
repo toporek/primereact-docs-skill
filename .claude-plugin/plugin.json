@@ -1,0 +1,9 @@
+{
+  "name": "primereact-docs",
+  "description": "Local, daily-synced mirror of the PrimeReact v11 docs (components, theming/design tokens, PassThrough, hooks) plus a v10->v11 version guardrail, so Claude answers from real v11 docs instead of guessing.",
+  "author": { "name": "Pawel Topor", "url": "https://github.com/toporek" },
+  "homepage": "https://github.com/toporek/primereact-docs-skill",
+  "repository": "https://github.com/toporek/primereact-docs-skill",
+  "license": "MIT",
+  "keywords": ["primereact", "primereact-v11", "primefaces", "react", "ui-components", "theming", "documentation"]
+}
