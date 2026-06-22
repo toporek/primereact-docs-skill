@@ -21,5 +21,6 @@ test('buildFiles transforms every doc and builds an index', () => {
   const acc = files.get('primitive/accordion/features.md');
   assert.match(acc, /^# Accordion\n/);
   assert.ok(!acc.includes('<Doc'));
+  assert.match(acc, /```tsx/);
   assert.match(index, /references\/primitive\/accordion\/features\.md/);
 });
