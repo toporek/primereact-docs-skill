@@ -1,0 +1,33 @@
+name: Sync PrimeReact v11 docs
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # daily 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Run tests
+        run: npm test
+      - name: Regenerate from upstream
+        run: npm run sync
+      - name: Open PR on changes
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: 'chore: sync PrimeReact v11 docs from upstream'
+          title: 'chore: sync PrimeReact v11 docs from upstream'
+          body: |
+            Automated regeneration of `references/` and `INDEX.md` from the
+            `v11` branch of primefaces/primereact. See `SOURCE.md` for the new commit.
+          branch: auto/sync-primereact-docs
+          delete-branch: true
