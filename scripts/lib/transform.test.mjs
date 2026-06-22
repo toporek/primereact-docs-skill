@@ -1,7 +1,7 @@
 // scripts/lib/transform.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks, assertNoJsx, mdxToMarkdown } from './transform.mjs';
+import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks, assertNoJsx, mdxToMarkdown, stripInlineJsx } from './transform.mjs';
 
 test('parseFrontmatter extracts title, description, component', () => {
   const raw = '---\ntitle: Accordion\ndescription: An accordion.\ncomponent: accordion\n---\nBody\n';
@@ -156,4 +156,35 @@ test('mdxToMarkdown runs the full pipeline', () => {
   assert.match(out, /\[Motion\]\(\.\.\/motion\/features\.md\)/);
   assert.ok(!out.includes('<Doc'));
   assert.ok(out.endsWith('\n'));
+});
+
+test('stripInlineJsx converts inline Link to a markdown link', () => {
+  assert.equal(
+    stripInlineJsx('such as <Link href="/button">Button</Link> and render it'),
+    'such as [Button](/button) and render it',
+  );
+});
+
+test('stripInlineJsx converts inline Button with href and unwraps without href', () => {
+  assert.equal(stripInlineJsx('Click <Button href="/x">here</Button> now'), 'Click [here](/x) now');
+  assert.equal(stripInlineJsx('a <Strong>bold</Strong> word'), 'a bold word');
+});
+
+test('stripInlineJsx strips self-closing and lone capitalized tags', () => {
+  assert.equal(stripInlineJsx('Use <Check /> to confirm <Github/>'), 'Use  to confirm ');
+  assert.equal(stripInlineJsx('<DocSourceViewer name="x" />'), '');
+});
+
+test('stripInlineJsx preserves inline-code spans verbatim', () => {
+  assert.equal(stripInlineJsx('write `<DocTable/>` in MDX'), 'write `<DocTable/>` in MDX');
+});
+
+test('transformComponents converts an inline Link in prose and leaves no JSX', () => {
+  const out = transformComponents('Create a <Link href="/button">Button</Link> and render it.', { lookupDemo: () => null, component: '' });
+  assert.equal(out, 'Create a [Button](/button) and render it.');
+});
+
+test('transformComponents drops block wrapper tags but keeps their children', () => {
+  const input = '<DocTabs>\n<DocTabsTab header="Vite">\nInstall with Vite.\n</DocTabsTab>\n</DocTabs>';
+  assert.equal(transformComponents(input, { lookupDemo: () => null, component: '' }), 'Install with Vite.');
 });

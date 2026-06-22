@@ -28,6 +28,27 @@ export function parseAttrs(s) {
   return attrs;
 }
 
+/**
+ * Clean inline JSX from a single non-fence line: convert <Link>/<Button ... href> to
+ * markdown links, unwrap remaining paired capitalized component tags (keep inner text),
+ * and strip self-closing / lone capitalized tags. Inline-code spans (`...`) are preserved.
+ */
+export function stripInlineJsx(line) {
+  const spans = [];
+  let s = line.replace(/`[^`]*`/g, (m) => { spans.push(m); return ' ' + (spans.length - 1) + ' '; });
+  s = s.replace(/<(?:Link|Button)\b([^>]*)>([\s\S]*?)<\/(?:Link|Button)>/g, (full, attrs, text) => {
+    const a = parseAttrs(attrs);
+    const t = text.trim();
+    return a.href ? '[' + t + '](' + a.href + ')' : t;
+  });
+  let prev;
+  do { prev = s; s = s.replace(/<([A-Z][A-Za-z0-9.]*)\b[^>]*>([\s\S]*?)<\/\1>/g, '$2'); } while (s !== prev);
+  s = s.replace(/<[A-Z][A-Za-z0-9.]*\b[^>]*?\/>/g, '');
+  s = s.replace(/<\/?[A-Z][A-Za-z0-9.]*\b[^>]*>/g, '');
+  s = s.replace(/ (\d+) /g, (m, i) => spans[+i]);
+  return s;
+}
+
 /** Fence-aware, line-oriented MDX custom-component → Markdown transform. */
 export function transformComponents(body, { lookupDemo, component }) {
   const lines = body.split('\n');
@@ -90,10 +111,9 @@ export function transformComponents(body, { lookupDemo, component }) {
       continue;
     }
 
-    // Drop any own-line capitalized JSX tag (self-closing, open, or close) with no inline code.
-    if (/^<\/?[A-Z][A-Za-z0-9.]*\b[^>]*>$/.test(t) && !t.includes('`')) continue;
-
-    out.push(line);
+    const cleaned = stripInlineJsx(line);
+    if (cleaned.trim() === '') continue;
+    out.push(cleaned);
   }
 
   return out.join('\n');
