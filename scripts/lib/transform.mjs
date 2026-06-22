@@ -35,7 +35,7 @@ export function parseAttrs(s) {
  */
 export function stripInlineJsx(line) {
   const spans = [];
-  let s = line.replace(/`[^`]*`/g, (m) => { spans.push(m); return ' ' + (spans.length - 1) + ' '; });
+  let s = line.replace(/`[^`]*`/g, (m) => { spans.push(m); return '\x00' + (spans.length - 1) + '\x00'; });
   s = s.replace(/<(?:Link|Button)\b([^>]*)>([\s\S]*?)<\/(?:Link|Button)>/g, (full, attrs, text) => {
     const a = parseAttrs(attrs);
     const t = text.trim();
@@ -45,7 +45,7 @@ export function stripInlineJsx(line) {
   do { prev = s; s = s.replace(/<([A-Z][A-Za-z0-9.]*)\b[^>]*>([\s\S]*?)<\/\1>/g, '$2'); } while (s !== prev);
   s = s.replace(/<[A-Z][A-Za-z0-9.]*\b[^>]*?\/>/g, '');
   s = s.replace(/<\/?[A-Z][A-Za-z0-9.]*\b[^>]*>/g, '');
-  s = s.replace(/ (\d+) /g, (m, i) => spans[+i]);
+  s = s.replace(/\x00(\d+)\x00/g, (m, i) => spans[+i]);
   return s;
 }
 

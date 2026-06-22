@@ -188,3 +188,12 @@ test('transformComponents drops block wrapper tags but keeps their children', ()
   const input = '<DocTabs>\n<DocTabsTab header="Vite">\nInstall with Vite.\n</DocTabsTab>\n</DocTabs>';
   assert.equal(transformComponents(input, { lookupDemo: () => null, component: '' }), 'Install with Vite.');
 });
+
+test('stripInlineJsx leaves bare digits in prose untouched (sentinel safety)', () => {
+  assert.equal(stripInlineJsx('using ISO 4217 standard'), 'using ISO 4217 standard');
+  assert.equal(stripInlineJsx('See step 1 for details'), 'See step 1 for details');
+});
+
+test('stripInlineJsx restores inline code even when prose has digits', () => {
+  assert.equal(stripInlineJsx('set `mode` to 3 then `done`'), 'set `mode` to 3 then `done`');
+});
