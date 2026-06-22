@@ -27,3 +27,20 @@ export function parseAttrs(s) {
   while ((m = re.exec(s))) attrs[m[1]] = m[2] !== undefined ? m[2] : m[3];
   return attrs;
 }
+
+/** Normalize a transformed body: drop MDX comments outside fences, collapse blanks, ensure H1 + trailing newline. */
+export function finalizeDoc(body, title) {
+  let inFence = false;
+  let out = body
+    .replace(/\r\n/g, '\n')
+    .split('\n')
+    .filter((line) => {
+      if (FENCE.test(line)) { inFence = !inFence; return true; }
+      return inFence || !/^\s*\{\/\*.*\*\/\}\s*$/.test(line);
+    })
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+  if (!/^#\s/.test(out)) out = '# ' + title + '\n\n' + out;
+  return out + '\n';
+}
