@@ -1,0 +1,117 @@
+# With Next.js
+
+Setting up PrimeReact in a Next.js project.
+
+## Working Example
+
+    <span className='text-2xl font-semibold'>Quickstart your project with our PrimeReact + Next.js template</span>
+    <div>Use this Next.js template pre-configured with PrimeReact to quickly start building your app with ready-to-use UI components and styles.</div>
+    <div className='flex items-center gap-2 text-surface-500 dark:text-surface-400'>
+        <span>github.com/primefaces/primereact-examples</span>
+    </div>
+
+## Installation
+
+### Install Packages
+
+Install PrimeReact and a theme package using your favorite package manager:
+
+```bash
+npm install primereact@11.0.0-alpha.10 @primeuix/themes
+```
+
+### PrimeReactProvider
+
+Create a `prime-ssr-provider.tsx` file in the root of your project and add the following code:
+
+```tsx showLineNumbers
+'use client';
+import { PrimeReactProvider, PrimeReactStyleSheet } from '@primereact/core';
+import { useServerInsertedHTML } from 'next/navigation';
+import * as React from 'react';
+import Aura from '@primeuix/themes/aura';
+
+const styledStyleSheet = new PrimeReactStyleSheet();
+
+export default function PrimeSSRProvider({
+    children
+}: Readonly<{
+    children?: React.ReactNode;
+}>) {
+    useServerInsertedHTML(() => {
+        const styleElements = styledStyleSheet.getAllElements();
+
+        styledStyleSheet.clear();
+
+        return <>{styleElements}</>;
+    });
+
+    const primereact = {
+        theme: {
+            preset: Aura
+        }
+    };
+
+    return (
+        <PrimeReactProvider {...primereact} stylesheet={styledStyleSheet}>
+            {children}
+        </PrimeReactProvider>
+    );
+}
+```
+
+### Add SSRProvider
+
+Import the `PrimeSSRProvider` in your root `layout.tsx` file and wrap your app with it.
+
+```tsx showLineNumbers {2,12}
+...
+import PrimeSSRProvider from './prime-ssr-provider';
+
+export default function RootLayout({
+    children
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+        <html lang="en">
+            <body>
+                <PrimeSSRProvider>{children}</PrimeSSRProvider>
+            </body>
+        </html>
+    );
+}
+```
+
+     ### Verify
+
+To verify that PrimeReact is installed correctly, you can create a simple component such as [Button](/button) and render it in your application.
+Each component can be imported and registered individually so that you only include what you use for bundle optimization. Import path is available in the documentation of the corresponding component.
+
+```tsx showLineNumbers {1,6}
+import { Button } from 'primereact/button';
+import { Github } from '@primeicons/react/github';
+
+export default function VerifyInstallation() {
+    return (
+        <div className="card flex justify-center">
+            <Button>Verify</Button>
+        </div>
+    );
+}
+```
+
+## More Tips
+
+- You can import and use only the components you need for a smaller bundle size.
+- For icons, custom themes, and advanced setup, see the [PrimeReact documentation](https://v11.primereact.org/setup).
+
+## Troubleshooting
+
+If you encounter issues during installation or setup, check the following:
+
+- Ensure that you have the latest version of Vite and Node.js installed.
+- Verify that your project structure is correct and that the `PrimeReactProvider` is properly wrapped around your application.
+- Check the browser console for any errors related to PrimeReact components or themes.
+- If you are using TypeScript, ensure that you have the necessary type definitions installed.
+- Refer to the [PrimeReact GitHub repository](https://github.com/primefaces/primereact) for more information and support.
