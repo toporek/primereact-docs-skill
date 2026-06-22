@@ -31,3 +31,13 @@ test('migration.md contains the rename map, theming change, and not-yet list', (
   assert.match(body, /DataTable/);
   assert.match(body, /package\.json/);
 });
+
+test('overview.md covers the four modes and the v11-in-progress caveat', () => {
+  const body = readFileSync(join(SKILL, 'overview.md'), 'utf8');
+  assert.match(body, /styled/i);
+  assert.match(body, /primitive/i);
+  assert.match(body, /headless/i);
+  assert.match(body, /tailwind/i);
+  assert.match(body, /token/i);
+  assert.match(body, /in (active )?development|in progress|not yet/i);
+});
