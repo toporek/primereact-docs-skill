@@ -1,7 +1,7 @@
 // scripts/lib/transform.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents } from './transform.mjs';
+import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks } from './transform.mjs';
 
 test('parseFrontmatter extracts title, description, component', () => {
   const raw = '---\ntitle: Accordion\ndescription: An accordion.\ncomponent: accordion\n---\nBody\n';
@@ -88,4 +88,39 @@ test('transformComponents drops other own-line components and import/export', ()
 test('transformComponents leaves fenced content untouched', () => {
   const input = '```tsx\nimport {Accordion} from "primereact/accordion";\n<DocTable/>\n```';
   assert.equal(transformComponents(input, opts), input);
+});
+
+const slugMap = new Map([
+  ['primitive/accordion', 'primitive/accordion/features.md'],
+  ['primitive/motion', 'primitive/motion/features.md'],
+  ['styled/theming/styled', 'styled/theming/styled.md'],
+]);
+
+test('rewriteDocLinks rewrites known root-relative links to relative paths', () => {
+  assert.equal(
+    rewriteDocLinks('See [Motion](/docs/primitive/motion#phases).', 'primitive/accordion/features.md', slugMap),
+    'See [Motion](../motion/features.md#phases).',
+  );
+});
+
+test('rewriteDocLinks rewrites known absolute primereact.org links', () => {
+  assert.equal(
+    rewriteDocLinks('[t](https://v11.primereact.org/docs/styled/theming/styled)', 'primitive/accordion/features.md', slugMap),
+    '[t](../../styled/theming/styled.md)',
+  );
+});
+
+test('rewriteDocLinks normalizes unknown root-relative /docs links to absolute', () => {
+  assert.equal(
+    rewriteDocLinks('[x](/docs/primitive/unknown)', 'primitive/accordion/features.md', slugMap),
+    '[x](https://v11.primereact.org/docs/primitive/unknown)',
+  );
+});
+
+test('rewriteDocLinks leaves non-doc links and fenced lines untouched', () => {
+  const s = 'pre [a](/docs/primitive/motion)\n```\n[b](/docs/primitive/motion)\n```\n[ext](https://example.com)';
+  assert.equal(
+    rewriteDocLinks(s, 'primitive/accordion/features.md', slugMap),
+    'pre [a](../motion/features.md)\n```\n[b](/docs/primitive/motion)\n```\n[ext](https://example.com)',
+  );
 });

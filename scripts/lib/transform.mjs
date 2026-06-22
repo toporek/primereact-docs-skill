@@ -99,6 +99,32 @@ export function transformComponents(body, { lookupDemo, component }) {
   return out.join('\n');
 }
 
+/** Rewrite internal /docs/<slug> links to local relative paths (known) or absolute upstream URLs (unknown). */
+export function rewriteDocLinks(body, selfOutPath, slugMap) {
+  const fromDir = selfOutPath.includes('/') ? selfOutPath.slice(0, selfOutPath.lastIndexOf('/')).split('/') : [];
+  const relativeTo = (target) => {
+    const to = target.split('/');
+    let i = 0;
+    while (i < fromDir.length && i < to.length - 1 && fromDir[i] === to[i]) i++;
+    return [...Array(fromDir.length - i).fill('..'), ...to.slice(i)].join('/');
+  };
+  const linkRe = /\]\((?:https?:\/\/(?:v11\.)?primereact\.org)?\/docs\/([A-Za-z0-9_/-]+?)(?:\.md)?(?:\?[^)#]*)?(#[^)]*)?\)/g;
+  let inFence = false;
+  return body
+    .split('\n')
+    .map((line) => {
+      if (FENCE.test(line)) { inFence = !inFence; return line; }
+      if (inFence) return line;
+      return line.replace(linkRe, (full, slug, anchor) => {
+        const target = slugMap.get(slug);
+        if (target) return '](' + relativeTo(target) + (anchor || '') + ')';
+        if (full.startsWith('](/docs/')) return '](https://v11.primereact.org/docs/' + slug + (anchor || '') + ')';
+        return full;
+      });
+    })
+    .join('\n');
+}
+
 /** Normalize a transformed body: drop MDX comments outside fences, collapse blanks, ensure H1 + trailing newline. */
 export function finalizeDoc(body, title) {
   let inFence = false;
