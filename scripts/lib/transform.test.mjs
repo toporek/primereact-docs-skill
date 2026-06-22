@@ -1,7 +1,7 @@
 // scripts/lib/transform.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks } from './transform.mjs';
+import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks, assertNoJsx, mdxToMarkdown } from './transform.mjs';
 
 test('parseFrontmatter extracts title, description, component', () => {
   const raw = '---\ntitle: Accordion\ndescription: An accordion.\ncomponent: accordion\n---\nBody\n';
@@ -123,4 +123,37 @@ test('rewriteDocLinks leaves non-doc links and fenced lines untouched', () => {
     rewriteDocLinks(s, 'primitive/accordion/features.md', slugMap),
     'pre [a](../motion/features.md)\n```\n[b](/docs/primitive/motion)\n```\n[ext](https://example.com)',
   );
+});
+
+test('assertNoJsx throws on surviving JSX, ignores fences and inline code', () => {
+  assert.throws(() => assertNoJsx('# T\n\n<DocTable name="X"/>\n'), /Raw JSX/);
+  assert.doesNotThrow(() => assertNoJsx('# T\n\nUse `<Accordion.Root>` here.\n'));
+  assert.doesNotThrow(() => assertNoJsx('# T\n\n```tsx\n<Accordion.Root/>\n```\n'));
+});
+
+test('mdxToMarkdown runs the full pipeline', () => {
+  const raw = [
+    '---', 'title: Accordion', 'description: An accordion.', 'component: accordion', '---',
+    '<DocPrimitiveIntro description="Custom sections." />',
+    '',
+    '<DocDemoViewer name="accordion:basic-demo" mode="collapsible"/>',
+    '',
+    '## API',
+    '<DocTable name="AccordionRoot" category="api" />',
+    '',
+    'See [Motion](/docs/primitive/motion).',
+    '',
+  ].join('\n');
+  const out = mdxToMarkdown(raw, {
+    lookupDemo: (c, d) => (c === 'accordion' && d === 'basic-demo' ? 'const X = 1;' : null),
+    selfOutPath: 'primitive/accordion/features.md',
+    slugMap: new Map([['primitive/motion', 'primitive/motion/features.md']]),
+  });
+  assert.match(out, /^# Accordion\n\nAn accordion\./);
+  assert.match(out, /Custom sections\./);
+  assert.match(out, /```tsx\nconst X = 1;\n```/);
+  assert.match(out, /TODO: mirror in v2/);
+  assert.match(out, /\[Motion\]\(\.\.\/motion\/features\.md\)/);
+  assert.ok(!out.includes('<Doc'));
+  assert.ok(out.endsWith('\n'));
 });

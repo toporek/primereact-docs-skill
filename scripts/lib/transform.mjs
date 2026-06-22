@@ -141,3 +141,28 @@ export function finalizeDoc(body, title) {
   if (!/^#\s/.test(out)) out = '# ' + title + '\n\n' + out;
   return out + '\n';
 }
+
+/** Fail the build if any JSX component tag survives outside code fences / inline code. */
+export function assertNoJsx(text, label = 'doc') {
+  let inFence = false;
+  for (const line of text.split('\n')) {
+    if (FENCE.test(line)) { inFence = !inFence; continue; }
+    if (inFence) continue;
+    const stripped = line.replace(/`[^`]*`/g, '');
+    if (/<Doc[A-Za-z]/.test(stripped) || /<\/?[A-Z][A-Za-z0-9]*[\s/>]/.test(stripped)) {
+      throw new Error('Raw JSX artifact left in ' + label + ': ' + line.trim());
+    }
+  }
+}
+
+/** Full MDX → Markdown pipeline for one doc. */
+export function mdxToMarkdown(raw, { lookupDemo, selfOutPath, slugMap }) {
+  const { data, body } = parseFrontmatter(raw);
+  const title = data.title || 'Untitled';
+  const lead = data.description ? data.description + '\n\n' : '';
+  let out = transformComponents(body, { lookupDemo, component: data.component || '' });
+  out = rewriteDocLinks(out, selfOutPath, slugMap);
+  out = finalizeDoc('# ' + title + '\n\n' + lead + out, title);
+  assertNoJsx(out, selfOutPath);
+  return out;
+}
