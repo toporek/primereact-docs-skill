@@ -28,6 +28,77 @@ export function parseAttrs(s) {
   return attrs;
 }
 
+/** Fence-aware, line-oriented MDX custom-component → Markdown transform. */
+export function transformComponents(body, { lookupDemo, component }) {
+  const lines = body.split('\n');
+  const out = [];
+  let inFence = false;
+
+  const fence = (src) => ['```tsx', String(src).replace(/\s+$/, ''), '```'];
+
+  for (const line of lines) {
+    if (FENCE.test(line)) { inFence = !inFence; out.push(line); continue; }
+    if (inFence) { out.push(line); continue; }
+
+    const t = line.trim();
+
+    if (t === '') { out.push(line); continue; }
+    if (/^(import|export)\s/.test(t)) continue;
+    if (/^\{\/\*.*\*\/\}$/.test(t)) continue;
+
+    let m = t.match(/^<DocDemoViewer\b([^>]*)\/>$/);
+    if (m) {
+      const { name = '', mode } = parseAttrs(m[1]);
+      if (mode === 'hidden' || !name.includes(':')) continue;
+      const [comp, demo] = name.split(':');
+      const src = lookupDemo(comp, demo);
+      if (src) out.push(...fence(src));
+      continue;
+    }
+
+    m = t.match(/^<DocPTViewer\b([^>]*)\/>$/);
+    if (m) {
+      const { name = '' } = parseAttrs(m[1]);
+      const src = name ? lookupDemo(component, name) : null;
+      if (src) out.push('**Pass Through example:**', '', ...fence(src));
+      continue;
+    }
+
+    m = t.match(/^<DocTable\b([^>]*)\/>$/);
+    if (m) {
+      const { name = 'this component', category = 'api' } = parseAttrs(m[1]);
+      out.push(
+        '> **API/props table for `' + name + '` (`' + category + '`) is generated from upstream ' +
+          'TypeScript types and is not yet mirrored — see the installed package types or the ' +
+          'upstream docs. (TODO: mirror in v2.)',
+      );
+      continue;
+    }
+
+    m = t.match(/^<DocPrimitiveIntro\b([^>]*)\/>$/);
+    if (m) {
+      const { description = '' } = parseAttrs(m[1]);
+      if (description) out.push(description);
+      continue;
+    }
+
+    m = t.match(/^<Button\b([^>]*)>(.*?)<\/Button>$/);
+    if (m) {
+      const { href } = parseAttrs(m[1]);
+      const text = m[2].trim();
+      out.push(href ? '[' + text + '](' + href + ')' : text);
+      continue;
+    }
+
+    // Drop any own-line capitalized JSX tag (self-closing, open, or close) with no inline code.
+    if (/^<\/?[A-Z][A-Za-z0-9.]*\b[^>]*>$/.test(t) && !t.includes('`')) continue;
+
+    out.push(line);
+  }
+
+  return out.join('\n');
+}
+
 /** Normalize a transformed body: drop MDX comments outside fences, collapse blanks, ensure H1 + trailing newline. */
 export function finalizeDoc(body, title) {
   let inFence = false;
