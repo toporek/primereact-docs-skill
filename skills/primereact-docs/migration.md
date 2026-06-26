@@ -44,10 +44,10 @@ Read `primereact` in the project's `package.json`:
 
 ```tsx
 // npm install primereact @primeuix/themes
-import { PrimeReactProvider } from 'primereact';
+import { PrimeReactProvider } from '@primereact/core';
 import Aura from '@primeuix/themes/aura';
 
-<PrimeReactProvider value={{ theme: { preset: Aura } }}>{children}</PrimeReactProvider>
+<PrimeReactProvider theme={{ preset: Aura }}>{children}</PrimeReactProvider>
 ```
 
 - Built-in presets: **Aura, Material, Lara, Nora**.
