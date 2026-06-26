@@ -1,5 +1,6 @@
 {
   "name": "primereact-docs",
+  "description": "PrimeReact v11 documentation as a local, daily-synced Claude Code skill.",
   "owner": { "name": "Pawel Topor", "url": "https://github.com/toporek" },
   "plugins": [
     {
