@@ -267,11 +267,11 @@ const { state } = useToast({ toast: toastData, toaster });
 
 ### useToaster
 
-> **API/props table for `useToaster` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useToaster` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/toast or the installed `@primereact/types`.
 
 ### useToast
 
-> **API/props table for `useToast` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useToast` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/toast or the installed `@primereact/types`.
 
 ## Accessibility
 

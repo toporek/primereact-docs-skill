@@ -101,7 +101,7 @@ Default elements: `Root`=`fieldset`, `Legend`=`legend`, `Title`=`span`, `Trigger
 
 ### FieldsetRoot
 
-> **API/props table for `FieldsetRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FieldsetRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fieldset or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -124,7 +124,7 @@ Default elements: `Root`=`fieldset`, `Legend`=`legend`, `Title`=`span`, `Trigger
 
 ### FieldsetLegend
 
-> **API/props table for `FieldsetLegend` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FieldsetLegend` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fieldset or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -132,7 +132,7 @@ Default elements: `Root`=`fieldset`, `Legend`=`legend`, `Title`=`span`, `Trigger
 
 ### FieldsetTitle
 
-> **API/props table for `FieldsetTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FieldsetTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fieldset or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -140,7 +140,7 @@ Default elements: `Root`=`fieldset`, `Legend`=`legend`, `Title`=`span`, `Trigger
 
 ### FieldsetTrigger
 
-> **API/props table for `FieldsetTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FieldsetTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fieldset or the installed `@primereact/types`.
 
 | Attribute             | Value                       |
 | --------------------- | --------------------------- |
@@ -155,7 +155,7 @@ Default elements: `Root`=`fieldset`, `Legend`=`legend`, `Title`=`span`, `Trigger
 
 ### FieldsetIndicator
 
-> **API/props table for `FieldsetIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FieldsetIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fieldset or the installed `@primereact/types`.
 
 | Attribute     | Value                  |
 | ------------- | ---------------------- |
@@ -170,7 +170,7 @@ Default elements: `Root`=`fieldset`, `Legend`=`legend`, `Title`=`span`, `Trigger
 
 ### FieldsetContent
 
-> **API/props table for `FieldsetContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FieldsetContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fieldset or the installed `@primereact/types`.
 
 | Attribute     | Value                  |
 | ------------- | ---------------------- |

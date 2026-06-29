@@ -151,11 +151,11 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 ### State
 
-> **API/props table for `Fluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Fluid` API table (`api/state`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.
 
 ### Exposes
 
-> **API/props table for `Fluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Fluid` API table (`api/exposes`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.
 
 ### Interfaces
 
@@ -173,19 +173,19 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 ### Props
 
-> **API/props table for `useFluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFluid` API table (`api/props`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.
 
 ### State
 
-> **API/props table for `useFluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFluid` API table (`api/state`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.
 
 ### Exposes
 
-> **API/props table for `useFluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFluid` API table (`api/exposes`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.
 
 ### Types
 
-> **API/props table for `useFluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFluid` API table (`api/types`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.
 
 ## Theming
 
@@ -201,4 +201,4 @@ List of class names used in the styled mode.
 
 List of design tokens.
 
-> **API/props table for `Fluid` (`token`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Fluid` API table (`token`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/fluid or the installed `@primereact/types`.

@@ -137,7 +137,7 @@ See [Primitive](../../primitive/components/navigationmenu.md) for a component-ba
 
 ### useNavigationMenu
 
-> **API/props table for `useNavigationMenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useNavigationMenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/navigationmenu or the installed `@primereact/types`.
 
 ### Returned values
 

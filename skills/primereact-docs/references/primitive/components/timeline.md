@@ -90,7 +90,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineRoot
 
-> **API/props table for `TimelineRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute          | Value                     |
 | ------------------ | ------------------------- |
@@ -111,7 +111,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineEvent
 
-> **API/props table for `TimelineEvent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineEvent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -124,7 +124,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineSeparator
 
-> **API/props table for `TimelineSeparator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineSeparator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -137,7 +137,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineMarker
 
-> **API/props table for `TimelineMarker` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineMarker` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -150,7 +150,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineConnector
 
-> **API/props table for `TimelineConnector` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineConnector` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -163,7 +163,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineContent
 
-> **API/props table for `TimelineContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -176,7 +176,7 @@ Default elements: `Root`=`div`, `Event`=`div`, `Separator`=`div`, `Marker`=`div`
 
 ### TimelineOpposite
 
-> **API/props table for `TimelineOpposite` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TimelineOpposite` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/timeline or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |

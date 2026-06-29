@@ -265,13 +265,13 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarLayout
 
-> **API/props table for `SidebarLayout` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarLayout` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
-> **API/props table for `SidebarLayout` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarLayout` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 ### SidebarRoot
 
-> **API/props table for `SidebarRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Attribute               | Value                                                   |
 | ----------------------- | ------------------------------------------------------- |
@@ -282,11 +282,11 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 | `data-side`             | `"left"` \| `"right"`                                   |
 | `data-overlay`          | Present when overlay is true                            |
 
-> **API/props table for `SidebarRoot` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarRoot` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 ### SidebarSpacer
 
-> **API/props table for `SidebarSpacer` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarSpacer` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -294,7 +294,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarAside
 
-> **API/props table for `SidebarAside` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarAside` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -302,7 +302,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarPanel
 
-> **API/props table for `SidebarPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -310,7 +310,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarHeader
 
-> **API/props table for `SidebarHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -318,7 +318,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarContent
 
-> **API/props table for `SidebarContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -326,7 +326,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarFooter
 
-> **API/props table for `SidebarFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -334,7 +334,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarGroup
 
-> **API/props table for `SidebarGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -342,7 +342,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarGroupLabel
 
-> **API/props table for `SidebarGroupLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarGroupLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -350,7 +350,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarGroupContent
 
-> **API/props table for `SidebarGroupContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarGroupContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -358,7 +358,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenu
 
-> **API/props table for `SidebarMenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -366,7 +366,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuItem
 
-> **API/props table for `SidebarMenuItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Attribute   | Value                                  |
 | ----------- | -------------------------------------- |
@@ -378,7 +378,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuButton
 
-> **API/props table for `SidebarMenuButton` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuButton` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Attribute     | Value                              |
 | ------------- | ---------------------------------- |
@@ -390,7 +390,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuAction
 
-> **API/props table for `SidebarMenuAction` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuAction` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -398,7 +398,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuBadge
 
-> **API/props table for `SidebarMenuBadge` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuBadge` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -406,7 +406,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuSub
 
-> **API/props table for `SidebarMenuSub` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuSub` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -414,7 +414,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuSubItem
 
-> **API/props table for `SidebarMenuSubItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuSubItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -422,7 +422,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMenuSubButton
 
-> **API/props table for `SidebarMenuSubButton` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMenuSubButton` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Attribute     | Value                              |
 | ------------- | ---------------------------------- |
@@ -435,7 +435,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarTrigger
 
-> **API/props table for `SidebarTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -443,7 +443,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarRail
 
-> **API/props table for `SidebarRail` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarRail` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -451,7 +451,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarMain
 
-> **API/props table for `SidebarMain` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarMain` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -459,7 +459,7 @@ Use `Layout` with `id` and `target` props for multiple independent sidebars.
 
 ### SidebarBackdrop
 
-> **API/props table for `SidebarBackdrop` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SidebarBackdrop` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/sidebar or the installed `@primereact/types`.
 
 Uses the [Backdrop](https://primereact.dev/docs/primitive/components/backdrop) component internally for animated overlay rendering.
 

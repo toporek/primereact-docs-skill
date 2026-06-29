@@ -28,7 +28,7 @@ import { ButtonGroup } from 'primereact/buttongroup';
 
 ### ButtonGroup
 
-> **API/props table for `ButtonGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ButtonGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/buttongroup or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

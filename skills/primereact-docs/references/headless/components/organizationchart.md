@@ -248,7 +248,7 @@ Every prop object includes `data-scope="organizationchart"` and a `data-part`. B
 
 ### useOrganizationChart
 
-> **API/props table for `useOrganizationChart` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useOrganizationChart` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/organizationchart or the installed `@primereact/types`.
 
 ## Accessibility
 

@@ -98,7 +98,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelRoot
 
-> **API/props table for `PanelRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -122,7 +122,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelHeader
 
-> **API/props table for `PanelHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -130,7 +130,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelTitle
 
-> **API/props table for `PanelTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -138,7 +138,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelTrigger
 
-> **API/props table for `PanelTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Attribute             | Value                       |
 | --------------------- | --------------------------- |
@@ -153,7 +153,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelIndicator
 
-> **API/props table for `PanelIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Attribute     | Value                  |
 | ------------- | ---------------------- |
@@ -168,7 +168,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelContent
 
-> **API/props table for `PanelContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Attribute     | Value                  |
 | ------------- | ---------------------- |
@@ -183,7 +183,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Title`=`div`, `Trigger`=`button
 
 ### PanelFooter
 
-> **API/props table for `PanelFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PanelFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/panel or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

@@ -223,11 +223,11 @@ The hook exposes state through `data-*` attributes on each part. Use them as CSS
 
 ### useTooltip
 
-> **API/props table for `useTooltip` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useTooltip` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/tooltip or the installed `@primereact/types`.
 
 ### useTooltipManager
 
-> **API/props table for `useTooltipManager` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useTooltipManager` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/tooltip or the installed `@primereact/types`.
 
 ## Accessibility
 

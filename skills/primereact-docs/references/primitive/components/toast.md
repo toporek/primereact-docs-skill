@@ -171,7 +171,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToasterRoot
 
-> **API/props table for `ToasterRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToasterRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -179,7 +179,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToasterRegion
 
-> **API/props table for `ToasterRegion` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToasterRegion` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Attribute       | Value                           |
 | --------------- | ------------------------------- |
@@ -195,11 +195,11 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToasterPortal
 
-> **API/props table for `ToasterPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToasterPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 ### ToastRoot
 
-> **API/props table for `ToastRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Attribute              | Value                                           |
 | ---------------------- | ----------------------------------------------- |
@@ -240,7 +240,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToastContent
 
-> **API/props table for `ToastContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -248,7 +248,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToastMessage
 
-> **API/props table for `ToastMessage` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastMessage` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -256,7 +256,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToastTitle
 
-> **API/props table for `ToastTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -264,7 +264,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToastDescription
 
-> **API/props table for `ToastDescription` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastDescription` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -272,7 +272,7 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 ### ToastIcon
 
-> **API/props table for `ToastIcon` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastIcon` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 The `match` prop restricts rendering to a specific severity. Use `'always'` (or omit `match`) for the catch-all.
 
@@ -282,7 +282,7 @@ The `match` prop restricts rendering to a specific severity. Use `'always'` (or 
 
 ### ToastAction
 
-> **API/props table for `ToastAction` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastAction` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -290,7 +290,7 @@ The `match` prop restricts rendering to a specific severity. Use `'always'` (or 
 
 ### ToastClose
 
-> **API/props table for `ToastClose` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToastClose` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

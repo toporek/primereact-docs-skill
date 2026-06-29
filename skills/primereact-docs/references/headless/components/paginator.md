@@ -181,7 +181,7 @@ Prop objects include data attributes for styling active, disabled, and navigatio
 
 ### usePaginator
 
-> **API/props table for `usePaginator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`usePaginator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/paginator or the installed `@primereact/types`.
 
 ## Accessibility
 

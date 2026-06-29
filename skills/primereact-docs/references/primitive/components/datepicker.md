@@ -160,7 +160,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerRoot
 
-> **API/props table for `DatePickerRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -228,7 +228,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerInput
 
-> **API/props table for `DatePickerInput` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerInput` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -241,7 +241,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerTrigger
 
-> **API/props table for `DatePickerTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -250,7 +250,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerValue
 
-> **API/props table for `DatePickerValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -259,7 +259,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerClear
 
-> **API/props table for `DatePickerClear` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerClear` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -272,7 +272,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerClearTrigger
 
-> **API/props table for `DatePickerClearTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerClearTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value             |
 | ------------ | ----------------- |
@@ -285,7 +285,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerPortal
 
-> **API/props table for `DatePickerPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -298,7 +298,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### DatePickerPositioner
 
-> **API/props table for `DatePickerPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -320,7 +320,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### DatePickerPopup
 
-> **API/props table for `DatePickerPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value                      |
 | ------------ | -------------------------- |
@@ -330,7 +330,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### DatePickerArrow
 
-> **API/props table for `DatePickerArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -352,7 +352,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerBody
 
-> **API/props table for `DatePickerBody` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerBody` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -365,7 +365,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerPanel
 
-> **API/props table for `DatePickerPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -378,7 +378,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerCalendar
 
-> **API/props table for `DatePickerCalendar` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerCalendar` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -391,7 +391,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerHeader
 
-> **API/props table for `DatePickerHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -404,7 +404,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerPrev
 
-> **API/props table for `DatePickerPrev` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerPrev` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -417,7 +417,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerNext
 
-> **API/props table for `DatePickerNext` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerNext` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -430,7 +430,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTitle
 
-> **API/props table for `DatePickerTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -443,7 +443,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerSelectMonth
 
-> **API/props table for `DatePickerSelectMonth` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerSelectMonth` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -456,7 +456,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerSelectYear
 
-> **API/props table for `DatePickerSelectYear` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerSelectYear` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -469,7 +469,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerDecade
 
-> **API/props table for `DatePickerDecade` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerDecade` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -482,7 +482,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTable
 
-> **API/props table for `DatePickerTable` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTable` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -495,7 +495,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableHead
 
-> **API/props table for `DatePickerTableHead` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableHead` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -508,7 +508,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableHeadRow
 
-> **API/props table for `DatePickerTableHeadRow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableHeadRow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value              |
 | ------------ | ------------------ |
@@ -521,7 +521,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableHeadCell
 
-> **API/props table for `DatePickerTableHeadCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableHeadCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -534,7 +534,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableHeadWeekCell
 
-> **API/props table for `DatePickerTableHeadWeekCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableHeadWeekCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -547,7 +547,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableHeadWeekLabel
 
-> **API/props table for `DatePickerTableHeadWeekLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableHeadWeekLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -556,7 +556,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableHeadWeekHeaderLabel
 
-> **API/props table for `DatePickerTableHeadWeekHeaderLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableHeadWeekHeaderLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value               |
 | ------------ | ------------------- |
@@ -565,7 +565,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableBody
 
-> **API/props table for `DatePickerTableBody` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableBody` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -578,7 +578,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableBodyRow
 
-> **API/props table for `DatePickerTableBodyRow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableBodyRow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -591,7 +591,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableBodyCell
 
-> **API/props table for `DatePickerTableBodyCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableBodyCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -604,7 +604,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableBodyWeekCell
 
-> **API/props table for `DatePickerTableBodyWeekCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableBodyWeekCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -617,7 +617,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTableBodyWeekLabel
 
-> **API/props table for `DatePickerTableBodyWeekLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTableBodyWeekLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -626,7 +626,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerDay
 
-> **API/props table for `DatePickerDay` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerDay` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute          | Value                        |
 | ------------------ | ---------------------------- |
@@ -639,7 +639,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerMonth
 
-> **API/props table for `DatePickerMonth` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerMonth` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -650,7 +650,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerYear
 
-> **API/props table for `DatePickerYear` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerYear` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -661,7 +661,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerTime
 
-> **API/props table for `DatePickerTime` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerTime` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -674,7 +674,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerPicker
 
-> **API/props table for `DatePickerPicker` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerPicker` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value                                                                    |
 | ------------ | ------------------------------------------------------------------------ |
@@ -687,7 +687,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerHour
 
-> **API/props table for `DatePickerHour` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerHour` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -700,7 +700,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerMinute
 
-> **API/props table for `DatePickerMinute` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerMinute` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -713,7 +713,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerSecond
 
-> **API/props table for `DatePickerSecond` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerSecond` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -726,7 +726,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerAmPm
 
-> **API/props table for `DatePickerAmPm` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerAmPm` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -739,7 +739,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerIncrement
 
-> **API/props table for `DatePickerIncrement` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerIncrement` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -752,7 +752,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerDecrement
 
-> **API/props table for `DatePickerDecrement` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerDecrement` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -765,7 +765,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerSeparator
 
-> **API/props table for `DatePickerSeparator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerSeparator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -774,7 +774,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerButtonbar
 
-> **API/props table for `DatePickerButtonbar` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerButtonbar` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -787,7 +787,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerFooter
 
-> **API/props table for `DatePickerFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -800,7 +800,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerToday
 
-> **API/props table for `DatePickerToday` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerToday` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -813,7 +813,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### DatePickerDropdown
 
-> **API/props table for `DatePickerDropdown` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DatePickerDropdown` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datepicker or the installed `@primereact/types`.
 
 ## Accessibility
 

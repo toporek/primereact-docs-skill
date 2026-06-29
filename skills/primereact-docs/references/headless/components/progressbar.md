@@ -116,7 +116,7 @@ The prop objects include `data-scope="progressbar"` and `data-part` for styling.
 
 ### useProgressBar
 
-> **API/props table for `useProgressBar` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useProgressBar` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/progressbar or the installed `@primereact/types`.
 
 ## Accessibility
 

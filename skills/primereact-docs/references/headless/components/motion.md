@@ -153,7 +153,7 @@ Switch `hideStrategy` to match what your CSS expects. `display` is the default b
 
 ### useMotion
 
-> **API/props table for `useMotion` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useMotion` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/motion or the installed `@primereact/types`.
 
 ## Accessibility
 

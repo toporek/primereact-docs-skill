@@ -198,10 +198,10 @@ See [FocusTrap Primitive](../../primitive/components/focustrap.md#accessibility)
 
 List of class names used in the styled mode.
 
-> **API/props table for `FocusTrap` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FocusTrap` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/focustrap or the installed `@primereact/types`.
 
 ### Design Tokens
 
 List of design tokens.
 
-> **API/props table for `FocusTrap` (`token`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FocusTrap` API table (`token`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/focustrap or the installed `@primereact/types`.

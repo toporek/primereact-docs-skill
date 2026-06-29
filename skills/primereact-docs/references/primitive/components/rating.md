@@ -92,7 +92,7 @@ Default element: `span` for all sub-components.
 
 ### RatingRoot
 
-> **API/props table for `RatingRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RatingRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/rating or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -105,7 +105,7 @@ Default element: `span` for all sub-components.
 
 ### RatingOption
 
-> **API/props table for `RatingOption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RatingOption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/rating or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -121,7 +121,7 @@ Default element: `span` for all sub-components.
 
 ### RatingOn
 
-> **API/props table for `RatingOn` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RatingOn` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/rating or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -133,7 +133,7 @@ Default element: `span` for all sub-components.
 
 ### RatingOff
 
-> **API/props table for `RatingOff` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RatingOff` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/rating or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |

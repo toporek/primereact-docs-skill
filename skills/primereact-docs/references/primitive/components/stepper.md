@@ -142,7 +142,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperRoot
 
-> **API/props table for `StepperRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |
@@ -165,7 +165,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperList
 
-> **API/props table for `StepperList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -173,7 +173,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperItem
 
-> **API/props table for `StepperItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Attribute     | Value                       |
 | ------------- | --------------------------- |
@@ -187,7 +187,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperStep
 
-> **API/props table for `StepperStep` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperStep` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Attribute       | Value                         |
 | --------------- | ----------------------------- |
@@ -202,7 +202,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperHeader
 
-> **API/props table for `StepperHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |
@@ -215,7 +215,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperNumber
 
-> **API/props table for `StepperNumber` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperNumber` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -223,7 +223,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperTitle
 
-> **API/props table for `StepperTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -231,7 +231,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperSeparator
 
-> **API/props table for `StepperSeparator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperSeparator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -239,7 +239,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperPanels
 
-> **API/props table for `StepperPanels` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperPanels` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -247,7 +247,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperPanel
 
-> **API/props table for `StepperPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Attribute     | Value                        |
 | ------------- | ---------------------------- |
@@ -261,7 +261,7 @@ Default elements: `Root`=`div`, `List`=`div`, `Step`=`div`, `Item`=`div`, `Heade
 
 ### StepperContent
 
-> **API/props table for `StepperContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`StepperContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/stepper or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

@@ -16,4 +16,4 @@ const instance = useFluid();
 
 ### useFluid
 
-> **API/props table for `useFluid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFluid` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/fluid or the installed `@primereact/types`.

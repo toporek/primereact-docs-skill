@@ -256,10 +256,10 @@ See [AnimateOnScroll Primitive](../../primitive/components/animateonscroll.md#ac
 
 List of class names used in the styled mode.
 
-> **API/props table for `AnimateOnScroll` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AnimateOnScroll` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/animateonscroll or the installed `@primereact/types`.
 
 ### Design Tokens
 
 List of design tokens.
 
-> **API/props table for `AnimateOnScroll` (`token`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AnimateOnScroll` API table (`token`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/animateonscroll or the installed `@primereact/types`.

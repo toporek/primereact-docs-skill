@@ -88,7 +88,7 @@ Default elements: `Badge`=`span`, `OverlayBadge`=`div`.
 
 ### Badge
 
-> **API/props table for `Badge` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Badge` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/badge or the installed `@primereact/types`.
 
 | Attribute    | Value                              |
 | ------------ | ---------------------------------- |
@@ -102,7 +102,7 @@ Default elements: `Badge`=`span`, `OverlayBadge`=`div`.
 
 ### OverlayBadge
 
-> **API/props table for `OverlayBadge` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`OverlayBadge` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/badge or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

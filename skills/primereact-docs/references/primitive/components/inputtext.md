@@ -58,7 +58,7 @@ Use `as` to change the rendered HTML element or use a custom React component.
 
 ### InputText
 
-> **API/props table for `InputText` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputText` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputtext or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |

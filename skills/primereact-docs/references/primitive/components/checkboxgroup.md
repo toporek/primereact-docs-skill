@@ -37,7 +37,7 @@ import { CheckboxGroup } from 'primereact/checkboxgroup';
 
 ### CheckboxGroup
 
-> **API/props table for `CheckboxGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CheckboxGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/checkboxgroup or the installed `@primereact/types`.
 
 | Attribute    | Value             |
 | ------------ | ----------------- |

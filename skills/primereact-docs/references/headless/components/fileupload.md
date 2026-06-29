@@ -317,7 +317,7 @@ The drop zone lights up via `data-highlight="true"` during drag-over; every prop
 
 ### useFileUpload
 
-> **API/props table for `useFileUpload` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFileUpload` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/fileupload or the installed `@primereact/types`.
 
 ## Accessibility
 

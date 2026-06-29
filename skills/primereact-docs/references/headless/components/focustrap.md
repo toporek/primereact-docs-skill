@@ -119,7 +119,7 @@ The container receives a `data-focus-trap` attribute when the trap is active, gi
 
 ### useFocusTrap
 
-> **API/props table for `useFocusTrap` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useFocusTrap` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/focustrap or the installed `@primereact/types`.
 
 ## Accessibility
 

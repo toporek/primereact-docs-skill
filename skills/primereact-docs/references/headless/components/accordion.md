@@ -186,11 +186,11 @@ Every prop object includes `data-scope="accordion"` and a `data-part` attribute.
 
 ### useAccordion
 
-> **API/props table for `useAccordion` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useAccordion` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/accordion or the installed `@primereact/types`.
 
 ### useAccordionPanel
 
-> **API/props table for `useAccordionPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useAccordionPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/accordion or the installed `@primereact/types`.
 
 ## Accessibility
 

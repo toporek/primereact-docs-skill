@@ -87,7 +87,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Content`=`div`.
 
 ### CollapsibleRoot
 
-> **API/props table for `CollapsibleRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CollapsibleRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/collapsible or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -99,7 +99,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Content`=`div`.
 
 ### CollapsibleTrigger
 
-> **API/props table for `CollapsibleTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CollapsibleTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/collapsible or the installed `@primereact/types`.
 
 | Attribute             | Value                       |
 | --------------------- | --------------------------- |
@@ -110,7 +110,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Content`=`div`.
 
 ### CollapsibleContent
 
-> **API/props table for `CollapsibleContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CollapsibleContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/collapsible or the installed `@primereact/types`.
 
 | Attribute     | Value               |
 | ------------- | ------------------- |

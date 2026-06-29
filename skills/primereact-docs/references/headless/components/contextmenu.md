@@ -272,11 +272,11 @@ All prop getters attach `data-scope="contextmenu"` and a `data-part` attribute f
 
 ### useContextMenu
 
-> **API/props table for `useContextMenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useContextMenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/contextmenu or the installed `@primereact/types`.
 
 ### useContextMenuSubmenu
 
-> **API/props table for `useContextMenuSubmenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useContextMenuSubmenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/contextmenu or the installed `@primereact/types`.
 
 ## Accessibility
 

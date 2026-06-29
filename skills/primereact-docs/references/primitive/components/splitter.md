@@ -72,7 +72,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### SplitterRoot
 
-> **API/props table for `SplitterRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SplitterRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/splitter or the installed `@primereact/types`.
 
 | Attribute          | Value                             |
 | ------------------ | --------------------------------- |
@@ -89,7 +89,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### SplitterPanel
 
-> **API/props table for `SplitterPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SplitterPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/splitter or the installed `@primereact/types`.
 
 | Attribute          | Value                             |
 | ------------------ | --------------------------------- |
@@ -103,7 +103,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### SplitterGutter
 
-> **API/props table for `SplitterGutter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SplitterGutter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/splitter or the installed `@primereact/types`.
 
 | Attribute          | Value                             |
 | ------------------ | --------------------------------- |
@@ -117,7 +117,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### SplitterHandle
 
-> **API/props table for `SplitterHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SplitterHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/splitter or the installed `@primereact/types`.
 
 | Attribute          | Value                             |
 | ------------------ | --------------------------------- |

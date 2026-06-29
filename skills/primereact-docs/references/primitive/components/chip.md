@@ -85,7 +85,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ChipRoot
 
-> **API/props table for `ChipRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ChipRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/chip or the installed `@primereact/types`.
 
 | Attribute    | Value  |
 | ------------ | ------ |
@@ -102,7 +102,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ChipStart
 
-> **API/props table for `ChipStart` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ChipStart` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/chip or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -110,7 +110,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ChipLabel
 
-> **API/props table for `ChipLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ChipLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/chip or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -118,7 +118,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ChipEnd
 
-> **API/props table for `ChipEnd` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ChipEnd` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/chip or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -126,7 +126,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ChipRemove
 
-> **API/props table for `ChipRemove` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ChipRemove` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/chip or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

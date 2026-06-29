@@ -139,11 +139,11 @@ Every prop object includes `data-scope` and `data-part` attributes you can targe
 
 ### useAvatar
 
-> **API/props table for `useAvatar` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useAvatar` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/avatar or the installed `@primereact/types`.
 
 ### useAvatarGroup
 
-> **API/props table for `useAvatarGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useAvatarGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/avatar or the installed `@primereact/types`.
 
 ## Accessibility
 

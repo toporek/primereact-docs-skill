@@ -110,7 +110,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### RadioButtonRoot
 
-> **API/props table for `RadioButtonRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RadioButtonRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/radiobutton or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |
@@ -129,7 +129,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### RadioButtonBox
 
-> **API/props table for `RadioButtonBox` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RadioButtonBox` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/radiobutton or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |
@@ -145,7 +145,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### RadioButtonIndicator
 
-> **API/props table for `RadioButtonIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RadioButtonIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/radiobutton or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |
@@ -161,7 +161,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### RadioButtonGroup
 
-> **API/props table for `RadioButtonGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`RadioButtonGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/radiobutton or the installed `@primereact/types`.
 
 | Attribute    | Value                |
 | ------------ | -------------------- |

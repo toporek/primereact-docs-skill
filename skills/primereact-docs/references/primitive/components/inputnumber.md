@@ -70,14 +70,14 @@ Use `as` to change the rendered input element.
 
 ### InputNumber
 
-> **API/props table for `InputNumberRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputNumberRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputnumber or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
 | `data-scope` | `"inputnumber"` |
 | `data-part`  | `"root"`        |
 
-> **API/props table for `InputNumber` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputNumber` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputnumber or the installed `@primereact/types`.
 
 ## Accessibility
 

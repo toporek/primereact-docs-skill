@@ -73,7 +73,7 @@ Use `as` to change the rendered HTML element. Defaults to `span`.
 
 ### VisuallyHidden
 
-> **API/props table for `VisuallyHidden` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`VisuallyHidden` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/visuallyhidden or the installed `@primereact/types`.
 
 ## Accessibility
 

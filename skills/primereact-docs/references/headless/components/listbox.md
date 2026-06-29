@@ -184,11 +184,11 @@ The hook exposes state through `data-*` attributes on each part. Use them as CSS
 
 ### useListbox
 
-> **API/props table for `useListbox` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useListbox` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/listbox or the installed `@primereact/types`.
 
 ### useListboxOption
 
-> **API/props table for `useListboxOption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useListboxOption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/listbox or the installed `@primereact/types`.
 
 ## Accessibility
 

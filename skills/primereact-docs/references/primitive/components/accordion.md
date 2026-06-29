@@ -128,7 +128,7 @@ Default elements: `Root`=`div`, `Panel`=`div`, `Header`=`div`, `Trigger`=`button
 
 ### AccordionRoot
 
-> **API/props table for `AccordionRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AccordionRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/accordion or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -149,7 +149,7 @@ Default elements: `Root`=`div`, `Panel`=`div`, `Header`=`div`, `Trigger`=`button
 
 ### AccordionPanel
 
-> **API/props table for `AccordionPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AccordionPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/accordion or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -165,7 +165,7 @@ Default elements: `Root`=`div`, `Panel`=`div`, `Header`=`div`, `Trigger`=`button
 
 ### AccordionHeader
 
-> **API/props table for `AccordionHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AccordionHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/accordion or the installed `@primereact/types`.
 
 | Attribute     | Value                  |
 | ------------- | ---------------------- |
@@ -180,7 +180,7 @@ Default elements: `Root`=`div`, `Panel`=`div`, `Header`=`div`, `Trigger`=`button
 
 ### AccordionTrigger
 
-> **API/props table for `AccordionTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AccordionTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/accordion or the installed `@primereact/types`.
 
 | Attribute             | Value                       |
 | --------------------- | --------------------------- |
@@ -196,7 +196,7 @@ Default elements: `Root`=`div`, `Panel`=`div`, `Header`=`div`, `Trigger`=`button
 
 ### AccordionContent
 
-> **API/props table for `AccordionContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AccordionContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/accordion or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -212,7 +212,7 @@ Default elements: `Root`=`div`, `Panel`=`div`, `Header`=`div`, `Trigger`=`button
 
 ### AccordionIndicator
 
-> **API/props table for `AccordionIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AccordionIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/accordion or the installed `@primereact/types`.
 
 | Attribute     | Value                  |
 | ------------- | ---------------------- |

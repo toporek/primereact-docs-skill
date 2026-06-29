@@ -287,11 +287,11 @@ Every prop object includes `data-scope="tree"` and a `data-part`. Boolean state 
 
 ### useTree
 
-> **API/props table for `useTree` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useTree` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/tree or the installed `@primereact/types`.
 
 ### useTreeNode
 
-> **API/props table for `useTreeNode` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useTreeNode` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/tree or the installed `@primereact/types`.
 
 ## Accessibility
 

@@ -113,7 +113,7 @@ Defaults: `Root`=`div`, `Nodes`=`ul`, `Node`=`li`, `Content`=`div`, `Toggle`=`bu
 
 ### TreeRoot
 
-> **API/props table for `TreeRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute       | Value                                                 |
 | --------------- | ----------------------------------------------------- |
@@ -141,7 +141,7 @@ Defaults: `Root`=`div`, `Nodes`=`ul`, `Node`=`li`, `Content`=`div`, `Toggle`=`bu
 
 ### TreeNodes
 
-> **API/props table for `TreeNodes` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeNodes` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -155,7 +155,7 @@ Defaults: `Root`=`div`, `Nodes`=`ul`, `Node`=`li`, `Content`=`div`, `Toggle`=`bu
 
 ### TreeNode
 
-> **API/props table for `TreeNode` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeNode` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute        | Value                             |
 | ---------------- | --------------------------------- |
@@ -175,7 +175,7 @@ Defaults: `Root`=`div`, `Nodes`=`ul`, `Node`=`li`, `Content`=`div`, `Toggle`=`bu
 
 ### TreeContent
 
-> **API/props table for `TreeContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute              | Value                                      |
 | ---------------------- | ------------------------------------------ |
@@ -197,7 +197,7 @@ Defaults: `Root`=`div`, `Nodes`=`ul`, `Node`=`li`, `Content`=`div`, `Toggle`=`bu
 
 ### TreeToggle
 
-> **API/props table for `TreeToggle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeToggle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |
@@ -214,7 +214,7 @@ For leaf nodes the toggle is replaced by `<span data-part="toggle-spacer" aria-h
 
 ### TreeToggleIndicator
 
-> **API/props table for `TreeToggleIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeToggleIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute    | Value                |
 | ------------ | -------------------- |
@@ -227,7 +227,7 @@ For leaf nodes the toggle is replaced by `<span data-part="toggle-spacer" aria-h
 
 ### TreeSelection
 
-> **API/props table for `TreeSelection` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeSelection` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 Render-prop only; no DOM attributes of its own.
 
@@ -237,7 +237,7 @@ Render-prop only; no DOM attributes of its own.
 
 ### TreeDropIndicator
 
-> **API/props table for `TreeDropIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeDropIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 Renders only while the matching drop point is hovered. Use one with `position="before"` and one with `position="after"` per `Tree.Node`.
 
@@ -252,7 +252,7 @@ Renders only while the matching drop point is hovered. Use one with `position="b
 
 ### TreeLabel
 
-> **API/props table for `TreeLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -260,7 +260,7 @@ Renders only while the matching drop point is hovered. Use one with `position="b
 
 ### TreeFilter
 
-> **API/props table for `TreeFilter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeFilter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Attribute    | Value      |
 | ------------ | ---------- |
@@ -273,7 +273,7 @@ Renders only while the matching drop point is hovered. Use one with `position="b
 
 ### TreeHeader
 
-> **API/props table for `TreeHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -281,7 +281,7 @@ Renders only while the matching drop point is hovered. Use one with `position="b
 
 ### TreeFooter
 
-> **API/props table for `TreeFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -289,7 +289,7 @@ Renders only while the matching drop point is hovered. Use one with `position="b
 
 ### TreeEmpty
 
-> **API/props table for `TreeEmpty` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeEmpty` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -297,7 +297,7 @@ Renders only while the matching drop point is hovered. Use one with `position="b
 
 ### TreeLoading
 
-> **API/props table for `TreeLoading` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TreeLoading` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tree or the installed `@primereact/types`.
 
 Renders only while `Tree.Root.loading` is true. Use it as a sibling of `Tree.Nodes`.
 

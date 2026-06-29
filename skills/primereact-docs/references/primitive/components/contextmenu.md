@@ -213,7 +213,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuRoot
 
-> **API/props table for `ContextMenuRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -242,7 +242,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuTrigger
 
-> **API/props table for `ContextMenuTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -255,7 +255,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuList
 
-> **API/props table for `ContextMenuList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -269,7 +269,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuItem
 
-> **API/props table for `ContextMenuItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute       | Value                         |
 | --------------- | ----------------------------- |
@@ -286,7 +286,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuSubmenu
 
-> **API/props table for `ContextMenuSubmenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value                        |
 | ------------ | ---------------------------- |
@@ -300,7 +300,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuSubmenuTrigger
 
-> **API/props table for `ContextMenuSubmenuTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute       | Value                               |
 | --------------- | ----------------------------------- |
@@ -317,7 +317,7 @@ Default elements: `Root`=`div`, `Trigger`=`div`, `List`=`ul`, `Item`=`li`, `Sub`
 
 ### ContextMenuSubmenuPositioner
 
-> **API/props table for `ContextMenuSubmenuPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value             |
 | ------------ | ----------------- |
@@ -335,28 +335,28 @@ The positioner element exposes CSS custom properties for layout and transform co
 | `--transform-origin`        | Computed transform origin for animations |
 | `--positioner-anchor-width` | Width of the anchor/trigger element      |
 
-> **API/props table for `ContextMenuSubmenuPositioner` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuPositioner` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuSubmenuPortal
 
-> **API/props table for `ContextMenuSubmenuPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
-> **API/props table for `ContextMenuSubmenuPortal` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuPortal` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuSubmenuPopup
 
-> **API/props table for `ContextMenuSubmenuPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
 | `data-scope` | `"contextmenu"` |
 | `data-part`  | `"subpopup"`    |
 
-> **API/props table for `ContextMenuSubmenuPopup` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSubmenuPopup` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuIndicator
 
-> **API/props table for `ContextMenuIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute        | Value                          |
 | ---------------- | ------------------------------ |
@@ -373,7 +373,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### ContextMenuLabel
 
-> **API/props table for `ContextMenuLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -386,7 +386,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### ContextMenuSeparator
 
-> **API/props table for `ContextMenuSeparator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuSeparator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -399,18 +399,18 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### ContextMenuRadioGroup
 
-> **API/props table for `ContextMenuRadioGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuRadioGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
 | `data-scope` | `"contextmenu"` |
 | `data-part`  | `"radiogroup"`  |
 
-> **API/props table for `ContextMenuRadioGroup` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuRadioGroup` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuPopup
 
-> **API/props table for `ContextMenuPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -423,7 +423,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### ContextMenuPositioner
 
-> **API/props table for `ContextMenuPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -447,7 +447,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### ContextMenuArrow
 
-> **API/props table for `ContextMenuArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -471,7 +471,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### ContextMenuPortal
 
-> **API/props table for `ContextMenuPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -491,15 +491,15 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### ContextMenuIcon
 
-> **API/props table for `ContextMenuIcon` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuIcon` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuCheckboxIcon
 
-> **API/props table for `ContextMenuCheckboxIcon` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuCheckboxIcon` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuRadioIcon
 
-> **API/props table for `ContextMenuRadioIcon` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ContextMenuRadioIcon` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ## Accessibility
 

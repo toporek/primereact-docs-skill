@@ -122,7 +122,7 @@ Every prop object includes `data-scope="progress"` and a `data-part` attribute. 
 
 ### useProgressSpinner
 
-> **API/props table for `useProgressSpinner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useProgressSpinner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/progressspinner or the installed `@primereact/types`.
 
 ## Accessibility
 

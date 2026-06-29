@@ -26,7 +26,7 @@ import { InputText } from 'primereact/inputtext';
 
 ### Label
 
-> **API/props table for `Label` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Label` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/label or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |

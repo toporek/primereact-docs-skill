@@ -71,7 +71,7 @@ Default elements: `Root`=`div`, `Range`=`path`, `Value`=`path`, `Text`=`text`. T
 
 ### KnobRoot
 
-> **API/props table for `KnobRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`KnobRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/knob or the installed `@primereact/types`.
 
 | Attribute       | Value                  |
 | --------------- | ---------------------- |
@@ -90,7 +90,7 @@ Default elements: `Root`=`div`, `Range`=`path`, `Value`=`path`, `Text`=`text`. T
 
 ### KnobRange
 
-> **API/props table for `KnobRange` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`KnobRange` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/knob or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -103,7 +103,7 @@ Default elements: `Root`=`div`, `Range`=`path`, `Value`=`path`, `Text`=`text`. T
 
 ### KnobValue
 
-> **API/props table for `KnobValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`KnobValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/knob or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -116,7 +116,7 @@ Default elements: `Root`=`div`, `Range`=`path`, `Value`=`path`, `Text`=`text`. T
 
 ### KnobText
 
-> **API/props table for `KnobText` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`KnobText` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/knob or the installed `@primereact/types`.
 
 | Attribute    | Value    |
 | ------------ | -------- |

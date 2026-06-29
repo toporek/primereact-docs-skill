@@ -70,7 +70,7 @@ Default element: `div`.
 
 ### AnimateOnScroll
 
-> **API/props table for `AnimateOnScroll` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AnimateOnScroll` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/animateonscroll or the installed `@primereact/types`.
 
 | Attribute    | Value               |
 | ------------ | ------------------- |

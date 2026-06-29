@@ -72,7 +72,7 @@ Default elements: `Root`=`div`, `Track`=`circle`, `Range`=`circle`, `Value`=`tex
 
 ### ProgressSpinnerRoot
 
-> **API/props table for `ProgressSpinnerRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressSpinnerRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressspinner or the installed `@primereact/types`.
 
 | Attribute       | Value                                |
 | --------------- | ------------------------------------ |
@@ -84,7 +84,7 @@ Default elements: `Root`=`div`, `Track`=`circle`, `Range`=`circle`, `Value`=`tex
 
 ### ProgressSpinnerTrack
 
-> **API/props table for `ProgressSpinnerTrack` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressSpinnerTrack` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressspinner or the installed `@primereact/types`.
 
 | Attribute    | Value                                |
 | ------------ | ------------------------------------ |
@@ -94,7 +94,7 @@ Default elements: `Root`=`div`, `Track`=`circle`, `Range`=`circle`, `Value`=`tex
 
 ### ProgressSpinnerRange
 
-> **API/props table for `ProgressSpinnerRange` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressSpinnerRange` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressspinner or the installed `@primereact/types`.
 
 | Attribute    | Value                                |
 | ------------ | ------------------------------------ |
@@ -104,7 +104,7 @@ Default elements: `Root`=`div`, `Track`=`circle`, `Range`=`circle`, `Value`=`tex
 
 ### ProgressSpinnerValue
 
-> **API/props table for `ProgressSpinnerValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressSpinnerValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressspinner or the installed `@primereact/types`.
 
 ## Accessibility
 

@@ -81,7 +81,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### InputOtpRoot
 
-> **API/props table for `InputOtpRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputOtpRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputotp or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -95,7 +95,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### InputOtpText
 
-> **API/props table for `InputOtpText` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputOtpText` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputotp or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |

@@ -187,7 +187,7 @@ Default elements: `Root`=`div`, `Content`=`div`, `Item`=`div`, `Prev`=`button`, 
 
 ### GalleryRoot
 
-> **API/props table for `GalleryRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Attribute         | Value                               |
 | ----------------- | ----------------------------------- |
@@ -206,7 +206,7 @@ Default elements: `Root`=`div`, `Content`=`div`, `Item`=`div`, `Prev`=`button`, 
 
 ### GalleryBackdrop
 
-> **API/props table for `GalleryBackdrop` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryBackdrop` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -214,7 +214,7 @@ Default elements: `Root`=`div`, `Content`=`div`, `Item`=`div`, `Prev`=`button`, 
 
 ### GalleryContent
 
-> **API/props table for `GalleryContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -222,7 +222,7 @@ Default elements: `Root`=`div`, `Content`=`div`, `Item`=`div`, `Prev`=`button`, 
 
 ### GalleryItem
 
-> **API/props table for `GalleryItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Attribute     | Value                                |
 | ------------- | ------------------------------------ |
@@ -248,7 +248,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryPrev
 
-> **API/props table for `GalleryPrev` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryPrev` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -256,7 +256,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryNext
 
-> **API/props table for `GalleryNext` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryNext` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -264,7 +264,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryHeader
 
-> **API/props table for `GalleryHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -272,7 +272,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryFooter
 
-> **API/props table for `GalleryFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -280,7 +280,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryZoomIn
 
-> **API/props table for `GalleryZoomIn` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryZoomIn` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Attribute  | Value                               |
 | ---------- | ----------------------------------- |
@@ -292,7 +292,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryZoomOut
 
-> **API/props table for `GalleryZoomOut` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryZoomOut` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Attribute  | Value                           |
 | ---------- | ------------------------------- |
@@ -304,7 +304,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryZoomToggle
 
-> **API/props table for `GalleryZoomToggle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryZoomToggle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -312,7 +312,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryRotateLeft
 
-> **API/props table for `GalleryRotateLeft` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryRotateLeft` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -320,7 +320,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryRotateRight
 
-> **API/props table for `GalleryRotateRight` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryRotateRight` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -328,7 +328,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryFlipX
 
-> **API/props table for `GalleryFlipX` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryFlipX` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -336,7 +336,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryFlipY
 
-> **API/props table for `GalleryFlipY` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryFlipY` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -344,7 +344,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryDownload
 
-> **API/props table for `GalleryDownload` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryDownload` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -352,7 +352,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryFullScreen
 
-> **API/props table for `GalleryFullScreen` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryFullScreen` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Attribute         | Value                           |
 | ----------------- | ------------------------------- |
@@ -364,7 +364,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryThumbnail
 
-> **API/props table for `GalleryThumbnail` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryThumbnail` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -372,7 +372,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryThumbnailContent
 
-> **API/props table for `GalleryThumbnailContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryThumbnailContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -380,7 +380,7 @@ The `Item` element sets CSS custom properties on its `style` for transform contr
 
 ### GalleryThumbnailItem
 
-> **API/props table for `GalleryThumbnailItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`GalleryThumbnailItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/gallery or the installed `@primereact/types`.
 
 | Attribute     | Value                              |
 | ------------- | ---------------------------------- |

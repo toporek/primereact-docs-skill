@@ -89,7 +89,7 @@ Default elements: `Root`=`div`, `Item`=`div`, `Handle`=`span`, `Indicator`=`span
 
 ### CompareRoot
 
-> **API/props table for `CompareRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CompareRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/compare or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -99,7 +99,7 @@ Default elements: `Root`=`div`, `Item`=`div`, `Handle`=`span`, `Indicator`=`span
 
 ### CompareItem
 
-> **API/props table for `CompareItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CompareItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/compare or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -109,7 +109,7 @@ Default elements: `Root`=`div`, `Item`=`div`, `Handle`=`span`, `Indicator`=`span
 
 ### CompareHandle
 
-> **API/props table for `CompareHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CompareHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/compare or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -119,7 +119,7 @@ Default elements: `Root`=`div`, `Item`=`div`, `Handle`=`span`, `Indicator`=`span
 
 ### CompareIndicator
 
-> **API/props table for `CompareIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CompareIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/compare or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |

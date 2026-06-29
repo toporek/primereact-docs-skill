@@ -542,7 +542,7 @@ See [Tabs Primitive](../../primitive/components/tabs.md#accessibility) for WAI-A
 
 List of class names used in the styled mode.
 
-> **API/props table for `Tabs` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Tabs` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/tabs or the installed `@primereact/types`.
 
 ### Design Tokens
 

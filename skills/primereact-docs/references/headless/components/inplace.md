@@ -146,7 +146,7 @@ Every prop object includes `data-scope="inplace"` and a `data-part` attribute. S
 
 ### useInplace
 
-> **API/props table for `useInplace` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useInplace` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/inplace or the installed `@primereact/types`.
 
 ## Accessibility
 

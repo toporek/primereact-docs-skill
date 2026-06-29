@@ -131,19 +131,19 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 ### Props
 
-> **API/props table for `useRating` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRating` API table (`api/props`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/rating/api or the installed `@primereact/types`.
 
 ### State
 
-> **API/props table for `useRating` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRating` API table (`api/state`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/rating/api or the installed `@primereact/types`.
 
 ### Exposes
 
-> **API/props table for `useRating` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRating` API table (`api/exposes`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/rating/api or the installed `@primereact/types`.
 
 ### Interfaces
 
-> **API/props table for `useRating` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRating` API table (`api/interfaces`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/rating/api or the installed `@primereact/types`.
 
 ### Events
 
@@ -153,4 +153,4 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 ### Types
 
-> **API/props table for `useRating` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRating` API table (`api/types`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/rating/api or the installed `@primereact/types`.

@@ -89,7 +89,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Content`=`div`, `Footer`=`div`,
 
 ### DataViewRoot
 
-> **API/props table for `DataViewRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataViewRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dataview or the installed `@primereact/types`.
 
 | Attribute     | Value                |
 | ------------- | -------------------- |
@@ -103,7 +103,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Content`=`div`, `Footer`=`div`,
 
 ### DataViewHeader
 
-> **API/props table for `DataViewHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataViewHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dataview or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -116,7 +116,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Content`=`div`, `Footer`=`div`,
 
 ### DataViewContent
 
-> **API/props table for `DataViewContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataViewContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dataview or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -129,7 +129,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Content`=`div`, `Footer`=`div`,
 
 ### DataViewFooter
 
-> **API/props table for `DataViewFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataViewFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dataview or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -142,7 +142,7 @@ Default elements: `Root`=`div`, `Header`=`div`, `Content`=`div`, `Footer`=`div`,
 
 ### DataViewEmpty
 
-> **API/props table for `DataViewEmpty` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataViewEmpty` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dataview or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |

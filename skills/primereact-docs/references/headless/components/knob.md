@@ -145,7 +145,7 @@ Every prop object includes `data-scope="knob"` and a `data-part` attribute. Stat
 
 ### useKnob
 
-> **API/props table for `useKnob` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useKnob` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/knob or the installed `@primereact/types`.
 
 ## Accessibility
 

@@ -610,4 +610,4 @@ List of class names used in the styled mode.
 
 List of design tokens.
 
-> **API/props table for `CheckboxGroup` (`token`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CheckboxGroup` API table (`token`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/checkboxgroup or the installed `@primereact/types`.

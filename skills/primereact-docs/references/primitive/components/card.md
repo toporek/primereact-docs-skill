@@ -94,7 +94,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardRoot
 
-> **API/props table for `CardRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Attribute    | Value  |
 | ------------ | ------ |
@@ -114,7 +114,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardHeader
 
-> **API/props table for `CardHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -122,7 +122,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardBody
 
-> **API/props table for `CardBody` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardBody` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -130,7 +130,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardCaption
 
-> **API/props table for `CardCaption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardCaption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -138,7 +138,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardTitle
 
-> **API/props table for `CardTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -146,7 +146,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardSubtitle
 
-> **API/props table for `CardSubtitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardSubtitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -154,7 +154,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardContent
 
-> **API/props table for `CardContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -162,7 +162,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### CardFooter
 
-> **API/props table for `CardFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CardFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/card or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

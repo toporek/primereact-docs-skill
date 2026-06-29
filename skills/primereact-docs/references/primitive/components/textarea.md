@@ -59,7 +59,7 @@ Use `as` to change the rendered HTML element or use a custom React component.
 
 ### Textarea
 
-> **API/props table for `Textarea` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Textarea` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/textarea or the installed `@primereact/types`.
 
 | Attribute      | Value                |
 | -------------- | -------------------- |

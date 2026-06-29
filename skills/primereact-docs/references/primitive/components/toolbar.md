@@ -85,7 +85,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ToolbarRoot
 
-> **API/props table for `ToolbarRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToolbarRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toolbar or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -101,7 +101,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ToolbarStart
 
-> **API/props table for `ToolbarStart` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToolbarStart` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toolbar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -109,7 +109,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ToolbarCenter
 
-> **API/props table for `ToolbarCenter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToolbarCenter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toolbar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -117,7 +117,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ToolbarEnd
 
-> **API/props table for `ToolbarEnd` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToolbarEnd` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toolbar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

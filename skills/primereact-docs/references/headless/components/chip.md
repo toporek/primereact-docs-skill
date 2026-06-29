@@ -135,7 +135,7 @@ The root prop object includes `data-scope="chip"` and `data-part="root"` for tar
 
 ### useChip
 
-> **API/props table for `useChip` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useChip` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/chip or the installed `@primereact/types`.
 
 ## Accessibility
 

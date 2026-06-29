@@ -31,7 +31,7 @@ import { InputText } from 'primereact/inputtext';
 
 ### IconFieldRoot
 
-> **API/props table for `IconFieldRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`IconFieldRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/iconfield or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -40,7 +40,7 @@ import { InputText } from 'primereact/inputtext';
 
 ### IconFieldInset
 
-> **API/props table for `IconFieldInset` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`IconFieldInset` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/iconfield or the installed `@primereact/types`.
 
 ## Accessibility
 

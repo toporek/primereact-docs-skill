@@ -96,7 +96,7 @@ const [container, setContainer] = React.useState<HTMLElement | null>(null);
 
 ### usePortal
 
-> **API/props table for `usePortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`usePortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/portal or the installed `@primereact/types`.
 
 ## Accessibility
 

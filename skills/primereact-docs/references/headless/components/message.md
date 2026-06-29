@@ -137,7 +137,7 @@ Prop objects include `data-scope="message"` and a `data-part` attribute for CSS 
 
 ### useMessage
 
-> **API/props table for `useMessage` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useMessage` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/message or the installed `@primereact/types`.
 
 ## Accessibility
 

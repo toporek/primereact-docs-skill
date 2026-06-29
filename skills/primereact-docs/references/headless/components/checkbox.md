@@ -174,11 +174,11 @@ Every prop object includes `data-scope="checkbox"` and a `data-part` attribute. 
 
 ### useCheckbox
 
-> **API/props table for `useCheckbox` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useCheckbox` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/checkbox or the installed `@primereact/types`.
 
 ### useCheckboxGroup
 
-> **API/props table for `useCheckboxGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useCheckboxGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/checkbox or the installed `@primereact/types`.
 
 ## Accessibility
 

@@ -73,7 +73,7 @@ Portal accepts a render function as children, providing access to the component 
 
 ### Portal
 
-> **API/props table for `Portal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Portal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/portal or the installed `@primereact/types`.
 
 ## Accessibility
 

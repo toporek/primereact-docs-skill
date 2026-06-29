@@ -16,4 +16,4 @@ const instance = useIconField();
 
 ### useIconField
 
-> **API/props table for `useIconField` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useIconField` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/iconfield or the installed `@primereact/types`.

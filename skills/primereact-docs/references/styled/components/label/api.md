@@ -30,7 +30,7 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 ### State
 
-> **API/props table for `Label` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`Label` API table (`api/state`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/label/api or the installed `@primereact/types`.
 
 ### Exposes
 
@@ -54,20 +54,20 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 ### Props
 
-> **API/props table for `useLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useLabel` API table (`api/props`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/label/api or the installed `@primereact/types`.
 
 ### State
 
-> **API/props table for `useLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useLabel` API table (`api/state`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/label/api or the installed `@primereact/types`.
 
 ### Exposes
 
-> **API/props table for `useLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useLabel` API table (`api/exposes`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/label/api or the installed `@primereact/types`.
 
 ### Interfaces
 
-> **API/props table for `useLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useLabel` API table (`api/interfaces`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/label/api or the installed `@primereact/types`.
 
 ### Types
 
-> **API/props table for `useLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useLabel` API table (`api/types`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/label/api or the installed `@primereact/types`.

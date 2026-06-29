@@ -450,7 +450,7 @@ Every prop object includes `data-scope="datepicker"` and a `data-part` that iden
 
 ### useDatePicker
 
-> **API/props table for `useDatePicker` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useDatePicker` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/datepicker or the installed `@primereact/types`.
 
 ## Accessibility
 

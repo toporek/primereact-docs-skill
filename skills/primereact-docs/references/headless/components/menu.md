@@ -273,11 +273,11 @@ All prop getters attach `data-scope="menu"` and a `data-part` attribute for CSS 
 
 ### useMenu
 
-> **API/props table for `useMenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useMenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/menu or the installed `@primereact/types`.
 
 ### useMenuSubmenu
 
-> **API/props table for `useMenuSubmenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useMenuSubmenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/menu or the installed `@primereact/types`.
 
 ## Accessibility
 

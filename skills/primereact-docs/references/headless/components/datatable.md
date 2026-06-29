@@ -248,11 +248,11 @@ Every part exposes its state through `data-*` attributes, drive your CSS from th
 
 ### useDataTable
 
-> **API/props table for `useDataTable` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useDataTable` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/datatable or the installed `@primereact/types`.
 
 ### useDataTableRow
 
-> **API/props table for `useDataTableRow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useDataTableRow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/datatable or the installed `@primereact/types`.
 
 ## Accessibility
 

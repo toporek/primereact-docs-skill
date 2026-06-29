@@ -116,7 +116,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupRoot
 
-> **API/props table for `MeterGroupRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute          | Value                     |
 | ------------------ | ------------------------- |
@@ -136,7 +136,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupMeters
 
-> **API/props table for `MeterGroupMeters` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupMeters` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute          | Value                     |
 | ------------------ | ------------------------- |
@@ -150,7 +150,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupMeter
 
-> **API/props table for `MeterGroupMeter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupMeter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute          | Value                     |
 | ------------------ | ------------------------- |
@@ -164,7 +164,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupLabels
 
-> **API/props table for `MeterGroupLabels` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupLabels` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute          | Value                     |
 | ------------------ | ------------------------- |
@@ -178,7 +178,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupLabel
 
-> **API/props table for `MeterGroupLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -191,7 +191,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupMarker
 
-> **API/props table for `MeterGroupMarker` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupMarker` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -204,7 +204,7 @@ No per-child index is emitted. Use `:nth-child(n)` on `[data-part="meter"]`, `[d
 
 ### MeterGroupText
 
-> **API/props table for `MeterGroupText` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MeterGroupText` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/metergroup or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |

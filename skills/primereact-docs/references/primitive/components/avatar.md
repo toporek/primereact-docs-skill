@@ -88,7 +88,7 @@ Default elements: `Root`=`div`, `Image`=`img`, `Fallback`=`span`.
 
 ### AvatarRoot
 
-> **API/props table for `AvatarRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AvatarRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/avatar or the installed `@primereact/types`.
 
 | Attribute    | Value      |
 | ------------ | ---------- |
@@ -103,7 +103,7 @@ Default elements: `Root`=`div`, `Image`=`img`, `Fallback`=`span`.
 
 ### AvatarImage
 
-> **API/props table for `AvatarImage` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AvatarImage` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/avatar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -111,7 +111,7 @@ Default elements: `Root`=`div`, `Image`=`img`, `Fallback`=`span`.
 
 ### AvatarFallback
 
-> **API/props table for `AvatarFallback` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AvatarFallback` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/avatar or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -119,7 +119,7 @@ Default elements: `Root`=`div`, `Image`=`img`, `Fallback`=`span`.
 
 ### AvatarGroup
 
-> **API/props table for `AvatarGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AvatarGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/avatar or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |

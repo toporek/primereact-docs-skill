@@ -187,7 +187,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRoot
 
-> **API/props table for `DataTableRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute                  | Value                                       |
 | -------------------------- | ------------------------------------------- |
@@ -243,7 +243,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableHeader
 
-> **API/props table for `DataTableHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -251,7 +251,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTableContainer
 
-> **API/props table for `DataTableTableContainer` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTableContainer` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute    | Value               |
 | ------------ | ------------------- |
@@ -264,7 +264,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTable
 
-> **API/props table for `DataTableTable` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTable` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute    | Value                     |
 | ------------ | ------------------------- |
@@ -278,7 +278,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTHead
 
-> **API/props table for `DataTableTHead` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTHead` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -286,7 +286,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTHeadRow
 
-> **API/props table for `DataTableTHeadRow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTHeadRow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -294,7 +294,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTHeadCell
 
-> **API/props table for `DataTableTHeadCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTHeadCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute           | Value                           |
 | ------------------- | ------------------------------- |
@@ -307,7 +307,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTBody
 
-> **API/props table for `DataTableTBody` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTBody` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -315,7 +315,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableFrozenTBody
 
-> **API/props table for `DataTableFrozenTBody` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableFrozenTBody` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -323,7 +323,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRow
 
-> **API/props table for `DataTableRow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute               | Value                                                  |
 | ----------------------- | ------------------------------------------------------ |
@@ -346,7 +346,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableCell
 
-> **API/props table for `DataTableCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute            | Value                                  |
 | -------------------- | -------------------------------------- |
@@ -363,7 +363,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTFoot
 
-> **API/props table for `DataTableTFoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTFoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -371,7 +371,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTFootRow
 
-> **API/props table for `DataTableTFootRow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTFootRow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -379,7 +379,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableTFootCell
 
-> **API/props table for `DataTableTFootCell` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableTFootCell` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -387,7 +387,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableFooter
 
-> **API/props table for `DataTableFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -395,7 +395,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableSort
 
-> **API/props table for `DataTableSort` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableSort` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute         | Value                                               |
 | ----------------- | --------------------------------------------------- |
@@ -413,7 +413,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableSortIndicator
 
-> **API/props table for `DataTableSortIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableSortIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -421,7 +421,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableSortOrder
 
-> **API/props table for `DataTableSortOrder` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableSortOrder` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -429,7 +429,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableFilter
 
-> **API/props table for `DataTableFilter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableFilter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute      | Value                                        |
 | -------------- | -------------------------------------------- |
@@ -444,7 +444,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTablePagination
 
-> **API/props table for `DataTablePagination` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTablePagination` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -452,7 +452,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableSelection
 
-> **API/props table for `DataTableSelection` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableSelection` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -460,7 +460,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowToggle
 
-> **API/props table for `DataTableRowToggle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowToggle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute         | Value                                            |
 | ----------------- | ------------------------------------------------ |
@@ -475,7 +475,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowToggleIndicator
 
-> **API/props table for `DataTableRowToggleIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowToggleIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -483,7 +483,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowExpansion
 
-> **API/props table for `DataTableRowExpansion` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowExpansion` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -515,7 +515,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableCellEditor
 
-> **API/props table for `DataTableCellEditor` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableCellEditor` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Attribute        | Value                                         |
 | ---------------- | --------------------------------------------- |
@@ -532,7 +532,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableCellEditorDisplay
 
-> **API/props table for `DataTableCellEditorDisplay` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableCellEditorDisplay` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -540,7 +540,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableCellEditorContent
 
-> **API/props table for `DataTableCellEditorContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableCellEditorContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -548,7 +548,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowEditor
 
-> **API/props table for `DataTableRowEditor` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowEditor` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -556,7 +556,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowEditorInit
 
-> **API/props table for `DataTableRowEditorInit` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowEditorInit` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -564,7 +564,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowEditorSave
 
-> **API/props table for `DataTableRowEditorSave` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowEditorSave` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -572,7 +572,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowEditorCancel
 
-> **API/props table for `DataTableRowEditorCancel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowEditorCancel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -580,7 +580,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableColumnToggle
 
-> **API/props table for `DataTableColumnToggle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableColumnToggle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -588,7 +588,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableColumnReorder
 
-> **API/props table for `DataTableColumnReorder` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableColumnReorder` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -596,7 +596,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableColumnReorderTarget
 
-> **API/props table for `DataTableColumnReorderTarget` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableColumnReorderTarget` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -604,7 +604,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableColumnResizer
 
-> **API/props table for `DataTableColumnResizer` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableColumnResizer` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -612,7 +612,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableColumnResizeIndicator
 
-> **API/props table for `DataTableColumnResizeIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableColumnResizeIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -620,7 +620,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableRowReorder
 
-> **API/props table for `DataTableRowReorder` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableRowReorder` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -628,7 +628,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableExport
 
-> **API/props table for `DataTableExport` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableExport` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -636,7 +636,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableLoading
 
-> **API/props table for `DataTableLoading` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableLoading` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -644,7 +644,7 @@ Render `DataTable.Pagination` anywhere below the table; it acts as a render-prop
 
 ### DataTableEmptyTBody
 
-> **API/props table for `DataTableEmptyTBody` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DataTableEmptyTBody` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/datatable or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

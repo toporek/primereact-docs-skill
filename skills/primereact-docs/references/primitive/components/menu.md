@@ -225,7 +225,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuRoot
 
-> **API/props table for `MenuRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value    |
 | ------------ | -------- |
@@ -254,7 +254,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuTrigger
 
-> **API/props table for `MenuTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value                     |
 | ------------ | ------------------------- |
@@ -268,7 +268,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuList
 
-> **API/props table for `MenuList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value    |
 | ------------ | -------- |
@@ -282,7 +282,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuItem
 
-> **API/props table for `MenuItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute       | Value                         |
 | --------------- | ----------------------------- |
@@ -299,7 +299,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuSubmenu
 
-> **API/props table for `MenuSubmenu` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuSubmenu` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value                        |
 | ------------ | ---------------------------- |
@@ -313,7 +313,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuSubmenuTrigger
 
-> **API/props table for `MenuSubmenuTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuSubmenuTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute       | Value                               |
 | --------------- | ----------------------------------- |
@@ -330,7 +330,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuIndicator
 
-> **API/props table for `MenuIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute        | Value                          |
 | ---------------- | ------------------------------ |
@@ -347,7 +347,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuLabel
 
-> **API/props table for `MenuLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -360,7 +360,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuSeparator
 
-> **API/props table for `MenuSeparator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuSeparator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -373,7 +373,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuCheckboxItem
 
-> **API/props table for `MenuCheckboxItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuCheckboxItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value    |
 | ------------ | -------- |
@@ -386,18 +386,18 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuRadioItemGroup
 
-> **API/props table for `MenuRadioItemGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuRadioItemGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
 | `data-scope` | `"menu"`       |
 | `data-part`  | `"radiogroup"` |
 
-> **API/props table for `MenuRadioItemGroup` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuRadioItemGroup` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 ### MenuRadioItem
 
-> **API/props table for `MenuRadioItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuRadioItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value    |
 | ------------ | -------- |
@@ -410,7 +410,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuPopup
 
-> **API/props table for `MenuPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -423,7 +423,7 @@ Default elements: `Root`=`div`, `List`=`ul`, `Item`=`li`, `CheckboxItem`=`li`, `
 
 ### MenuPositioner
 
-> **API/props table for `MenuPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -447,7 +447,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### MenuArrow
 
-> **API/props table for `MenuArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Attribute    | Value     |
 | ------------ | --------- |
@@ -471,7 +471,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### MenuPortal
 
-> **API/props table for `MenuPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -491,15 +491,15 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### MenuIcon
 
-> **API/props table for `MenuIcon` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuIcon` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 ### MenuCheckboxIcon
 
-> **API/props table for `MenuCheckboxIcon` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuCheckboxIcon` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 ### MenuRadioIcon
 
-> **API/props table for `MenuRadioIcon` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MenuRadioIcon` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/menu or the installed `@primereact/types`.
 
 ## Accessibility
 

@@ -151,7 +151,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectRoot
 
-> **API/props table for `SelectRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value      |
 | ------------ | ---------- |
@@ -178,7 +178,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectTrigger
 
-> **API/props table for `SelectTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute              | Value                      |
 | ---------------------- | -------------------------- |
@@ -192,7 +192,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectValue
 
-> **API/props table for `SelectValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -200,7 +200,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectIndicator
 
-> **API/props table for `SelectIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute     | Value                        |
 | ------------- | ---------------------------- |
@@ -215,7 +215,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectClear
 
-> **API/props table for `SelectClear` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectClear` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value      |
 | ------------ | ---------- |
@@ -228,7 +228,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectPortal
 
-> **API/props table for `SelectPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -236,7 +236,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### SelectPositioner
 
-> **API/props table for `SelectPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -260,7 +260,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectPopup
 
-> **API/props table for `SelectPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value                      |
 | ------------ | -------------------------- |
@@ -274,7 +274,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectFilter
 
-> **API/props table for `SelectFilter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectFilter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value      |
 | ------------ | ---------- |
@@ -288,7 +288,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectList
 
-> **API/props table for `SelectList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value      |
 | ------------ | ---------- |
@@ -301,7 +301,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectOption
 
-> **API/props table for `SelectOption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectOption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute         | Value                   |
 | ----------------- | ----------------------- |
@@ -316,7 +316,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectOptionIndicator
 
-> **API/props table for `SelectOptionIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectOptionIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute         | Value                   |
 | ----------------- | ----------------------- |
@@ -329,7 +329,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectHeader
 
-> **API/props table for `SelectHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -337,7 +337,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectFooter
 
-> **API/props table for `SelectFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -345,7 +345,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectEmpty
 
-> **API/props table for `SelectEmpty` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectEmpty` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -353,7 +353,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### SelectArrow
 
-> **API/props table for `SelectArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SelectArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/select or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |

@@ -141,7 +141,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### ScrollAreaRoot
 
-> **API/props table for `ScrollAreaRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ScrollAreaRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/scrollarea or the installed `@primereact/types`.
 
 | Attribute              | Value                                     |
 | ---------------------- | ----------------------------------------- |
@@ -175,7 +175,7 @@ The `Root` element sets CSS custom properties on its `style` for scrollbar corne
 
 ### ScrollAreaViewport
 
-> **API/props table for `ScrollAreaViewport` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ScrollAreaViewport` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/scrollarea or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -188,7 +188,7 @@ The `Root` element sets CSS custom properties on its `style` for scrollbar corne
 
 ### ScrollAreaContent
 
-> **API/props table for `ScrollAreaContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ScrollAreaContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/scrollarea or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -196,7 +196,7 @@ The `Root` element sets CSS custom properties on its `style` for scrollbar corne
 
 ### ScrollAreaScrollbar
 
-> **API/props table for `ScrollAreaScrollbar` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ScrollAreaScrollbar` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/scrollarea or the installed `@primereact/types`.
 
 | Attribute    | Value                              |
 | ------------ | ---------------------------------- |
@@ -219,7 +219,7 @@ The `Scrollbar` element sets CSS custom properties on its `style` for handle siz
 
 ### ScrollAreaHandle
 
-> **API/props table for `ScrollAreaHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ScrollAreaHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/scrollarea or the installed `@primereact/types`.
 
 | Attribute    | Value                        |
 | ------------ | ---------------------------- |
@@ -232,7 +232,7 @@ The `Scrollbar` element sets CSS custom properties on its `style` for handle siz
 
 ### ScrollAreaCorner
 
-> **API/props table for `ScrollAreaCorner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ScrollAreaCorner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/scrollarea or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |

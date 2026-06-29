@@ -100,7 +100,7 @@ Default elements: `Root`=`div`, `Content`=`div`, `Item`=`div`, `Prev`=`button`, 
 
 ### CarouselRoot
 
-> **API/props table for `CarouselRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                              |
 | ------------------ | ---------------------------------- |
@@ -122,7 +122,7 @@ Default elements: `Root`=`div`, `Content`=`div`, `Item`=`div`, `Prev`=`button`, 
 
 ### CarouselContent
 
-> **API/props table for `CarouselContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                              |
 | ------------------ | ---------------------------------- |
@@ -148,7 +148,7 @@ The `Content` element sets three CSS custom properties on its `style` for use in
 
 ### CarouselItem
 
-> **API/props table for `CarouselItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                              |
 | ------------------ | ---------------------------------- |
@@ -164,7 +164,7 @@ The `Content` element sets three CSS custom properties on its `style` for use in
 
 ### CarouselPrev
 
-> **API/props table for `CarouselPrev` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselPrev` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                               |
 | ------------------ | ----------------------------------- |
@@ -177,7 +177,7 @@ The `Content` element sets three CSS custom properties on its `style` for use in
 
 ### CarouselNext
 
-> **API/props table for `CarouselNext` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselNext` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                               |
 | ------------------ | ----------------------------------- |
@@ -190,7 +190,7 @@ The `Content` element sets three CSS custom properties on its `style` for use in
 
 ### CarouselIndicators
 
-> **API/props table for `CarouselIndicators` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselIndicators` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -202,7 +202,7 @@ The `Content` element sets three CSS custom properties on its `style` for use in
 
 ### CarouselIndicator
 
-> **API/props table for `CarouselIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/carousel or the installed `@primereact/types`.
 
 | Attribute          | Value                            |
 | ------------------ | -------------------------------- |

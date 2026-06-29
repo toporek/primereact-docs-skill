@@ -143,7 +143,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### PopoverRoot
 
-> **API/props table for `PopoverRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -161,7 +161,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### PopoverTrigger
 
-> **API/props table for `PopoverTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Attribute              | Value                        |
 | ---------------------- | ---------------------------- |
@@ -173,7 +173,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### PopoverPortal
 
-> **API/props table for `PopoverPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -181,7 +181,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### PopoverPositioner
 
-> **API/props table for `PopoverPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -205,7 +205,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### PopoverPopup
 
-> **API/props table for `PopoverPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Attribute   | Value                        |
 | ----------- | ---------------------------- |
@@ -217,7 +217,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### PopoverArrow
 
-> **API/props table for `PopoverArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -241,7 +241,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### PopoverHeader
 
-> **API/props table for `PopoverHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -249,7 +249,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### PopoverTitle
 
-> **API/props table for `PopoverTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -257,7 +257,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### PopoverClose
 
-> **API/props table for `PopoverClose` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverClose` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -265,7 +265,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### PopoverContent
 
-> **API/props table for `PopoverContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -273,7 +273,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### PopoverDescription
 
-> **API/props table for `PopoverDescription` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverDescription` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -281,7 +281,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### PopoverFooter
 
-> **API/props table for `PopoverFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PopoverFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/popover or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

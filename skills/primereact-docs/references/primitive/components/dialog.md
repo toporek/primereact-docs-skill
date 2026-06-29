@@ -136,7 +136,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DialogRoot
 
-> **API/props table for `DialogRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Attribute        | Value                                |
 | ---------------- | ------------------------------------ |
@@ -160,7 +160,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DialogTrigger
 
-> **API/props table for `DialogTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Attribute     | Value                             |
 | ------------- | --------------------------------- |
@@ -173,7 +173,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DialogPortal
 
-> **API/props table for `DialogPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -181,7 +181,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DialogBackdrop
 
-> **API/props table for `DialogBackdrop` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogBackdrop` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 Uses the [Backdrop](https://primereact.dev/docs/primitive/components/backdrop) component internally for animated overlay rendering.
 
@@ -191,7 +191,7 @@ Uses the [Backdrop](https://primereact.dev/docs/primitive/components/backdrop) c
 
 ### DialogPositioner
 
-> **API/props table for `DialogPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Attribute              | Value                                                                                                                            |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,7 +207,7 @@ Uses the [Backdrop](https://primereact.dev/docs/primitive/components/backdrop) c
 
 ### DialogPopup
 
-> **API/props table for `DialogPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Attribute        | Value                                |
 | ---------------- | ------------------------------------ |
@@ -222,7 +222,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogHeader
 
-> **API/props table for `DialogHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -230,7 +230,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogTitle
 
-> **API/props table for `DialogTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -238,7 +238,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogHeaderActions
 
-> **API/props table for `DialogHeaderActions` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogHeaderActions` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -246,7 +246,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogMaximizable
 
-> **API/props table for `DialogMaximizable` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogMaximizable` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Attribute        | Value                                    |
 | ---------------- | ---------------------------------------- |
@@ -259,7 +259,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogClose
 
-> **API/props table for `DialogClose` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogClose` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -267,7 +267,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogContent
 
-> **API/props table for `DialogContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Attribute        | Value                                |
 | ---------------- | ------------------------------------ |
@@ -279,7 +279,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DialogFooter
 
-> **API/props table for `DialogFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DialogFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/dialog or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

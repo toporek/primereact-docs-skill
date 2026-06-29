@@ -109,7 +109,7 @@ Default elements: `Root`=`button`, `Indicator`=`span`, `ToggleButtonGroup`=`div`
 
 ### ToggleButtonRoot
 
-> **API/props table for `ToggleButtonRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToggleButtonRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/togglebutton or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -124,7 +124,7 @@ Default elements: `Root`=`button`, `Indicator`=`span`, `ToggleButtonGroup`=`div`
 
 ### ToggleButtonIndicator
 
-> **API/props table for `ToggleButtonIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToggleButtonIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/togglebutton or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |

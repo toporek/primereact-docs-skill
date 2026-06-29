@@ -98,7 +98,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TabsRoot
 
-> **API/props table for `TabsRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -114,7 +114,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TabsList
 
-> **API/props table for `TabsList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -122,7 +122,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TabsContent
 
-> **API/props table for `TabsContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -130,7 +130,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TabsTab
 
-> **API/props table for `TabsTab` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsTab` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -143,7 +143,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TabsIndicator
 
-> **API/props table for `TabsIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 **CSS Custom Properties**
 
@@ -162,7 +162,7 @@ The indicator element exposes CSS custom properties for animated positioning rel
 
 ### TabsPanels
 
-> **API/props table for `TabsPanels` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsPanels` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -170,7 +170,7 @@ The indicator element exposes CSS custom properties for animated positioning rel
 
 ### TabsPanel
 
-> **API/props table for `TabsPanel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsPanel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Attribute     | Value               |
 | ------------- | ------------------- |
@@ -182,7 +182,7 @@ The indicator element exposes CSS custom properties for animated positioning rel
 
 ### TabsPrev
 
-> **API/props table for `TabsPrev` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsPrev` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -194,7 +194,7 @@ The indicator element exposes CSS custom properties for animated positioning rel
 
 ### TabsNext
 
-> **API/props table for `TabsNext` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TabsNext` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tabs or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |

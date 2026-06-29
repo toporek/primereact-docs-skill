@@ -642,4 +642,4 @@ List of class names used in the styled mode.
 
 List of design tokens.
 
-> **API/props table for `InputPassword` (`token`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputPassword` API table (`token`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/inputpassword or the installed `@primereact/types`.

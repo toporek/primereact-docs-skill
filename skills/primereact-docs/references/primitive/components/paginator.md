@@ -110,7 +110,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorRoot
 
-> **API/props table for `PaginatorRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -128,7 +128,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorContent
 
-> **API/props table for `PaginatorContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -136,7 +136,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorFirst
 
-> **API/props table for `PaginatorFirst` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorFirst` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -150,7 +150,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorPrev
 
-> **API/props table for `PaginatorPrev` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorPrev` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -164,7 +164,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorNext
 
-> **API/props table for `PaginatorNext` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorNext` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -178,7 +178,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorLast
 
-> **API/props table for `PaginatorLast` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorLast` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute       | Value                 |
 | --------------- | --------------------- |
@@ -192,7 +192,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorPages
 
-> **API/props table for `PaginatorPages` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorPages` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -205,7 +205,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorPage
 
-> **API/props table for `PaginatorPage` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorPage` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Attribute       | Value                       |
 | --------------- | --------------------------- |
@@ -220,7 +220,7 @@ Default elements: `Root`=`nav`, `Content`=`div`, `First`=`button`, `Prev`=`butto
 
 ### PaginatorEllipsis
 
-> **API/props table for `PaginatorEllipsis` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`PaginatorEllipsis` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/paginator or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

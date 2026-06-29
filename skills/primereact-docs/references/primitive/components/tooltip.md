@@ -96,7 +96,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TooltipManager
 
-> **API/props table for `TooltipManager` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipManager` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -104,7 +104,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TooltipRoot
 
-> **API/props table for `TooltipRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Attribute      | Value                                   |
 | -------------- | --------------------------------------- |
@@ -121,7 +121,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TooltipTrigger
 
-> **API/props table for `TooltipTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Attribute         | Value                        |
 | ----------------- | ---------------------------- |
@@ -133,7 +133,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TooltipPortal
 
-> **API/props table for `TooltipPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -141,7 +141,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### TooltipPositioner
 
-> **API/props table for `TooltipPositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipPositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -166,7 +166,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### TooltipPopup
 
-> **API/props table for `TooltipPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Attribute           | Value                                     |
 | ------------------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### TooltipArrow
 
-> **API/props table for `TooltipArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TooltipArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/tooltip or the installed `@primereact/types`.
 
 | Attribute      | Value                                                     |
 | -------------- | --------------------------------------------------------- |

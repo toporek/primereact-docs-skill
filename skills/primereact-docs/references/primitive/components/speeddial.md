@@ -108,7 +108,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `List`=`ul`, `Item`=`li`, `A
 
 ### SpeedDialRoot
 
-> **API/props table for `SpeedDialRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SpeedDialRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/speeddial or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -125,7 +125,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `List`=`ul`, `Item`=`li`, `A
 
 ### SpeedDialTrigger
 
-> **API/props table for `SpeedDialTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SpeedDialTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/speeddial or the installed `@primereact/types`.
 
 | Attribute     | Value                       |
 | ------------- | --------------------------- |
@@ -140,7 +140,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `List`=`ul`, `Item`=`li`, `A
 
 ### SpeedDialList
 
-> **API/props table for `SpeedDialList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SpeedDialList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/speeddial or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |
@@ -153,7 +153,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `List`=`ul`, `Item`=`li`, `A
 
 ### SpeedDialItem
 
-> **API/props table for `SpeedDialItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SpeedDialItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/speeddial or the installed `@primereact/types`.
 
 | Attribute     | Value                        |
 | ------------- | ---------------------------- |
@@ -167,7 +167,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `List`=`ul`, `Item`=`li`, `A
 
 ### SpeedDialAction
 
-> **API/props table for `SpeedDialAction` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SpeedDialAction` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/speeddial or the installed `@primereact/types`.
 
 | Attribute    | Value         |
 | ------------ | ------------- |

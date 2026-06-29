@@ -215,7 +215,7 @@ Every prop object includes `data-scope` and `data-part` attributes for CSS targe
 
 ### useOrderList
 
-> **API/props table for `useOrderList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useOrderList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/orderlist or the installed `@primereact/types`.
 
 ## Accessibility
 

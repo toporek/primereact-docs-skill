@@ -75,7 +75,7 @@ Default elements: `Root`=`span`, `Track`=`span`, `Range`=`span`, `Handle`=`span`
 
 ### SliderRoot
 
-> **API/props table for `SliderRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SliderRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/slider or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -91,7 +91,7 @@ Default elements: `Root`=`span`, `Track`=`span`, `Range`=`span`, `Handle`=`span`
 
 ### SliderTrack
 
-> **API/props table for `SliderTrack` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SliderTrack` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/slider or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -105,7 +105,7 @@ Default elements: `Root`=`span`, `Track`=`span`, `Range`=`span`, `Handle`=`span`
 
 ### SliderRange
 
-> **API/props table for `SliderRange` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SliderRange` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/slider or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -119,7 +119,7 @@ Default elements: `Root`=`span`, `Track`=`span`, `Range`=`span`, `Handle`=`span`
 
 ### SliderHandle
 
-> **API/props table for `SliderHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`SliderHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/slider or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |

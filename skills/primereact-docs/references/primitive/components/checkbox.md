@@ -95,7 +95,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### CheckboxRoot
 
-> **API/props table for `CheckboxRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CheckboxRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/checkbox or the installed `@primereact/types`.
 
 | Attribute            | Value                      |
 | -------------------- | -------------------------- |
@@ -116,7 +116,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### CheckboxBox
 
-> **API/props table for `CheckboxBox` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CheckboxBox` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/checkbox or the installed `@primereact/types`.
 
 | Attribute            | Value                      |
 | -------------------- | -------------------------- |
@@ -134,7 +134,7 @@ Default elements: `Root`=`div`, `Box`=`div`, `Indicator`=`span`.
 
 ### CheckboxIndicator
 
-> **API/props table for `CheckboxIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CheckboxIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/checkbox or the installed `@primereact/types`.
 
 | Attribute            | Value                      |
 | -------------------- | -------------------------- |

@@ -161,7 +161,7 @@ Each part exposes `data-scope="inputnumber"` and a `data-part` identifier (`root
 
 ### useInputNumber
 
-> **API/props table for `useInputNumber` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useInputNumber` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/inputnumber or the installed `@primereact/types`.
 
 ## Accessibility
 

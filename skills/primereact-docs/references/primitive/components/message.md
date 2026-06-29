@@ -80,7 +80,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### MessageRoot
 
-> **API/props table for `MessageRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MessageRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/message or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |
@@ -97,7 +97,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### MessageContent
 
-> **API/props table for `MessageContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MessageContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/message or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |
@@ -110,7 +110,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### MessageIcon
 
-> **API/props table for `MessageIcon` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MessageIcon` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/message or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |
@@ -123,7 +123,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### MessageText
 
-> **API/props table for `MessageText` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MessageText` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/message or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |
@@ -136,7 +136,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### MessageClose
 
-> **API/props table for `MessageClose` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`MessageClose` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/message or the installed `@primereact/types`.
 
 | Attribute    | Value       |
 | ------------ | ----------- |

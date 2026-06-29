@@ -191,7 +191,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadRoot
 
-> **API/props table for `FileUploadRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -208,7 +208,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadTrigger
 
-> **API/props table for `FileUploadTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -216,7 +216,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadUpload
 
-> **API/props table for `FileUploadUpload` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadUpload` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -224,7 +224,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadClear
 
-> **API/props table for `FileUploadClear` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadClear` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -232,7 +232,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadContent
 
-> **API/props table for `FileUploadContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Attribute        | Value                                         |
 | ---------------- | --------------------------------------------- |
@@ -244,7 +244,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItemGroup
 
-> **API/props table for `FileUploadItemGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItemGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -252,7 +252,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItem
 
-> **API/props table for `FileUploadItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -260,7 +260,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItemPreview
 
-> **API/props table for `FileUploadItemPreview` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItemPreview` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -268,7 +268,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItemInfo
 
-> **API/props table for `FileUploadItemInfo` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItemInfo` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -276,7 +276,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItemName
 
-> **API/props table for `FileUploadItemName` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItemName` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -284,7 +284,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItemSize
 
-> **API/props table for `FileUploadItemSize` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItemSize` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -292,7 +292,7 @@ Default elements: `Root`=`div`, `Trigger`=`button`, `Upload`=`button`, `Clear`=`
 
 ### FileUploadItemRemove
 
-> **API/props table for `FileUploadItemRemove` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`FileUploadItemRemove` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/fileupload or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

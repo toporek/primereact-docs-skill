@@ -115,7 +115,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### InputColorRoot
 
-> **API/props table for `InputColorRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute       | Value                        |
 | --------------- | ---------------------------- |
@@ -141,7 +141,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### InputColorArea
 
-> **API/props table for `InputColorArea` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorArea` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -166,7 +166,7 @@ The `Area` element sets CSS custom properties on its `style` for gradient render
 
 ### InputColorAreaBackground
 
-> **API/props table for `InputColorAreaBackground` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorAreaBackground` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -174,7 +174,7 @@ The `Area` element sets CSS custom properties on its `style` for gradient render
 
 ### InputColorAreaHandle
 
-> **API/props table for `InputColorAreaHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorAreaHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -187,7 +187,7 @@ The `Area` element sets CSS custom properties on its `style` for gradient render
 
 ### InputColorSlider
 
-> **API/props table for `InputColorSlider` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorSlider` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute          | Value                          |
 | ------------------ | ------------------------------ |
@@ -211,7 +211,7 @@ The `Slider` element sets CSS custom properties on its `style` for track and han
 
 ### InputColorSliderTrack
 
-> **API/props table for `InputColorSliderTrack` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorSliderTrack` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -219,7 +219,7 @@ The `Slider` element sets CSS custom properties on its `style` for track and han
 
 ### InputColorSliderHandle
 
-> **API/props table for `InputColorSliderHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorSliderHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute    | Value             |
 | ------------ | ----------------- |
@@ -232,7 +232,7 @@ The `Slider` element sets CSS custom properties on its `style` for track and han
 
 ### InputColorSwatch
 
-> **API/props table for `InputColorSwatch` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorSwatch` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -253,7 +253,7 @@ The `Swatch` element sets a CSS custom property on its `style` for color renderi
 
 ### InputColorSwatchBackground
 
-> **API/props table for `InputColorSwatchBackground` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorSwatchBackground` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -261,7 +261,7 @@ The `Swatch` element sets a CSS custom property on its `style` for color renderi
 
 ### InputColorEyeDropper
 
-> **API/props table for `InputColorEyeDropper` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorEyeDropper` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -274,7 +274,7 @@ The `Swatch` element sets a CSS custom property on its `style` for color renderi
 
 ### InputColorInput
 
-> **API/props table for `InputColorInput` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorInput` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Attribute      | Value                  |
 | -------------- | ---------------------- |
@@ -288,7 +288,7 @@ The `Swatch` element sets a CSS custom property on its `style` for color renderi
 
 ### InputColorTransparencyGrid
 
-> **API/props table for `InputColorTransparencyGrid` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`InputColorTransparencyGrid` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/inputcolor or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

@@ -79,7 +79,7 @@ Default elements: `Root`=`div`, `Control`=`div`, `Handle`=`span`.
 
 ### ToggleSwitchRoot
 
-> **API/props table for `ToggleSwitchRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToggleSwitchRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toggleswitch or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |
@@ -99,7 +99,7 @@ Default elements: `Root`=`div`, `Control`=`div`, `Handle`=`span`.
 
 ### ToggleSwitchControl
 
-> **API/props table for `ToggleSwitchControl` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToggleSwitchControl` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toggleswitch or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |
@@ -116,7 +116,7 @@ Default elements: `Root`=`div`, `Control`=`div`, `Handle`=`span`.
 
 ### ToggleSwitchHandle
 
-> **API/props table for `ToggleSwitchHandle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ToggleSwitchHandle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toggleswitch or the installed `@primereact/types`.
 
 | Attribute        | Value                  |
 | ---------------- | ---------------------- |

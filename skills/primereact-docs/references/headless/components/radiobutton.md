@@ -185,11 +185,11 @@ Every prop object includes `data-scope="radiobutton"` and a `data-part` attribut
 
 ### useRadioButton
 
-> **API/props table for `useRadioButton` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRadioButton` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/radiobutton or the installed `@primereact/types`.
 
 ### useRadioButtonGroup
 
-> **API/props table for `useRadioButtonGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRadioButtonGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/radiobutton or the installed `@primereact/types`.
 
 ## Accessibility
 

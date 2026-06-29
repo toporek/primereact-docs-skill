@@ -384,11 +384,11 @@ List of class names used in the styled mode.
 |:------|:------|
 | p-carousel | Class name of the root element |
 
-> **API/props table for `CarouselContent` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
-> **API/props table for `CarouselIndicators` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
-> **API/props table for `CarouselIndicator` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
-> **API/props table for `CarouselNext` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
-> **API/props table for `CarouselPrev` (`style`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`CarouselContent` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/carousel or the installed `@primereact/types`.
+> **`CarouselIndicators` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/carousel or the installed `@primereact/types`.
+> **`CarouselIndicator` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/carousel or the installed `@primereact/types`.
+> **`CarouselNext` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/carousel or the installed `@primereact/types`.
+> **`CarouselPrev` API table (`style`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/styled/components/carousel or the installed `@primereact/types`.
 
 ### Design Tokens
 

@@ -173,11 +173,11 @@ button[data-disabled] {
 
 ### useToggleButton
 
-> **API/props table for `useToggleButton` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useToggleButton` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/togglebutton or the installed `@primereact/types`.
 
 ### useToggleButtonGroup
 
-> **API/props table for `useToggleButtonGroup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useToggleButtonGroup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/togglebutton or the installed `@primereact/types`.
 
 ## Accessibility
 

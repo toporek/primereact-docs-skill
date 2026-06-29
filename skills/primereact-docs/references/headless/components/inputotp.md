@@ -124,7 +124,7 @@ The root element includes `data-scope="inputotp"` and `data-part="root"`. Each i
 
 ### useInputOtp
 
-> **API/props table for `useInputOtp` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useInputOtp` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/inputotp or the installed `@primereact/types`.
 
 ## Accessibility
 

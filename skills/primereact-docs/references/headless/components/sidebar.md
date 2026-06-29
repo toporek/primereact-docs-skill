@@ -252,15 +252,15 @@ const { state, triggerProps, contentProps } = useSidebarMenuItem({
 
 ### useSidebar
 
-> **API/props table for `useSidebar` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useSidebar` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/sidebar or the installed `@primereact/types`.
 
 ### useSidebarLayout
 
-> **API/props table for `useSidebarLayout` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useSidebarLayout` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/sidebar or the installed `@primereact/types`.
 
 ### useSidebarMenuItem
 
-> **API/props table for `useSidebarMenuItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useSidebarMenuItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/sidebar or the installed `@primereact/types`.
 
 ## Accessibility
 

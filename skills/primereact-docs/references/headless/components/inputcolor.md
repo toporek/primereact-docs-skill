@@ -247,7 +247,7 @@ State-based attributes such as `data-disabled` and `data-dragging` are emitted o
 
 ### useInputColor
 
-> **API/props table for `useInputColor` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useInputColor` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/inputcolor or the installed `@primereact/types`.
 
 ## Accessibility
 

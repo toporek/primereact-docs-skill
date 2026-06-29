@@ -89,7 +89,7 @@ The root prop object includes `data-scope="skeleton"` and `data-part="root"` for
 
 ### useSkeleton
 
-> **API/props table for `useSkeleton` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useSkeleton` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/skeleton or the installed `@primereact/types`.
 
 ## Accessibility
 

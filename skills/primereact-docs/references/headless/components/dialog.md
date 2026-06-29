@@ -274,7 +274,7 @@ The hook exposes state through `data-*` attributes on each part. Use them as CSS
 
 ### useDialog
 
-> **API/props table for `useDialog` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useDialog` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/dialog or the installed `@primereact/types`.
 
 ## Accessibility
 

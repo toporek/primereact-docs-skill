@@ -120,7 +120,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DrawerRoot
 
-> **API/props table for `DrawerRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Attribute       | Value                                                      |
 | --------------- | ---------------------------------------------------------- |
@@ -141,7 +141,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DrawerTrigger
 
-> **API/props table for `DrawerTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -149,7 +149,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DrawerPortal
 
-> **API/props table for `DrawerPortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerPortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -157,7 +157,7 @@ Sub-components accept a render function as children, providing access to the com
 
 ### DrawerBackdrop
 
-> **API/props table for `DrawerBackdrop` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerBackdrop` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 Uses the [Backdrop](https://primereact.dev/docs/primitive/components/backdrop) component internally for animated overlay rendering.
 
@@ -167,7 +167,7 @@ Uses the [Backdrop](https://primereact.dev/docs/primitive/components/backdrop) c
 
 ### DrawerPopup
 
-> **API/props table for `DrawerPopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerPopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Attribute       | Value                                                      |
 | --------------- | ---------------------------------------------------------- |
@@ -182,7 +182,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DrawerHeader
 
-> **API/props table for `DrawerHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -190,7 +190,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DrawerTitle
 
-> **API/props table for `DrawerTitle` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerTitle` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -198,7 +198,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DrawerClose
 
-> **API/props table for `DrawerClose` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerClose` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -206,7 +206,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DrawerContent
 
-> **API/props table for `DrawerContent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerContent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -214,7 +214,7 @@ Uses [VisuallyHidden](visuallyhidden.md) elements internally for focus trap boun
 
 ### DrawerFooter
 
-> **API/props table for `DrawerFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DrawerFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/drawer or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

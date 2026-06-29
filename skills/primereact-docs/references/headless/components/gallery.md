@@ -345,11 +345,11 @@ Prop objects include `data-scope="gallery"` and a `data-part` for each section, 
 
 ### useGallery
 
-> **API/props table for `useGallery` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useGallery` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/gallery or the installed `@primereact/types`.
 
 ### useGalleryItem
 
-> **API/props table for `useGalleryItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useGalleryItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/gallery or the installed `@primereact/types`.
 
 ## Accessibility
 

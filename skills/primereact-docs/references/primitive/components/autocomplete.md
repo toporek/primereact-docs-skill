@@ -142,7 +142,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompleteRoot
 
-> **API/props table for `AutoCompleteRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -167,7 +167,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompleteInput
 
-> **API/props table for `AutoCompleteInput` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteInput` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -180,7 +180,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompleteTrigger
 
-> **API/props table for `AutoCompleteTrigger` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteTrigger` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute              | Value                      |
 | ---------------------- | -------------------------- |
@@ -194,7 +194,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompleteIndicator
 
-> **API/props table for `AutoCompleteIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute     | Value                        |
 | ------------- | ---------------------------- |
@@ -209,7 +209,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompleteClear
 
-> **API/props table for `AutoCompleteClear` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteClear` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -222,7 +222,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompletePortal
 
-> **API/props table for `AutoCompletePortal` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompletePortal` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -230,7 +230,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### AutoCompletePositioner
 
-> **API/props table for `AutoCompletePositioner` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompletePositioner` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -254,7 +254,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompletePopup
 
-> **API/props table for `AutoCompletePopup` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompletePopup` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value                      |
 | ------------ | -------------------------- |
@@ -268,7 +268,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteList
 
-> **API/props table for `AutoCompleteList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -281,7 +281,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteOption
 
-> **API/props table for `AutoCompleteOption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteOption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute         | Value                   |
 | ----------------- | ----------------------- |
@@ -296,7 +296,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteOptionIndicator
 
-> **API/props table for `AutoCompleteOptionIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteOptionIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute         | Value                   |
 | ----------------- | ----------------------- |
@@ -309,7 +309,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteHeader
 
-> **API/props table for `AutoCompleteHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -317,7 +317,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteFooter
 
-> **API/props table for `AutoCompleteFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -325,7 +325,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteEmpty
 
-> **API/props table for `AutoCompleteEmpty` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteEmpty` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -333,7 +333,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 ### AutoCompleteArrow
 
-> **API/props table for `AutoCompleteArrow` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteArrow` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Attribute    | Value                                                     |
 | ------------ | --------------------------------------------------------- |
@@ -355,7 +355,7 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### AutoCompleteValue
 
-> **API/props table for `AutoCompleteValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`AutoCompleteValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/autocomplete or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

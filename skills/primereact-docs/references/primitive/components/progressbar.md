@@ -79,7 +79,7 @@ Default elements: `Root`=`div`, `Track`=`div`, `Indicator`=`div`, `Label`=`div`,
 
 ### ProgressBarRoot
 
-> **API/props table for `ProgressBarRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressBarRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressbar or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -96,7 +96,7 @@ Default elements: `Root`=`div`, `Track`=`div`, `Indicator`=`div`, `Label`=`div`,
 
 ### ProgressBarTrack
 
-> **API/props table for `ProgressBarTrack` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressBarTrack` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressbar or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -109,7 +109,7 @@ Default elements: `Root`=`div`, `Track`=`div`, `Indicator`=`div`, `Label`=`div`,
 
 ### ProgressBarIndicator
 
-> **API/props table for `ProgressBarIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressBarIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressbar or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -122,7 +122,7 @@ Default elements: `Root`=`div`, `Track`=`div`, `Indicator`=`div`, `Label`=`div`,
 
 ### ProgressBarLabel
 
-> **API/props table for `ProgressBarLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressBarLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressbar or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -135,7 +135,7 @@ Default elements: `Root`=`div`, `Track`=`div`, `Indicator`=`div`, `Label`=`div`,
 
 ### ProgressBarValue
 
-> **API/props table for `ProgressBarValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ProgressBarValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/progressbar or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |

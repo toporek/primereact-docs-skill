@@ -101,7 +101,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalRoot
 
-> **API/props table for `TerminalRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -121,7 +121,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalWelcome
 
-> **API/props table for `TerminalWelcome` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalWelcome` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -134,7 +134,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalCommandList
 
-> **API/props table for `TerminalCommandList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalCommandList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -147,7 +147,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalCommand
 
-> **API/props table for `TerminalCommand` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalCommand` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -160,7 +160,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalCommandValue
 
-> **API/props table for `TerminalCommandValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalCommandValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value            |
 | ------------ | ---------------- |
@@ -173,7 +173,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalCommandPromptLabel
 
-> **API/props table for `TerminalCommandPromptLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalCommandPromptLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value                  |
 | ------------ | ---------------------- |
@@ -186,7 +186,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalCommandResponse
 
-> **API/props table for `TerminalCommandResponse` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalCommandResponse` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value               |
 | ------------ | ------------------- |
@@ -199,7 +199,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalPrompt
 
-> **API/props table for `TerminalPrompt` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalPrompt` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value        |
 | ------------ | ------------ |
@@ -212,7 +212,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalPromptLabel
 
-> **API/props table for `TerminalPromptLabel` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalPromptLabel` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |
@@ -225,7 +225,7 @@ Default elements: `Root`=`div`, `Welcome`=`div`, `CommandList`=`div`, `Command`=
 
 ### TerminalPromptValue
 
-> **API/props table for `TerminalPromptValue` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`TerminalPromptValue` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/terminal or the installed `@primereact/types`.
 
 | Attribute    | Value           |
 | ------------ | --------------- |

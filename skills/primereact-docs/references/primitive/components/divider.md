@@ -78,9 +78,9 @@ Default element: `div`.
 
 ### DividerRoot
 
-> **API/props table for `DividerRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DividerRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/divider or the installed `@primereact/types`.
 
-> **API/props table for `DividerRoot` (`pt`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`DividerRoot` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/divider or the installed `@primereact/types`.
 
 ## Accessibility
 

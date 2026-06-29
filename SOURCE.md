@@ -5,6 +5,5 @@ Pages: 377
 Synced: 2026-06-29
 Source mode: rendered (primereact.dev rendered Markdown).
 
-PrimeReact v11 is released; the upstream GitHub `v11` branch was removed, so the
-mirror now tracks the official primereact.dev docs endpoints. The legacy `github`
-branch adapter remains available via `PRIMEREACT_DOCS_SOURCE=github`.
+PrimeReact v11 is released; its docs are served from primereact.dev, so the
+mirror fetches the official `llms.txt` index and each page's `.md`.

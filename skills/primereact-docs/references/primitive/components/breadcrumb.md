@@ -105,7 +105,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbRoot
 
-> **API/props table for `BreadcrumbRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -124,7 +124,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbList
 
-> **API/props table for `BreadcrumbList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -137,7 +137,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbItem
 
-> **API/props table for `BreadcrumbItem` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbItem` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -150,7 +150,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbLink
 
-> **API/props table for `BreadcrumbLink` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbLink` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -163,7 +163,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbCurrent
 
-> **API/props table for `BreadcrumbCurrent` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbCurrent` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -176,7 +176,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbSeparator
 
-> **API/props table for `BreadcrumbSeparator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbSeparator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |
@@ -189,7 +189,7 @@ Default elements: `Root`=`nav`, `List`=`ol`, `Item`=`li`, `Link`=`a`, `Current`=
 
 ### BreadcrumbEllipsis
 
-> **API/props table for `BreadcrumbEllipsis` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`BreadcrumbEllipsis` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/breadcrumb or the installed `@primereact/types`.
 
 | Attribute    | Value          |
 | ------------ | -------------- |

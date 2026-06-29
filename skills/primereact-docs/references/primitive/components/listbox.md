@@ -103,7 +103,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxRoot
 
-> **API/props table for `ListboxRoot` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -120,7 +120,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxList
 
-> **API/props table for `ListboxList` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxList` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -128,7 +128,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxOption
 
-> **API/props table for `ListboxOption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxOption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Attribute         | Value                   |
 | ----------------- | ----------------------- |
@@ -143,7 +143,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxOptionIndicator
 
-> **API/props table for `ListboxOptionIndicator` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxOptionIndicator` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Attribute         | Value                   |
 | ----------------- | ----------------------- |
@@ -156,7 +156,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxHeader
 
-> **API/props table for `ListboxHeader` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxHeader` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -164,7 +164,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxFilter
 
-> **API/props table for `ListboxFilter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxFilter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -172,7 +172,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxEmpty
 
-> **API/props table for `ListboxEmpty` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxEmpty` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -180,7 +180,7 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 ### ListboxFooter
 
-> **API/props table for `ListboxFooter` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`ListboxFooter` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/listbox or the installed `@primereact/types`.
 
 | Label | Type | Description |
 |:------|:------|:------|

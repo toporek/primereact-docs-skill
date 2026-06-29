@@ -243,7 +243,7 @@ The hook exposes state through `data-*` attributes on each part. Use them as CSS
 
 ### useAutoComplete
 
-> **API/props table for `useAutoComplete` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useAutoComplete` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/autocomplete or the installed `@primereact/types`.
 
 ## Accessibility
 

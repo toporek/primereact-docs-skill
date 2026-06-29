@@ -171,11 +171,11 @@ Every prop object includes `data-scope="rating"` and a `data-part` attribute. St
 
 ### useRating
 
-> **API/props table for `useRating` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRating` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/rating or the installed `@primereact/types`.
 
 ### useRatingOption
 
-> **API/props table for `useRatingOption` (`api`) is generated from upstream TypeScript types and is not yet mirrored — see the installed package types or the upstream docs. (TODO: mirror in v2.)
+> **`useRatingOption` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/headless/components/rating or the installed `@primereact/types`.
 
 ## Accessibility
 
