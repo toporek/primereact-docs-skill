@@ -2,11 +2,10 @@
 import { rmSync, mkdirSync, writeFileSync, readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { cloneV11, selectSource, REPO, BRANCH } from './lib/source.mjs';
-import { buildFiles, buildRenderedFiles } from './lib/build.mjs';
+import { renderedMdSource } from './lib/source.mjs';
+import { buildRenderedFiles } from './lib/build.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const VENDOR = join(ROOT, '.vendor', 'primereact');
 const SKILL = join(ROOT, 'skills', 'primereact-docs');
 const REFS = join(SKILL, 'references');
 const INDEX = join(SKILL, 'INDEX.md');
@@ -36,38 +35,16 @@ function renderedStamp(base, pages) {
     'Pages: ' + pages + '\n' +
     'Synced: ' + today() + '\n' +
     'Source mode: rendered (primereact.dev rendered Markdown).\n\n' +
-    'PrimeReact v11 is released; the upstream GitHub `v11` branch was removed, so the\n' +
-    'mirror now tracks the official primereact.dev docs endpoints. The legacy `github`\n' +
-    'branch adapter remains available via `PRIMEREACT_DOCS_SOURCE=github`.\n'
-  );
-}
-
-function githubStamp(sha) {
-  return (
-    '# Source\n\n' +
-    'Docs mirrored from ' + REPO + ' (branch `' + BRANCH + '`).\n' +
-    'Upstream commit: ' + sha + '\n' +
-    'Synced: ' + today() + '\n' +
-    'Source mode: github-branch (MDX under apps/showcase/docs + demos under apps/showcase/demo).\n'
+    'PrimeReact v11 is released; its docs are served from primereact.dev, so the\n' +
+    'mirror fetches the official `llms.txt` index and each page\'s `.md`.\n'
   );
 }
 
 async function main() {
-  const source = selectSource(VENDOR);
-  let files;
-  let index;
-  let stamp;
-  let label;
-  if (source.mode === 'github') {
-    const sha = cloneV11(VENDOR);
-    ({ files, index } = buildFiles({ docsRoot: source.docsRoot, demoRoot: source.demoRoot }));
-    stamp = githubStamp(sha);
-    label = 'github ' + sha;
-  } else {
-    ({ files, index } = await buildRenderedFiles({ base: source.base }));
-    stamp = renderedStamp(source.base, files.size);
-    label = 'rendered ' + source.base;
-  }
+  const source = renderedMdSource();
+  const { files, index } = await buildRenderedFiles({ base: source.base });
+  const stamp = renderedStamp(source.base, files.size);
+  const label = 'rendered ' + source.base;
 
   if (checkMode) {
     const existing = readExistingRefs();

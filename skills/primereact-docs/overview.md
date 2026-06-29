@@ -40,15 +40,15 @@ built-in styles. See `references/styled/guides/misc/passthrough.md`.
 
 ## Gotchas
 
-- **v11 is released (GA), but a few v10 components are still not ported** — Chart,
+- **v11 is released (GA), but a few v10 components are not yet ported** — Chart,
   Editor, TreeSelect, CascadeSelect, Multi/TriStateCheckbox, and the
   MegaMenu/SlideMenu/TabMenu/PanelMenu/TieredMenu family. (DataTable, AutoComplete,
   Select, TreeTable, PickList and OrderList **are** in v11.) If a component has no
   page under `references/`, treat it as not-in-v11 — see `migration.md`.
 - **Don't mix v10 names into v11 code** (Calendar/Dropdown/Sidebar/etc.) — the
   guardrail in `migration.md` lists the renames.
-- **Props/API tables aren't fully mirrored.** The upstream `.md` ships prop tables
-  as a component the site renders client-side, so a page may show an
-  "API/props table … not yet mirrored" note. Fall back to the installed
-  `@primereact/types` or `primereact.dev` for exhaustive prop lists; the prose,
-  usage snippets, and demos on each component page still cover the common cases.
+- **Props/API tables aren't inlined.** Upstream renders prop tables as a
+  client-side component, so a page shows a note like *"`X` API table — See the
+  live table at primereact.dev/docs/…"* in their place. Follow that link, or use
+  the installed `@primereact/types`, for exhaustive props; the prose, usage
+  snippets, and demos on each component page cover the common cases.

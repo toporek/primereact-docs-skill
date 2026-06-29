@@ -50,7 +50,7 @@ export function stripInlineJsx(line) {
 }
 
 /** Fence-aware, line-oriented MDX custom-component → Markdown transform. */
-export function transformComponents(body, { lookupDemo, component }) {
+export function transformComponents(body, { lookupDemo, component, apiTableUrl } = {}) {
   const lines = body.split('\n');
   const out = [];
   let inFence = false;
@@ -87,11 +87,15 @@ export function transformComponents(body, { lookupDemo, component }) {
 
     m = t.match(/^<DocTable\b([^>]*)\/>$/);
     if (m) {
-      const { name = 'this component', category = 'api' } = parseAttrs(m[1]);
+      const { name = 'this component', category = 'api', type = '' } = parseAttrs(m[1]);
+      const kind = type ? category + '/' + type : category;
+      // The props/API table is TypeScript-derived and rendered client-side upstream,
+      // so it isn't in the source `.md`. Point at the live page (bare URL so the link
+      // rewriter leaves it pointing upstream, not at our local mirror).
+      const ref = apiTableUrl ? 'See the live table at ' + apiTableUrl : 'See the upstream docs';
       out.push(
-        '> **API/props table for `' + name + '` (`' + category + '`) is generated from upstream ' +
-          'TypeScript types and is not yet mirrored — see the installed package types or the ' +
-          'upstream docs. (TODO: mirror in v2.)',
+        '> **`' + name + '` API table (`' + kind + '`)** — TypeScript-derived; not inlined here. ' +
+          ref + ' or the installed `@primereact/types`.',
       );
       continue;
     }
@@ -175,26 +179,15 @@ export function assertNoJsx(text, label = 'doc') {
   }
 }
 
-/** Full MDX → Markdown pipeline for one doc (github/MDX source). */
-export function mdxToMarkdown(raw, { lookupDemo, selfOutPath, slugMap }) {
-  const { data, body } = parseFrontmatter(raw);
-  const title = data.title || 'Untitled';
-  const lead = data.description ? data.description + '\n\n' : '';
-  let out = transformComponents(body, { lookupDemo, component: data.component || '' });
-  out = rewriteDocLinks(out, selfOutPath, slugMap);
-  out = finalizeDoc('# ' + title + '\n\n' + lead + out, title);
-  assertNoJsx(out, selfOutPath);
-  return out;
-}
-
 /**
- * Light cleanup pipeline for already-rendered Markdown (rendered source).
- * The page body already starts with its own H1 and has demos inlined, so we
- * only strip any residual inline JSX, rewrite internal links, normalize, and
- * assert no JSX survives. `title` is a fallback H1 if the body somehow lacks one.
+ * Light cleanup pipeline for already-rendered Markdown (the primereact.dev source).
+ * The page body already starts with its own H1 and has demos inlined, so we only
+ * strip any residual inline JSX, turn `<DocTable>` placeholders into a link to the
+ * live upstream table (`apiTableUrl`), rewrite internal links, normalize, and assert
+ * no JSX survives. `title` is a fallback H1 if the body somehow lacks one.
  */
-export function renderedToMarkdown(raw, { title, selfOutPath, slugMap }) {
-  let out = transformComponents(raw, { lookupDemo: () => null, component: '' });
+export function renderedToMarkdown(raw, { title, selfOutPath, slugMap, apiTableUrl }) {
+  let out = transformComponents(raw, { lookupDemo: () => null, component: '', apiTableUrl });
   out = rewriteDocLinks(out, selfOutPath, slugMap);
   out = finalizeDoc(out, title || 'Untitled');
   assertNoJsx(out, selfOutPath);

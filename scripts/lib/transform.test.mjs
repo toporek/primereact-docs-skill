@@ -1,7 +1,7 @@
 // scripts/lib/transform.test.mjs
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks, assertNoJsx, mdxToMarkdown, stripInlineJsx } from './transform.mjs';
+import { parseFrontmatter, parseAttrs, finalizeDoc, transformComponents, rewriteDocLinks, assertNoJsx, renderedToMarkdown, stripInlineJsx } from './transform.mjs';
 
 test('parseFrontmatter extracts title, description, component', () => {
   const raw = '---\ntitle: Accordion\ndescription: An accordion.\ncomponent: accordion\n---\nBody\n';
@@ -60,10 +60,19 @@ test('transformComponents skips hidden demos and missing demos', () => {
   assert.equal(transformComponents('<DocDemoViewer name="accordion:nope"/>', opts), '');
 });
 
-test('transformComponents converts DocTable to a TODO note (no raw JSX)', () => {
+test('transformComponents converts DocTable to a note (no raw JSX)', () => {
   const out = transformComponents('<DocTable name="AccordionRoot" category="api" />', opts);
-  assert.match(out, /API\/props table for `AccordionRoot` \(`api`\)/);
-  assert.match(out, /TODO: mirror in v2/);
+  assert.match(out, /`AccordionRoot` API table \(`api`\)/);
+  assert.ok(!out.includes('<DocTable'));
+});
+
+test('transformComponents DocTable note links to the live table when apiTableUrl is set', () => {
+  const out = transformComponents('<DocTable name="Label" category="api" type="props" />', {
+    ...opts,
+    apiTableUrl: 'https://primereact.dev/docs/styled/components/label',
+  });
+  assert.match(out, /`Label` API table \(`api\/props`\)/);
+  assert.match(out, /https:\/\/primereact\.dev\/docs\/styled\/components\/label/);
   assert.ok(!out.includes('<DocTable'));
 });
 
@@ -138,30 +147,45 @@ test('assertNoJsx throws on surviving JSX, ignores fences and inline code', () =
   assert.doesNotThrow(() => assertNoJsx('# T\n\n```tsx\n<Accordion.Root/>\n```\n'));
 });
 
-test('mdxToMarkdown runs the full pipeline', () => {
+test('renderedToMarkdown cleans a rendered page (links, DocTable, JSX, no frontmatter)', () => {
   const raw = [
-    '---', 'title: Accordion', 'description: An accordion.', 'component: accordion', '---',
-    '<DocPrimitiveIntro description="Custom sections." />',
+    '# Button',
     '',
-    '<DocDemoViewer name="accordion:basic-demo" mode="collapsible"/>',
+    'Button is an extension to standard input.',
     '',
-    '## API',
-    '<DocTable name="AccordionRoot" category="api" />',
+    '```tsx',
+    "import { Button } from '@primereact/ui/button';",
+    '<Button>Accept</Button>',
+    '```',
     '',
-    'See [Motion](/docs/primitive/motion).',
+    'See <Link href="/docs/styled/components/select">Select</Link> too.',
+    '',
+    '# Button API',
+    '<DocTable name="Button" category="api" type="props" />',
+    '',
+    'Also see [Accordion](/docs/styled/components/accordion).',
     '',
   ].join('\n');
-  const out = mdxToMarkdown(raw, {
-    lookupDemo: (c, d) => (c === 'accordion' && d === 'basic-demo' ? 'const X = 1;' : null),
-    selfOutPath: 'primitive/accordion/features.md',
-    slugMap: new Map([['primitive/motion', 'primitive/motion/features.md']]),
+  const out = renderedToMarkdown(raw, {
+    title: 'Button',
+    selfOutPath: 'styled/components/button.md',
+    slugMap: new Map([
+      ['styled/components/select', 'styled/components/select.md'],
+      ['styled/components/accordion', 'styled/components/accordion.md'],
+    ]),
+    apiTableUrl: 'https://primereact.dev/docs/styled/components/button',
   });
-  assert.match(out, /^# Accordion\n\nAn accordion\./);
-  assert.match(out, /Custom sections\./);
-  assert.match(out, /```tsx\nconst X = 1;\n```/);
-  assert.match(out, /TODO: mirror in v2/);
-  assert.match(out, /\[Motion\]\(\.\.\/motion\/features\.md\)/);
+  // keeps the H1 + prose + fenced demo verbatim
+  assert.match(out, /^# Button\n\nButton is an extension/);
+  assert.match(out, /```tsx\nimport \{ Button \}/);
+  // inline <Link> → markdown link; internal /docs link → local relative path
+  assert.match(out, /See \[Select\]\(select\.md\) too\./);
+  assert.match(out, /\[Accordion\]\(accordion\.md\)/);
+  // <DocTable> → live-link note (bare URL, left pointing upstream); no JSX survives
+  assert.match(out, /`Button` API table \(`api\/props`\)/);
+  assert.match(out, /https:\/\/primereact\.dev\/docs\/styled\/components\/button/);
   assert.ok(!out.includes('<Doc'));
+  assert.ok(!out.includes('<Link'));
   assert.ok(out.endsWith('\n'));
 });
 
