@@ -31,10 +31,9 @@ The skill activates automatically when you work on PrimeReact code. New commits
 - `scripts/sync.mjs` — fetches the official
   [primereact.dev](https://primereact.dev) `llms.txt` index and each page's
   rendered `.md`, lightly cleans them (rewriting internal links, stripping any
-  residual JSX), and regenerates `references/` + `INDEX.md`. The doc-body source
-  is pluggable (`scripts/lib/source.mjs`): the default `rendered` adapter tracks
-  primereact.dev; a legacy `github` adapter (`PRIMEREACT_DOCS_SOURCE=github`)
-  remains for the old MDX branch.
+  residual JSX, linking the client-rendered API tables to their live upstream
+  pages), and regenerates `references/` + `INDEX.md`. The single source is defined
+  in `scripts/lib/source.mjs` (`renderedMdSource` → primereact.dev).
 
 > PrimeReact v11 shipped (GA) and the upstream `v11` git branch was removed, so
 > the mirror now tracks the official `primereact.dev` docs endpoints.
