@@ -113,7 +113,14 @@ test('rewriteDocLinks rewrites known absolute primereact.org links', () => {
 test('rewriteDocLinks normalizes unknown root-relative /docs links to absolute', () => {
   assert.equal(
     rewriteDocLinks('[x](/docs/primitive/unknown)', 'primitive/accordion/features.md', slugMap),
-    '[x](https://v11.primereact.org/docs/primitive/unknown)',
+    '[x](https://primereact.dev/docs/primitive/unknown)',
+  );
+});
+
+test('rewriteDocLinks rewrites known absolute primereact.dev links', () => {
+  assert.equal(
+    rewriteDocLinks('[t](https://primereact.dev/docs/styled/theming/styled)', 'primitive/accordion/features.md', slugMap),
+    '[t](../../styled/theming/styled.md)',
   );
 });
 

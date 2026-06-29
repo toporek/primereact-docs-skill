@@ -128,7 +128,7 @@ export function rewriteDocLinks(body, selfOutPath, slugMap) {
     while (i < fromDir.length && i < to.length - 1 && fromDir[i] === to[i]) i++;
     return [...Array(fromDir.length - i).fill('..'), ...to.slice(i)].join('/');
   };
-  const linkRe = /\]\((?:https?:\/\/(?:v11\.)?primereact\.org)?\/docs\/([A-Za-z0-9_/-]+?)(?:\.md)?(?:\?[^)#]*)?(#[^)]*)?\)/g;
+  const linkRe = /\]\((?:https?:\/\/(?:www\.|v11\.)?primereact\.(?:org|dev))?\/docs\/([A-Za-z0-9_/-]+?)(?:\.md)?(?:\?[^)#]*)?(#[^)]*)?\)/g;
   let inFence = false;
   return body
     .split('\n')
@@ -138,7 +138,7 @@ export function rewriteDocLinks(body, selfOutPath, slugMap) {
       return line.replace(linkRe, (full, slug, anchor) => {
         const target = slugMap.get(slug);
         if (target) return '](' + relativeTo(target) + (anchor || '') + ')';
-        if (full.startsWith('](/docs/')) return '](https://v11.primereact.org/docs/' + slug + (anchor || '') + ')';
+        if (full.startsWith('](/docs/')) return '](https://primereact.dev/docs/' + slug + (anchor || '') + ')';
         return full;
       });
     })
@@ -175,7 +175,7 @@ export function assertNoJsx(text, label = 'doc') {
   }
 }
 
-/** Full MDX → Markdown pipeline for one doc. */
+/** Full MDX → Markdown pipeline for one doc (github/MDX source). */
 export function mdxToMarkdown(raw, { lookupDemo, selfOutPath, slugMap }) {
   const { data, body } = parseFrontmatter(raw);
   const title = data.title || 'Untitled';
@@ -183,6 +183,20 @@ export function mdxToMarkdown(raw, { lookupDemo, selfOutPath, slugMap }) {
   let out = transformComponents(body, { lookupDemo, component: data.component || '' });
   out = rewriteDocLinks(out, selfOutPath, slugMap);
   out = finalizeDoc('# ' + title + '\n\n' + lead + out, title);
+  assertNoJsx(out, selfOutPath);
+  return out;
+}
+
+/**
+ * Light cleanup pipeline for already-rendered Markdown (rendered source).
+ * The page body already starts with its own H1 and has demos inlined, so we
+ * only strip any residual inline JSX, rewrite internal links, normalize, and
+ * assert no JSX survives. `title` is a fallback H1 if the body somehow lacks one.
+ */
+export function renderedToMarkdown(raw, { title, selfOutPath, slugMap }) {
+  let out = transformComponents(raw, { lookupDemo: () => null, component: '' });
+  out = rewriteDocLinks(out, selfOutPath, slugMap);
+  out = finalizeDoc(out, title || 'Untitled');
   assertNoJsx(out, selfOutPath);
   return out;
 }

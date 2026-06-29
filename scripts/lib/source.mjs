@@ -5,6 +5,9 @@ import { join, dirname } from 'node:path';
 
 export const REPO = 'https://github.com/primefaces/primereact';
 export const BRANCH = 'v11';
+// Official rendered-docs host (the default source since v11 shipped and the
+// upstream `v11` branch was removed).
+export const SITE = 'https://primereact.dev';
 
 /** Shallow-clone the v11 branch into vendorDir; return the resolved HEAD SHA. */
 export function cloneV11(vendorDir) {
@@ -23,12 +26,17 @@ export function githubBranchSource(vendorDir) {
   };
 }
 
-/** v2 stub: official .md / llms-full.txt endpoints are not live yet (see SOURCE.md / spec). */
+/** Official rendered-Markdown source: primereact.dev llms.txt index + per-page .md. */
 export function renderedMdSource() {
-  throw new Error('renderedMdSource: not implemented — v11 official .md/llms endpoints are not live yet (TODO v2).');
+  return { mode: 'rendered', base: SITE };
 }
 
-export function selectSource(vendorDir, mode = process.env.PRIMEREACT_DOCS_SOURCE || 'github') {
-  if (mode === 'rendered') return renderedMdSource();
-  return githubBranchSource(vendorDir);
+/**
+ * Default source is `rendered` (primereact.dev) since v11 released and the
+ * upstream GitHub `v11` branch was removed. The legacy MDX-branch source is
+ * still available via PRIMEREACT_DOCS_SOURCE=github.
+ */
+export function selectSource(vendorDir, mode = process.env.PRIMEREACT_DOCS_SOURCE || 'rendered') {
+  if (mode === 'github') return githubBranchSource(vendorDir);
+  return renderedMdSource();
 }

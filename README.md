@@ -5,9 +5,10 @@ grep-friendly Markdown so Claude Code answers PrimeReact questions (components,
 theming/design tokens, PassThrough, hooks) from the real v11 docs instead of
 guessing — Claude's training mostly reflects v10, and v11 is a ground-up rewrite.
 
-Because v11 is still in active development and its docs site is often unavailable,
-this gives you an **offline, grep-able, version-pinned** snapshot plus a daily
-auto-sync and a v10→v11 version guardrail.
+This gives you an **offline, grep-able** snapshot of the official docs plus a
+daily auto-sync and a v10→v11 version guardrail — handy when the docs site is
+slow/unavailable and so Claude answers from real v11 APIs instead of its
+mostly-v10 memory.
 
 ## Install
 
@@ -25,25 +26,29 @@ The skill activates automatically when you work on PrimeReact code. New commits
 
 - `skills/primereact-docs/` — the installable skill: `SKILL.md` router,
   hand-authored `overview.md` + `migration.md` guardrail, generated `INDEX.md`,
-  and `references/` (one Markdown file per upstream doc, across the `general`,
-  `styled`, `primitive`, `headless`, and `tailwind` variants).
-- `scripts/sync.mjs` — shallow-clones the `v11` branch of
-  [primefaces/primereact](https://github.com/primefaces/primereact), transforms
-  each `apps/showcase/docs/**/*.mdx` to Markdown (inlining the referenced demo
-  `.tsx` examples, rewriting internal links), and regenerates `references/` +
-  `INDEX.md`. The doc-body source is pluggable (`scripts/lib/source.mjs`) so it
-  can switch to v11's official `.md`/`llms-full.txt` endpoints once they ship.
+  and `references/` (one Markdown file per upstream doc, across the `styled`,
+  `primitive`, `headless`, `tailwind`, and `hooks` variants).
+- `scripts/sync.mjs` — fetches the official
+  [primereact.dev](https://primereact.dev) `llms.txt` index and each page's
+  rendered `.md`, lightly cleans them (rewriting internal links, stripping any
+  residual JSX), and regenerates `references/` + `INDEX.md`. The doc-body source
+  is pluggable (`scripts/lib/source.mjs`): the default `rendered` adapter tracks
+  primereact.dev; a legacy `github` adapter (`PRIMEREACT_DOCS_SOURCE=github`)
+  remains for the old MDX branch.
+
+> PrimeReact v11 shipped (GA) and the upstream `v11` git branch was removed, so
+> the mirror now tracks the official `primereact.dev` docs endpoints.
 
 ## Updating
 
 ```bash
-npm run sync        # re-pull upstream and regenerate (commit the result)
+npm run sync        # re-fetch the official docs and regenerate (commit the result)
 npm run sync:check  # non-zero exit if committed output drifts from upstream
-npm test            # unit tests for the transform/collect/index/source modules
+npm test            # unit tests for the transform/rendered/index/source modules
 ```
 
-`SOURCE.md` records the upstream commit the current mirror was generated from. A
-**daily** GitHub Action opens/updates a single rolling PR when upstream changes.
+`SOURCE.md` records the source + sync date. A **daily** GitHub Action
+opens/updates a single rolling PR when the upstream docs change.
 
 > **Note (maintainers/forks):** the sync workflow opens PRs via
 > `peter-evans/create-pull-request`, which requires **Settings → Actions →
@@ -51,20 +56,23 @@ npm test            # unit tests for the transform/collect/index/source modules
 
 ## Known limitations
 
-- **API/props tables are not mirrored yet (v2).** v11 renders them from an 86 MB
-  TypeDoc JSON; v1 mirrors prose, usage, and runnable demos, and shows a TODO note
-  where a table would be. Use `@primereact/types` or upstream for exhaustive props.
-- **v11 is incomplete.** Components not yet ported (DataTable, Chart, Editor,
-  AutoComplete, …) have no `references/` entry; see `migration.md`.
+- **Props/API tables aren't fully mirrored.** Upstream ships prop tables as a
+  component rendered client-side, so a page may show a TODO note where a props
+  table would be. Prose, usage, and runnable demos are mirrored; use
+  `@primereact/types` or `primereact.dev` for exhaustive props.
+- **A few components aren't in v11 yet** (Chart, Editor, TreeSelect,
+  CascadeSelect, the MegaMenu/TieredMenu family, …) — they have no `references/`
+  entry; see `migration.md`.
 
 ## License & attribution
 
 Documentation under `skills/primereact-docs/references/` is © PrimeFaces and the
 PrimeReact contributors, mirrored from
 [primefaces/primereact](https://github.com/primefaces/primereact) under the
-[MIT License](LICENSE) with mechanical modifications (MDX → Markdown; demo files
-inlined; internal links rewritten; API-table components replaced with TODO notes).
-The sync tooling in this repo is also MIT.
+[MIT License](LICENSE) with mechanical modifications (fetched as rendered
+Markdown from primereact.dev; internal links rewritten to local paths; residual
+API-table components replaced with TODO notes). The sync tooling in this repo is
+also MIT.
 
 This is an unofficial community project, **not affiliated with or endorsed by
 PrimeFaces/PrimeTek**. "PrimeReact" and "PrimeFaces" are names of their respective owners.

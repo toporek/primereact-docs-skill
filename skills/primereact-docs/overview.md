@@ -7,16 +7,17 @@ are the load-bearing concepts that differ from v10.
 
 A given component can be consumed in up to four modes — pick the one the project uses:
 
-1. **Styled** (`references/styled/**`) — batteries-included components with the
-   `@primeuix/themes` design-token theming. The default and most common; closest
-   to the v10 mental model. Each component has `features.md` (+ often `theming.md`).
-2. **Primitive** (`references/primitive/**`) — unstyled, accessible **compound**
-   components (e.g. `Accordion.Root` / `Accordion.Panel` / `Accordion.Trigger`)
-   with full control over markup via the polymorphic `as` prop.
-3. **Headless** (`references/headless/**`, `references/general/hooks/**`) —
-   behavior-only `use*` hooks; you render everything.
-4. **Tailwind** (`references/tailwind/**`, `references/general/tailwind.md`) —
-   the styled components wired for Tailwind via `tailwindcss-primeui`.
+1. **Styled** (`references/styled/components/<comp>.md`) — batteries-included
+   components with the `@primeuix/themes` design-token theming. The default and
+   most common; closest to the v10 mental model.
+2. **Primitive** (`references/primitive/components/<comp>.md`) — unstyled,
+   accessible **compound** components (e.g. `Accordion.Root` / `Accordion.Panel`
+   / `Accordion.Trigger`) with full control over markup via the polymorphic `as` prop.
+3. **Headless** (`references/headless/components/<comp>.md`) plus the standalone
+   `@primereact/hooks` collection (`references/hooks/**`) — behavior-only `use*`
+   hooks; you render everything.
+4. **Tailwind** (`references/tailwind/**`, `references/styled/guides/theming/tailwind.md`)
+   — the styled components wired for Tailwind via `tailwindcss-primeui`.
 
 ## Theming = design tokens, not CSS files
 
@@ -35,16 +36,19 @@ monolithic single-component-with-many-props style. Most sub-components accept an
 ## PassThrough (pt)
 
 `pt` lets you inject props/classes into internal elements; `unstyled` drops
-built-in styles. See `references/general/passthrough.md`.
+built-in styles. See `references/styled/guides/misc/passthrough.md`.
 
 ## Gotchas
 
-- **v11 is in active development and incomplete.** Several v10 components are not
-  yet ported (DataTable, Chart, Editor, AutoComplete, TreeTable, PickList…). If a
-  component isn't under `references/`, treat it as not-yet-in-v11 — see `migration.md`.
+- **v11 is released (GA), but a few v10 components are still not ported** — Chart,
+  Editor, TreeSelect, CascadeSelect, Multi/TriStateCheckbox, and the
+  MegaMenu/SlideMenu/TabMenu/PanelMenu/TieredMenu family. (DataTable, AutoComplete,
+  Select, TreeTable, PickList and OrderList **are** in v11.) If a component has no
+  page under `references/`, treat it as not-in-v11 — see `migration.md`.
 - **Don't mix v10 names into v11 code** (Calendar/Dropdown/Sidebar/etc.) — the
   guardrail in `migration.md` lists the renames.
-- **API/props tables are not mirrored yet (v2).** Where a doc shows a
-  "API/props table … not yet mirrored" note, fall back to the installed
-  `@primereact/types` or the upstream docs for exhaustive prop lists; the prose,
-  usage snippets, and demos in each `features.md` still cover the common cases.
+- **Props/API tables aren't fully mirrored.** The upstream `.md` ships prop tables
+  as a component the site renders client-side, so a page may show an
+  "API/props table … not yet mirrored" note. Fall back to the installed
+  `@primereact/types` or `primereact.dev` for exhaustive prop lists; the prose,
+  usage snippets, and demos on each component page still cover the common cases.

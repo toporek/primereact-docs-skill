@@ -5,17 +5,18 @@ description: Use when writing, configuring, or debugging PrimeReact v11 UI code 
 
 # PrimeReact v11 Docs
 
-Local, version-pinned mirror of the **PrimeReact v11** documentation (from the
-`v11` branch of `primefaces/primereact`), plus a v10→v11 version guardrail.
-Ground every PrimeReact answer in these files instead of recalling APIs from
-memory — v11 is a ground-up rewrite and Claude's training mostly reflects v10.
+Local mirror of the **PrimeReact v11** documentation (from the official
+`primereact.dev` docs — `llms.txt` index + per-page `.md`), plus a v10→v11
+version guardrail. Ground every PrimeReact answer in these files instead of
+recalling APIs from memory — v11 is a ground-up rewrite and Claude's training
+mostly reflects v10.
 
 ## Always start here
 
 1. **Read `overview.md`** — the v11 mental models (four usage modes, design-token
    theming, compound components, headless hooks, PassThrough) and gotchas.
 2. **Check the installed version** — `primereact` in the project's `package.json`.
-   - `11.x` (or `11.0.0-*`) → use the mirrored v11 docs in `references/`.
+   - `11.x` → v11 is released (GA); use the mirrored v11 docs in `references/`.
    - `10.x` or lower → the API differs substantially; see `migration.md` and rely
      on your v10 knowledge for names/imports the v11 docs would get wrong.
 
@@ -30,26 +31,32 @@ you are using training-memory APIs that were renamed/removed — open `migration
 - `import 'primereact/resources/themes/*.css'` (gone — theming is now
   `@primeuix/themes` design tokens via `PrimeReactProvider`).
 
-Some heavy v10 components are **not yet ported to v11** (DataTable, Chart, Editor,
-Select-as-data-grid, AutoComplete, TreeTable, PickList, OrderList…). For those,
-say so and use v10 guidance — do not invent a v11 API.
+A few v10 components are **not yet ported to v11** (Chart, Editor, TreeSelect,
+CascadeSelect, MultiStateCheckbox, TriStateCheckbox, and the MegaMenu/SlideMenu/
+TabMenu/PanelMenu/TieredMenu family). If a component has no page under
+`references/` (check `INDEX.md`), say so and use v10 guidance — don't invent a
+v11 API. (DataTable, AutoComplete, Select, TreeTable, PickList and OrderList
+**are** in v11 — see `references/styled/components/`.)
 
 ## Task → which docs to read
 
 Default to the **styled** variant (batteries-included) unless the project uses
-unstyled/primitive, headless hooks, or Tailwind.
+unstyled/primitive, headless hooks, or Tailwind. Paths mirror the site:
+`references/<variant>/components/<comp>.md`, `references/<variant>/guides/...`.
 
 | Task | Read |
 |---|---|
-| **Getting started / install** | `references/general/gettingstarted/*`, `references/styled/installation/*` |
-| **Theming / design tokens / presets / dark mode** | `references/styled/theming/*`, a component's `references/styled/<comp>/theming.md` |
-| **Unstyled / PassThrough** | `references/general/passthrough.md`, `references/styled/theming/unstyled.md` |
-| **Tailwind mode** | `references/general/tailwind.md`, `references/tailwind/**` |
-| **A specific styled component** | `references/styled/<component>/features.md` (+ `theming.md`) |
-| **Unstyled compound primitives** | `references/primitive/<component>/features.md` |
-| **Headless hooks** | `references/headless/<component>/features.md`, `references/general/hooks/*` |
-| **Icons** | `references/general/icons/*` |
-| **Accessibility / RTL** | `references/general/guides/*` |
+| **Getting started / install** | `references/styled/guides/introduction.md`, `references/styled/guides/installation/*` |
+| **Configuration / provider** | `references/styled/guides/configuration.md` |
+| **Theming / design tokens / presets / dark mode** | `references/styled/guides/theming/styled.md` |
+| **Unstyled / PassThrough** | `references/styled/guides/misc/passthrough.md`, `references/styled/guides/theming/unstyled.md` |
+| **Tailwind mode** | `references/styled/guides/theming/tailwind.md`, `references/tailwind/**` |
+| **A specific styled component** | `references/styled/components/<component>.md` |
+| **Unstyled compound primitives** | `references/primitive/components/<component>.md` |
+| **Headless component hooks** | `references/headless/components/<component>.md` |
+| **Standalone hooks** (`@primereact/hooks`) | `references/hooks/<use-name>.md`, `references/hooks/gettingstarted/*` |
+| **Icons** | `references/styled/guides/icons/*` |
+| **Accessibility** | `references/<variant>/guides/misc/accessibility.md` |
 | **v10 → v11 migration / version mismatch** | `migration.md` |
 
 ## Anything else
@@ -59,6 +66,6 @@ Open `INDEX.md` for the full topic list, or grep for a symbol:
 
 ## Provenance
 
-`SOURCE.md` records the upstream commit + sync date. Because v11 is in active
-development, the mirror can lag the branch by up to a day; for bleeding-edge
-questions, confirm against the upstream repo.
+`SOURCE.md` records the source (official `primereact.dev` endpoints) + sync date.
+A daily GitHub Action refreshes the mirror; for the very latest, confirm against
+`primereact.dev`.

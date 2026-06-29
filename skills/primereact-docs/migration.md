@@ -1,8 +1,9 @@
 # PrimeReact Migration & Version Guardrail (v10 → v11)
 
-PrimeReact v11 is a **ground-up rewrite**. The mirrored docs in `references/`
-describe **v11**. Before writing code, check the installed version and use this
-file to bridge what your training memory (mostly v10) and the v11 docs each say.
+PrimeReact v11 is a **ground-up rewrite** and is now **released (GA)**. The
+mirrored docs in `references/` describe **v11**. Before writing code, check the
+installed version and use this file to bridge what your training memory (mostly
+v10) and the v11 docs each say.
 
 ## Step 0 — check the installed version FIRST
 
@@ -17,19 +18,23 @@ Read `primereact` in the project's `package.json`:
 
 ## Renamed components — STOP if you are about to write the v10 name (on v11)
 
+v11 styled/primitive components import from **`@primereact/ui/<component>`** (not
+the old `primereact/<component>` paths). Confirm the exact import in each
+component's `references/<variant>/components/<comp>.md`.
+
 | v10 (training memory) | v11 | v11 import |
 |---|---|---|
-| `Calendar` | `DatePicker` | `primereact/datepicker` |
-| `Dropdown` | `Select` | `primereact/select` |
-| `InputSwitch` | `Switch` (ToggleSwitch) | `primereact/switch` |
-| `OverlayPanel` | `Popover` | `primereact/popover` |
-| `Sidebar` | `Drawer` | `primereact/drawer` |
-| `InputTextarea` | `Textarea` | `primereact/textarea` |
-| `Chips` | `InputTags` | `primereact/inputtags` |
-| `TabView` / `TabPanel` | `Tabs` (compound: `Tabs`, `Tabs.List`, `Tabs.Tab`, `Tabs.Panel`) | `primereact/tabs` |
-| `Steps` | `Stepper` | `primereact/stepper` |
-| `Galleria` | `Gallery` | `primereact/gallery` |
-| `ScrollPanel` | `ScrollArea` | `primereact/scrollarea` |
+| `Calendar` | `DatePicker` | `@primereact/ui/datepicker` |
+| `Dropdown` | `Select` | `@primereact/ui/select` |
+| `InputSwitch` | `Switch` (ToggleSwitch) | `@primereact/ui/switch` |
+| `OverlayPanel` | `Popover` | `@primereact/ui/popover` |
+| `Sidebar` | `Drawer` | `@primereact/ui/drawer` |
+| `InputTextarea` | `Textarea` | `@primereact/ui/textarea` |
+| `Chips` | `InputTags` | `@primereact/ui/inputtags` |
+| `TabView` / `TabPanel` | `Tabs` (compound: `Tabs`, `Tabs.List`, `Tabs.Tab`, `Tabs.Panel`) | `@primereact/ui/tabs` |
+| `Steps` | `Stepper` | `@primereact/ui/stepper` |
+| `Galleria` | `Gallery` | `@primereact/ui/gallery` |
+| `ScrollPanel` | `ScrollArea` | `@primereact/ui/scrollarea` |
 | `ScrollTop` | `useScrollTop` hook | `@primereact/hooks` |
 | `KeyFilter` | `useKeyFilter` hook | `@primereact/hooks` |
 | `InputMask` | `useMask` hook | `@primereact/hooks` |
@@ -54,18 +59,22 @@ import Aura from '@primeuix/themes/aura';
 - Tokens in three tiers: primitive → semantic → component; customize with
   `definePreset(...)`; dark mode via `darkModeSelector`.
 - **Unstyled mode** (no built-in classes) and **Tailwind** (`tailwindcss-primeui`)
-  are first-class. See `references/styled/theming/*` and `references/general/tailwind.md`.
+  are first-class. See `references/styled/guides/theming/*` (incl. `unstyled.md`,
+  `tailwind.md`) and `references/tailwind/**`.
 
 ## Not yet ported to v11 (as of the mirrored snapshot)
 
-`DataTable`, `Chart`, `Editor`, `AutoComplete`, the data-grid `Select`/dropdown
-filters, `TreeTable`, `TreeSelect`, `PickList`, `OrderList`, `CascadeSelect`,
-`MultiStateCheckbox`, `TriStateCheckbox`, and several menu variants
-(`MegaMenu`, `SlideMenu`, `TabMenu`, `PanelMenu`, `TieredMenu`).
+Now in v11 (don't treat these as missing anymore): **DataTable, AutoComplete,
+Select, TreeTable, PickList, OrderList** — see `references/styled/components/`.
 
-For these on a v11 project: say the component is not yet in v11, and either use
-the v10 component (if the project still has v10 installed) or wait for the port —
-**do not invent a v11 API.** Check `INDEX.md`/`references/` to confirm presence.
+Still **not ported** as of this snapshot: `Chart`, `Editor`, `TreeSelect`,
+`CascadeSelect`, `MultiStateCheckbox`, `TriStateCheckbox`, and the
+`MegaMenu` / `SlideMenu` / `TabMenu` / `PanelMenu` / `TieredMenu` family.
+
+For a component with **no page under `references/`**: say it's not yet in v11, and
+either use the v10 component (if the project still has v10 installed) or wait for
+the port — **do not invent a v11 API.** Always check `INDEX.md` / `references/` to
+confirm presence (the mirror is refreshed daily, so the list shifts over time).
 
 ## Peer dependencies & packages (v11)
 

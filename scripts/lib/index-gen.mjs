@@ -1,6 +1,6 @@
 // scripts/lib/index-gen.mjs
-const GROUP_LABELS = { general: 'General', styled: 'Styled', primitive: 'Primitive', headless: 'Headless', tailwind: 'Tailwind' };
-const GROUP_ORDER = ['general', 'styled', 'primitive', 'headless', 'tailwind'];
+const GROUP_LABELS = { general: 'General', styled: 'Styled', primitive: 'Primitive', headless: 'Headless', tailwind: 'Tailwind', hooks: 'Hooks' };
+const GROUP_ORDER = ['general', 'styled', 'primitive', 'headless', 'tailwind', 'hooks'];
 
 export function buildIndex(entries) {
   const groups = new Map();
