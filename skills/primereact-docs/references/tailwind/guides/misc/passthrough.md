@@ -1,0 +1,96 @@
+# Pass Through
+
+The Pass Through attributes is an API to access the internal DOM Structure of the components.
+
+## Introduction
+
+In traditional 3rd party UI libraries, users are limited to the API provided by component author. This API commonly consists of props, events and slots. Whenever a requirement emerges for a new customization option in the API, the component
+author needs to develop and publish it with a new release.
+
+Vision of PrimeTek is _Your components, not ours_. The pass through feature is a key element to implement this vision by exposing the component internals in order to apply arbitrary attributes and listeners to the DOM elements. The primary
+advantage of this approach is that it frees you from being restricted by the main component API. We recommend considering the pass-through feature whenever you need to tailor a component that lacks a built-in feature for your specific
+requirement.
+
+## Basic
+
+Each component has a special `pt` property to define an object with keys corresponding to the available DOM elements. Each value can either be a string, an object or a function that returns a string or an object to define the
+arbitrary properties to apply to the element such as styling, aria, data-\* or custom attributes. If the value is a string or a function that returns a string, it is considered as a className definition and added to the className attribute of the
+element. Every component documentation has a dedicated section to document the available section names exposed via PT.
+
+Most common usage of `pt` is styling and customization. Example below styles an unstyled Panel component with Tailwind CSS library.
+
+```tsx
+import { Panel } from 'primereact/panel';
+
+export default function BasicDemo() {
+    return (
+        <div>
+            <Panel.Root
+                pt={{
+                    root: 'border border-primary rounded-xl p-4',
+                    header: {
+                        id: 'myPanelHeader',
+                        style: {
+                            userSelect: 'none'
+                        },
+                        className: 'flex items-center justify-between text-primary font-bold'
+                    },
+                    content: { className: 'text-primary-700 dark:text-primary-200 mt-4' },
+                    title: 'text-xl'
+                }}
+            >
+                <Panel.Header>
+                    <Panel.Title> Header</Panel.Title>
+                </Panel.Header>
+                <Panel.Content>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </Panel.Content>
+            </Panel.Root>
+        </div>
+    );
+}
+
+```
+
+## Global
+
+Defines the shared pass through properties per component type. For example, with the configuration below all panel headers have the `bg-primary` style class and the all autocomplete components have a fixed width. These settings can be overriden by a particular component as components `pt` property has higher precedence over global `pt`.
+
+```tsx
+pt: {
+    panel: {
+        header: {
+            className: 'bg-primary text-primary-contrast'
+        }
+    },
+    autocomplete: {
+        input: {
+            root: 'w-64' // OR { class: 'w-64' }
+        }
+    }
+}
+```
+
+## Custom CSS
+
+The `global` property has a `css` option to define custom css that belongs to a global `pt` configuration. Common use case of this feature is defining global styles and animations related to the pass through configuration.
+
+```tsx
+pt: {
+    global: {
+        css: `
+            .my-button {
+                border-width: 2px;
+            }
+        `
+    },
+    button: {
+        root: 'my-button'
+    }
+}
+```

@@ -1,384 +1,393 @@
 # PrimeReact v11 Docs Index
 
-## General
-
-- [Contribution Guide](references/general/discover/contribution.md) — Welcome to the PrimeReact Contribution Guide and thank you for considering contributing.
-- [Introduction](references/general/gettingstarted/introduction.md) — Next-generation UI Component suite for React.
-- [Setup](references/general/gettingstarted/setup.md) — Installation guides for popular development environments.
-- [Accessibility](references/general/guides/accessibility.md) — PrimeReact has WCAG 2.1 AA level compliance, refer to the accessibility documentation of each component for detailed information.
-- [RTL Support](references/general/guides/rtl.md) — Right-to-left direction support of PrimeReact.
-- [useKeyFilter](references/general/hooks/usekeyfilter/features.md) — useKeyFilter used to block individual keystrokes based on a pattern.
-- [useMask](references/general/hooks/usemask/features.md) — useMask is used to enter input in a certain format such as numeric, date, currency, email and phone.
-- [useScrollTop](references/general/hooks/usescrolltop/features.md) — useScrollTop is a hook that provides a way to scroll to the top of a container.
-- [Custom Icons](references/general/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
-- [Prime Icons](references/general/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
-- [LLMs.txt](references/general/llms.md) — LLMs.txt is a file that contains the LLMs for the PrimeReact documentation.
-- [Pass Through](references/general/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
-- [Tailwind CSS](references/general/tailwind.md) — Integration between PrimeReact and Tailwind CSS both in styled and unstyled modes.
-
 ## Styled
 
-- [Accordion](references/styled/accordion/features.md) — Accordion groups content into collapsible panels.
-- [Accordion Theming](references/styled/accordion/theming.md) — Theming documentation for Accordion component
-- [AnimateOnScroll](references/styled/animateonscroll/features.md) — AnimateOnScroll applies enter and leave animations to elements as they move in and out of the viewport during scroll.
-- [AnimateOnScroll Theming](references/styled/animateonscroll/theming.md) — Theming documentation for AnimateOnScroll component
-- [AutoComplete](references/styled/autocomplete/features.md) — AutoComplete is an input component that provides real-time suggestions when being typed.
-- [AutoComplete Theming](references/styled/autocomplete/theming.md) — Theming documentation for AutoComplete component
-- [Avatar](references/styled/avatar/features.md) — Avatar represents people using icons, labels and images.
-- [Avatar Theming](references/styled/avatar/theming.md) — Theming documentation for Avatar component
-- [Badge](references/styled/badge/features.md) — Badge is a small status indicator for another element.
-- [Badge Theming](references/styled/badge/theming.md) — Theming documentation for Badge component
-- [Breadcrumb](references/styled/breadcrumb/features.md) — Breadcrumb provides contextual information about page hierarchy.
-- [Breadcrumb Theming](references/styled/breadcrumb/theming.md) — Theming documentation for Breadcrumb component
-- [Button](references/styled/button/features.md) — Button is an extension to standard input element with icons and theming.
-- [Button Theming](references/styled/button/theming.md) — Theming documentation for Button component
-- [Card](references/styled/card/features.md) — Card is a flexible container component.
-- [Card Theming](references/styled/card/theming.md) — Theming documentation for Card component
-- [Carousel](references/styled/carousel/features.md) — Carousel is a content slider featuring various customization options.
-- [Carousel Theming](references/styled/carousel/theming.md) — Theming documentation for Carousel component
-- [Checkbox](references/styled/checkbox/features.md) — Checkbox is an extension to standard checkbox element with theming.
-- [Checkbox Theming](references/styled/checkbox/theming.md) — Theming documentation for Checkbox component
-- [CheckboxGroup](references/styled/checkboxgroup/features.md) — CheckboxGroup groups multiple checkboxes and manages their shared value.
-- [CheckboxGroup Theming](references/styled/checkboxgroup/theming.md) — Theming documentation for CheckboxGroup component
-- [Chip](references/styled/chip/features.md) — Chip represents entities using icons, labels and images.
-- [Chip Theming](references/styled/chip/theming.md) — Theming documentation for Chip component
-- [CommandMenu](references/styled/commandmenu/features.md) — CommandMenu represents a command menu component.
-- [CommandMenu Theming](references/styled/commandmenu/theming.md) — Theming documentation for commandmenu component
-- [Compare](references/styled/compare/features.md) — Compare two items side by side with a slider.
-- [ConfirmDialog](references/styled/confirmdialog/features.md) — ConfirmDialog uses a Dialog UI
-- [ConfirmDialog Theming](references/styled/confirmdialog/theming.md) — Theming documentation for ConfirmDialog component
-- [ConfirmPopup](references/styled/confirmpopup/features.md) — ConfirmPopup uses a Dialog UI
-- [ConfirmPopup Theming](references/styled/confirmpopup/theming.md) — Theming documentation for ConfirmPopup component
-- [ContextMenu](references/styled/contextmenu/features.md) — ContextMenu displays an overlay menu to display actions related to a trigger, activated by a right-click event.
-- [ContextMenu Theming](references/styled/contextmenu/theming.md) — Theming documentation for ContextMenu component
-- [DataView](references/styled/dataview/features.md) — DataView displays data in grid or list layout with pagination and sorting features.
-- [DataView Theming](references/styled/dataview/theming.md) — Theming documentation for DataView component
-- [DatePicker](references/styled/datepicker/features.md) — DatePicker is a form component to work with dates.
-- [DatePicker Theming](references/styled/datepicker/theming.md) — Theming documentation for DatePicker component
-- [Dialog](references/styled/dialog/features.md) — Dialog is a container to display content in an overlay window.
-- [Dialog Theming](references/styled/dialog/theming.md) — Theming documentation for Dialog component
-- [Divider](references/styled/divider/features.md) — Divider is used to separate contents.
-- [Divider Theming](references/styled/divider/theming.md) — Theming documentation for Divider component
-- [Drag & Drop](references/styled/dnd/features.md) — `useDnd` is the shared drag-and-drop primitive that powers PickList, OrderList, and Kanban.
-- [Drawer](references/styled/drawer/features.md) — Drawer is a panel component displayed as an overlay at the edges of the screen.
-- [Drawer Theming](references/styled/drawer/theming.md) — Theming documentation for Drawer component
-- [Fieldset](references/styled/fieldset/features.md) — Fieldset is a container component with a legend and optional collapsible content.
-- [Fieldset Theming](references/styled/fieldset/theming.md) — Theming documentation for Fieldset component
-- [FileUpload](references/styled/fileupload/features.md) — FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
-- [FileUpload Theming](references/styled/fileupload/theming.md) — Theming documentation for FileUpload component
-- [FloatLabel API](references/styled/floatlabel/api.md) — API documentation for FloatLabel component
-- [FloatLabel](references/styled/floatlabel/features.md) — FloatLabel visually integrates a label with its form element.
-- [FloatLabel Theming](references/styled/floatlabel/theming.md) — Theming documentation for FloatLabel component
-- [Fluid API](references/styled/fluid/api.md) — API documentation for Fluid component
-- [Fluid](references/styled/fluid/features.md) — Fluid is a layout component to make descendant components span full width of their container.
-- [Fluid Theming](references/styled/fluid/theming.md) — Theming documentation for Fluid component
-- [FocusTrap](references/styled/focustrap/features.md) — Focus Trap keeps focus within a certain DOM element while tabbing.
-- [FocusTrap Theming](references/styled/focustrap/theming.md) — Theming documentation for FocusTrap component
-- [Gallery](references/styled/gallery/features.md) — Gallery is a component to display a collection of images in a gallery.
-- [Gallery Theming](references/styled/gallery/theming.md) — Theming documentation for Gallery component
-- [IconField API](references/styled/iconfield/api.md) — API documentation for IconField component
-- [IconField](references/styled/iconfield/features.md) — IconField wraps an input and an icon.
-- [IconField Theming](references/styled/iconfield/theming.md) — Theming documentation for IconField component
-- [IftaLabel API](references/styled/iftalabel/api.md) — API documentation for IftaLabel component
-- [IftaLabel](references/styled/iftalabel/features.md) — IftaLabel visually integrates a label with its form element.
-- [IftaLabel Theming](references/styled/iftalabel/theming.md) — Theming documentation for IftaLabel component
-- [Inplace](references/styled/inplace/features.md) — Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
-- [Inplace Theming](references/styled/inplace/theming.md) — Theming documentation for Inplace component
-- [InputColor](references/styled/inputcolor/features.md) — InputColor is a component that allows the user to select a color.
-- [InputColor Theming](references/styled/inputcolor/theming.md) — Theming documentation for InputColor component
-- [InputGroup API](references/styled/inputgroup/api.md) — API documentation for InputGroup component
-- [InputGroup](references/styled/inputgroup/features.md) — InputGroup displays text, icon, buttons and other content can be grouped next to an input.
-- [InputGroup Theming](references/styled/inputgroup/theming.md) — Theming documentation for InputGroup component
-- [InputNumber](references/styled/inputnumber/features.md) — InputNumber is used to enter numeric values.
-- [InputNumber Theming](references/styled/inputnumber/theming.md) — Theming documentation for InputNumber component
-- [InputOtp](references/styled/inputotp/features.md) — InputOtp is used to enter one time passwords.
-- [InputOtp Theming](references/styled/inputotp/theming.md) — Theming documentation for InputOtp component
-- [InputTags](references/styled/inputtags/features.md) — InputTags groups a collection of contents in items.
-- [InputTags Theming](references/styled/inputtags/theming.md) — Theming documentation for InputTags component
-- [InputText](references/styled/inputtext/features.md) — InputText is an extension to standard input element with icons and theming.
-- [InputText Theming](references/styled/inputtext/theming.md) — Theming documentation for InputText component
-- [Configuration](references/styled/installation/configuration.md) — Application wide configuration for PrimeReact.
-- [With Next.js](references/styled/installation/nextjs.md) — Setting up PrimeReact in a Next.js project.
-- [With Vite](references/styled/installation/vite.md) — Setting up PrimeReact in a Vite project.
-- [Knob](references/styled/knob/features.md) — Knob is a form component to define number inputs with a dial.
-- [Knob Theming](references/styled/knob/theming.md) — Theming documentation for Knob component
-- [Label API](references/styled/label/api.md) — API documentation for Label component
-- [Label](references/styled/label/features.md) — Label provides accessible text labels for form controls. Use `htmlFor` to link the label to a form control by its id.
-- [Label Theming](references/styled/label/theming.md) — Theming documentation for Label component
-- [Listbox](references/styled/listbox/features.md) — Listbox is used to select one or more values from a list of items.
-- [Listbox Theming](references/styled/listbox/theming.md) — Theming documentation for Listbox component
-- [Menu](references/styled/menu/features.md) — Menu is a versatile component that provides various features such as inline and portal rendering, composite structures, app-style layouts, menubars, sidebars, and router integration.
-- [Menu Theming](references/styled/menu/theming.md) — Theming documentation for Menu component
-- [Message](references/styled/message/features.md) — Message component is used to display inline messages.
-- [Message Theming](references/styled/message/theming.md) — Theming documentation for Message component
-- [MeterGroup](references/styled/metergroup/features.md) — MeterGroup displays scalar measurements within a known range.
-- [MeterGroup Theming](references/styled/metergroup/theming.md) — Theming documentation for MeterGroup component
-- [OrderList](references/styled/orderlist/features.md) — OrderList is used to reorder items in a list using selection and drag-drop.
-- [OrgChart API](references/styled/orgchart/api.md) — API documentation for OrgChart component
-- [OrgChart](references/styled/orgchart/features.md) — OrgChart visualizes hierarchical organization data.
-- [OrgChart Theming](references/styled/orgchart/theming.md) — Theming documentation for OrgChart component
-- [Paginator](references/styled/paginator/features.md) — Paginator displays data in paged format and provides navigation between pages.
-- [Paginator Theming](references/styled/paginator/theming.md) — Theming documentation for Paginator component
-- [Panel](references/styled/panel/features.md) — Panel is a container component with optional collapsible content.
-- [Panel Theming](references/styled/panel/theming.md) — Theming documentation for Panel component
-- [Password](references/styled/password/features.md) — Password is an enhanced input for password entry with strength metering, mask toggling, and controlled or uncontrolled usage.
-- [Password Theming](references/styled/password/theming.md) — Theming documentation for Password component
-- [PickList](references/styled/picklist/features.md) — PickList is used to transfer items between two lists with drag-drop and button controls.
-- [Popover](references/styled/popover/features.md) — Popover is an overlay container that displays content relative to a trigger.
-- [Popover Theming](references/styled/popover/theming.md) — Theming documentation for Popover component
-- [ProgressBar](references/styled/progressbar/features.md) — ProgressBar is a process status indicator.
-- [ProgressBar Theming](references/styled/progressbar/theming.md) — Theming documentation for ProgressBar component
-- [ProgressSpinner](references/styled/progressspinner/features.md) — ProgressSpinner is a process status indicator that supports both determinate and indeterminate modes.
-- [RadioButton](references/styled/radiobutton/features.md) — RadioButton is an extension to standard radio button element with theming.
-- [RadioButton Theming](references/styled/radiobutton/theming.md) — Theming documentation for RadioButton component
-- [Rating API](references/styled/rating/api.md) — API documentation for Rating component
-- [Rating](references/styled/rating/features.md) — Rating component is a star based selection input.
-- [Rating Theming](references/styled/rating/theming.md) — Theming documentation for Rating component
-- [ScrollArea](references/styled/scrollarea/features.md) — ScrollArea is a cross browser, lightweight and themable alternative to native browser scrollbar.
-- [ScrollArea Theming](references/styled/scrollarea/theming.md) — Theming documentation for ScrollArea component
-- [Select](references/styled/select/features.md) — Select is used to choose an item from a collection of options.
-- [Select Theming](references/styled/select/theming.md) — Theming documentation for Select component
-- [Sidebar](references/styled/sidebar/features.md) — Sidebar is a layout component for building application navigation with collapsible panels, multi-variant styling, and composable menu structures.
-- [Skeleton](references/styled/skeleton/features.md) — Skeleton is a placeholder to display instead of the actual content.
-- [Skeleton Theming](references/styled/skeleton/theming.md) — Theming documentation for Skeleton component
-- [Slider](references/styled/slider/features.md) — Slider is a component to provide input with a drag handle.
-- [Slider Theming](references/styled/slider/theming.md) — Theming documentation for Slider component
-- [SpeedDial](references/styled/speeddial/features.md) — SpeedDial is a floating action button with a popup menu displaying a set of actions.
-- [SpeedDial Theming](references/styled/speeddial/theming.md) — Theming documentation for SpeedDial component
-- [Splitter](references/styled/splitter/features.md) — Splitter is utilized to separate and resize panels.
-- [Splitter Theming](references/styled/splitter/theming.md) — Theming documentation for Splitter component
-- [Stepper](references/styled/stepper/features.md) — The Stepper component displays a wizard-like workflow by guiding users through the multi-step progression.
-- [Stepper Theming](references/styled/stepper/theming.md) — Theming documentation for Stepper component
-- [StyleClass](references/styled/styleclass/features.md) — StyleClass manages CSS classes on a target element with enter/leave animations triggered by user interaction.
-- [Switch](references/styled/switch/features.md) — Switch is used to select a boolean value.
-- [Switch Theming](references/styled/switch/theming.md) — Theming documentation for Switch component
-- [Tabs](references/styled/tabs/features.md) — Tabs is a component that displays a list of tabs and allows the user to select one.
-- [Tabs Theming](references/styled/tabs/theming.md) — Theming documentation for Tabs component
-- [Tag](references/styled/tag/features.md) — Tag component is used to categorize content.
-- [Tag Theming](references/styled/tag/theming.md) — Theming documentation for Tag component
-- [Terminal](references/styled/terminal/features.md) — Terminal is a text-based interface component that emulates a command line experience, enabling users to enter commands and receive responses.
-- [Terminal Theming](references/styled/terminal/theming.md) — Theming documentation for Terminal component
-- [Textarea](references/styled/textarea/features.md) — Textarea is a multi-line text input element.
-- [Textarea Theming](references/styled/textarea/theming.md) — Theming documentation for Textarea component
-- [Styled Mode](references/styled/theming/styled.md) — Choose from a variety of pre-styled themes or develop your own.
-- [Unstyled Mode](references/styled/theming/unstyled.md) — Build fully customizable components with complete control over styling by disabling default themes and implementing your own design system.
-- [Timeline](references/styled/timeline/features.md) — Timeline visualizes a series of chained events.
-- [Timeline Theming](references/styled/timeline/theming.md) — Theming documentation for Timeline component
-- [Toast](references/styled/toast/features.md) — Toast is a component that displays a message to the user.
-- [Toast Theming](references/styled/toast/theming.md) — Theming documentation for Toast component
-- [ToggleButton](references/styled/togglebutton/features.md) — ToggleButton component is used to create a button that can be toggled on or off.
-- [ToggleButton Theming](references/styled/togglebutton/theming.md) — Theming documentation for ToggleButton component
-- [ToggleButtonGroup](references/styled/togglebuttongroup/features.md) — ToggleButtonGroup component is used to create a group of toggle buttons.
-- [ToggleButton Theming](references/styled/togglebuttongroup/theming.md) — Theming documentation for ToggleButton component
-- [Toolbar](references/styled/toolbar/features.md) — Toolbar is a grouping component for buttons and other content.
-- [Toolbar Theming](references/styled/toolbar/theming.md) — Theming documentation for Toolbar component
-- [Tooltip](references/styled/tooltip/features.md) — Tooltip is a component that displays a tooltip when the user hovers over an element.
-- [Tooltip Theming](references/styled/tooltip/theming.md) — Theming documentation for Tooltip component
-- [Tree](references/styled/tree/features.md) — Tree is used to display hierarchical data.
-- [Tree Theming](references/styled/tree/theming.md) — Theming documentation for Tree component
+- [Add-Ons](references/styled/add-ons/introduction.md) — Premium templates, UI blocks and design tooling that build on top of PrimeReact.
+- [Accordion](references/styled/components/accordion.md) — Accordion groups content into collapsible panels.
+- [AnimateOnScroll](references/styled/components/animateonscroll.md) — AnimateOnScroll applies enter and leave animations to elements as they move in and out of the viewport during scroll.
+- [AutoComplete](references/styled/components/autocomplete.md) — AutoComplete is an input component that provides real-time suggestions when being typed.
+- [Avatar](references/styled/components/avatar.md) — Avatar represents people using icons, labels and images.
+- [Badge](references/styled/components/badge.md) — Badge is a small status indicator for another element.
+- [Breadcrumb](references/styled/components/breadcrumb.md) — Breadcrumb provides contextual information about page hierarchy.
+- [Button](references/styled/components/button.md) — Button is an extension to standard input element with icons and theming.
+- [ButtonGroup](references/styled/components/buttongroup.md) — ButtonGroup composes related buttons into a connected pill with shared corners and seams.
+- [Card](references/styled/components/card.md) — Card is a flexible container component.
+- [Carousel](references/styled/components/carousel.md) — Carousel is a content slider featuring various customization options.
+- [Checkbox](references/styled/components/checkbox.md) — Checkbox is an extension to standard checkbox element with theming.
+- [CheckboxGroup](references/styled/components/checkboxgroup.md) — CheckboxGroup groups multiple checkboxes and manages their shared value.
+- [Chip](references/styled/components/chip.md) — Chip represents entities using icons, labels and images.
+- [Compare](references/styled/components/compare.md) — Compare two items side by side with a slider.
+- [ContextMenu](references/styled/components/contextmenu.md) — A right-click triggered menu with keyboard navigation, nested submenus, and WAI-ARIA support.
+- [DataTable](references/styled/components/datatable.md) — DataTable displays data in tabular format with sorting, filtering, pagination and selection features.
+- [DataView](references/styled/components/dataview.md) — DataView displays data in grid or list layout with pagination and sorting features.
+- [DatePicker](references/styled/components/datepicker.md) — DatePicker is a form component to work with dates.
+- [Dialog](references/styled/components/dialog.md) — Dialog is a container to display content in an overlay window.
+- [Divider](references/styled/components/divider.md) — Divider is used to separate contents.
+- [Drawer](references/styled/components/drawer.md) — Drawer is a panel component displayed as an overlay at the edges of the screen.
+- [Fieldset](references/styled/components/fieldset.md) — Fieldset is a container component with a legend and optional collapsible content.
+- [FileUpload](references/styled/components/fileupload.md) — FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
+- [FloatLabel](references/styled/components/floatlabel.md) — FloatLabel visually integrates a label with its form element.
+- [FloatLabel API](references/styled/components/floatlabel/api.md) — API documentation for FloatLabel component
+- [Fluid](references/styled/components/fluid.md) — Fluid is a layout component to make descendant components span full width of their container.
+- [Fluid API](references/styled/components/fluid/api.md) — API documentation for Fluid component
+- [FocusTrap](references/styled/components/focustrap.md) — Focus Trap keeps focus within a certain DOM element while tabbing.
+- [Gallery](references/styled/components/gallery.md) — Gallery is a component to display a collection of images in a gallery.
+- [IconField](references/styled/components/iconfield.md) — IconField wraps an input and an icon.
+- [IconField API](references/styled/components/iconfield/api.md) — API documentation for IconField component
+- [IftaLabel](references/styled/components/iftalabel.md) — IftaLabel visually integrates a label with its form element.
+- [IftaLabel API](references/styled/components/iftalabel/api.md) — API documentation for IftaLabel component
+- [Inplace](references/styled/components/inplace.md) — Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
+- [InputColor](references/styled/components/inputcolor.md) — InputColor is a component that allows the user to select a color.
+- [InputGroup](references/styled/components/inputgroup.md) — InputGroup displays text, icon, buttons and other content can be grouped next to an input.
+- [InputGroup API](references/styled/components/inputgroup/api.md) — API documentation for InputGroup component
+- [InputMask](references/styled/components/inputmask.md) — InputMask is used to enter input in a certain format such as numeric, date, currency, email and phone.
+- [InputNumber](references/styled/components/inputnumber.md) — InputNumber is used to enter numeric values.
+- [InputOtp](references/styled/components/inputotp.md) — InputOtp is used to enter one time passwords.
+- [InputPassword](references/styled/components/inputpassword.md) — InputPassword is an enhanced input for password entry with strength metering, mask toggling, and controlled or uncontrolled usage.
+- [InputTags](references/styled/components/inputtags.md) — InputTags groups a collection of contents in items.
+- [InputText](references/styled/components/inputtext.md) — InputText is an extension to standard input element with icons and theming.
+- [KeyFilter](references/styled/components/keyfilter.md) — KeyFilter is used to block individual keystrokes based on a pattern.
+- [Knob](references/styled/components/knob.md) — Knob is a form component to define number inputs with a dial.
+- [Label](references/styled/components/label.md) — Label provides accessible text labels for form controls. Use `htmlFor` to link the label to a form control by its id.
+- [Label API](references/styled/components/label/api.md) — API documentation for Label component
+- [Listbox](references/styled/components/listbox.md) — Listbox is used to select one or more values from a list of items.
+- [Menu](references/styled/components/menu.md) — A keyboard-navigable dropdown menu with support for items, checkbox items, radio items, and nested submenus.
+- [Message](references/styled/components/message.md) — Message component is used to display inline messages.
+- [MeterGroup](references/styled/components/metergroup.md) — MeterGroup displays scalar measurements within a known range.
+- [NavigationMenu](references/styled/components/navigationmenu.md) — NavigationMenu coordinates multiple Menu instances horizontally or vertically, providing keyboard navigation between them and a single source of truth for which menu is open.
+- [OrderList](references/styled/components/orderlist.md) — OrderList is used to reorder items in a list using selection and drag-drop.
+- [OrganizationChart](references/styled/components/organizationchart.md) — OrganizationChart visualizes hierarchical organization data.
+- [OrganizationChart API](references/styled/components/organizationchart/api.md) — API documentation for OrganizationChart component
+- [OverlayManager](references/styled/components/overlaymanager.md) — OverlayManager opens overlay components imperatively from anywhere in your app.
+- [Paginator](references/styled/components/paginator.md) — Paginator displays data in paged format and provides navigation between pages.
+- [Panel](references/styled/components/panel.md) — Panel is a container component with optional collapsible content.
+- [PickList](references/styled/components/picklist.md) — PickList is used to transfer items between two lists with drag-drop and button controls.
+- [Popover](references/styled/components/popover.md) — Popover is an overlay container that displays content relative to a trigger.
+- [ProgressBar](references/styled/components/progressbar.md) — ProgressBar is a process status indicator.
+- [ProgressSpinner](references/styled/components/progressspinner.md) — ProgressSpinner is a process status indicator that supports both determinate and indeterminate modes.
+- [RadioButton](references/styled/components/radiobutton.md) — RadioButton is an extension to standard radio button element with theming.
+- [Rating](references/styled/components/rating.md) — Rating component is a star based selection input.
+- [Rating API](references/styled/components/rating/api.md) — API documentation for Rating component
+- [ScrollArea](references/styled/components/scrollarea.md) — ScrollArea is a cross browser, lightweight and themable alternative to native browser scrollbar.
+- [Select](references/styled/components/select.md) — Select is used to choose an item from a collection of options.
+- [Sidebar](references/styled/components/sidebar.md) — Sidebar is a layout component for building application navigation with collapsible panels, multi-variant styling, and composable menu structures.
+- [Skeleton](references/styled/components/skeleton.md) — Skeleton is a placeholder to display instead of the actual content.
+- [Slider](references/styled/components/slider.md) — Slider is a component to provide input with a drag handle.
+- [SpeedDial](references/styled/components/speeddial.md) — SpeedDial is a floating action button with a popup menu displaying a set of actions.
+- [Splitter](references/styled/components/splitter.md) — Splitter is utilized to separate and resize panels.
+- [Stepper](references/styled/components/stepper.md) — The Stepper component displays a wizard-like workflow by guiding users through the multi-step progression.
+- [Tabs](references/styled/components/tabs.md) — Tabs is a component that displays a list of tabs and allows the user to select one.
+- [Tag](references/styled/components/tag.md) — Tag component is used to categorize content.
+- [Terminal](references/styled/components/terminal.md) — Terminal is a text-based interface component that emulates a command line experience, enabling users to enter commands and receive responses.
+- [Textarea](references/styled/components/textarea.md) — Textarea is a multi-line text input element.
+- [Timeline](references/styled/components/timeline.md) — Timeline visualizes a series of chained events.
+- [Toast](references/styled/components/toast.md) — Toast is a component that displays a message to the user.
+- [ToggleButton](references/styled/components/togglebutton.md) — ToggleButton component is used to create a button that can be toggled on or off.
+- [ToggleButtonGroup](references/styled/components/togglebuttongroup.md) — ToggleButtonGroup component is used to create a group of toggle buttons.
+- [ToggleSwitch](references/styled/components/toggleswitch.md) — ToggleSwitch is used to select a boolean value.
+- [Toolbar](references/styled/components/toolbar.md) — Toolbar is a grouping component for buttons and other content.
+- [Tooltip](references/styled/components/tooltip.md) — Tooltip is a component that displays a tooltip when the user hovers over an element.
+- [Tree](references/styled/components/tree.md) — Tree is used to display hierarchical data.
+- [Tree Theming](references/styled/components/tree/theming.md) — Theming documentation for Tree component
+- [TreeTable](references/styled/components/treetable.md) — TreeTable renders hierarchical data with the same feature set as DataTable, sort, filter, pagination, selection, scroll, frozen, resize, reorder, editing, export.
+- [Configuration](references/styled/guides/configuration.md) — Application wide configuration for PrimeReact.
+- [Custom Icons](references/styled/guides/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
+- [Prime Icons](references/styled/guides/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
+- [Installation](references/styled/guides/installation.md) — How to set up PrimeReact in your project. Select your framework to get started.
+- [With Astro](references/styled/guides/installation/astro.md) — Setting up PrimeReact in an Astro project.
+- [Manual](references/styled/guides/installation/manual.md) — Setting up PrimeReact manually in any project.
+- [With Next.js](references/styled/guides/installation/nextjs.md) — Setting up PrimeReact in a Next.js project.
+- [With React Router](references/styled/guides/installation/react-router.md) — Setting up PrimeReact in a React Router project.
+- [With TanStack](references/styled/guides/installation/tanstack.md) — Setting up PrimeReact in a TanStack Start project.
+- [With Vite](references/styled/guides/installation/vite.md) — Setting up PrimeReact in a Vite project.
+- [Styled](references/styled/guides/introduction.md) — Pre-themed React components built on top of the headless layer. Drop them in and they look good out of the box.
+- [Accessibility](references/styled/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Animations](references/styled/guides/misc/animations.md) — Built-in CSS animations for PrimeReact components.
+- [Pass Through](references/styled/guides/misc/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
+- [RTL Support](references/styled/guides/misc/rtl.md) — Right-to-left direction support of PrimeReact.
+- [Styled Mode](references/styled/guides/theming/styled.md) — Choose from a variety of pre-styled themes or develop your own.
+- [Tailwind CSS](references/styled/guides/theming/tailwind.md) — Integration between PrimeReact and Tailwind CSS both in styled and unstyled modes.
+- [Unstyled Mode](references/styled/guides/theming/unstyled.md) — Build fully customizable components with complete control over styling by disabling default themes and implementing your own design system.
+- [Resources](references/styled/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
 
 ## Primitive
 
-- [Accordion](references/primitive/accordion/features.md) — An unstyled, accessible accordion component with compound composition.
-- [AnimateOnScroll](references/primitive/animateonscroll/features.md) — An unstyled component that applies CSS animations to elements entering or leaving the viewport.
-- [AutoComplete](references/primitive/autocomplete/features.md) — An unstyled autocomplete input component with real-time search, keyboard navigation, and popup positioning.
-- [Avatar](references/primitive/avatar/features.md) — An unstyled avatar component with compound composition and group support.
-- [Badge](references/primitive/badge/features.md) — An unstyled badge component for displaying status indicators.
-- [Breadcrumb](references/primitive/breadcrumb/features.md) — An unstyled breadcrumb component for building navigational hierarchies with full control over layout and styling.
-- [Button](references/primitive/button/features.md) — An unstyled button component with compound composition and group support.
-- [Card](references/primitive/card/features.md) — An unstyled, flexible container component with compound composition.
-- [Carousel](references/primitive/carousel/features.md) — An unstyled, accessible carousel component with compound composition.
-- [Checkbox](references/primitive/checkbox/features.md) — An unstyled, accessible checkbox component with compound composition and group support.
-- [Chip](references/primitive/chip/features.md) — An unstyled chip component with compound composition for representing entities.
-- [Collapsible](references/primitive/collapsible/features.md) — An unstyled collapsible component for building expand/collapse interfaces with full control over layout and styling.
-- [CommandMenu](references/primitive/commandmenu/features.md) — An unstyled searchable command palette with grouped items and keyboard navigation.
-- [Compare](references/primitive/compare/features.md) — An unstyled, accessible before/after comparison component with compound composition.
-- [ConfirmDialog](references/primitive/confirmdialog/features.md) — An unstyled confirmation dialog component with icon, message, and action button composition.
-- [ConfirmPopup](references/primitive/confirmpopup/features.md) — An unstyled confirm popup component with alertdialog role, focus management, and outside click dismissal.
-- [ContextMenu](references/primitive/contextmenu/features.md) — An unstyled, accessible context menu component with compound composition for right-click actions.
-- [DataView](references/primitive/dataview/features.md) — An unstyled data container component for building list and grid layouts with full control over presentation.
-- [DatePicker](references/primitive/datepicker/features.md) — An unstyled date picker component with calendar navigation, view switching, and time selection.
-- [Dialog](references/primitive/dialog/features.md) — An unstyled modal dialog component with built-in focus trap, scroll lock, drag support, and dismissable backdrop.
-- [Divider](references/primitive/divider/features.md) — An unstyled separator component with compound composition for horizontal and vertical content division.
-- [Drawer](references/primitive/drawer/features.md) — An unstyled slide-in panel component with built-in focus trap, scroll lock, and dismissable backdrop.
-- [Fieldset](references/primitive/fieldset/features.md) — An unstyled, accessible fieldset component with semantic legend and optional collapsible content.
-- [FileUpload](references/primitive/fileupload/features.md) — An unstyled file upload component with drag-and-drop, validation, and progress tracking.
-- [FocusTrap](references/primitive/focustrap/features.md) — An unstyled component that traps keyboard focus within its container.
-- [Gallery](references/primitive/gallery/features.md) — An unstyled, accessible gallery component with compound composition.
-- [Inplace](references/primitive/inplace/features.md) — An unstyled, accessible inline editing component with compound composition.
-- [InputColor](references/primitive/inputcolor/features.md) — An unstyled, accessible color picker component with compound composition.
-- [InputNumber](references/primitive/inputnumber/features.md) — An unstyled numeric input with formatting, locale support, and spin button behavior.
-- [InputOtp](references/primitive/inputotp/features.md) — An unstyled OTP input component with automatic focus management and keyboard navigation.
-- [InputTags](references/primitive/inputtags/features.md) — An unstyled tag input component with keyboard navigation, delimiter support, and optional typeahead suggestions.
-- [InputText](references/primitive/inputtext/features.md) — An unstyled text input component with data attributes and native input semantics.
-- [Knob](references/primitive/knob/features.md) — An unstyled circular dial component for numeric input with SVG-based rendering.
-- [Listbox](references/primitive/listbox/features.md) — An unstyled listbox component with keyboard navigation, type-ahead search, and single or multiple selection.
-- [Menu](references/primitive/menu/features.md) — An unstyled, accessible menu component with compound composition for inline and popup navigation.
-- [Message](references/primitive/message/features.md) — An unstyled message component for displaying inline notifications with close and auto-dismiss support.
-- [MeterGroup](references/primitive/metergroup/features.md) — An unstyled meter group component for visualizing scalar measurements within a range.
-- [Motion](references/primitive/motion/features.md) — Configure enter/leave animations on primitive components with motionProps.
-- [Paginator](references/primitive/paginator/features.md) — An unstyled, accessible paginator component with compound composition.
-- [Panel](references/primitive/panel/features.md) — An unstyled, accessible panel component with optional collapsible content.
-- [Password](references/primitive/password/features.md) — An unstyled password input with mask toggling and controlled or uncontrolled value state.
-- [Popover](references/primitive/popover/features.md) — An unstyled popover component with positioning, focus management, and outside click dismissal.
-- [Portal](references/primitive/portal/features.md) — An unstyled utility component that renders content into a DOM node outside the component hierarchy.
-- [ProgressBar](references/primitive/progressbar/features.md) — An unstyled progress bar component for displaying process completion status.
-- [ProgressSpinner](references/primitive/progressspinner/features.md) — An unstyled, accessible circular progress component with compound composition.
-- [RadioButton](references/primitive/radiobutton/features.md) — An unstyled, accessible radio button component with compound composition and group support.
-- [Rating](references/primitive/rating/features.md) — An unstyled, accessible rating component with compound composition for star-based selection input.
-- [ScrollArea](references/primitive/scrollarea/features.md) — An unstyled, accessible scroll area component with custom scrollbar support.
-- [Select](references/primitive/select/features.md) — An unstyled select dropdown component with keyboard navigation, filtering, and single or multiple selection.
-- [Sidebar](references/primitive/sidebar/features.md) — An unstyled layout component for building application navigation with collapsible panels, multi-variant styling, and composable menu structures.
-- [Skeleton](references/primitive/skeleton/features.md) — An unstyled placeholder component for displaying loading states.
-- [Slider](references/primitive/slider/features.md) — An unstyled, accessible slider component with compound composition.
-- [SpeedDial](references/primitive/speeddial/features.md) — An unstyled, accessible speed dial component with compound composition.
-- [Splitter](references/primitive/splitter/features.md) — An unstyled resizable panel layout component with pointer and keyboard-driven sizing.
-- [Stepper](references/primitive/stepper/features.md) — An unstyled, accessible stepper component with compound composition for multi-step workflows.
-- [Switch](references/primitive/switch/features.md) — An unstyled, accessible switch toggle component with compound composition.
-- [Tabs](references/primitive/tabs/features.md) — An unstyled tab component with keyboard navigation and scrollable overflow support.
-- [Tag](references/primitive/tag/features.md) — An unstyled, accessible tag component for categorizing content.
-- [Terminal](references/primitive/terminal/features.md) — An unstyled terminal component for building command-line style interfaces with full control over layout and styling.
-- [Textarea](references/primitive/textarea/features.md) — An unstyled multi-line text input component with auto-resize support.
-- [Timeline](references/primitive/timeline/features.md) — An unstyled timeline component for visualizing sequential events with full control over layout and styling.
-- [Toast](references/primitive/toast/features.md) — An unstyled, accessible toast notification system with compound composition.
-- [ToggleButton](references/primitive/togglebutton/features.md) — An unstyled toggle button component with group selection support for single and multiple modes.
-- [Toolbar](references/primitive/toolbar/features.md) — An unstyled toolbar component with compound composition for grouping actions.
-- [Tooltip](references/primitive/tooltip/features.md) — An unstyled tooltip component with hover/focus triggers, delay management, and group transitions.
-- [Tree](references/primitive/tree/features.md) — An unstyled, accessible tree component with compound composition for hierarchical data.
-- [VisuallyHidden](references/primitive/visuallyhidden/features.md) — A utility component that hides content visually while keeping it accessible to screen readers.
+- [Add-Ons](references/primitive/add-ons/introduction.md) — Premium templates, UI blocks and design tooling that build on top of PrimeReact.
+- [Accordion](references/primitive/components/accordion.md) — An unstyled, accessible accordion component with compound composition.
+- [AnimateOnScroll](references/primitive/components/animateonscroll.md) — An unstyled component that applies CSS animations to elements entering or leaving the viewport.
+- [AutoComplete](references/primitive/components/autocomplete.md) — An unstyled autocomplete input component with real-time search, keyboard navigation, and popup positioning.
+- [Avatar](references/primitive/components/avatar.md) — An unstyled avatar component with compound composition and group support.
+- [Badge](references/primitive/components/badge.md) — An unstyled badge component for displaying status indicators.
+- [Breadcrumb](references/primitive/components/breadcrumb.md) — An unstyled breadcrumb component for building navigational hierarchies with full control over layout and styling.
+- [Button](references/primitive/components/button.md) — An unstyled button component with compound composition and group support.
+- [ButtonGroup](references/primitive/components/buttongroup.md) — An unstyled container that groups related buttons into a single connected unit.
+- [Card](references/primitive/components/card.md) — An unstyled, flexible container component with compound composition.
+- [Carousel](references/primitive/components/carousel.md) — An unstyled, accessible carousel component with compound composition.
+- [Checkbox](references/primitive/components/checkbox.md) — An unstyled, accessible checkbox component with compound composition and group support.
+- [CheckboxGroup](references/primitive/components/checkboxgroup.md) — An unstyled container that groups multiple checkboxes and manages their shared value array.
+- [Chip](references/primitive/components/chip.md) — An unstyled chip component with compound composition for representing entities.
+- [Collapsible](references/primitive/components/collapsible.md) — An unstyled collapsible component for building expand/collapse interfaces with full control over layout and styling.
+- [Compare](references/primitive/components/compare.md) — An unstyled, accessible before/after comparison component with compound composition.
+- [ContextMenu](references/primitive/components/contextmenu.md) — An unstyled, accessible context menu component with compound composition for right-click actions.
+- [DataTable](references/primitive/components/datatable.md) — An unstyled data table with sort, filter, pagination, selection, expansion, editing, column reorder/resize, row reorder, grouping, frozen sections, CSV export, and tree mode.
+- [DataView](references/primitive/components/dataview.md) — An unstyled data container component for building list and grid layouts with full control over presentation.
+- [DatePicker](references/primitive/components/datepicker.md) — An unstyled date picker component with calendar navigation, view switching, and time selection.
+- [Dialog](references/primitive/components/dialog.md) — An unstyled modal dialog component with built-in focus trap, scroll lock, drag support, and dismissable backdrop.
+- [Divider](references/primitive/components/divider.md) — An unstyled separator component for horizontal and vertical content division.
+- [Drawer](references/primitive/components/drawer.md) — An unstyled slide-in panel component with built-in focus trap, scroll lock, and dismissable backdrop.
+- [Fieldset](references/primitive/components/fieldset.md) — An unstyled, accessible fieldset component with semantic legend and optional collapsible content.
+- [FileUpload](references/primitive/components/fileupload.md) — An unstyled file upload component with drag-and-drop, validation, and progress tracking.
+- [FloatLabel](references/primitive/components/floatlabel.md) — An unstyled wrapper that visually integrates a label with its form element.
+- [FocusTrap](references/primitive/components/focustrap.md) — An unstyled component that traps keyboard focus within its container.
+- [Gallery](references/primitive/components/gallery.md) — An unstyled, accessible gallery component with compound composition.
+- [IconField](references/primitive/components/iconfield.md) — An unstyled compound component that wraps an input together with an icon.
+- [IftaLabel](references/primitive/components/iftalabel.md) — An unstyled wrapper that creates an infield top-aligned label for its form element.
+- [Inplace](references/primitive/components/inplace.md) — An unstyled, accessible inline editing component with compound composition.
+- [InputColor](references/primitive/components/inputcolor.md) — An unstyled, accessible color picker component with compound composition.
+- [InputNumber](references/primitive/components/inputnumber.md) — An unstyled numeric input with formatting, locale support, and spin button behavior.
+- [InputOtp](references/primitive/components/inputotp.md) — An unstyled OTP input component with automatic focus management and keyboard navigation.
+- [InputPassword](references/primitive/components/inputpassword.md) — An unstyled password input with mask toggling and controlled or uncontrolled value state.
+- [InputTags](references/primitive/components/inputtags.md) — An unstyled tag input component with keyboard navigation, delimiter support, and optional typeahead suggestions.
+- [InputText](references/primitive/components/inputtext.md) — An unstyled text input component with data attributes and native input semantics.
+- [Knob](references/primitive/components/knob.md) — An unstyled circular dial component for numeric input with SVG-based rendering.
+- [Label](references/primitive/components/label.md) — An unstyled, accessible label element for form controls.
+- [Listbox](references/primitive/components/listbox.md) — An unstyled listbox component with keyboard navigation, type-ahead search, and single or multiple selection.
+- [Menu](references/primitive/components/menu.md) — An unstyled, accessible menu component with compound composition for inline and popup navigation.
+- [Message](references/primitive/components/message.md) — An unstyled message component for displaying inline notifications with close and auto-dismiss support.
+- [MeterGroup](references/primitive/components/metergroup.md) — Unstyled meter group primitive for scalar measurements within a range.
+- [Motion](references/primitive/components/motion.md) — Configure enter/leave animations on primitive components with motionProps.
+- [NavigationMenu](references/primitive/components/navigationmenu.md) — An unstyled, accessible horizontal menu bar that coordinates multiple Menu instances with keyboard navigation between them.
+- [OrganizationChart](references/primitive/components/organizationchart.md) — Unstyled, accessible org-chart primitive with a compound API.
+- [Paginator](references/primitive/components/paginator.md) — An unstyled, accessible paginator component with compound composition.
+- [Panel](references/primitive/components/panel.md) — An unstyled, accessible panel component with optional collapsible content.
+- [Popover](references/primitive/components/popover.md) — An unstyled popover component with positioning, focus management, and outside click dismissal.
+- [Portal](references/primitive/components/portal.md) — An unstyled utility component that renders content into a DOM node outside the component hierarchy.
+- [ProgressBar](references/primitive/components/progressbar.md) — An unstyled progress bar component for displaying process completion status.
+- [ProgressSpinner](references/primitive/components/progressspinner.md) — An unstyled, accessible circular progress component with compound composition.
+- [RadioButton](references/primitive/components/radiobutton.md) — An unstyled, accessible radio button component with compound composition and group support.
+- [Rating](references/primitive/components/rating.md) — An unstyled, accessible rating component with compound composition for star-based selection input.
+- [ScrollArea](references/primitive/components/scrollarea.md) — An unstyled, accessible scroll area component with custom scrollbar support.
+- [Select](references/primitive/components/select.md) — An unstyled select dropdown component with keyboard navigation, filtering, and single or multiple selection.
+- [Sidebar](references/primitive/components/sidebar.md) — An unstyled layout component for building application navigation with collapsible panels, multi-variant styling, and composable menu structures.
+- [Skeleton](references/primitive/components/skeleton.md) — An unstyled placeholder component for displaying loading states.
+- [Slider](references/primitive/components/slider.md) — An unstyled, accessible slider component with compound composition.
+- [SpeedDial](references/primitive/components/speeddial.md) — An unstyled, accessible speed dial component with compound composition.
+- [Splitter](references/primitive/components/splitter.md) — An unstyled resizable panel layout component with pointer and keyboard-driven sizing.
+- [Stepper](references/primitive/components/stepper.md) — An unstyled, accessible stepper component with compound composition for multi-step workflows.
+- [StyleClass](references/primitive/components/styleclass.md) — StyleClass manages CSS classes on a target element with enter/leave animations triggered by user interaction.
+- [Tabs](references/primitive/components/tabs.md) — An unstyled tab component with keyboard navigation and scrollable overflow support.
+- [Tag](references/primitive/components/tag.md) — An unstyled, accessible tag component for categorizing content.
+- [Terminal](references/primitive/components/terminal.md) — An unstyled terminal component for building command-line style interfaces with full control over layout and styling.
+- [Textarea](references/primitive/components/textarea.md) — An unstyled multi-line text input component with auto-resize support.
+- [Timeline](references/primitive/components/timeline.md) — An unstyled timeline component for visualizing sequential events with full control over layout and styling.
+- [Toast](references/primitive/components/toast.md) — An unstyled, accessible toast notification system with compound composition.
+- [ToggleButton](references/primitive/components/togglebutton.md) — An unstyled toggle button component with group selection support for single and multiple modes.
+- [ToggleButtonGroup](references/primitive/components/togglebuttongroup.md) — An unstyled container that groups multiple toggle buttons with single or multiple selection.
+- [ToggleSwitch](references/primitive/components/toggleswitch.md) — An unstyled, accessible toggle switch component with compound composition.
+- [Toolbar](references/primitive/components/toolbar.md) — An unstyled toolbar component with compound composition for grouping actions.
+- [Tooltip](references/primitive/components/tooltip.md) — An unstyled tooltip component with hover/focus triggers, delay management, and group transitions.
+- [Tree](references/primitive/components/tree.md) — Unstyled, accessible tree primitive with a compound API.
+- [TreeTable](references/primitive/components/treetable.md) — An unstyled hierarchical data table built on DataTable with treeMode enabled, sort, filter, paginate, select, expand, and edit tree-shaped data.
+- [VisuallyHidden](references/primitive/components/visuallyhidden.md) — A utility component that hides content visually while keeping it accessible to screen readers.
+- [Custom Icons](references/primitive/guides/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
+- [Prime Icons](references/primitive/guides/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
+- [Installation](references/primitive/guides/installation.md) — Install the primitive package and compose unstyled components in your React project.
+- [Primitive](references/primitive/guides/introduction.md) — Unstyled React components with composable subcomponents. Behavior included, styling up to you.
+- [Accessibility](references/primitive/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Pass Through](references/primitive/guides/misc/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
+- [RTL Support](references/primitive/guides/misc/rtl.md) — Right-to-left direction support of PrimeReact.
+- [Resources](references/primitive/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
 
 ## Headless
 
-- [useAccordion](references/headless/accordion/features.md) — Hooks that manage accordion state, keyboard navigation, and ARIA attributes.
-- [useAnimateOnScroll](references/headless/animateonscroll/features.md) — Hook that applies enter and leave CSS animations to elements based on viewport intersection.
-- [useAutoComplete](references/headless/autocomplete/features.md) — Hook that manages autocomplete state, search callbacks, and popup positioning for combobox inputs.
-- [useAvatar](references/headless/avatar/features.md) — Hooks that manage avatar image loading state and group layout.
-- [useBadge](references/headless/badge/features.md) — Hook that provides data attributes and prop spreading for badge elements.
-- [useBreadcrumb](references/headless/breadcrumb/features.md) — Hook that provides semantic ARIA attributes and data attributes for breadcrumb navigation.
-- [useButton](references/headless/button/features.md) — Hook that provides data attributes and prop spreading for button elements.
-- [useCard](references/headless/card/features.md) — Headless hook for building flexible card containers with custom markup.
-- [useCarousel](references/headless/carousel/features.md) — Hook that manages carousel scroll snapping, swipe gestures, and page-based navigation.
-- [useCheckbox](references/headless/checkbox/features.md) — Hooks that manage checkbox and checkbox group state, indeterminate logic, and ARIA attributes.
-- [useChip](references/headless/chip/features.md) — Headless hook for building removable chip elements with custom markup.
-- [useCollapsible](references/headless/collapsible/features.md) — Hook that manages open/close state, toggle behavior, and ARIA attributes for collapsible content.
-- [useCommandMenu](references/headless/commandmenu/features.md) — Hook that manages a searchable command palette with filtered options, keyboard navigation, and grouped items.
-- [useCompare](references/headless/compare/features.md) — Hook that manages compare slider state, pointer interactions, and clip-path positioning.
-- [ConfirmDialog](references/headless/confirmdialog/features.md) — Headless hook for building confirmation dialog overlays with icon, message, and action button support.
-- [useConfirmPopup](references/headless/confirmpopup/features.md) — Hook that manages confirm popup state, outside click dismissal, escape key handling, and focus management.
-- [useContextMenu](references/headless/contextmenu/features.md) — Hooks that manage context menu state, right-click positioning, keyboard navigation, and submenu coordination.
-- [useDataView](references/headless/dataview/features.md) — Hook that manages layout state and provides a locale-aware sort utility for data presentation.
-- [useDatePicker](references/headless/datepicker/features.md) — Hook that manages date picker state, calendar navigation, view switching, and popup positioning.
-- [useDialog](references/headless/dialog/features.md) — Hook that manages dialog open/close state, focus trapping, dragging, scroll lock, and z-index layering.
-- [useDivider](references/headless/divider/features.md) — Headless hook for building content separators with custom markup.
-- [Drawer](references/headless/drawer/features.md) — Headless hook for building slide-in panel overlays with focus trap, scroll lock, and dismissable backdrop.
-- [useFieldset](references/headless/fieldset/features.md) — Hook that manages collapsible fieldset state and ARIA attributes.
-- [useFileUpload](references/headless/fileupload/features.md) — Hook that manages file selection, validation, upload progress, and drag-and-drop state.
-- [FocusTrap](references/headless/focustrap/features.md) — Headless hook for trapping keyboard focus within a container element.
-- [useGallery](references/headless/gallery/features.md) — Hook that manages image gallery navigation, zoom, rotation, flip, and fullscreen state.
-- [useInplace](references/headless/inplace/features.md) — Hook that manages inline display-to-edit toggling with keyboard and state support.
-- [useInputColor](references/headless/inputcolor/features.md) — Hook that manages color selection state, 2D area interaction, channel sliders, and accessible color input behavior.
-- [useInputNumber](references/headless/inputnumber/features.md) — Hook that manages numeric input with formatting, locale support, and spin button behavior.
-- [useInputOtp](references/headless/inputotp/features.md) — Hook that manages OTP input state, focus navigation, and keyboard handling.
-- [useInputTags](references/headless/inputtags/features.md) — Hook that manages tag input state, keyboard navigation, and optional typeahead suggestions.
-- [useInputText](references/headless/inputtext/features.md) — Hook that provides data attributes and prop spreading for text input elements.
-- [useKnob](references/headless/knob/features.md) — Hook that manages circular dial state, SVG arc computation, and keyboard/mouse/touch interaction.
-- [useListbox](references/headless/listbox/features.md) — Hook that manages listbox selection state, keyboard navigation, and option search.
-- [useMenu](references/headless/menu/features.md) — Hook that manages menu state, keyboard navigation, focus tracking, and submenu coordination.
-- [useMessage](references/headless/message/features.md) — Hook that manages message visibility with auto-close timer and close callback.
-- [useMeterGroup](references/headless/metergroup/features.md) — Hook that manages meter value aggregation and percentage calculation within a defined range.
-- [useMotion](references/headless/motion/features.md) — Hook that manages enter/leave animations with CSS class transitions and visibility control.
-- [useOrderList](references/headless/orderlist/features.md) — A headless hook that manages list ordering with selection-based controls and optional drag-and-drop support.
-- [usePaginator](references/headless/paginator/features.md) — Hook that manages pagination state, page calculations, and accessible navigation prop objects.
-- [usePanel](references/headless/panel/features.md) — Hook that manages collapsible panel state and ARIA attributes.
-- [usePassword](references/headless/password/features.md) — Hook that manages password input with mask toggling and controlled or uncontrolled value state.
-- [usePickList](references/headless/picklist/features.md) — A headless hook that manages two lists with transfer, reorder, and optional drag-and-drop between them.
-- [usePopover](references/headless/popover/features.md) — Hook that manages popover open state, outside click dismissal, escape key handling, and focus management.
-- [usePortal](references/headless/portal/features.md) — Hook that tracks client-side mount state for SSR-safe portal rendering.
-- [usePositioner](references/headless/positioner/features.md) — Hook that positions a floating element relative to an anchor with automatic flip, shift, and arrow support.
-- [useProgressBar](references/headless/progressbar/features.md) — Hook that normalizes progress values to a percentage range and provides ARIA attributes.
-- [useProgressSpinner](references/headless/progressspinner/features.md) — Hook that manages circular progress state, SVG geometry computation, and determinate/indeterminate modes.
-- [useRadioButton](references/headless/radiobutton/features.md) — Hooks that manage radio button and radio button group state, checked logic, and ARIA attributes.
-- [useRating](references/headless/rating/features.md) — Hooks that manage rating state, hover interactions, and value resolution for star-based selection input.
-- [useScrollArea](references/headless/scrollarea/features.md) — Hook that manages custom scrollbar state, overflow detection, and thumb positioning.
-- [useSelect](references/headless/select/features.md) — Hook that manages select dropdown state, keyboard navigation, and popup positioning.
-- [useSidebar](references/headless/sidebar/features.md) — Headless hooks for managing sidebar state, collapse behavior, layout coordination, and collapsible menu items.
-- [useSkeleton](references/headless/skeleton/features.md) — Hook that provides data attributes for building custom placeholder loading elements.
-- [useSlider](references/headless/slider/features.md) — Hook that manages slider state, pointer dragging, and accessible range input behavior.
-- [useSpeedDial](references/headless/speeddial/features.md) — Hook that manages speed dial state, keyboard navigation, and directional positioning.
-- [useSplitter](references/headless/splitter/features.md) — Hook that manages resizable panel layout with keyboard navigation and pointer-based resizing.
-- [useStepper](references/headless/stepper/features.md) — A hook that manages stepper state, step navigation, and ARIA attributes.
-- [useStyleClass](references/headless/styleclass/features.md) — Hook that manages CSS class toggling with enter/leave animation sequences on a target element.
-- [useSwitch](references/headless/switch/features.md) — Hook that manages switch toggle state, checked/unchecked logic, and ARIA attributes.
-- [useTabs](references/headless/tabs/features.md) — Hook that manages tab selection state, keyboard navigation, and scrollable overflow.
-- [useTag](references/headless/tag/features.md) — Hook that provides data attributes for building custom categorization labels.
-- [useTerminal](references/headless/terminal/features.md) — Hook that manages command execution, input state, and command history for a terminal-style interface.
-- [useTextarea](references/headless/textarea/features.md) — Hook that provides auto-resize logic and data attributes for textarea elements.
-- [useTimeline](references/headless/timeline/features.md) — Hook that provides data attributes for alignment and orientation of timeline layouts.
-- [useToast](references/headless/toast/features.md) — Hooks that manage toast notification state, swipe dismissal, auto-timeout, and stacking behavior.
-- [useToggleButton](references/headless/togglebutton/features.md) — Hooks that manage toggle button pressed state and group value selection with single or multiple modes.
-- [useToolbar](references/headless/toolbar/features.md) — Headless hook for building toolbar containers with custom markup.
-- [useTooltip](references/headless/tooltip/features.md) — Hook that manages tooltip open state, hover/focus triggers, delay timing, and group transitions.
-- [useTree](references/headless/tree/features.md) — Hooks that manage tree state, keyboard navigation, selection, and drag-drop.
+- [Add-Ons](references/headless/add-ons/introduction.md) — Premium templates, UI blocks and design tooling that build on top of PrimeReact.
+- [useAccordion](references/headless/components/accordion.md) — Hooks that manage accordion state, keyboard navigation, and ARIA attributes.
+- [useAnimateOnScroll](references/headless/components/animateonscroll.md) — Hook that applies enter and leave CSS animations to elements based on viewport intersection.
+- [useAutoComplete](references/headless/components/autocomplete.md) — Hook that manages autocomplete state, search callbacks, and popup positioning for combobox inputs.
+- [useAvatar](references/headless/components/avatar.md) — Hooks that manage avatar image loading state and group layout.
+- [useBadge](references/headless/components/badge.md) — Hook that provides data attributes and prop spreading for badge elements.
+- [useBreadcrumb](references/headless/components/breadcrumb.md) — Hook that provides semantic ARIA attributes and data attributes for breadcrumb navigation.
+- [useButton](references/headless/components/button.md) — Hook that provides data attributes and prop spreading for button elements.
+- [useCard](references/headless/components/card.md) — Headless hook for building flexible card containers with custom markup.
+- [useCarousel](references/headless/components/carousel.md) — Hook that manages carousel scroll snapping, swipe gestures, and page-based navigation.
+- [useCheckbox](references/headless/components/checkbox.md) — Hooks that manage checkbox and checkbox group state, indeterminate logic, and ARIA attributes.
+- [useChip](references/headless/components/chip.md) — Headless hook for building removable chip elements with custom markup.
+- [useCollapsible](references/headless/components/collapsible.md) — Hook that manages open/close state, toggle behavior, and ARIA attributes for collapsible content.
+- [useCompare](references/headless/components/compare.md) — Hook that manages compare slider state, pointer interactions, and clip-path positioning.
+- [useContextMenu](references/headless/components/contextmenu.md) — Hooks that manage context menu state, right-click positioning, keyboard navigation, and submenu coordination.
+- [useDataTable](references/headless/components/datatable.md) — Hook that manages tabular data with sort, filter, pagination, selection, expansion, editing, column/row reorder, resize, and tree-mode flattening.
+- [useDataView](references/headless/components/dataview.md) — Hook that manages layout state and provides a locale-aware sort utility for data presentation.
+- [useDatePicker](references/headless/components/datepicker.md) — Hook that manages date picker state, calendar navigation, view switching, and popup positioning.
+- [useDialog](references/headless/components/dialog.md) — Hook that manages dialog open/close state, focus trapping, dragging, scroll lock, and z-index layering.
+- [useDivider](references/headless/components/divider.md) — Headless hook for building content separators with custom markup.
+- [useDrawer](references/headless/components/drawer.md) — Hook that manages slide-in panel overlays with focus trap, scroll lock, and dismissable backdrop.
+- [useFieldset](references/headless/components/fieldset.md) — Hook that manages collapsible fieldset state and ARIA attributes.
+- [useFileUpload](references/headless/components/fileupload.md) — Hook that manages file selection, validation, upload progress, and drag-and-drop state.
+- [useFloatLabel](references/headless/components/floatlabel.md) — Hook that coordinates an input and a floating label with focus and value state.
+- [useFluid](references/headless/components/fluid.md) — Hook that propagates fluid sizing context to descendant form components.
+- [FocusTrap](references/headless/components/focustrap.md) — Headless hook for trapping keyboard focus within a container element.
+- [useGallery](references/headless/components/gallery.md) — Hook that manages image gallery navigation, zoom, rotation, flip, and fullscreen state.
+- [useIconField](references/headless/components/iconfield.md) — Hook that positions an icon inside an input field boundary.
+- [useIftaLabel](references/headless/components/iftalabel.md) — Hook that positions a top-aligned label inside the input field boundary.
+- [useInplace](references/headless/components/inplace.md) — Hook that manages inline display-to-edit toggling with keyboard and state support.
+- [useInputColor](references/headless/components/inputcolor.md) — Hook that manages color selection state, 2D area interaction, channel sliders, and accessible color input behavior.
+- [useInputGroup](references/headless/components/inputgroup.md) — Hook that composes input fields with adjacent addon elements.
+- [useInputNumber](references/headless/components/inputnumber.md) — Hook that manages numeric input with formatting, locale support, and spin button behavior.
+- [useInputOtp](references/headless/components/inputotp.md) — Hook that manages OTP input state, focus navigation, and keyboard handling.
+- [useInputPassword](references/headless/components/inputpassword.md) — Hook that manages password input with mask toggling and controlled or uncontrolled value state.
+- [useInputTags](references/headless/components/inputtags.md) — Hook that manages tag input state and keyboard navigation between chips.
+- [useInputText](references/headless/components/inputtext.md) — Hook that provides data attributes and prop spreading for text input elements.
+- [useKnob](references/headless/components/knob.md) — Hook that manages circular dial state, SVG arc computation, and keyboard/mouse/touch interaction.
+- [useLabel](references/headless/components/label.md) — Hook that associates a label with an input control via id and htmlFor.
+- [useListbox](references/headless/components/listbox.md) — Hook that manages listbox selection state, keyboard navigation, and option search.
+- [useMenu](references/headless/components/menu.md) — Hook that manages menu state, keyboard navigation, focus tracking, and submenu coordination.
+- [useMessage](references/headless/components/message.md) — Hook that manages message visibility with auto-close timer and close callback.
+- [useMeterGroup](references/headless/components/metergroup.md) — Hook that manages meter value aggregation and percentage calculation within a defined range.
+- [useMotion](references/headless/components/motion.md) — Hook that manages enter/leave animations with CSS class transitions and visibility control.
+- [useNavigationMenu](references/headless/components/navigationmenu.md) — Hook that coordinates multiple useMenu instances inside a horizontal navigation bar with sibling traversal and single-open-at-a-time behavior.
+- [useOrderList](references/headless/components/orderlist.md) — A headless hook that manages list ordering with selection-based controls and optional drag-and-drop support.
+- [useOrganizationChart](references/headless/components/organizationchart.md) — Headless org-chart hook that manages collapse and selection state.
+- [usePaginator](references/headless/components/paginator.md) — Hook that manages pagination state, page calculations, and accessible navigation prop objects.
+- [usePanel](references/headless/components/panel.md) — Hook that manages collapsible panel state and ARIA attributes.
+- [usePickList](references/headless/components/picklist.md) — A headless hook that manages two lists with transfer, reorder, and optional drag-and-drop between them.
+- [usePopover](references/headless/components/popover.md) — Hook that manages popover open state, outside click dismissal, escape key handling, and focus management.
+- [usePortal](references/headless/components/portal.md) — Hook that tracks client-side mount state for SSR-safe portal rendering.
+- [usePositioner](references/headless/components/positioner.md) — Hook that positions a floating element relative to an anchor with automatic flip, shift, and arrow support.
+- [useProgressBar](references/headless/components/progressbar.md) — Hook that normalizes progress values to a percentage range and provides ARIA attributes.
+- [useProgressSpinner](references/headless/components/progressspinner.md) — Hook that manages circular progress state, SVG geometry computation, and determinate/indeterminate modes.
+- [useRadioButton](references/headless/components/radiobutton.md) — Hooks that manage radio button and radio button group state, checked logic, and ARIA attributes.
+- [useRating](references/headless/components/rating.md) — Hooks that manage rating state, hover interactions, and value resolution for star-based selection input.
+- [useScrollArea](references/headless/components/scrollarea.md) — Hook that manages custom scrollbar state, overflow detection, and handle positioning.
+- [useSelect](references/headless/components/select.md) — Hook that manages select dropdown state, keyboard navigation, and popup positioning.
+- [useSidebar](references/headless/components/sidebar.md) — Headless hooks for managing sidebar state, collapse behavior, layout coordination, and collapsible menu items.
+- [useSkeleton](references/headless/components/skeleton.md) — Hook that provides data attributes for building custom placeholder loading elements.
+- [useSlider](references/headless/components/slider.md) — Hook that manages slider state, pointer dragging, and accessible range input behavior.
+- [useSpeedDial](references/headless/components/speeddial.md) — Hook that manages speed dial state, keyboard navigation, and directional positioning.
+- [useSplitter](references/headless/components/splitter.md) — Hook that manages resizable panel layout with keyboard navigation and pointer-based resizing.
+- [useStepper](references/headless/components/stepper.md) — A hook that manages stepper state, step navigation, and ARIA attributes.
+- [useStyleClass](references/headless/components/styleclass.md) — Hook that manages CSS class toggling with enter/leave animation sequences on a target element.
+- [useTabs](references/headless/components/tabs.md) — Hook that manages tab selection state, keyboard navigation, and scrollable overflow.
+- [useTag](references/headless/components/tag.md) — Hook that provides data attributes for building custom categorization labels.
+- [useTerminal](references/headless/components/terminal.md) — Hook that manages command execution, input state, and command history for a terminal-style interface.
+- [useTextarea](references/headless/components/textarea.md) — Hook that provides auto-resize logic and data attributes for textarea elements.
+- [useTimeline](references/headless/components/timeline.md) — Hook that provides data attributes for alignment and orientation of timeline layouts.
+- [useToast](references/headless/components/toast.md) — Hooks that manage toast notification state, swipe dismissal, auto-timeout, and stacking behavior.
+- [useToggleButton](references/headless/components/togglebutton.md) — Hooks that manage toggle button pressed state and group value selection with single or multiple modes.
+- [useToggleSwitch](references/headless/components/toggleswitch.md) — Hook that manages toggle switch state, checked/unchecked logic, and ARIA attributes.
+- [useToolbar](references/headless/components/toolbar.md) — Headless hook for building toolbar containers with custom markup.
+- [useTooltip](references/headless/components/tooltip.md) — Hook that manages tooltip open state, hover/focus triggers, delay timing, and group transitions.
+- [useTree](references/headless/components/tree.md) — Headless tree hook that manages expansion, selection, keyboard and drag-drop state.
+- [useTreeTable](references/headless/components/treetable.md) — Hierarchical data table built on useDataTable with treeMode enabled, sort, filter, paginate, select, expand, and edit tree-shaped data.
+- [Installation](references/headless/guides/installation.md) — Install the headless package and start using hooks in your React project.
+- [Headless](references/headless/guides/introduction.md) — React hooks that handle logic and accessibility. You bring your own markup and styles.
+- [Accessibility](references/headless/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Resources](references/headless/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
 
 ## Tailwind
 
-- [Accordion](references/tailwind/accordion/features.md) — Accordion groups content into collapsible panels.
-- [AutoComplete](references/tailwind/autocomplete/features.md) — AutoComplete is an input component that provides real-time suggestions when being typed.
-- [AutoComplete Theming](references/tailwind/autocomplete/theming.md) — Theming documentation for AutoComplete component
-- [Avatar](references/tailwind/avatar/features.md) — Avatar represents people using icons, labels and images.
-- [Badge](references/tailwind/badge/features.md) — Badge is a small status indicator for another element.
-- [Breadcrumb](references/tailwind/breadcrumb/features.md) — Breadcrumb provides contextual information about page hierarchy.
-- [Button](references/tailwind/button/features.md) — Button is an extension to standard input element with icons and theming.
-- [Card](references/tailwind/card/features.md) — Card is a flexible container component.
-- [Carousel](references/tailwind/carousel/features.md) — Carousel is a content slider featuring various customization options.
-- [Checkbox](references/tailwind/checkbox/features.md) — Checkbox is an extension to standard checkbox element with theming.
-- [CheckboxGroup](references/tailwind/checkboxgroup/features.md) — Checkbox is an extension to standard checkbox element with theming.
-- [Chip](references/tailwind/chip/features.md) — Chip represents entities using icons, labels and images.
-- [CommandMenu](references/tailwind/commandmenu/features.md) — CommandMenu is a command palette component for searching and executing actions.
-- [Compare](references/tailwind/compare/features.md) — Compare is a component to compare two images with a slider.
-- [DataView](references/tailwind/dataview/features.md) — DataView displays data in grid or list layout with pagination and sorting features.
-- [Dialog](references/tailwind/dialog/features.md) — Dialog is a container to display content in an overlay window.
-- [Divider](references/tailwind/divider/features.md) — Divider is used to separate contents.
-- [Drawer](references/tailwind/drawer/features.md) — Drawer is a panel component displayed as an overlay at the edges of the screen.
-- [Fieldset](references/tailwind/fieldset/features.md) — Fieldset is a container component with a legend and optional collapsible content.
-- [Fluid](references/tailwind/fluid/features.md) — Fluid is a layout component to make descendant components span full width of their container.
-- [Fluid Theming](references/tailwind/fluid/theming.md) — Theming documentation for Fluid component
-- [IconField](references/tailwind/iconfield/features.md) — IconField wraps an input and an icon.
-- [Inplace](references/tailwind/inplace/features.md) — Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
-- [InputColor](references/tailwind/inputcolor/features.md) — InputColor is a component that allows the user to select a color.
-- [InputGroup](references/tailwind/inputgroup/features.md) — InputGroup displays text, icon, buttons and other content can be grouped next to an input.
-- [InputNumber](references/tailwind/inputnumber/features.md) — InputNumber is used to enter numeric values.
-- [InputOtp](references/tailwind/inputotp/features.md) — InputOtp is used to enter one time passwords.
-- [InputText](references/tailwind/inputtext/features.md) — InputText is an extension to standard input element with icons and theming.
-- [With Next.js](references/tailwind/installation/nextjs.md) — Setting up PrimeReact in a Next.js project.
-- [With Vite](references/tailwind/installation/vite.md) — Setting up PrimeReact in a Vite project.
-- [Label](references/tailwind/label/features.md) — Label provides accessible text labels for form controls. Use `htmlFor` to link the label to a form control by its id.
-- [Listbox](references/tailwind/listbox/features.md) — Listbox is used to select one or more values from a list of items.
-- [Message](references/tailwind/message/features.md) — Message component is used to display inline messages.
-- [MeterGroup](references/tailwind/metergroup/features.md) — MeterGroup displays scalar measurements within a known range.
-- [Paginator](references/tailwind/paginator/features.md) — Paginator displays data in paged format and provides navigation between pages.
-- [Paginator Theming](references/tailwind/paginator/theming.md) — Theming documentation for Paginator component
-- [Panel](references/tailwind/panel/features.md) — Panel is a container component with optional collapsible content.
-- [Panel Theming](references/tailwind/panel/theming.md) — Theming documentation for Panel component
-- [Password](references/tailwind/password/features.md) — Password is an enhanced input for password entry with strength metering, mask toggling, and controlled or uncontrolled usage.
-- [Password Theming](references/tailwind/password/theming.md) — Theming documentation for Password component
-- [Popover](references/tailwind/popover/features.md) — Popover is an overlay container that displays content relative to a trigger.
-- [ProgressBar](references/tailwind/progressbar/features.md) — ProgressBar is a process status indicator.
-- [RadioButton](references/tailwind/radiobutton/features.md) — RadioButton is an extension to standard radio button element with theming.
-- [Rating](references/tailwind/rating/features.md) — Rating component is a star based selection input.
-- [ScrollArea](references/tailwind/scrollarea/features.md) — ScrollArea is a cross browser, lightweight and themable alternative to native browser scrollbar.
-- [Select](references/tailwind/select/features.md) — Select is used to choose an item from a collection of options.
-- [Sidebar](references/tailwind/sidebar/features.md) — Sidebar is a layout component for building application navigation with collapsible panels, multi-variant styling, and composable menu structures.
-- [Skeleton](references/tailwind/skeleton/features.md) — Skeleton is a placeholder to display instead of the actual content.
-- [Slider](references/tailwind/slider/features.md) — Slider is a component to provide input with a drag handle.
-- [Splitter](references/tailwind/splitter/features.md) — Splitter is utilized to separate and resize panels.
-- [Switch](references/tailwind/switch/features.md) — Switch is used to select a boolean value.
-- [Tabs](references/tailwind/tabs/features.md) — Tabs is a component that displays a list of tabs and allows the user to select one.
-- [Tag](references/tailwind/tag/features.md) — Tag is a label component used to categorize content.
-- [Textarea](references/tailwind/textarea/features.md) — Textarea is a multi-line text input element.
-- [Timeline](references/tailwind/timeline/features.md) — Timeline visualizes a series of chained events.
-- [Toast](references/tailwind/toast/features.md) — Toast is a component that displays a message to the user.
-- [ToggleButton](references/tailwind/togglebutton/features.md) — ToggleButton component is used to create a button that can be toggled on or off.
-- [ToggleButtonGroup](references/tailwind/togglebuttongroup/features.md) — ToggleButtonGroup component is used to create a group of toggle buttons.
-- [Toolbar](references/tailwind/toolbar/features.md) — Toolbar is a grouping component for buttons and other content.
-- [Tooltip](references/tailwind/tooltip/features.md) — Tooltip is a component that displays a tooltip when the user hovers over an element.
+- [Add-Ons](references/tailwind/add-ons/introduction.md) — Premium templates, UI blocks and design tooling that build on top of PrimeReact.
+- [Accordion](references/tailwind/components/accordion.md) — Accordion groups content into collapsible panels.
+- [AutoComplete](references/tailwind/components/autocomplete.md) — AutoComplete is an input component that provides real-time suggestions when being typed.
+- [Avatar](references/tailwind/components/avatar.md) — Avatar represents people using icons, labels and images.
+- [Badge](references/tailwind/components/badge.md) — Badge is a small status indicator for another element.
+- [Breadcrumb](references/tailwind/components/breadcrumb.md) — Breadcrumb provides contextual information about page hierarchy.
+- [Button](references/tailwind/components/button.md) — Button is an extension to standard input element with icons and theming.
+- [ButtonGroup](references/tailwind/components/buttongroup.md) — ButtonGroup composes related buttons into a connected pill with shared corners and seams.
+- [Card](references/tailwind/components/card.md) — Card is a flexible container component.
+- [Carousel](references/tailwind/components/carousel.md) — Carousel is a content slider featuring various customization options.
+- [Checkbox](references/tailwind/components/checkbox.md) — Checkbox is an extension to standard checkbox element with theming.
+- [CheckboxGroup](references/tailwind/components/checkboxgroup.md) — Checkbox is an extension to standard checkbox element with theming.
+- [Chip](references/tailwind/components/chip.md) — Chip represents entities using icons, labels and images.
+- [Compare](references/tailwind/components/compare.md) — Compare is a component to compare two images with a slider.
+- [ContextMenu](references/tailwind/components/contextmenu.md) — A right-click triggered menu with keyboard navigation, nested submenus, and WAI-ARIA support.
+- [DataTable](references/tailwind/components/datatable.md) — DataTable displays tabular data with sorting, pagination, selection and filtering features.
+- [DataView](references/tailwind/components/dataview.md) — DataView displays data in grid or list layout with pagination and sorting features.
+- [DatePicker](references/tailwind/components/datepicker.md) — DatePicker is a form component to work with dates.
+- [Dialog](references/tailwind/components/dialog.md) — Dialog is a container to display content in an overlay window.
+- [Divider](references/tailwind/components/divider.md) — Divider is used to separate contents.
+- [Drawer](references/tailwind/components/drawer.md) — Drawer is a panel component displayed as an overlay at the edges of the screen.
+- [Fieldset](references/tailwind/components/fieldset.md) — Fieldset is a container component with a legend and optional collapsible content.
+- [Fluid](references/tailwind/components/fluid.md) — Fluid is a layout component to make descendant components span full width of their container.
+- [IconField](references/tailwind/components/iconfield.md) — IconField wraps an input and an icon.
+- [Inplace](references/tailwind/components/inplace.md) — Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
+- [InputColor](references/tailwind/components/inputcolor.md) — InputColor is a component that allows the user to select a color.
+- [InputGroup](references/tailwind/components/inputgroup.md) — InputGroup displays text, icon, buttons and other content can be grouped next to an input.
+- [InputNumber](references/tailwind/components/inputnumber.md) — InputNumber is used to enter numeric values.
+- [InputOtp](references/tailwind/components/inputotp.md) — InputOtp is used to enter one time passwords.
+- [InputPassword](references/tailwind/components/inputpassword.md) — InputPassword is an enhanced input for password entry with strength metering, mask toggling, and controlled or uncontrolled usage.
+- [InputText](references/tailwind/components/inputtext.md) — InputText is an extension to standard input element with icons and theming.
+- [Label](references/tailwind/components/label.md) — Label provides accessible text labels for form controls. Use `htmlFor` to link the label to a form control by its id.
+- [Listbox](references/tailwind/components/listbox.md) — Listbox is used to select one or more values from a list of items.
+- [Menu](references/tailwind/components/menu.md) — A keyboard-navigable dropdown menu with support for items, checkbox items, radio items, and nested submenus.
+- [Message](references/tailwind/components/message.md) — Message component is used to display inline messages.
+- [MeterGroup](references/tailwind/components/metergroup.md) — MeterGroup displays scalar measurements within a known range.
+- [NavigationMenu](references/tailwind/components/navigationmenu.md) — NavigationMenu coordinates multiple Menu instances horizontally with shared open state and keyboard navigation between triggers.
+- [OverlayManager](references/tailwind/components/overlaymanager.md) — OverlayManager opens overlay components imperatively from anywhere in your app.
+- [Paginator](references/tailwind/components/paginator.md) — Paginator displays data in paged format and provides navigation between pages.
+- [Panel](references/tailwind/components/panel.md) — Panel is a container component with optional collapsible content.
+- [Popover](references/tailwind/components/popover.md) — Popover is an overlay container that displays content relative to a trigger.
+- [ProgressBar](references/tailwind/components/progressbar.md) — ProgressBar is a process status indicator.
+- [RadioButton](references/tailwind/components/radiobutton.md) — RadioButton is an extension to standard radio button element with theming.
+- [Rating](references/tailwind/components/rating.md) — Rating component is a star based selection input.
+- [ScrollArea](references/tailwind/components/scrollarea.md) — ScrollArea is a cross browser, lightweight and themable alternative to native browser scrollbar.
+- [Select](references/tailwind/components/select.md) — Select is used to choose an item from a collection of options.
+- [Sidebar](references/tailwind/components/sidebar.md) — Sidebar is a layout component for building application navigation with collapsible panels, multi-variant styling, and composable menu structures.
+- [Skeleton](references/tailwind/components/skeleton.md) — Skeleton is a placeholder to display instead of the actual content.
+- [Slider](references/tailwind/components/slider.md) — Slider is a component to provide input with a drag handle.
+- [Splitter](references/tailwind/components/splitter.md) — Splitter is utilized to separate and resize panels.
+- [Tabs](references/tailwind/components/tabs.md) — Tabs is a component that displays a list of tabs and allows the user to select one.
+- [Tag](references/tailwind/components/tag.md) — Tag is a label component used to categorize content.
+- [Textarea](references/tailwind/components/textarea.md) — Textarea is a multi-line text input element.
+- [Timeline](references/tailwind/components/timeline.md) — Timeline visualizes a series of chained events.
+- [Toast](references/tailwind/components/toast.md) — Toast is a component that displays a message to the user.
+- [ToggleButton](references/tailwind/components/togglebutton.md) — ToggleButton component is used to create a button that can be toggled on or off.
+- [ToggleButtonGroup](references/tailwind/components/togglebuttongroup.md) — ToggleButtonGroup component is used to create a group of toggle buttons.
+- [ToggleSwitch](references/tailwind/components/toggleswitch.md) — ToggleSwitch is used to select a boolean value.
+- [Toolbar](references/tailwind/components/toolbar.md) — Toolbar is a grouping component for buttons and other content.
+- [Tooltip](references/tailwind/components/tooltip.md) — Tooltip is a component that displays a tooltip when the user hovers over an element.
+- [Custom Icons](references/tailwind/guides/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
+- [Prime Icons](references/tailwind/guides/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
+- [Installation](references/tailwind/guides/installation.md) — How to set up PrimeReact in your project. Select your framework to get started.
+- [With Astro](references/tailwind/guides/installation/astro.md) — Setting up PrimeReact Tailwind components in an Astro project.
+- [Manual](references/tailwind/guides/installation/manual.md) — Setting up PrimeReact Tailwind components manually in any project.
+- [With Next.js](references/tailwind/guides/installation/nextjs.md) — Setting up PrimeReact Tailwind components in a Next.js project.
+- [With React Router](references/tailwind/guides/installation/react-router.md) — Setting up PrimeReact Tailwind components in a React Router project.
+- [With TanStack](references/tailwind/guides/installation/tanstack.md) — Setting up PrimeReact Tailwind components in a TanStack Start project.
+- [With Vite](references/tailwind/guides/installation/vite.md) — Setting up PrimeReact Tailwind components in a Vite project.
+- [Tailwind](references/tailwind/guides/introduction.md) — Copy-paste React components styled with Tailwind CSS. Own the code, customize everything.
+- [Accessibility](references/tailwind/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Pass Through](references/tailwind/guides/misc/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
+- [RTL Support](references/tailwind/guides/misc/rtl.md) — Right-to-left direction support of PrimeReact.
+- [Theming](references/tailwind/guides/theming/guide.md) — Theme PrimeReact's Tailwind components with CSS variables and the tailwindcss-primeui plugin.
+- [Resources](references/tailwind/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
+
+## Hooks
+
+- [Introduction](references/hooks/gettingstarted/introduction.md) — A standalone collection of React hooks from @primereact/hooks.
+- [Setup](references/hooks/gettingstarted/setup.md) — Install @primereact/hooks and start using it in any React project.
+- [useAttrSelector](references/hooks/use-attr-selector.md) — Produce a stable, unique string from React.useId, handy for scoping CSS and DOM selectors.
+- [useControlledState](references/hooks/use-controlled-state.md) — State that works controlled or uncontrolled, following the React convention of value + onChange with a defaultValue fallback.
+- [useEventListener](references/hooks/use-event-listener.md) — Attach DOM event listeners declaratively, with automatic cleanup and a bind/unbind pair for manual control.
+- [useFilter](references/hooks/use-filter.md) — Generic filter hook for flat collections, with built-in match modes, accent-insensitive matching, locale support, and custom matcher registration.
+- [useHotKey](references/hooks/use-hot-key.md) — Bind keyboard shortcuts with modifier combinations, single key or array of keys, with enable flag for scoping.
+- [useId](references/hooks/use-id.md) — Stable unique identifier with an optional explicit override.
+- [useIntersectionObserver](references/hooks/use-intersection-observer.md) — A thin wrapper over the IntersectionObserver API with imperative observe/unobserve controls.
+- [useIsMobile](references/hooks/use-is-mobile.md) — Boolean flag that flips when the viewport crosses a mobile breakpoint.
+- [useKeyFilter](references/hooks/use-key-filter.md) — Block individual keystrokes that don't match a pattern, before they reach the input.
+- [useLocalStorage](references/hooks/use-local-storage.md) — State persisted to localStorage, with SSR-safe hydration and custom serialization.
+- [useMask](references/hooks/use-mask.md) — Format an input as the user types, phone, date, currency and similar fixed patterns.
+- [useMatchMedia](references/hooks/use-match-media.md) — Reactive boolean for any CSS media query.
+- [useMountEffect](references/hooks/use-mount-effect.md) — Run an effect exactly once, after the first render.
+- [useMounted](references/hooks/use-mounted.md) — SSR-safe flag that flips to true once the component mounts on the client.
+- [useNumberFormatter](references/hooks/use-number-formatter.md) — Locale-aware number formatting and parsing built on Intl.NumberFormat, decimal or currency, with custom prefix/suffix and rounding.
+- [usePresence](references/hooks/use-presence.md) — Coordinate enter/exit animations by delaying unmount until CSS transitions finish.
+- [usePrevious](references/hooks/use-previous.md) — Remember the value of a variable from the previous render.
+- [useProps](references/hooks/use-props.md) — Split incoming props into known props and extra attrs, preserving referential stability when values don't change.
+- [useQueueTask](references/hooks/use-queue-task.md) — Deduplicate work by id and flush it on the next microtask.
+- [useScrollTop](references/hooks/use-scrolltop.md) — useScrollTop is a hook that provides a way to scroll to the top of a container.
+- [useSortableList](references/hooks/use-sortable-list.md) — Reorder items in a list, optionally transfer them between lists, with state and handlers you spread onto your own DOM.
+- [useTreeFilter](references/hooks/use-tree-filter.md) — Filter hook for hierarchical data. Lenient or strict branch matching.
+- [useUnmountEffect](references/hooks/use-unmount-effect.md) — Run an effect exactly once, when the component unmounts.
+- [useUpdateEffect](references/hooks/use-update-effect.md) — useEffect that skips the initial mount and runs only on subsequent dependency changes.
+- [useViewTransition](references/hooks/use-view-transition.md) — Wrap state updates in the View Transitions API, with a graceful fallback on unsupported browsers.
+- [useVisibilityChange](references/hooks/use-visibility-change.md) — Reactive boolean that reflects the document's Page Visibility state.

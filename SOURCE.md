@@ -1,9 +1,10 @@
 # Source
 
-Docs mirrored from https://github.com/primefaces/primereact (branch `v11`).
-Upstream commit: 4479548533b0fb1d5e9f0a8f63a3cb529802755e
-Synced: 2026-06-22
-Source mode: github-branch (MDX under apps/showcase/docs + demos under apps/showcase/demo).
+Docs mirrored from https://primereact.dev (official `llms.txt` index + per-page `.md`).
+Pages: 377
+Synced: 2026-06-29
+Source mode: rendered (primereact.dev rendered Markdown).
 
-When v11 ships official `/llms-full.txt` + per-page `.md` endpoints, switch the
-rendered-md source adapter (see scripts/lib/source.mjs).
+PrimeReact v11 is released; the upstream GitHub `v11` branch was removed, so the
+mirror now tracks the official primereact.dev docs endpoints. The legacy `github`
+branch adapter remains available via `PRIMEREACT_DOCS_SOURCE=github`.
