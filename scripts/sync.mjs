@@ -43,20 +43,30 @@ function renderedStamp(base, pages) {
 async function main() {
   const source = renderedMdSource();
   const { files, index } = await buildRenderedFiles({ base: source.base });
-  const stamp = renderedStamp(source.base, files.size);
   const label = 'rendered ' + source.base;
 
+  // Compare generated output against what's committed. SOURCE.md (which carries a
+  // date stamp) is deliberately excluded so a date change alone never counts as
+  // drift — otherwise every daily run would open a no-op date-only PR.
+  const existing = readExistingRefs();
+  const drift = [];
+  for (const [p, c] of files) if (existing.get(p) !== c) drift.push(p);
+  for (const p of existing.keys()) if (!files.has(p)) drift.push('(removed) ' + p);
+  if (!existsSync(INDEX) || readFileSync(INDEX, 'utf8') !== index) drift.push('INDEX.md');
+
   if (checkMode) {
-    const existing = readExistingRefs();
-    const drift = [];
-    for (const [p, c] of files) if (existing.get(p) !== c) drift.push(p);
-    for (const p of existing.keys()) if (!files.has(p)) drift.push('(removed) ' + p);
-    if (!existsSync(INDEX) || readFileSync(INDEX, 'utf8') !== index) drift.push('INDEX.md');
     if (drift.length) {
       console.error('Drift vs ' + label + ':\n' + drift.map((d) => '  ' + d).join('\n'));
       process.exit(1);
     }
     console.log('Up to date with ' + label);
+    return;
+  }
+
+  if (!drift.length) {
+    // Docs unchanged — leave everything (incl. SOURCE.md's date) untouched so the
+    // working tree stays clean and the daily workflow opens no PR.
+    console.log('Up to date with ' + label + ' — no doc changes; nothing written.');
     return;
   }
 
@@ -67,7 +77,7 @@ async function main() {
     writeFileSync(dest, content);
   }
   writeFileSync(INDEX, index);
-  writeFileSync(SOURCE, stamp);
+  writeFileSync(SOURCE, renderedStamp(source.base, files.size));
   console.log('Synced ' + files.size + ' docs from ' + label);
 }
 
