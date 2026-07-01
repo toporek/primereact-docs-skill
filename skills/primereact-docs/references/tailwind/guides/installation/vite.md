@@ -2,7 +2,9 @@
 
 Setting up PrimeReact Tailwind components in a Vite project.
 
+{/* 
 Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/vite-styled-tailwind" target="_blank" rel="noopener noreferrer">Vite + Tailwind template</a>, pre-configured with PrimeReact.
+ */}
 
 ## Installation
 

@@ -2,7 +2,9 @@
 
 Setting up PrimeReact in a TanStack Start project.
 
+{/* 
 Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/tanstack-quickstart-nextgen" target="_blank" rel="noopener noreferrer">TanStack template</a>, pre-configured with PrimeReact.
+ */}
 
 ## Installation
 
@@ -55,7 +57,7 @@ export default function VerifyDemo() {
 ```
 
 ```tsx showLineNumbers {1,6}
-import { Button } from 'primereact/button';
+import { Button } from '@primereact/ui/button';
 
 export default function VerifyInstallation() {
     return (

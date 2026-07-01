@@ -2,7 +2,9 @@
 
 Setting up PrimeReact Tailwind components in a TanStack Start project.
 
+{/* 
 Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/tanstack-styled-tailwind" target="_blank" rel="noopener noreferrer">TanStack + Tailwind template</a>, pre-configured with PrimeReact.
+ */}
 
 ## Installation
 
