@@ -2,7 +2,9 @@
 
 Setting up PrimeReact Tailwind components in a Next.js project.
 
+{/*
 Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/nextjs-styled-tailwind" target="_blank" rel="noopener noreferrer">Next.js + Tailwind template</a>, pre-configured with PrimeReact.
+ */}
 
 ## Installation
 

@@ -2,7 +2,9 @@
 
 Setting up PrimeReact Tailwind components in an Astro project.
 
+{/* 
 Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/astro-styled-tailwind" target="_blank" rel="noopener noreferrer">Astro + Tailwind template</a>, pre-configured with PrimeReact.
+ */}
 
 ## Installation
 

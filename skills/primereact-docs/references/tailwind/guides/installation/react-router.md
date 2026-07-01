@@ -2,7 +2,9 @@
 
 Setting up PrimeReact Tailwind components in a React Router project.
 
+{/* 
 Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/react-router-styled-tailwind" target="_blank" rel="noopener noreferrer">React Router + Tailwind template</a>, pre-configured with PrimeReact.
+ */}
 
 ## Installation
 

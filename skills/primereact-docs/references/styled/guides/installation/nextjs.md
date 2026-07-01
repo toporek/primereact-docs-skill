@@ -97,7 +97,7 @@ export default function VerifyDemo() {
 ```
 
 ```tsx showLineNumbers {1,6}
-import { Button } from 'primereact/button';
+import { Button } from '@primereact/ui/button';
 import { Github } from '@primeicons/react/github';
 
 export default function VerifyInstallation() {
@@ -118,7 +118,7 @@ export default function VerifyInstallation() {
 
 If you encounter issues during installation or setup, check the following:
 
-- Ensure that you have the latest version of Vite and Node.js installed.
+- Ensure that you have the latest version of Next.js and Node.js installed.
 - Verify that your project structure is correct and that the `PrimeReactProvider` is properly wrapped around your application.
 - Check the browser console for any errors related to PrimeReact components or themes.
 - If you are using TypeScript, ensure that you have the necessary type definitions installed.

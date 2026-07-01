@@ -79,7 +79,7 @@ export default function VerifyDemo() {
 ```
 
 ```tsx showLineNumbers {1,6}
-import { Button } from 'primereact/button';
+import { Button } from '@primereact/ui/button';
 import { Github } from '@primeicons/react/github';
 
 export default function VerifyInstallation() {
