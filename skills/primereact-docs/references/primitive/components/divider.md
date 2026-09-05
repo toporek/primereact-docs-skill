@@ -4,38 +4,6 @@ An unstyled separator component for horizontal and vertical content division.
 
 Build fully custom content separators with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Divider } from 'primereact/divider';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <div className={styles.row}>
-                <div className={styles.column}>
-                    <span className={styles.label}>Invoice No</span>
-                    <span className={styles.value}>0000123</span>
-                </div>
-                <Divider orientation="vertical" className={styles.vertical} />
-                <div className={styles.column}>
-                    <span className={styles.label}>Issued</span>
-                    <span className={styles.value}>01/01/2026</span>
-                </div>
-                <Divider orientation="vertical" className={styles.vertical} />
-                <div className={styles.column}>
-                    <span className={styles.label}>Due Date</span>
-                    <span className={styles.value}>02/02/2026</span>
-                </div>
-            </div>
-            <Divider className={styles.horizontal} />
-            <p className={styles.value}>Fast setup, no credit card required.</p>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Horizontal and vertical orientations

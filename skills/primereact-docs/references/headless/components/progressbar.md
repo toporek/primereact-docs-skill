@@ -2,31 +2,6 @@
 
 Hook that normalizes progress values to a percentage range and provides ARIA attributes.
 
-```tsx
-'use client';
-import { useProgressBar } from '@primereact/headless/progressbar';
-
-export default function BasicDemo() {
-    const { rootProps, trackProps, state } = useProgressBar({ value: 50 });
-
-    return (
-        <div className="flex flex-col gap-6 max-w-lg mx-auto">
-            <div {...rootProps}>
-                <div {...trackProps} className="h-5 rounded-full bg-surface-100 dark:bg-surface-800 overflow-hidden">
-                    <div
-                        className="flex items-center justify-center h-full bg-primary rounded-full transition-all duration-500"
-                        style={{ width: state.computedValue + '%' }}
-                    >
-                        <span className="flex items-center justify-center text-xs font-semibold text-surface-200">{state.formattedValue}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

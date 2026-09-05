@@ -4,46 +4,6 @@ Unstyled meter group primitive for scalar measurements within a range.
 
 Bring your own markup and styles. MeterGroup handles the math and the data attributes.
 
-```tsx
-'use client';
-import { MeterGroup } from 'primereact/metergroup';
-import styles from './basic-demo.module.css';
-
-const values = [
-    { label: 'Apps', value: 16, color: 'var(--p-violet-500)' },
-    { label: 'Messages', value: 8, color: 'var(--p-emerald-500)' },
-    { label: 'Media', value: 24, color: 'var(--p-amber-500)' },
-    { label: 'System', value: 10, color: 'var(--p-blue-500)' }
-];
-
-const total = values.reduce((sum, v) => sum + v.value, 0);
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <MeterGroup.Root aria-valuenow={total} className={styles.root}>
-                <MeterGroup.Meters className={styles.meters}>
-                    {values.map((item) => (
-                        <MeterGroup.Meter key={item.label} value={item.value} color={item.color} className={styles.meter} />
-                    ))}
-                </MeterGroup.Meters>
-                <MeterGroup.Labels className={styles.labels}>
-                    {values.map((item) => (
-                        <MeterGroup.Label key={item.label} className={styles.label}>
-                            <MeterGroup.Marker color={item.color} className={styles.marker} />
-                            <MeterGroup.Text className={styles.text}>
-                                {item.label} ({item.value}%)
-                            </MeterGroup.Text>
-                        </MeterGroup.Label>
-                    ))}
-                </MeterGroup.Labels>
-            </MeterGroup.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound parts: `Root`, `Meters`, `Meter`, `Labels`, `Label`, `Marker`, `Text`

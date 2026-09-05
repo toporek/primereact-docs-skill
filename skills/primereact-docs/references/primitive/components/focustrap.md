@@ -4,26 +4,6 @@ An unstyled component that traps keyboard focus within its container.
 
 Build accessible modal regions that keep keyboard focus confined within a defined boundary.
 
-```tsx
-'use client';
-import { FocusTrap } from 'primereact/focustrap';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <FocusTrap className={styles.root}>
-            <h5 className={styles.heading}>Register</h5>
-            <input type="text" placeholder="Name" className={styles.input} />
-            <input type="email" placeholder="Email" className={styles.input} />
-            <button type="submit" className={styles.button}>
-                Submit
-            </button>
-        </FocusTrap>
-    );
-}
-
-```
-
 ## Features
 
 - Focus cycling: Tab wraps from last to first focusable element, Shift+Tab wraps from first to last

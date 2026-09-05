@@ -2,26 +2,6 @@
 
 Hook that provides data attributes and prop spreading for text input elements.
 
-```tsx
-'use client';
-import { useInputText } from '@primereact/headless/inputtext';
-
-export default function BasicDemo() {
-    const { rootProps } = useInputText();
-
-    return (
-        <div className="flex justify-center">
-            <input
-                {...rootProps}
-                placeholder="Enter text"
-                className="px-2.5 py-1.5 text-sm rounded-md border border-surface-300 dark:border-surface-600 bg-white dark:bg-surface-900 text-surface-700 dark:text-surface-100 placeholder:text-surface-400 dark:placeholder:text-surface-500 outline-hidden hover:border-surface-400 dark:hover:border-surface-500 focus-visible:border-primary transition-colors duration-200"
-            />
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

@@ -4,35 +4,6 @@ An unstyled, accessible panel component with optional collapsible content.
 
 Build fully custom content panels with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { Panel } from 'primereact/panel';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Panel.Root className={styles.root}>
-            <Panel.Header className={styles.header}>
-                <Panel.Title className={styles.title}>Header</Panel.Title>
-                <Panel.Trigger className={styles.trigger}>
-                    <Panel.Indicator className={styles.indicator}>
-                        <ChevronDown />
-                    </Panel.Indicator>
-                </Panel.Trigger>
-            </Panel.Header>
-            <Panel.Content className={styles.content}>
-                <div className={styles.contentInner}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-            </Panel.Content>
-        </Panel.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with seven sub-components: `Root`, `Header`, `Title`, `Trigger`, `Indicator`, `Content`, `Footer`

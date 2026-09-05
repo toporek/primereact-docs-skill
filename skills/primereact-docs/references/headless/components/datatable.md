@@ -2,70 +2,6 @@
 
 Hook that manages tabular data with sort, filter, pagination, selection, expansion, editing, column/row reorder, resize, and tree-mode flattening.
 
-```tsx
-'use client';
-import { ProductService, type Product } from '@/shared/services/product.service';
-import { useDataTable, useDataTableRow } from '@primereact/headless/datatable';
-import * as React from 'react';
-
-interface RowProps {
-    item: Record<string, unknown>;
-    index: number;
-    context: ReturnType<typeof useDataTable>;
-}
-
-function Row({ item, index, context }: RowProps) {
-    const { rowProps } = useDataTableRow({ item, index, context });
-    const product = item as unknown as Product;
-
-    return (
-        <tr {...rowProps} style={{ borderBottom: '1px solid var(--p-content-border-color)' }}>
-            <td style={cellStyle}>{product.code}</td>
-            <td style={cellStyle}>{product.name}</td>
-            <td style={cellStyle}>{product.category}</td>
-            <td style={cellStyle}>${product.price}</td>
-        </tr>
-    );
-}
-
-const cellStyle: React.CSSProperties = { padding: '0.5rem 0.75rem' };
-const headStyle: React.CSSProperties = { ...cellStyle, textAlign: 'left', fontWeight: 600, borderBottom: '1px solid var(--p-content-border-color)' };
-
-export default function BasicDemo() {
-    const [products, setProducts] = React.useState<Product[]>([]);
-
-    React.useEffect(() => {
-        setProducts(ProductService.getProductsData().slice(0, 6));
-    }, []);
-
-    const dt = useDataTable({ data: products as unknown as Record<string, unknown>[], dataKey: 'id' });
-    const rows = dt.state.paginatedData ?? dt.state.processedData ?? [];
-
-    return (
-        <div {...dt.rootProps} style={{ width: '100%' }}>
-            <div {...dt.tableContainerProps}>
-                <table {...dt.tableProps} style={{ width: '100%', borderCollapse: 'collapse' }}>
-                    <thead>
-                        <tr>
-                            <th style={headStyle}>Code</th>
-                            <th style={headStyle}>Name</th>
-                            <th style={headStyle}>Category</th>
-                            <th style={headStyle}>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {rows.map((item, index) => (
-                            <Row key={dt.getRowKey(item, index)} item={item} index={index} context={dt} />
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -98,17 +34,17 @@ const { state, rootProps, tableContainerProps, tableProps, getRowKey, sort, sele
 
 ### Controlled selection
 
-Pass `selectedKeys` and `onSelectionChange` to drive the selection from outside state.
+Pass `selectionKeys` and `onSelectionChange` to drive the selection from outside state.
 
 ```tsx
-const [selectedKeys, setSelectedKeys] = React.useState({});
+const [selectionKeys, setSelectionKeys] = React.useState({});
 
 const dt = useDataTable({
     data,
     dataKey: 'id',
     selectionMode: 'multiple',
-    selectedKeys,
-    onSelectionChange: (e) => setSelectedKeys(e.value)
+    selectionKeys,
+    onSelectionChange: (e) => setSelectionKeys(e.value)
 });
 ```
 
