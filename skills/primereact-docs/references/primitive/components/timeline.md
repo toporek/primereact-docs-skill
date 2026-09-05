@@ -4,39 +4,6 @@ An unstyled timeline component for visualizing sequential events with full contr
 
 Build fully custom timelines and event sequences with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Timeline } from 'primereact/timeline';
-import styles from './basic-demo.module.css';
-
-const events = [
-    { status: 'Ordered', date: '15/10/2026 10:30' },
-    { status: 'Processing', date: '15/10/2026 14:00' },
-    { status: 'Shipped', date: '15/10/2026 16:15' },
-    { status: 'Delivered', date: '16/10/2026 10:00' }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Timeline.Root className={styles.root}>
-                {events.map((event, index) => (
-                    <Timeline.Event key={index} className={styles.event}>
-                        <Timeline.Opposite className={styles.opposite}>{event.date}</Timeline.Opposite>
-                        <Timeline.Separator className={styles.separator}>
-                            <Timeline.Marker className={styles.marker} />
-                            {index !== events.length - 1 && <Timeline.Connector className={styles.connector} />}
-                        </Timeline.Separator>
-                        <Timeline.Content className={styles.content}>{event.status}</Timeline.Content>
-                    </Timeline.Event>
-                ))}
-            </Timeline.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Event`, `Separator`, `Marker`, `Connector`, `Content`, `Opposite`

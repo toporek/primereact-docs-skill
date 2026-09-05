@@ -4,26 +4,6 @@ An unstyled OTP input component with automatic focus management and keyboard nav
 
 Build fully custom one-time password inputs with complete control over layout and styling.
 
-```tsx
-'use client';
-import { InputOtp } from 'primereact/inputotp';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <InputOtp.Root className={styles.root}>
-                <InputOtp.Text index={0} className={styles.input} />
-                <InputOtp.Text index={1} className={styles.input} />
-                <InputOtp.Text index={2} className={styles.input} />
-                <InputOtp.Text index={3} className={styles.input} />
-            </InputOtp.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Text`

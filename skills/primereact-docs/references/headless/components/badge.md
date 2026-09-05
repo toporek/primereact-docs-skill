@@ -2,61 +2,6 @@
 
 Hook that provides data attributes and prop spreading for badge elements.
 
-```tsx
-'use client';
-import { Bell } from '@primeicons/react/bell';
-import { useBadge } from '@primereact/headless/badge';
-
-export default function BasicDemo() {
-    const standalone1 = useBadge();
-    const standalone2 = useBadge();
-    const standalone3 = useBadge();
-    const overlay = useBadge();
-    const dotBadge = useBadge();
-
-    return (
-        <div className="flex flex-col items-center justify-center gap-8">
-            <div className="flex items-center gap-3">
-                <span
-                    {...standalone1.rootProps}
-                    className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-xs font-bold rounded-md bg-red-500 text-white"
-                >
-                    5
-                </span>
-                <span
-                    {...standalone2.rootProps}
-                    className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-xs font-bold rounded-md bg-green-500 text-white"
-                >
-                    12
-                </span>
-                <span
-                    {...standalone3.rootProps}
-                    className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-xs font-bold rounded-md bg-surface-100 dark:bg-surface-800 text-surface-600 dark:text-surface-300"
-                >
-                    8
-                </span>
-            </div>
-            <div className="flex items-center gap-3">
-                <div className="relative inline-flex">
-                    <Bell className="text-surface-700 dark:text-surface-200 w-6! h-6!" />
-                    <span
-                        {...overlay.rootProps}
-                        className="absolute -top-2 -right-2 inline-flex items-center justify-center min-w-5 h-5 px-1 text-xs font-bold text-white bg-red-500 rounded-md"
-                    >
-                        3
-                    </span>
-                </div>
-                <div className="relative inline-flex">
-                    <Bell className="text-surface-700 dark:text-surface-200 w-6! h-6!" />
-                    <span {...dotBadge.rootProps} className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-green-500 rounded-full" />
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

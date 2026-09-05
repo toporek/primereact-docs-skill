@@ -2,36 +2,99 @@
 
 Setting up PrimeReact Tailwind components in a TanStack Start project.
 
-Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/tanstack-styled-tailwind" target="_blank" rel="noopener noreferrer">TanStack + Tailwind template</a>, pre-configured with PrimeReact.
+Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/tanstack-tailwind-quickstart" target="_blank" rel="noopener noreferrer">TanStack + Tailwind template</a>, pre-configured with PrimeReact.
 
-## Installation
+## Install via CLI
+
+PrimeReact's Tailwind components ship as a shadcn-compatible registry, so the shadcn CLI can scaffold everything for you. You need a project with Tailwind CSS v4 already set up.
+
+### Initialize
+
+Run `init` with the PrimeReact theme. This creates `components.json`, installs the base packages, adds the `cn` helper, and writes the design tokens (`--p-primary-*`, `--p-surface-*`) and the `tailwindcss-primeui` plugin to your global stylesheet:
+
+```bash
+npx shadcn@latest init -t start https://primereact.dev/r/theme.json
+```
+
+### Wrap with PrimeReactProvider
+
+Wrap your app with `PrimeReactProvider` so component behavior and your [PrimeUI](https://primeui.dev/pricing) license are available everywhere — see the [PrimeReactProvider](#primereactprovider) snippet below.
+
+### Add Components
+
+Add any component by its registry URL:
+
+```bash
+npx shadcn@latest add https://primereact.dev/r/button.json
+```
+
+Then pick your colors — see [Theming](../theming.md).
+
+## Manual installation
 
 PrimeReact Tailwind components are distributed through a shadcn-compatible registry, each component is copied into your codebase, so there is no theme file or runtime theme provider to set up.
 
 ### Install Packages
 
-Install PrimeReact and the icon package using your favorite package manager:
+Install PrimeReact along with the icon package and the Tailwind utilities the components rely on:
 
 ```bash
-npm install primereact@11.0.0-rc.1 @primeuix/themes@3.0.0-rc.1
+npm install primereact @primeicons/react tailwindcss-primeui tailwind-merge
 ```
 
 ### Add the `cn` Helper
 
-The components rely on a `cn` utility to merge class names. Install `tailwind-merge` and `clsx`:
-
-```bash
-npm install tailwind-merge clsx
-```
-
-Then create `lib/utils.ts` and add the helper:
+The components rely on a `cn` utility to merge class names. Create `lib/utils.ts` and add the helper:
 
 ```ts showLineNumbers title="lib/utils.ts"
-import { clsx, type ClassValue } from 'clsx';
+import { cn as _cn } from '@primeuix/utils';
 import { twMerge } from 'tailwind-merge';
 
-export function cn(...inputs: ClassValue[]) {
-    return twMerge(clsx(inputs));
+export function cn(...inputs: unknown[]) {
+    return twMerge(_cn(...inputs));
+}
+```
+
+### Set up Global Styles
+
+Import Tailwind and the `tailwindcss-primeui` plugin in your global stylesheet, and register the `dark` variant so utilities and components respond to a `.dark` class:
+
+```css showLineNumbers title="src/styles.css" {4}
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
+@custom-variant dark (&:where(.dark, .dark *));
+```
+
+The PrimeReact design tokens (`--p-primary-*`, `--p-surface-*`, …) live under `:root` and `.dark`. Add them by running `npx shadcn@latest add https://primereact.dev/r/theme.json`, or copy them from the [Theming](../theming.md) guide.
+
+### PrimeReactProvider
+
+Wrap your app with `PrimeReactProvider` in your root route (`src/routes/__root.tsx`) so component behavior and your [PrimeUI](https://primeui.dev/pricing) license are available everywhere. Set `darkModeSelector` to the same `.dark` class used above:
+
+```tsx showLineNumbers title="src/routes/__root.tsx" {7,10}
+import { Outlet, createRootRoute } from '@tanstack/react-router';
+import { PrimeReactProvider } from '@primereact/core';
+
+const primereact = {
+    theme: {
+        options: {
+            darkModeSelector: '.dark'
+        }
+    },
+    license: 'PrimeUI-Commercial-Key...'
+};
+
+export const Route = createRootRoute({
+    component: RootComponent
+});
+
+function RootComponent() {
+    return (
+        <PrimeReactProvider {...primereact}>
+            <Outlet />
+        </PrimeReactProvider>
+    );
 }
 ```
 
@@ -59,17 +122,6 @@ export default function VerifyInstallation() {
 }
 ```
 
-## More Tips
+## Next Steps
 
-- Browse any component page to copy its individual `shadcn add` command or source code.
-- Components live in your codebase, edit the files under `@/components/ui` to customize them freely.
-
-## Troubleshooting
-
-If you encounter issues during installation or setup, check the following:
-
-- Ensure that you have the latest version of TanStack Start and Node.js installed.
-- Confirm the `@/*` path alias is configured in `tsconfig.json` so component imports resolve.
-- Verify that the `cn` helper exists at `lib/utils.ts` and that `tailwind-merge` and `clsx` are installed.
-- Check the browser console for any errors related to PrimeReact components or styles.
-- Refer to the [PrimeReact GitHub repository](https://github.com/primefaces/primereact) for more information and support.
+[Theme your components](../theming.md) with CSS variables, then [browse the components](../../components/button.md) to add and customize the ones you need.

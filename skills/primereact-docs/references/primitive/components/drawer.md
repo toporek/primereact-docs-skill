@@ -4,59 +4,6 @@ An unstyled slide-in panel component with built-in focus trap, scroll lock, and 
 
 Build fully custom slide-in panels with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Bars } from '@primeicons/react/bars';
-import { Times } from '@primeicons/react/times';
-import { Drawer } from 'primereact/drawer';
-import styles from './basic-demo.module.css';
-
-const navItems = [
-    { icon: 'pi pi-objects-column', label: 'Dashboard' },
-    { icon: 'pi pi-inbox', label: 'Inbox' },
-    { icon: 'pi pi-calendar', label: 'Calendar' },
-    { icon: 'pi pi-chart-bar', label: 'Analytics' }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Drawer.Root>
-                <Drawer.Trigger className={styles.trigger}>
-                    <Bars />
-                </Drawer.Trigger>
-                <Drawer.Portal>
-                    <Drawer.Backdrop className={styles.backdrop} />
-                    <Drawer.Popup className={styles.popup}>
-                        <Drawer.Header className={styles.header}>
-                            <Drawer.Title className={styles.title}>Navigation</Drawer.Title>
-                            <Drawer.Close className={styles.close}>
-                                <Times />
-                            </Drawer.Close>
-                        </Drawer.Header>
-                        <Drawer.Content className={styles.content}>
-                            <nav>
-                                <ul className={styles.navList}>
-                                    {navItems.map((item) => (
-                                        <li key={item.label}>
-                                            <a className={styles.navItem}>
-                                                <i className={item.icon} />
-                                                {item.label}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </nav>
-                        </Drawer.Content>
-                    </Drawer.Popup>
-                </Drawer.Portal>
-            </Drawer.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Trigger`, `Portal`, `Backdrop`, `Popup`, `Header`, `Title`, `Close`, `Content`, `Footer`

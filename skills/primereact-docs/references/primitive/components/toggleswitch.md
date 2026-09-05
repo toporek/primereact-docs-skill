@@ -4,30 +4,6 @@ An unstyled, accessible toggle switch component with compound composition.
 
 Build fully custom toggle switch controls with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ToggleSwitch } from 'primereact/toggleswitch';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <div className={styles.field}>
-                <ToggleSwitch.Root inputId="basic-switch" className={styles.root} inputClassName={styles.input}>
-                    <ToggleSwitch.Control className={styles.control}>
-                        <ToggleSwitch.Handle className={styles.handle} />
-                    </ToggleSwitch.Control>
-                </ToggleSwitch.Root>
-                <label htmlFor="basic-switch" className={styles.label}>
-                    Notifications
-                </label>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with three sub-components: `Root`, `Control`, `Handle`

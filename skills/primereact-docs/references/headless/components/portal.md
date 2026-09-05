@@ -2,34 +2,6 @@
 
 Hook that tracks client-side mount state for SSR-safe portal rendering.
 
-```tsx
-'use client';
-import { usePortal } from '@primereact/headless/portal';
-import * as React from 'react';
-import { createPortal } from 'react-dom';
-
-export default function BasicDemo() {
-    const portal = usePortal();
-    const [container, setContainer] = React.useState<HTMLElement | null>(null);
-
-    return (
-        <div className="flex flex-col gap-4">
-            <div className="border border-surface-200 rounded-lg p-4 text-sm text-surface-600">
-                <p className="font-semibold text-surface-900 mb-2">Portal Target</p>
-                <div ref={setContainer} className="border border-dashed border-surface-300 rounded p-3 min-h-10" />
-            </div>
-            {portal.state.mounted &&
-                container &&
-                createPortal(
-                    <p className="text-sm text-primary-600 m-0">This content is rendered inside the target container via a portal.</p>,
-                    container
-                )}
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

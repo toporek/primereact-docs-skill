@@ -2,68 +2,6 @@
 
 Hook that manages pagination state, page calculations, and accessible navigation prop objects.
 
-```tsx
-'use client';
-
-import { AngleDoubleLeft } from '@primeicons/react/angle-double-left';
-import { AngleDoubleRight } from '@primeicons/react/angle-double-right';
-import { AngleLeft } from '@primeicons/react/angle-left';
-import { AngleRight } from '@primeicons/react/angle-right';
-import { EllipsisH } from '@primeicons/react/ellipsis-h';
-import { usePaginator } from '@primereact/headless/paginator';
-
-export default function BasicDemo() {
-    const { rootProps, firstProps, prevProps, nextProps, lastProps, pagesProps, pages, getPageProps } = usePaginator({ total: 100, itemsPerPage: 5 });
-
-    return (
-        <nav {...rootProps} className="flex items-center justify-center gap-1">
-            <button
-                {...firstProps}
-                className="inline-flex items-center justify-center size-9 rounded-full border-0 bg-transparent text-surface-500 dark:text-surface-400 cursor-pointer select-none hover:bg-surface-100 dark:hover:bg-surface-800 disabled:opacity-60 disabled:pointer-events-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
-            >
-                <AngleDoubleLeft className="size-4" />
-            </button>
-            <button
-                {...prevProps}
-                className="inline-flex items-center justify-center size-9 rounded-full border-0 bg-transparent text-surface-500 dark:text-surface-400 cursor-pointer select-none hover:bg-surface-100 dark:hover:bg-surface-800 disabled:opacity-60 disabled:pointer-events-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
-            >
-                <AngleLeft className="size-4" />
-            </button>
-            <span {...pagesProps} className="flex items-center gap-1">
-                {pages.map((page, index) =>
-                    page.type === 'page' ? (
-                        <button
-                            key={index}
-                            {...getPageProps(page.value!)}
-                            className="inline-flex items-center justify-center size-9 rounded-full border-0 bg-transparent text-surface-500 dark:text-surface-400 text-sm cursor-pointer select-none hover:bg-[var(--p-content-hover-background)] dark:hover:bg-surface-800 data-[active]:bg-[var(--p-highlight-background)] data-[active]:text-[var(--p-highlight-color)] data-[active]:hover:bg-[var(--p-highlight-background)] disabled:opacity-60 disabled:pointer-events-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
-                        >
-                            {page.value}
-                        </button>
-                    ) : (
-                        <span key={index} className="inline-flex items-center justify-center size-9 text-surface-400 dark:text-surface-500">
-                            <EllipsisH className="size-4" />
-                        </span>
-                    )
-                )}
-            </span>
-            <button
-                {...nextProps}
-                className="inline-flex items-center justify-center size-9 rounded-full border-0 bg-transparent text-surface-500 dark:text-surface-400 cursor-pointer select-none hover:bg-surface-100 dark:hover:bg-surface-800 disabled:opacity-60 disabled:pointer-events-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
-            >
-                <AngleRight className="size-4" />
-            </button>
-            <button
-                {...lastProps}
-                className="inline-flex items-center justify-center size-9 rounded-full border-0 bg-transparent text-surface-500 dark:text-surface-400 cursor-pointer select-none hover:bg-surface-100 dark:hover:bg-surface-800 disabled:opacity-60 disabled:pointer-events-none focus-visible:outline focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
-            >
-                <AngleDoubleRight className="size-4" />
-            </button>
-        </nav>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

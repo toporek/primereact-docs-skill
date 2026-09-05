@@ -4,55 +4,6 @@ An unstyled data table with sort, filter, pagination, selection, expansion, edit
 
 Compose a fully custom table with complete control over markup, layout, and styling. Every feature is opt-in and driven by data attributes.
 
-```tsx
-'use client';
-import { ProductService, type Product } from '@/shared/services/product.service';
-import { DataTable } from 'primereact/datatable';
-import * as React from 'react';
-
-const cellStyle: React.CSSProperties = { padding: '0.5rem 0.75rem' };
-const headStyle: React.CSSProperties = { ...cellStyle, textAlign: 'left', fontWeight: 600, borderBottom: '1px solid var(--p-content-border-color)' };
-const rowStyle: React.CSSProperties = { borderBottom: '1px solid var(--p-content-border-color)' };
-
-export default function BasicDemo() {
-    const [products, setProducts] = React.useState<Product[]>([]);
-
-    React.useEffect(() => {
-        setProducts(ProductService.getProductsData().slice(0, 6));
-    }, []);
-
-    return (
-        <div style={{ width: '100%' }}>
-            <DataTable.Root data={products} dataKey="id">
-                <DataTable.TableContainer>
-                    <DataTable.Table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                        <DataTable.THead>
-                            <DataTable.THeadRow>
-                                <DataTable.THeadCell style={headStyle}>Code</DataTable.THeadCell>
-                                <DataTable.THeadCell style={headStyle}>Name</DataTable.THeadCell>
-                                <DataTable.THeadCell style={headStyle}>Category</DataTable.THeadCell>
-                                <DataTable.THeadCell style={headStyle}>Price</DataTable.THeadCell>
-                            </DataTable.THeadRow>
-                        </DataTable.THead>
-                        <DataTable.TBody>
-                            {({ item }: { item: Record<string, unknown> }) => (
-                                <DataTable.Row style={rowStyle}>
-                                    <DataTable.Cell style={cellStyle}>{String(item.code)}</DataTable.Cell>
-                                    <DataTable.Cell style={cellStyle}>{String(item.name)}</DataTable.Cell>
-                                    <DataTable.Cell style={cellStyle}>{String(item.category)}</DataTable.Cell>
-                                    <DataTable.Cell style={cellStyle}>${String(item.price)}</DataTable.Cell>
-                                </DataTable.Row>
-                            )}
-                        </DataTable.TBody>
-                    </DataTable.Table>
-                </DataTable.TableContainer>
-            </DataTable.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Header`, `TableContainer`, `Table`, `THead`, `THeadRow`, `THeadCell`, `TBody`, `FrozenTBody`, `Row`, `Cell`, `TFoot`, `TFootRow`, `TFootCell`, `Footer`, `Sort`, `SortIndicator`, `SortOrder`, `Filter`, `Pagination`, `Selection`, `RowToggle`, `RowToggleIndicator`, `RowExpansion`, `RowGroupHeader`, `RowGroupFooter`, `CellEditor`, `CellEditorDisplay`, `CellEditorContent`, `RowEditor`, `RowEditorInit`, `RowEditorSave`, `RowEditorCancel`, `ColumnToggle`, `ColumnReorder`, `ColumnReorderTarget`, `ColumnResizer`, `ColumnResizeIndicator`, `RowReorder`, `Export`, `Loading`, `EmptyTBody`

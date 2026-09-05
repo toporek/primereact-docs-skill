@@ -2,21 +2,6 @@
 
 Label provides accessible text labels for form controls. Use `htmlFor` to link the label to a form control by its id.
 
-```tsx
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function Preview() {
-    return (
-        <div className="flex flex-col gap-2 w-full max-w-3xs mx-auto">
-            <Label htmlFor="username">Username</Label>
-            <InputText id="username" placeholder="Enter username" />
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -33,126 +18,17 @@ import { Label } from '@primereact/ui/label';
 
 An accessible label element associated with a form control.
 
-```tsx
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function BasicDemo() {
-    return (
-        <div className="flex flex-wrap justify-center">
-            <div className="flex flex-col gap-2 w-full max-w-sm">
-                <Label htmlFor="username">Username</Label>
-                <InputText id="username" placeholder="Enter username" />
-            </div>
-        </div>
-    );
-}
-
-```
-
 ### Required
 
 You can display required indicators in the label content while keeping the input semantics with `required` or `aria-required`.
-
-```tsx
-import { Envelope } from '@primeicons/react';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function RequiredDemo() {
-    return (
-        <div className="flex flex-wrap justify-center">
-            <div className="flex flex-col gap-2 w-full max-w-sm">
-                <Label htmlFor="email" className="font-medium">
-                    <Envelope />
-                    <span>Email</span>
-                    <span aria-hidden="true">*</span>
-                </Label>
-                <InputText id="email" type="email" placeholder="name@example.com" required aria-required="true" />
-            </div>
-        </div>
-    );
-}
-
-```
 
 ### Wrapper
 
 `Label` can wrap a form control to associate them implicitly without `htmlFor`. Useful for card-style selectable options.
 
-```tsx
-'use client';
-import { Label } from '@primereact/ui/label';
-import { RadioButton } from '@primereact/ui/radiobutton';
-import { RadioButtonGroup, type RadioButtonGroupValueChangeEvent } from '@primereact/ui/radiobuttongroup';
-import * as React from 'react';
-
-const plans = [
-    { id: 'starter', name: 'Starter', description: 'For solo developers.' },
-    { id: 'pro', name: 'Pro', description: 'For growing teams.' },
-    { id: 'enterprise', name: 'Enterprise', description: 'For large organizations.' }
-];
-
-export default function WrapperDemo() {
-    const [selected, setSelected] = React.useState<string>('pro');
-
-    return (
-        <div className="flex flex-wrap justify-center">
-            <RadioButtonGroup
-                value={selected}
-                onValueChange={(e: RadioButtonGroupValueChangeEvent) => setSelected(e.value as string)}
-                className="flex flex-col w-full max-w-3xs gap-2"
-            >
-                {plans.map((plan) => (
-                    <Label
-                        key={plan.id}
-                        className={`flex items-start gap-3 p-3 rounded-md border cursor-pointer ${selected === plan.id ? 'border-primary' : 'border-surface'}`}
-                    >
-                        <RadioButton.Root name="plan" value={plan.id}>
-                            <RadioButton.Box>
-                                <RadioButton.Indicator match="checked" />
-                            </RadioButton.Box>
-                        </RadioButton.Root>
-                        <div className="flex flex-col gap-0.5">
-                            <span className="font-medium">{plan.name}</span>
-                            <span className="text-xs text-surface-500">{plan.description}</span>
-                        </div>
-                    </Label>
-                ))}
-            </RadioButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ### Disabled
 
 `Label` reflects the disabled state of an associated control automatically when the control and label are peers or when the container has `data-disabled`.
-
-```tsx
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function DisabledDemo() {
-    return (
-        <div className="flex flex-col items-start max-w-3xs w-full mx-auto gap-6">
-            <div className="flex flex-col gap-2 w-full">
-                <Label htmlFor="account-id">Account ID</Label>
-                <InputText id="account-id" defaultValue="ACC-2026-0042" disabled />
-            </div>
-
-            <div data-disabled className="flex flex-col gap-2 w-full">
-                <Label htmlFor="api-key">API Key</Label>
-                <span>
-                    <InputText id="api-key" defaultValue="sk_live_***************" disabled fluid />
-                </span>
-            </div>
-        </div>
-    );
-}
-
-```
 
 ## Accessibility
 
