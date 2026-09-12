@@ -2,37 +2,6 @@
 
 Hook that manages password input with mask toggling and controlled or uncontrolled value state.
 
-```tsx
-'use client';
-import { Eye } from '@primeicons/react/eye';
-import { EyeSlash } from '@primeicons/react/eye-slash';
-import { useInputPassword } from '@primereact/headless/inputpassword';
-
-export default function BasicDemo() {
-    const { rootProps, state, toggleMask } = useInputPassword();
-
-    return (
-        <div className="flex items-center justify-center">
-            <div className="flex items-center border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden has-[input:focus-visible]:outline-1 has-[input:focus-visible]:outline-primary">
-                <input
-                    {...rootProps}
-                    placeholder="Enter password"
-                    className="w-48 px-2.5 py-1.5 text-sm bg-transparent outline-none text-surface-900 dark:text-surface-100"
-                />
-                <button
-                    type="button"
-                    onClick={toggleMask}
-                    className="px-2.5 py-1.5 cursor-pointer text-surface-500 hover:text-surface-700 dark:hover:text-surface-300"
-                >
-                    {state.mask ? <Eye /> : <EyeSlash />}
-                </button>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

@@ -2,28 +2,6 @@
 
 Hook that provides auto-resize logic and data attributes for textarea elements.
 
-```tsx
-'use client';
-import { useTextarea } from '@primereact/headless/textarea';
-
-export default function BasicDemo() {
-    const { rootProps } = useTextarea();
-
-    return (
-        <div className="flex justify-center">
-            <textarea
-                {...rootProps}
-                rows={5}
-                cols={30}
-                placeholder="Enter text"
-                className="px-2.5 py-1.5 text-sm rounded-md border border-surface-300 dark:border-surface-600 bg-white dark:bg-surface-900 text-surface-700 dark:text-surface-100 placeholder:text-surface-400 dark:placeholder:text-surface-500 outline-hidden hover:border-surface-400 dark:hover:border-surface-500 focus-visible:border-primary transition-colors duration-200"
-            />
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

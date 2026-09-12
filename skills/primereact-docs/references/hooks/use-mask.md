@@ -35,20 +35,3 @@ function useMask(options: UseMaskOptions): UseMaskReturn;
 `{ ref, value, rawValue, isComplete, setValue }`. `value` is the masked string, `rawValue` strips the literals and placeholders, `isComplete` is `true` once all required slots are filled.
 
 ## Basic
-
-```tsx
-'use client';
-import { useMask } from '@primereact/hooks';
-import { InputText } from '@primereact/ui/inputtext';
-
-export default function BasicDemo() {
-    const { ref } = useMask({ mask: '99-999999' });
-
-    return (
-        <div className="flex justify-center">
-            <InputText ref={ref} placeholder="99-999999" />
-        </div>
-    );
-}
-
-```

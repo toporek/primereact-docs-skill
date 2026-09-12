@@ -2,58 +2,6 @@
 
 Hook that manages tab selection state, keyboard navigation, and scrollable overflow.
 
-```tsx
-'use client';
-import { useTabs } from '@primereact/headless/tabs';
-
-export default function BasicDemo() {
-    const { getTabProps, getIndicatorProps, isItemActive } = useTabs({ defaultValue: 'tab1' });
-
-    return (
-        <div>
-            <div className="relative flex border-b border-surface-200 dark:border-surface-700">
-                {items.map((item) => {
-                    const active = isItemActive(item.value);
-
-                    return (
-                        <button
-                            key={item.value}
-                            {...getTabProps(item.value)}
-                            className={`px-4 py-3 text-sm font-semibold cursor-pointer transition-colors select-none focus-visible:outline-1 focus-visible:-outline-offset-1 focus-visible:outline-primary ${active ? 'text-primary' : 'text-surface-500 dark:text-surface-400 hover:text-surface-700 dark:hover:text-surface-200'}`}
-                        >
-                            {item.title}
-                        </button>
-                    );
-                })}
-                <span
-                    {...getIndicatorProps()}
-                    className="absolute block -bottom-px left-[var(--px-active-bar-left)] h-0.5 w-[var(--px-active-bar-width)] bg-primary transition-all duration-200 ease-out"
-                />
-            </div>
-            <div className="p-4 text-surface-700 dark:text-surface-200">
-                {items.map((item) => {
-                    const active = isItemActive(item.value);
-
-                    return (
-                        <div key={item.value} role="tabpanel" style={{ display: active ? 'block' : 'none' }}>
-                            <h2 className="text-lg font-bold">{item.title}</h2>
-                            <p className="mt-1 text-surface-500 dark:text-surface-400">{item.content}</p>
-                        </div>
-                    );
-                })}
-            </div>
-        </div>
-    );
-}
-
-const items = [
-    { value: 'tab1', title: 'Account Info', content: 'Update your personal information such as name, email address, and profile picture.' },
-    { value: 'tab2', title: 'Payment', content: 'Manage your subscription plan, view invoices, and update your payment method.' },
-    { value: 'tab3', title: 'Preferences', content: 'Customize how the application looks and behaves to match your personal preferences.' }
-];
-
-```
-
 ## Usage
 
 ```tsx

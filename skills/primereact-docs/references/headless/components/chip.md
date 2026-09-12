@@ -2,52 +2,6 @@
 
 Headless hook for building removable chip elements with custom markup.
 
-```tsx
-'use client';
-import { Times } from '@primeicons/react/times';
-import { useChip } from '@primereact/headless/chip';
-
-export default function BasicDemo() {
-    const chip1 = useChip();
-    const chip2 = useChip();
-    const chip3 = useChip({ onRemove: () => {} });
-
-    return (
-        <div className="flex items-center justify-center gap-2">
-            {chip1.state.visible && (
-                <div
-                    {...chip1.rootProps}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-surface-200 dark:border-surface-700 text-sm"
-                >
-                    <span>Apple</span>
-                </div>
-            )}
-            {chip2.state.visible && (
-                <div
-                    {...chip2.rootProps}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-surface-200 dark:border-surface-700 text-sm"
-                >
-                    <img src="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" alt="Amy" className="w-6 h-6 rounded-full" />
-                    <span>Amy Elsner</span>
-                </div>
-            )}
-            {chip3.state.visible && (
-                <div
-                    {...chip3.rootProps}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-surface-200 dark:border-surface-700 text-sm"
-                >
-                    <span>Removable</span>
-                    <span {...chip3.removeProps} className="inline-flex items-center cursor-pointer hover:text-red-500 transition">
-                        <Times className="w-3 h-3" />
-                    </span>
-                </div>
-            )}
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

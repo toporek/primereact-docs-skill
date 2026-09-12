@@ -2,30 +2,6 @@
 
 Hook that manages OTP input state, focus navigation, and keyboard handling.
 
-```tsx
-'use client';
-import { useInputOtp } from '@primereact/headless/inputotp';
-
-export default function BasicDemo() {
-    const { rootProps, getTextProps } = useInputOtp();
-
-    return (
-        <div className="flex justify-center">
-            <div {...rootProps} className="flex items-center gap-2">
-                {[0, 1, 2, 3].map((index) => (
-                    <input
-                        key={index}
-                        {...getTextProps(index)}
-                        className="w-9 py-1.5 text-sm text-center rounded-md border border-surface-300 dark:border-surface-600 bg-white dark:bg-surface-900 text-surface-700 dark:text-surface-100 outline-hidden hover:border-surface-400 dark:hover:border-surface-500 focus-visible:border-primary transition-colors duration-200"
-                    />
-                ))}
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

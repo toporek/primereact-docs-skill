@@ -2,43 +2,6 @@
 
 Hook that provides data attributes for building custom categorization labels.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { ExclamationTriangle } from '@primeicons/react/exclamation-triangle';
-import { InfoCircle } from '@primeicons/react/info-circle';
-import { useTag } from '@primereact/headless/tag';
-
-const tags = [
-    { label: 'Active', icon: Check, bg: 'bg-green-100 text-green-700' },
-    { label: 'Info', icon: InfoCircle, bg: 'bg-blue-100 text-blue-700' },
-    { label: 'Warning', icon: ExclamationTriangle, bg: 'bg-amber-100 text-amber-700' }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className="flex items-center justify-center flex-wrap gap-2">
-            {tags.map((tag) => {
-                const { rootProps } = useTag();
-                const Icon = tag.icon;
-
-                return (
-                    <span
-                        key={tag.label}
-                        {...rootProps}
-                        className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${tag.bg}`}
-                    >
-                        <Icon className="w-3 h-3" />
-                        {tag.label}
-                    </span>
-                );
-            })}
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

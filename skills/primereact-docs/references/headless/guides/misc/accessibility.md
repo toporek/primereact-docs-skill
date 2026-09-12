@@ -145,44 +145,6 @@ However the best practice is combining semantic HTML for accessibility while kee
 
 A working sample is the PrimeReact checkbox that is tabbable, keyboard accessible and is compliant with a screen reader. Instead of ARIA roles it relies on a hidden native checkbox.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { useCheckbox } from '@primereact/headless/checkbox';
-
-export default function AccessibilityCheckboxDemo() {
-    const { rootProps, inputProps, boxProps, indicatorProps } = useCheckbox({});
-
-    return (
-        <div className="flex items-center justify-center gap-2">
-            <div
-                {...rootProps}
-                className="relative inline-flex items-center has-[input:focus-visible]:outline-1 has-[input:focus-visible]:outline-offset-2 has-[input:focus-visible]:outline-primary has-[input:focus-visible]:outline rounded"
-            >
-                <input
-                    {...inputProps}
-                    value={inputProps.value as string}
-                    id="chkbox"
-                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none m-0 p-0 border border-transparent rounded"
-                />
-                <div
-                    {...boxProps}
-                    className="flex items-center justify-center w-5 h-5 rounded-sm border-2 data-checked:bg-primary data-checked:border-primary data-unchecked:border-gray-300 data-unchecked:hover:border-primary"
-                >
-                    <span {...indicatorProps} className="data-unchecked:hidden">
-                        <Check className="w-3 h-3 text-primary-contrast" />
-                    </span>
-                </div>
-            </div>
-            <label htmlFor="chkbox" className="cursor-pointer select-none text-sm">
-                Remember Me
-            </label>
-        </div>
-    );
-}
-
-```
-
 ## Colors
 
 Colors on a web page should aim a contrast ratio of at least 4.5:1 and consider a selection of colors that do not cause vibration.

@@ -2,52 +2,6 @@
 
 Hooks that manage accordion state, keyboard navigation, and ARIA attributes.
 
-```tsx
-'use client';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { useAccordion, useAccordionPanel } from '@primereact/headless/accordion';
-
-export default function BasicDemo() {
-    const accordion = useAccordion({ defaultValue: '1' });
-
-    const panel1 = useAccordionPanel({ value: '1', context: accordion });
-    const panel2 = useAccordionPanel({ value: '2', context: accordion });
-    const panel3 = useAccordionPanel({ value: '3', context: accordion });
-
-    const items = [
-        { panel: panel1, title: 'What is PrimeReact?', content: 'PrimeReact is a rich set of open source UI components for React.' },
-        { panel: panel2, title: 'How to get started?', content: 'Install PrimeReact via npm and import the components you need.' },
-        { panel: panel3, title: 'What about accessibility?', content: 'All components follow WAI-ARIA guidelines with full keyboard support.' }
-    ];
-
-    return (
-        <div {...accordion.rootProps} className="max-w-md mx-auto">
-            {items.map(({ panel, title, content }) => (
-                <div key={title} {...panel.panelProps} className="border-b border-surface-200 dark:border-surface-700">
-                    <div {...panel.headerProps}>
-                        <button
-                            {...panel.triggerProps}
-                            className="flex items-center justify-between w-full py-3 px-4 text-left cursor-pointer text-muted-color hover:text-color transition focus-visible:outline-1 focus-visible:-outline-offset-1 focus-visible:outline-primary"
-                        >
-                            <span>{title}</span>
-                            <span {...panel.indicatorProps} className="transition-transform duration-200 data-[open]:rotate-180">
-                                <ChevronDown />
-                            </span>
-                        </button>
-                    </div>
-                    {panel.state.open && (
-                        <div {...panel.contentProps} className="px-4 pb-3 text-surface-600 dark:text-surface-300 text-sm">
-                            {content}
-                        </div>
-                    )}
-                </div>
-            ))}
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

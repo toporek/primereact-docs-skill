@@ -4,21 +4,6 @@ An unstyled button component with compound composition and group support.
 
 Build fully custom button elements with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Button } from 'primereact/button';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Button className={styles.button}>Submit</Button>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Single component with `ButtonGroup` for grouping multiple buttons
