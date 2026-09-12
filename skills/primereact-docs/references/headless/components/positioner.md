@@ -2,58 +2,6 @@
 
 Hook that positions a floating element relative to an anchor with automatic flip, shift, and arrow support.
 
-```tsx
-'use client';
-import { usePortal } from '@primereact/headless/portal';
-import { usePositioner } from '@primereact/headless/positioner';
-import * as React from 'react';
-import { createPortal } from 'react-dom';
-
-export default function BasicDemo() {
-    const [open, setOpen] = React.useState(false);
-    const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
-    const [contentEl, setContentEl] = React.useState<HTMLDivElement | null>(null);
-
-    const portal = usePortal();
-
-    const positioner = usePositioner({
-        anchor: anchorEl ?? undefined,
-        content: contentEl ?? undefined,
-        side: 'bottom',
-        sideOffset: 8,
-        flip: true,
-        shift: true
-    });
-
-    return (
-        <>
-            <div className="flex justify-center">
-                <button
-                    ref={setAnchorEl}
-                    onClick={() => setOpen((prev) => !prev)}
-                    className="px-3 py-1.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm font-medium cursor-pointer transition"
-                >
-                    {open ? 'Hide' : 'Show'} Tooltip
-                </button>
-            </div>
-            {portal.state.mounted &&
-                open &&
-                createPortal(
-                    <div
-                        ref={setContentEl}
-                        className="bg-gray-900 text-white text-xs rounded-md px-3 py-1.5 shadow-lg"
-                        data-side={positioner.state.actualSide}
-                    >
-                        Positioned on {positioner.state.actualSide ?? 'bottom'}
-                    </div>,
-                    document.body
-                )}
-        </>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

@@ -4,53 +4,6 @@ An unstyled breadcrumb component for building navigational hierarchies with full
 
 Build fully custom breadcrumb navigation with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Home } from '@primeicons/react/home';
-import { Breadcrumb } from 'primereact/breadcrumb';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Breadcrumb.Root className={styles.root}>
-                <Breadcrumb.List className={styles.list}>
-                    <Breadcrumb.Item className={styles.item}>
-                        <Breadcrumb.Link href="/" className={styles.link}>
-                            <Home className={styles.icon} />
-                        </Breadcrumb.Link>
-                    </Breadcrumb.Item>
-                    <Breadcrumb.Separator className={styles.separator}>
-                        <ChevronRight className={styles.separatorIcon} />
-                    </Breadcrumb.Separator>
-                    <Breadcrumb.Item className={styles.item}>
-                        <Breadcrumb.Link href="#" className={styles.link}>
-                            Products
-                        </Breadcrumb.Link>
-                    </Breadcrumb.Item>
-                    <Breadcrumb.Separator className={styles.separator}>
-                        <ChevronRight className={styles.separatorIcon} />
-                    </Breadcrumb.Separator>
-                    <Breadcrumb.Item className={styles.item}>
-                        <Breadcrumb.Link href="#" className={styles.link}>
-                            Electronics
-                        </Breadcrumb.Link>
-                    </Breadcrumb.Item>
-                    <Breadcrumb.Separator className={styles.separator}>
-                        <ChevronRight className={styles.separatorIcon} />
-                    </Breadcrumb.Separator>
-                    <Breadcrumb.Item className={styles.item}>
-                        <Breadcrumb.Current className={styles.current}>Laptops</Breadcrumb.Current>
-                    </Breadcrumb.Item>
-                </Breadcrumb.List>
-            </Breadcrumb.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `List`, `Item`, `Link`, `Current`, `Separator`, `Ellipsis`

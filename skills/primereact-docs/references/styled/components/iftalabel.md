@@ -2,25 +2,6 @@
 
 IftaLabel visually integrates a label with its form element.
 
-```tsx
-import { IftaLabel } from '@primereact/ui/iftalabel';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function Preview() {
-    return (
-        <div className="mx-auto flex w-full max-w-3xs flex-col gap-1.5">
-            <IftaLabel>
-                <InputText id="name" fluid defaultValue="Isabella Reyes" />
-                <Label htmlFor="name">Full Name</Label>
-            </IftaLabel>
-            <small className="text-surface-500 opacity-75">The label stays inside the field, above the value</small>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -37,54 +18,9 @@ import { IftaLabel } from '@primereact/ui/iftalabel';
 
 An infield top-aligned label positioned inside the input boundary.
 
-```tsx
-import { IftaLabel } from '@primereact/ui/iftalabel';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function BasicDemo() {
-    return (
-        <div className="flex flex-wrap justify-center">
-            <IftaLabel>
-                <InputText id="username" />
-                <Label htmlFor="username">Username</Label>
-            </IftaLabel>
-        </div>
-    );
-}
-
-```
-
 ### Invalid
 
 When the form element is invalid, the label is also highlighted.
-
-```tsx
-'use client';
-import { IftaLabel } from '@primereact/ui/iftalabel';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-import * as React from 'react';
-
-export default function InvalidDemo() {
-    const [value, setValue] = React.useState('');
-
-    return (
-        <div className="flex flex-wrap justify-center">
-            <IftaLabel>
-                <InputText
-                    id="invalid"
-                    value={value}
-                    onInput={(e: React.FormEvent<HTMLInputElement>) => setValue(e.currentTarget.value)}
-                    invalid={!value}
-                />
-                <Label htmlFor="invalid">Username</Label>
-            </IftaLabel>
-        </div>
-    );
-}
-
-```
 
 ## Accessibility
 
@@ -108,9 +44,9 @@ API documentation for IftaLabel component
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: IftaLabelInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: IftaLabelInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: IftaLabelInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: IftaLabelInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | IftaLabelInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |

@@ -4,43 +4,6 @@ An unstyled listbox component with keyboard navigation, type-ahead search, and s
 
 Build fully custom option lists with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { Listbox, ListboxListInstance } from 'primereact/listbox';
-import styles from './basic-demo.module.css';
-
-const cities = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Listbox.Root options={cities} optionLabel="name" className={styles.root}>
-                <Listbox.List className={styles.list}>
-                    {(instance: ListboxListInstance) =>
-                        instance.options?.map((option: unknown, index: number) => (
-                            <Listbox.Option key={index} index={index} className={styles.option}>
-                                <Listbox.OptionIndicator className={styles.optionIndicator}>
-                                    <Check className={styles.checkIcon} />
-                                </Listbox.OptionIndicator>
-                                {instance.listbox?.getOptionLabel(option)}
-                            </Listbox.Option>
-                        ))
-                    }
-                </Listbox.List>
-            </Listbox.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `List`, `Option`, `OptionIndicator`, `Header`, `Filter`, `Empty`, `Footer`
