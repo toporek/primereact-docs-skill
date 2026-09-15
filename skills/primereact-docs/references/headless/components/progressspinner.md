@@ -2,27 +2,6 @@
 
 Hook that manages circular progress state, SVG geometry computation, and determinate/indeterminate modes.
 
-```tsx
-'use client';
-import { useProgressSpinner } from '@primereact/headless/progressspinner';
-
-export default function BasicDemo() {
-    const { rootProps, circleProps, circleTrackProps, circleRangeProps } = useProgressSpinner();
-
-    return (
-        <div className="flex justify-center">
-            <div {...rootProps} className="w-24 h-24" aria-label="Loading">
-                <svg {...circleProps} className="w-full h-full animate-spin">
-                    <circle {...circleTrackProps} className="stroke-[var(--p-content-border-color)]" />
-                    <circle {...circleRangeProps} className="stroke-primary [stroke-dasharray:89,200] [stroke-dashoffset:0] [stroke-linecap:round]" />
-                </svg>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

@@ -2,69 +2,6 @@
 
 Hook that manages carousel scroll snapping, swipe gestures, and page-based navigation.
 
-```tsx
-'use client';
-import { ChevronLeft } from '@primeicons/react/chevron-left';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { useCarousel } from '@primereact/headless/carousel';
-
-export default function BasicDemo() {
-    const { rootProps, contentProps, state, getItemProps, indicatorsProps, getIndicatorProps, getPrevProps, getNextProps } = useCarousel({
-        align: 'center'
-    });
-
-    return (
-        <div className="max-w-xl mx-auto py-4">
-            <div {...rootProps}>
-                <div
-                    {...contentProps}
-                    className="relative flex gap-(--spacing-items) overflow-x-scroll overscroll-x-contain scrollbar-none [scroll-snap-type:var(--px-scroll-snap-type)] h-[240px]"
-                    style={contentProps.style}
-                >
-                    {Array.from({ length: 5 }).map((_, i) => (
-                        <div
-                            key={i}
-                            {...getItemProps(i)}
-                            className="grow-0 shrink-0 min-w-0 basis-[calc(100%/var(--px-slides-per-page)-var(--px-spacing-items)*(var(--px-slides-per-page)-1)/var(--px-slides-per-page))] snap-center"
-                        >
-                            <div className="h-full text-5xl font-semibold bg-surface-50 dark:bg-surface-950 text-surface-950 dark:text-surface-0 flex flex-col items-center justify-center gap-6 rounded-xl border border-surface-200 dark:border-surface-700">
-                                <span>{i + 1}</span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className="flex mt-4 gap-4">
-                    <div {...indicatorsProps} className="flex flex-wrap items-center justify-start gap-2">
-                        {Array.from(state.snapPoints).map((_, i) => (
-                            <button
-                                key={i}
-                                {...getIndicatorProps(i)}
-                                className="w-7 h-2 rounded-full transition-colors cursor-pointer outline-0 outline-primary focus-visible:outline-2 focus-visible:outline-offset-2 bg-surface-200 dark:bg-surface-700 hover:bg-surface-300 dark:hover:bg-surface-600 data-[active]:bg-primary"
-                            />
-                        ))}
-                    </div>
-                    <div className="flex items-center justify-end gap-2 flex-1">
-                        <button
-                            {...getPrevProps(state.isPrevDisabled)}
-                            className="w-9 h-9 flex items-center justify-center rounded-full border border-surface-200 dark:border-surface-700 bg-surface-0 dark:bg-surface-800 text-surface-500 dark:text-surface-400 hover:bg-surface-50 dark:hover:bg-surface-700 cursor-pointer transition disabled:opacity-50 disabled:pointer-events-none outline-0 outline-primary focus-visible:outline-2 focus-visible:outline-offset-2"
-                        >
-                            <ChevronLeft className="text-lg" />
-                        </button>
-                        <button
-                            {...getNextProps(state.isNextDisabled)}
-                            className="w-9 h-9 flex items-center justify-center rounded-full border border-surface-200 dark:border-surface-700 bg-surface-0 dark:bg-surface-800 text-surface-500 dark:text-surface-400 hover:bg-surface-50 dark:hover:bg-surface-700 cursor-pointer transition disabled:opacity-50 disabled:pointer-events-none outline-0 outline-primary focus-visible:outline-2 focus-visible:outline-offset-2"
-                        >
-                            <ChevronRight className="text-lg" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
