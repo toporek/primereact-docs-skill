@@ -4,55 +4,6 @@ An unstyled toggle button component with group selection support for single and 
 
 Build fully custom toggle buttons and button groups with complete control over layout and styling.
 
-```tsx
-'use client';
-import { AlignCenter } from '@primeicons/react/align-center';
-import { AlignJustify } from '@primeicons/react/align-justify';
-import { AlignLeft } from '@primeicons/react/align-left';
-import { AlignRight } from '@primeicons/react/align-right';
-import { Heart } from '@primeicons/react/heart';
-import { HeartFill } from '@primeicons/react/heart-fill';
-import { ToggleButton, type ToggleButtonIndicatorInstance } from 'primereact/togglebutton';
-import { ToggleButtonGroup } from 'primereact/togglebuttongroup';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <ToggleButton.Root className={styles.button}>
-                <ToggleButton.Indicator className={styles.indicator}>
-                    {({ togglebutton }: ToggleButtonIndicatorInstance) => (togglebutton?.state.pressed ? <HeartFill /> : <Heart />)}
-                </ToggleButton.Indicator>
-            </ToggleButton.Root>
-
-            <ToggleButtonGroup className={styles.group} allowEmpty={false}>
-                <ToggleButton.Root className={styles.groupButton} value="left">
-                    <ToggleButton.Indicator className={styles.groupIndicator}>
-                        <AlignLeft />
-                    </ToggleButton.Indicator>
-                </ToggleButton.Root>
-                <ToggleButton.Root className={styles.groupButton} value="center">
-                    <ToggleButton.Indicator className={styles.groupIndicator}>
-                        <AlignCenter />
-                    </ToggleButton.Indicator>
-                </ToggleButton.Root>
-                <ToggleButton.Root className={styles.groupButton} value="right">
-                    <ToggleButton.Indicator className={styles.groupIndicator}>
-                        <AlignRight />
-                    </ToggleButton.Indicator>
-                </ToggleButton.Root>
-                <ToggleButton.Root className={styles.groupButton} value="justify">
-                    <ToggleButton.Indicator className={styles.groupIndicator}>
-                        <AlignJustify />
-                    </ToggleButton.Indicator>
-                </ToggleButton.Root>
-            </ToggleButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Indicator`
