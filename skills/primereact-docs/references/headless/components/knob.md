@@ -2,35 +2,6 @@
 
 Hook that manages circular dial state, SVG arc computation, and keyboard/mouse/touch interaction.
 
-```tsx
-'use client';
-import * as React from 'react';
-import { useKnob } from '@primereact/headless/knob';
-
-export default function BasicDemo() {
-    const { rootProps, svgProps, rangeProps, valueProps, textProps, state } = useKnob({ defaultValue: 50 });
-
-    return (
-        <div className="flex justify-center">
-            <div {...rootProps} className="inline-flex">
-                <svg
-                    {...(svgProps as React.SVGProps<SVGSVGElement>)}
-                    aria-label="Volume"
-                    className="outline-none focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-full cursor-pointer"
-                >
-                    <path {...rangeProps} stroke="var(--p-content-border-color)" className="fill-none" />
-                    <path {...valueProps} stroke="var(--p-primary-color)" className="fill-none" />
-                    <text {...textProps} className="text-[1rem] fill-surface-700 dark:fill-surface-0">
-                        {state.value}
-                    </text>
-                </svg>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

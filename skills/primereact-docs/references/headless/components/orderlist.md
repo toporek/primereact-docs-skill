@@ -2,91 +2,6 @@
 
 A headless hook that manages list ordering with selection-based controls and optional drag-and-drop support.
 
-```tsx
-'use client';
-import { useOrderList, type UseOrderListReorderEvent } from '@primereact/headless/orderlist';
-import { useState } from 'react';
-
-const cities = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' }
-];
-
-type City = (typeof cities)[0];
-
-export default function BasicDemo() {
-    const [items, setItems] = useState(cities);
-    const [selection, setSelection] = useState<City[]>([]);
-
-    const orderList = useOrderList({
-        value: items,
-        selection,
-        onReorder: (e: UseOrderListReorderEvent) => setItems(e.value as typeof cities)
-    });
-
-    const toggleSelection = (item: City) => {
-        setSelection((prev) => (prev.includes(item) ? prev.filter((s) => s !== item) : [...prev, item]));
-    };
-
-    const btnClassName =
-        'px-2 py-1 rounded bg-surface-100 dark:bg-surface-800 hover:bg-surface-200 dark:hover:bg-surface-700 text-sm disabled:opacity-50';
-    const hasSelection = selection.length > 0;
-
-    return (
-        <div className="flex justify-center">
-            <div className="flex gap-2 w-full max-w-xs">
-                <div {...orderList.controlsProps} className="flex flex-col gap-1">
-                    <button
-                        onClick={orderList.firstProps.onClick as React.MouseEventHandler}
-                        disabled={!hasSelection || undefined}
-                        className={btnClassName}
-                    >
-                        ⇈
-                    </button>
-                    <button
-                        onClick={orderList.prevProps.onClick as React.MouseEventHandler}
-                        disabled={!hasSelection || undefined}
-                        className={btnClassName}
-                    >
-                        ↑
-                    </button>
-                    <button
-                        onClick={orderList.nextProps.onClick as React.MouseEventHandler}
-                        disabled={!hasSelection || undefined}
-                        className={btnClassName}
-                    >
-                        ↓
-                    </button>
-                    <button
-                        onClick={orderList.lastProps.onClick as React.MouseEventHandler}
-                        disabled={!hasSelection || undefined}
-                        className={btnClassName}
-                    >
-                        ⇊
-                    </button>
-                </div>
-                <div {...orderList.listProps} className="flex-1 border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
-                    {(orderList.state.value as typeof cities).map((item, i) => (
-                        <div
-                            key={item.code}
-                            {...orderList.getOptionProps(item, i)}
-                            onClick={() => toggleSelection(item)}
-                            className={`px-3 py-2 cursor-pointer select-none text-sm border-b border-surface-100 dark:border-surface-800 last:border-b-0 ${selection.includes(item) ? 'bg-primary/10 text-primary' : 'hover:bg-surface-50 dark:hover:bg-surface-900'}`}
-                        >
-                            {item.name}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -98,7 +13,7 @@ const orderList = useOrderList({
     value: items,
     selection,
     draggable: true,
-    onReorder: (e) => setItems(e.value)
+    onValueChange: (e) => setItems(e.value)
 });
 
 <div {...orderList.rootProps}>
@@ -127,16 +42,16 @@ const orderList = useOrderList({
 
 ## Working with callbacks
 
-### onReorder, persist the new order
+### onValueChange, persist the new order
 
-`onReorder` fires whenever the list changes. In controlled usage, feed `e.value` back into your state.
+`onValueChange` fires whenever the list changes. In controlled usage, feed `e.value` back into your state.
 
 ```tsx
 const [items, setItems] = React.useState(['A', 'B', 'C']);
 
 const orderList = useOrderList({
     value: items,
-    onReorder: (e) => setItems(e.value)
+    onValueChange: (e) => setItems(e.value)
 });
 ```
 
@@ -151,7 +66,7 @@ const orderList = useOrderList({
     value: items,
     selection,
     onSelectionChange: (e) => setSelection(e.value),
-    onReorder: (e) => setItems(e.value)
+    onValueChange: (e) => setItems(e.value)
 });
 ```
 
@@ -164,7 +79,7 @@ const orderList = useOrderList({
     value: items,
     draggable: true,
     placeholder: 'clone',
-    onReorder: (e) => setItems(e.value)
+    onValueChange: (e) => setItems(e.value)
 });
 ```
 
@@ -175,7 +90,7 @@ Target the ghost with the `[data-sortable-placeholder]` attribute.
 Use the returned imperative methods to bind moves to custom shortcuts or toolbars.
 
 ```tsx
-const orderList = useOrderList({ value: items, selection, onReorder: (e) => setItems(e.value) });
+const orderList = useOrderList({ value: items, selection, onValueChange: (e) => setItems(e.value) });
 
 useHotkey('alt+up', () => orderList.moveUp());
 useHotkey('alt+shift+up', () => orderList.moveTop());

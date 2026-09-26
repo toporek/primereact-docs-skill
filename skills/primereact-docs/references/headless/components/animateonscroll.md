@@ -2,53 +2,6 @@
 
 Hook that applies enter and leave CSS animations to elements based on viewport intersection.
 
-```tsx
-'use client';
-import { ArrowDown } from '@primeicons/react/arrow-down';
-import { useAnimateOnScroll } from '@primereact/headless/animateonscroll';
-import * as React from 'react';
-
-function AnimatedBox({ enterClassName, leaveClassName, children }: { enterClassName: string; leaveClassName?: string; children: React.ReactNode }) {
-    const { rootProps } = useAnimateOnScroll({ enterClassName, leaveClassName });
-
-    return <div {...rootProps}>{children}</div>;
-}
-
-export default function BasicDemo() {
-    return (
-        <div className="flex flex-col items-center overflow-hidden">
-            <div className="flex flex-col items-center gap-4">
-                <div className="text-2xl font-medium">Scroll Down</div>
-                <div className="animate-bounce h-8 w-8 bg-primary text-primary-contrast rounded-full inline-flex items-center justify-center">
-                    <ArrowDown />
-                </div>
-            </div>
-            <div className="h-[45rem]"></div>
-            <div className="flex flex-col items-center gap-8 w-full">
-                <AnimatedBox
-                    enterClassName="animate-enter fade-in-10 slide-in-from-b-16 animate-duration-1000"
-                    leaveClassName="animate-leave fade-out-0 animate-duration-100"
-                >
-                    <div className="text-5xl lg:text-[4rem] text-center font-bold max-w-lg lg:max-w-3xl text-surface-900">
-                        Discover real-world design inspiration.
-                    </div>
-                </AnimatedBox>
-                <AnimatedBox
-                    enterClassName="animate-enter fade-in-10 slide-in-from-b-16 animate-duration-1000"
-                    leaveClassName="animate-leave fade-out-0 animate-duration-100"
-                >
-                    <div className="max-w-md lg:max-w-md text-base lg:text-lg text-center text-surface-500">
-                        Featuring over 400,000 screens and 1,000 iOS, Android & Web apps.
-                    </div>
-                </AnimatedBox>
-            </div>
-            <div className="h-[15rem]"></div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

@@ -4,21 +4,6 @@ An unstyled multi-line text input component with auto-resize support.
 
 Build fully custom multi-line text inputs with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Textarea } from 'primereact/textarea';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Textarea rows={5} cols={30} placeholder="Enter text" className={styles.textarea} />
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Single component rendering a native `<textarea>` element
