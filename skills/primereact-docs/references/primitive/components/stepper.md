@@ -4,53 +4,6 @@ An unstyled, accessible stepper component with compound composition for multi-st
 
 Build fully custom step-by-step workflows with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Stepper } from 'primereact/stepper';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Stepper.Root defaultValue="1" className={styles.root}>
-            <Stepper.List className={styles.list}>
-                <Stepper.Step value="1" className={styles.step}>
-                    <Stepper.Header className={styles.header}>
-                        <Stepper.Number className={styles.number}>1</Stepper.Number>
-                        <Stepper.Title className={styles.title}>Header I</Stepper.Title>
-                    </Stepper.Header>
-                    <Stepper.Separator className={styles.separator} />
-                </Stepper.Step>
-                <Stepper.Step value="2" className={styles.step}>
-                    <Stepper.Header className={styles.header}>
-                        <Stepper.Number className={styles.number}>2</Stepper.Number>
-                        <Stepper.Title className={styles.title}>Header II</Stepper.Title>
-                    </Stepper.Header>
-                    <Stepper.Separator className={styles.separator} />
-                </Stepper.Step>
-                <Stepper.Step value="3" className={styles.step}>
-                    <Stepper.Header className={styles.header}>
-                        <Stepper.Number className={styles.number}>3</Stepper.Number>
-                        <Stepper.Title className={styles.title}>Header III</Stepper.Title>
-                    </Stepper.Header>
-                </Stepper.Step>
-            </Stepper.List>
-            <Stepper.Panels className={styles.panels}>
-                <Stepper.Panel value="1" className={styles.panel}>
-                    <div className={styles.panelPlaceholder}>Content I</div>
-                </Stepper.Panel>
-                <Stepper.Panel value="2" className={styles.panel}>
-                    <div className={styles.panelPlaceholder}>Content II</div>
-                </Stepper.Panel>
-                <Stepper.Panel value="3" className={styles.panel}>
-                    <div className={styles.panelPlaceholder}>Content III</div>
-                </Stepper.Panel>
-            </Stepper.Panels>
-        </Stepper.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with eleven sub-components: `Root`, `List`, `Step`, `Item`, `Header`, `Number`, `Title`, `Separator`, `Panels`, `Panel`, `Content`

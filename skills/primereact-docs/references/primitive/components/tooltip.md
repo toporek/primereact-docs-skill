@@ -4,46 +4,6 @@ An unstyled tooltip component with hover/focus triggers, delay management, and g
 
 Build fully custom tooltips with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Tooltip } from 'primereact/tooltip';
-import styles from './basic-demo.module.css';
-
-const flights = [
-    { from: 'IST', to: 'LHR', airline: 'Turkish Airlines', status: 'ON TIME', statusClass: 'onTime' as const },
-    { from: 'IST', to: 'CDG', airline: 'Lufthansa', status: 'DELAYED', statusClass: 'delayed' as const },
-    { from: 'IST', to: 'FRA', airline: 'Qatar Airways', status: 'BOARDING', statusClass: 'boarding' as const }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Tooltip.Manager>
-                <div className={styles.flightBar}>
-                    {flights.map((flight) => (
-                        <Tooltip.Root key={flight.to} openDelay={200} closeDelay={100}>
-                            <Tooltip.Trigger className={styles.trigger}>
-                                {flight.from} <ChevronRight className={styles.chevron} /> {flight.to}
-                            </Tooltip.Trigger>
-                            <Tooltip.Portal>
-                                <Tooltip.Positioner sideOffset={8}>
-                                    <Tooltip.Popup className={styles.popup}>
-                                        <Tooltip.Arrow className={styles.arrow} />
-                                        {flight.airline} <span className={styles[flight.statusClass]}>{flight.status}</span>
-                                    </Tooltip.Popup>
-                                </Tooltip.Positioner>
-                            </Tooltip.Portal>
-                        </Tooltip.Root>
-                    ))}
-                </div>
-            </Tooltip.Manager>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Configurable `openDelay` and `closeDelay` for timing control

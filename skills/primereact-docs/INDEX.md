@@ -2,7 +2,13 @@
 
 ## Styled
 
+- [Figma to Theme Code CI Pipeline](references/styled/add-ons/designer/ci.md) — Automate the conversion of Figma design tokens to theme code using CI pipelines and the theme designer API.
+- [Designer](references/styled/add-ons/designer/guide.md) — Theme Designer is the ultimate tool to customize and design your own themes featuring a visual editor, Figma to theme code, cloud storage, and migration assistant.
+- [Theme Designer](references/styled/add-ons/designer/overview.md) — Theme Designer is the ultimate tool to customize and design your own themes featuring a visual editor, Figma to theme code, cloud storage, and migration assistant.
 - [Add-Ons](references/styled/add-ons/introduction.md) — Premium templates, UI blocks and design tooling that build on top of PrimeReact.
+- [PrimeOne Guide v3](references/styled/add-ons/uikit/guide/v3.md) — PrimeOne is PrimeTek's official Figma UI Kit, built to work seamlessly with the Prime UI Suites.
+- [PrimeOne Guide](references/styled/add-ons/uikit/guide/v4.md) — PrimeOne is a strong UI component library that gets even better with a great Figma UI Kit. It is PrimeTek's official Figma UI Kit, built to work seamlessly with the Prime UI Suites.
+- [UI Kit](references/styled/add-ons/uikit/overview.md) — PrimeOne is PrimeTek's official Figma UI Kit, designed to match the implementations in the Prime UI Suites.
 - [Accordion](references/styled/components/accordion.md) — Accordion groups content into collapsible panels.
 - [AnimateOnScroll](references/styled/components/animateonscroll.md) — AnimateOnScroll applies enter and leave animations to elements as they move in and out of the viewport during scroll.
 - [AutoComplete](references/styled/components/autocomplete.md) — AutoComplete is an input component that provides real-time suggestions when being typed.
@@ -90,7 +96,12 @@
 - [Tree](references/styled/components/tree.md) — Tree is used to display hierarchical data.
 - [Tree Theming](references/styled/components/tree/theming.md) — Theming documentation for Tree component
 - [TreeTable](references/styled/components/treetable.md) — TreeTable renders hierarchical data with the same feature set as DataTable, sort, filter, pagination, selection, scroll, frozen, resize, reorder, editing, export.
+- [MCP Server](references/styled/guides/ai/mcp.md) — Connect AI assistants to PrimeReact component documentation, guides, examples, setup, and API metadata.
+- [Plugin](references/styled/guides/ai/plugin.md) — Install PrimeReact workflow skills and the PrimeReact MCP server in a supported AI assistant.
 - [Configuration](references/styled/guides/configuration.md) — Application wide configuration for PrimeReact.
+- [Formik](references/styled/guides/form/formik.md) — Build validated forms with PrimeReact and Formik.
+- [React Hook Form](references/styled/guides/form/react-hook-form.md) — Build validated forms with PrimeReact and React Hook Form.
+- [TanStack Form](references/styled/guides/form/tanstack.md) — Build validated forms with PrimeReact and TanStack Form.
 - [Custom Icons](references/styled/guides/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
 - [Prime Icons](references/styled/guides/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
 - [Installation](references/styled/guides/installation.md) — How to set up PrimeReact in your project. Select your framework to get started.
@@ -101,8 +112,10 @@
 - [With TanStack](references/styled/guides/installation/tanstack.md) — Setting up PrimeReact in a TanStack Start project.
 - [With Vite](references/styled/guides/installation/vite.md) — Setting up PrimeReact in a Vite project.
 - [Styled](references/styled/guides/introduction.md) — Pre-themed React components built on top of the headless layer. Drop them in and they look good out of the box.
+- [Updating to v11](references/styled/guides/migration/updating-to-v11.md) — A component by component guide to moving an application from PrimeReact v10 to v11.
 - [Accessibility](references/styled/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
 - [Animations](references/styled/guides/misc/animations.md) — Built-in CSS animations for PrimeReact components.
+- [Internationalization and Localization](references/styled/guides/misc/internationalization.md) — Translating component messages and configuring regional settings such as date formats and the first day of the week.
 - [Pass Through](references/styled/guides/misc/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
 - [RTL Support](references/styled/guides/misc/rtl.md) — Right-to-left direction support of PrimeReact.
 - [Styled Mode](references/styled/guides/theming/styled.md) — Choose from a variety of pre-styled themes or develop your own.
@@ -189,11 +202,15 @@
 - [Tree](references/primitive/components/tree.md) — Unstyled, accessible tree primitive with a compound API.
 - [TreeTable](references/primitive/components/treetable.md) — An unstyled hierarchical data table built on DataTable with treeMode enabled, sort, filter, paginate, select, expand, and edit tree-shaped data.
 - [VisuallyHidden](references/primitive/components/visuallyhidden.md) — A utility component that hides content visually while keeping it accessible to screen readers.
+- [MCP Server](references/primitive/guides/ai/mcp.md) — Connect AI assistants to PrimeReact component documentation, guides, examples, setup, and API metadata.
+- [Plugin](references/primitive/guides/ai/plugin.md) — Install PrimeReact workflow skills and the PrimeReact MCP server in a supported AI assistant.
 - [Custom Icons](references/primitive/guides/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
 - [Prime Icons](references/primitive/guides/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
-- [Installation](references/primitive/guides/installation.md) — Install the primitive package and compose unstyled components in your React project.
+- [Installation](references/primitive/guides/installation.md) — Install PrimeReact and compose unstyled primitive components in your React project.
 - [Primitive](references/primitive/guides/introduction.md) — Unstyled React components with composable subcomponents. Behavior included, styling up to you.
+- [Updating to v11](references/primitive/guides/migration/updating-to-v11.md) — A component by component guide to moving an application from PrimeReact v10 to v11.
 - [Accessibility](references/primitive/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Internationalization and Localization](references/primitive/guides/misc/internationalization.md) — Translating component messages and configuring regional settings such as date formats and the first day of the week.
 - [Pass Through](references/primitive/guides/misc/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
 - [RTL Support](references/primitive/guides/misc/rtl.md) — Right-to-left direction support of PrimeReact.
 - [Resources](references/primitive/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
@@ -278,9 +295,12 @@
 - [useTooltip](references/headless/components/tooltip.md) — Hook that manages tooltip open state, hover/focus triggers, delay timing, and group transitions.
 - [useTree](references/headless/components/tree.md) — Headless tree hook that manages expansion, selection, keyboard and drag-drop state.
 - [useTreeTable](references/headless/components/treetable.md) — Hierarchical data table built on useDataTable with treeMode enabled, sort, filter, paginate, select, expand, and edit tree-shaped data.
-- [Installation](references/headless/guides/installation.md) — Install the headless package and start using hooks in your React project.
+- [MCP Server](references/headless/guides/ai/mcp.md) — Connect AI assistants to PrimeReact component documentation, guides, examples, setup, and API metadata.
+- [Plugin](references/headless/guides/ai/plugin.md) — Install PrimeReact workflow skills and the PrimeReact MCP server in a supported AI assistant.
+- [Installation](references/headless/guides/installation.md) — Install PrimeReact's headless hooks and build fully custom components in your React project.
 - [Headless](references/headless/guides/introduction.md) — React hooks that handle logic and accessibility. You bring your own markup and styles.
 - [Accessibility](references/headless/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Internationalization and Localization](references/headless/guides/misc/internationalization.md) — Translating component messages and configuring regional settings such as date formats and the first day of the week.
 - [Resources](references/headless/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
 
 ## Tailwind
@@ -345,6 +365,8 @@
 - [ToggleSwitch](references/tailwind/components/toggleswitch.md) — ToggleSwitch is used to select a boolean value.
 - [Toolbar](references/tailwind/components/toolbar.md) — Toolbar is a grouping component for buttons and other content.
 - [Tooltip](references/tailwind/components/tooltip.md) — Tooltip is a component that displays a tooltip when the user hovers over an element.
+- [MCP Server](references/tailwind/guides/ai/mcp.md) — Connect AI assistants to PrimeReact component documentation, guides, examples, setup, and API metadata.
+- [Plugin](references/tailwind/guides/ai/plugin.md) — Install PrimeReact workflow skills and the PrimeReact MCP server in a supported AI assistant.
 - [Custom Icons](references/tailwind/guides/icons/customicons.md) — PrimeReact components can be used with any icon library using the templating features.
 - [Prime Icons](references/tailwind/guides/icons/primeicons.md) — PrimeIcons is the default icon library of PrimeReact with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as PrimeReact components can use any icon with templating.
 - [Installation](references/tailwind/guides/installation.md) — How to set up PrimeReact in your project. Select your framework to get started.
@@ -356,9 +378,10 @@
 - [With Vite](references/tailwind/guides/installation/vite.md) — Setting up PrimeReact Tailwind components in a Vite project.
 - [Tailwind](references/tailwind/guides/introduction.md) — Copy-paste React components styled with Tailwind CSS. Own the code, customize everything.
 - [Accessibility](references/tailwind/guides/misc/accessibility.md) — PrimeReact has WCAG level compliance, refer to the accessibility documentation of each component for detailed information.
+- [Internationalization and Localization](references/tailwind/guides/misc/internationalization.md) — Translating component messages and configuring regional settings such as date formats and the first day of the week.
 - [Pass Through](references/tailwind/guides/misc/passthrough.md) — The Pass Through attributes is an API to access the internal DOM Structure of the components.
 - [RTL Support](references/tailwind/guides/misc/rtl.md) — Right-to-left direction support of PrimeReact.
-- [Theming](references/tailwind/guides/theming/guide.md) — Theme PrimeReact's Tailwind components with CSS variables and the tailwindcss-primeui plugin.
+- [Theming](references/tailwind/guides/theming.md) — Theme PrimeReact's Tailwind components with CSS variables and the tailwindcss-primeui plugin.
 - [Resources](references/tailwind/resources/introduction.md) — Support channels, legacy versions and places to discover more about PrimeReact.
 
 ## Hooks
