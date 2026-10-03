@@ -2,66 +2,6 @@
 
 Hook that manages listbox selection state, keyboard navigation, and option search.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { useListbox, useListboxOption } from '@primereact/headless/listbox';
-
-const cities = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' }
-];
-
-const visuallyHiddenStyle = {
-    border: 0,
-    clip: 'rect(0 0 0 0)',
-    clipPath: 'inset(50%)',
-    height: '1px',
-    margin: '-1px',
-    overflow: 'hidden',
-    padding: 0,
-    position: 'absolute',
-    whiteSpace: 'nowrap',
-    width: '1px'
-} as const;
-
-export default function BasicDemo() {
-    const listbox = useListbox({ options: cities, optionLabel: 'name' });
-    const { rootProps, listProps, firstHiddenProps, lastHiddenProps, getOptions, getOptionLabel } = listbox;
-
-    return (
-        <div className="flex justify-center">
-            <div {...rootProps} className="w-full max-w-56 border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
-                <span {...firstHiddenProps} tabIndex={0} style={visuallyHiddenStyle} />
-                <ul {...listProps} className="list-none m-0 p-1 outline-none">
-                    {getOptions().map((option, index) => {
-                        const { optionProps, optionIndicatorProps } = useListboxOption({ option, index, context: listbox });
-
-                        return (
-                            <li
-                                key={index}
-                                {...optionProps}
-                                className="flex items-center gap-2 px-3 py-2 my-0.5 rounded-md cursor-pointer select-none text-sm transition-colors text-surface-700 dark:text-surface-0 hover:bg-surface-50 dark:hover:bg-surface-800 outline-none aria-selected:bg-surface-100 aria-selected:dark:bg-surface-800 aria-selected:text-primary data-[focused]:bg-surface-100 data-[focused]:dark:bg-surface-800 data-[disabled]:pointer-events-none data-[disabled]:opacity-60"
-                            >
-                                <span {...optionIndicatorProps} className="flex items-center justify-center w-4 h-4 data-[unselected]:invisible">
-                                    <Check className="w-3.5 h-3.5" />
-                                </span>
-                                <span>{getOptionLabel(option)}</span>
-                            </li>
-                        );
-                    })}
-                </ul>
-                <span {...lastHiddenProps} tabIndex={0} style={visuallyHiddenStyle} />
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

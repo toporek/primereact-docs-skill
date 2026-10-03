@@ -4,98 +4,6 @@ An unstyled, accessible context menu component with compound composition for rig
 
 Build fully custom right-click menus with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Clipboard } from '@primeicons/react/clipboard';
-import { Copy } from '@primeicons/react/copy';
-import { ExternalLink } from '@primeicons/react/external-link';
-import { Folder } from '@primeicons/react/folder';
-import { PenToSquare } from '@primeicons/react/pen-to-square';
-import { Refresh } from '@primeicons/react/refresh';
-import { Search } from '@primeicons/react/search';
-import { Trash } from '@primeicons/react/trash';
-import { ContextMenu } from 'primereact/contextmenu';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.container}>
-            <ContextMenu.Root>
-                <ContextMenu.Trigger className={styles.trigger}>Right Click Here</ContextMenu.Trigger>
-                <ContextMenu.Portal>
-                    <ContextMenu.Positioner>
-                        <ContextMenu.Popup className={styles.popup}>
-                            <ContextMenu.List className={styles.list}>
-                                <ContextMenu.Item className={styles.item}>
-                                    <Copy className={styles.icon} />
-                                    Copy
-                                </ContextMenu.Item>
-                                <ContextMenu.Item className={styles.item}>
-                                    <Clipboard className={styles.icon} />
-                                    Paste
-                                </ContextMenu.Item>
-
-                                <ContextMenu.Separator className={styles.separator} />
-
-                                <ContextMenu.Submenu>
-                                    <ContextMenu.SubmenuTrigger className={styles.subtrigger}>
-                                        <Folder className={styles.icon} />
-                                        View
-                                        <ContextMenu.SubmenuIndicator className={styles.indicator}>
-                                            <ChevronRight />
-                                        </ContextMenu.SubmenuIndicator>
-                                    </ContextMenu.SubmenuTrigger>
-                                    <ContextMenu.Portal>
-                                        <ContextMenu.Positioner>
-                                            <ContextMenu.Popup className={styles.popup}>
-                                                <ContextMenu.List className={styles.list}>
-                                                    <ContextMenu.Item className={styles.item}>
-                                                        <Search className={styles.icon} />
-                                                        Zoom In
-                                                    </ContextMenu.Item>
-                                                    <ContextMenu.Item className={styles.item}>
-                                                        <Search className={styles.icon} />
-                                                        Zoom Out
-                                                    </ContextMenu.Item>
-                                                    <ContextMenu.Item className={styles.item}>
-                                                        <Refresh className={styles.icon} />
-                                                        Reload
-                                                    </ContextMenu.Item>
-                                                </ContextMenu.List>
-                                            </ContextMenu.Popup>
-                                        </ContextMenu.Positioner>
-                                    </ContextMenu.Portal>
-                                </ContextMenu.Submenu>
-
-                                <ContextMenu.Separator className={styles.separator} />
-
-                                <ContextMenu.Item className={styles.item}>
-                                    <PenToSquare className={styles.icon} />
-                                    Rename
-                                </ContextMenu.Item>
-                                <ContextMenu.Item className={styles.item}>
-                                    <ExternalLink className={styles.icon} />
-                                    Open Link
-                                </ContextMenu.Item>
-
-                                <ContextMenu.Separator className={styles.separator} />
-
-                                <ContextMenu.Item className={styles.itemDanger}>
-                                    <Trash className={styles.icon} />
-                                    Delete
-                                </ContextMenu.Item>
-                            </ContextMenu.List>
-                        </ContextMenu.Popup>
-                    </ContextMenu.Positioner>
-                </ContextMenu.Portal>
-            </ContextMenu.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Trigger`, `Portal`, `Positioner`, `Popup`, `Arrow`, `List`, `Item`, `Sub`, `SubTrigger`, `SubPortal`, `SubPositioner`, `SubPopup`, `Indicator`, `Label`, `Separator`, `RadioGroup`
@@ -367,9 +275,7 @@ The positioner element exposes CSS custom properties for layout and transform co
 | `data-checked`   | Present when item is checked   |
 | `data-unchecked` | Present when item is unchecked |
 
-| Label | Type | Description |
-|:------|:------|:------|
-| root | MenuIndicatorPassThroughType> | Used to pass attributes to the root's DOM element. |
+> **`ContextMenuIndicator` API table (`pt`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/contextmenu or the installed `@primereact/types`.
 
 ### ContextMenuLabel
 

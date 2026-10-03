@@ -11,12 +11,13 @@ Like shadcn/ui, the Tailwind components are themed entirely through **CSS variab
 Two pieces work together:
 
 - **CSS variables**, PrimeUI design tokens (`--p-primary-*`, `--p-surface-*`, and semantic tokens) added to your global stylesheet's `:root`.
-- **tailwindcss-primeui**, a Tailwind plugin that turns those tokens into utility classes (`bg-primary`, `text-surface-500`, `text-color`, `text-muted-color`, `border-surface`, `rounded-border`, …) and a dark-mode variant. Install it during [installation](../installation.md) and import it in your global CSS:
+- **tailwindcss-primeui**, a Tailwind plugin that turns those tokens into utility classes (`bg-primary`, `text-surface-500`, `text-color`, `text-muted-color`, `border-surface`, `rounded-border`, …) and a dark-mode variant. Install it during [installation](installation.md) and import it in your global CSS:
 
 ```css title="app/globals.css"
 @import 'tailwindcss';
-
 @import 'tailwindcss-primeui';
+
+@custom-variant dark (&:where(.dark, .dark *));
 ```
 
 ## CSS Variables
@@ -66,24 +67,22 @@ The PrimeReact registry ships as a `registry:style`, so when you set it up these
     --p-text-hover-muted-color: var(--p-surface-600);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --p-primary-color: var(--p-primary-400);
-        --p-primary-contrast-color: var(--p-surface-900);
-        --p-primary-hover-color: var(--p-primary-300);
-        --p-primary-active-color: var(--p-primary-200);
-        --p-content-border-color: var(--p-surface-700);
-        --p-content-hover-background: var(--p-surface-800);
-        --p-content-hover-color: var(--p-surface-0);
-        --p-highlight-background: color-mix(in srgb, var(--p-primary-400), transparent 84%);
-        --p-highlight-color: rgba(255, 255, 255, 0.87);
-        --p-highlight-focus-background: color-mix(in srgb, var(--p-primary-400), transparent 76%);
-        --p-highlight-focus-color: rgba(255, 255, 255, 0.87);
-        --p-text-color: var(--p-surface-0);
-        --p-text-hover-color: var(--p-surface-0);
-        --p-text-muted-color: var(--p-surface-400);
-        --p-text-hover-muted-color: var(--p-surface-300);
-    }
+.dark {
+    --p-primary-color: var(--p-primary-400);
+    --p-primary-contrast-color: var(--p-surface-900);
+    --p-primary-hover-color: var(--p-primary-300);
+    --p-primary-active-color: var(--p-primary-200);
+    --p-content-border-color: var(--p-surface-700);
+    --p-content-hover-background: var(--p-surface-800);
+    --p-content-hover-color: var(--p-surface-0);
+    --p-highlight-background: color-mix(in srgb, var(--p-primary-400), transparent 84%);
+    --p-highlight-color: rgba(255, 255, 255, 0.87);
+    --p-highlight-focus-background: color-mix(in srgb, var(--p-primary-400), transparent 76%);
+    --p-highlight-focus-color: rgba(255, 255, 255, 0.87);
+    --p-text-color: var(--p-surface-0);
+    --p-text-hover-color: var(--p-surface-0);
+    --p-text-muted-color: var(--p-surface-400);
+    --p-text-hover-muted-color: var(--p-surface-300);
 }
 ```
 
@@ -94,6 +93,25 @@ The PrimeReact registry ships as a `registry:style`, so when you set it up these
 - **Semantic tokens**, resolve to the scales and are what components actually reference: `--p-primary-color`, `--p-primary-contrast-color`, `--p-primary-hover-color`, `--p-primary-active-color`, `--p-text-color`, `--p-text-muted-color`, `--p-content-border-color`, `--p-content-hover-background`, `--p-highlight-background` / `--p-highlight-color`, and `--p-content-border-radius` for rounding.
 
 ## Customizing the theme
+
+### Preset colors via the CLI
+
+The registry ships ready-made **primary** (accent) and **surface** (neutral) palettes, each mapped to a Tailwind color. Add one — or mix them — and the tokens are written to your stylesheet automatically:
+
+```bash
+# accent color
+npx shadcn@latest add https://primereact.dev/r/primary-blue.json
+
+# neutral tone
+npx shadcn@latest add https://primereact.dev/r/surface-zinc.json
+```
+
+Primary and surface are independent, so any combination works, e.g. `primary-violet` with `surface-slate`.
+
+- **Primary:** `red`, `orange`, `amber`, `yellow`, `lime`, `green`, `emerald`, `teal`, `cyan`, `sky`, `blue`, `indigo`, `violet`, `purple`, `fuchsia`, `pink`, `rose`
+- **Surface:** `slate`, `gray`, `zinc`, `neutral`, `stone`
+
+Prefer full control, or a color outside these presets? Set the tokens by hand instead.
 
 ### Primary color
 
@@ -150,19 +168,13 @@ Remap `--p-surface-*` the same way to change the neutral tone, for example to on
 
 ## Dark mode
 
-By default the dark tokens apply under `@media (prefers-color-scheme: dark)`, following the user's system setting. To toggle dark mode yourself, move the dark overrides into a class selector and add that class to your `<html>` element:
-
-```css title="app/globals.css"
-.dark {
-    --p-primary-color: var(--p-primary-400);
-    --p-primary-contrast-color: var(--p-surface-900);
-    /* …rest of the dark overrides… */
-}
-```
+The dark overrides live under a `.dark` class, registered as the `dark` variant in your global CSS and matched by the provider's `darkModeSelector: '.dark'`. Toggle dark mode by adding or removing that class on your `<html>` element, either manually or with a library like `next-themes`:
 
 ```tsx
 <html className="dark">...</html>
 ```
+
+Prefer to follow the user's system setting instead? Wrap the same overrides in `@media (prefers-color-scheme: dark)` rather than the `.dark` class.
 
 ## Using tokens in your own markup
 
