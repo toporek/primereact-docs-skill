@@ -4,24 +4,6 @@ An unstyled, accessible circular progress component with compound composition.
 
 Build fully custom circular progress indicators with complete control over track, range, and value rendering.
 
-```tsx
-'use client';
-import { ProgressSpinner } from 'primereact/progressspinner';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <ProgressSpinner.Root className={styles.root} aria-label="Loading">
-                <ProgressSpinner.Track className={styles.track} />
-                <ProgressSpinner.Range className={styles.range} />
-            </ProgressSpinner.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Track`, `Range`, `Value`

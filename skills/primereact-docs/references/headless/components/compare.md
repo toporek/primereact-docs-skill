@@ -2,45 +2,6 @@
 
 Hook that manages compare slider state, pointer interactions, and clip-path positioning.
 
-```tsx
-'use client';
-import { Code } from '@primeicons/react/code';
-import { useCompare } from '@primereact/headless/compare';
-
-export default function BasicDemo() {
-    const { rootProps, getItemProps, handleProps, indicatorProps, inputProps } = useCompare({ defaultValue: 50 });
-
-    return (
-        <div
-            {...rootProps}
-            className="relative aspect-video max-w-lg mx-auto overflow-hidden rounded-lg cursor-ew-resize select-none"
-            style={{ touchAction: 'none' }}
-        >
-            <div {...getItemProps('after')}>
-                <img src="https://primefaces.org/cdn/primevue/images/compare/island1.jpg" draggable={false} />
-            </div>
-            <div {...getItemProps('before')}>
-                <img src="https://primefaces.org/cdn/primevue/images/compare/island2.jpg" draggable={false} />
-            </div>
-            <div
-                {...handleProps}
-                className="absolute inset-y-0 w-0.5 flex items-center justify-center bg-surface-0 dark:bg-surface-950"
-                style={handleProps.style}
-            >
-                <div
-                    {...indicatorProps}
-                    className="absolute flex items-center justify-center w-6 h-6 rounded-md bg-surface-0 dark:bg-surface-950 shadow-md"
-                >
-                    <Code />
-                </div>
-            </div>
-            <input {...inputProps} />
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

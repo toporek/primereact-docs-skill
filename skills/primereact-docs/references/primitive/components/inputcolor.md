@@ -4,51 +4,6 @@ An unstyled, accessible color picker component with compound composition.
 
 Build fully custom color pickers with complete control over area, sliders, swatch, and input rendering.
 
-```tsx
-'use client';
-
-import { EyeDropper } from '@primeicons/react/eye-dropper';
-import { parseColor } from 'primereact/inputcolor';
-import { InputColor } from 'primereact/inputcolor';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <InputColor.Root defaultValue={parseColor('#276def')}>
-            <div className={styles.root}>
-                <InputColor.Area className={styles.area}>
-                    <InputColor.AreaBackground className={styles.areaBackground} />
-                    <InputColor.AreaHandle className={styles.areaHandle} />
-                </InputColor.Area>
-                <div className={styles.controls}>
-                    <div className={styles.sliders}>
-                        <InputColor.Slider className={styles.slider}>
-                            <InputColor.TransparencyGrid className={styles.transparencyGrid} />
-                            <InputColor.SliderTrack className={styles.sliderTrack} />
-                            <InputColor.SliderHandle className={styles.sliderHandle} />
-                        </InputColor.Slider>
-                        <InputColor.Slider className={styles.slider} channel="alpha">
-                            <InputColor.TransparencyGrid className={styles.transparencyGrid} />
-                            <InputColor.SliderTrack className={styles.sliderTrack} />
-                            <InputColor.SliderHandle className={styles.sliderHandle} />
-                        </InputColor.Slider>
-                    </div>
-                    <InputColor.Swatch className={styles.swatch}>
-                        <InputColor.TransparencyGrid className={styles.transparencyGrid} />
-                        <InputColor.SwatchBackground className={styles.swatchBackground} />
-                    </InputColor.Swatch>
-                    <InputColor.EyeDropper className={styles.eyeDropper}>
-                        <EyeDropper />
-                    </InputColor.EyeDropper>
-                </div>
-                <InputColor.Input className={styles.input} channel="hex" />
-            </div>
-        </InputColor.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with twelve sub-components: `Root`, `Area`, `AreaBackground`, `AreaHandle`, `Slider`, `SliderTrack`, `SliderHandle`, `Swatch`, `SwatchBackground`, `EyeDropper`, `Input`, `TransparencyGrid`

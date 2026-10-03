@@ -2,24 +2,6 @@
 
 Headless hook for building content separators with custom markup.
 
-```tsx
-'use client';
-import { useDivider } from '@primereact/headless/divider';
-
-export default function BasicDemo() {
-    const { rootProps } = useDivider();
-
-    return (
-        <div className="max-w-md mx-auto space-y-4">
-            <p className="text-sm mb-4!">Fast setup, no credit card required.</p>
-            <div {...rootProps} role="separator" className="border-t border-surface-200 dark:border-surface-700" />
-            <p className="text-sm">Cancel anytime from your account.</p>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

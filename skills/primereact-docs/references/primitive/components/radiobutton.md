@@ -4,54 +4,6 @@ An unstyled, accessible radio button component with compound composition and gro
 
 Build fully custom radio button controls with complete control over layout and styling.
 
-```tsx
-'use client';
-import { RadioButton } from 'primereact/radiobutton';
-import { RadioButtonGroup, type RadioButtonGroupValueChangeEvent } from 'primereact/radiobuttongroup';
-import * as React from 'react';
-import styles from './basic-demo.module.css';
-
-const items = [
-    { value: 'standard', label: 'Standard' },
-    { value: 'express', label: 'Express' },
-    { value: 'overnight', label: 'Overnight' }
-];
-
-export default function BasicDemo() {
-    const [value, setValue] = React.useState<string | undefined>('express');
-
-    return (
-        <div className={styles.wrapper}>
-            <RadioButtonGroup
-                className={styles.group}
-                value={value}
-                onValueChange={(e: RadioButtonGroupValueChangeEvent) => setValue(e.value as string)}
-            >
-                {items.map((item) => (
-                    <div key={item.value} className={styles.field}>
-                        <RadioButton.Root
-                            inputId={`rb-${item.value}`}
-                            name="delivery"
-                            value={item.value}
-                            className={styles.root}
-                            inputClassName={styles.input}
-                        >
-                            <RadioButton.Box className={styles.box}>
-                                <RadioButton.Indicator match="checked" className={styles.indicator} />
-                            </RadioButton.Box>
-                        </RadioButton.Root>
-                        <label htmlFor={`rb-${item.value}`} className={styles.label}>
-                            {item.label}
-                        </label>
-                    </div>
-                ))}
-            </RadioButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with three sub-components: `Root`, `Box`, `Indicator`

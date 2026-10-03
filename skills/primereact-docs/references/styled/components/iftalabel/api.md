@@ -10,9 +10,9 @@ API documentation for IftaLabel component
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: IftaLabelInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: IftaLabelInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: IftaLabelInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: IftaLabelInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | IftaLabelInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |

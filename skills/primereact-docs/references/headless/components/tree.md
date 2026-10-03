@@ -2,114 +2,6 @@
 
 Headless tree hook that manages expansion, selection, keyboard and drag-drop state.
 
-```tsx
-'use client';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { File } from '@primeicons/react/file';
-import { Folder } from '@primeicons/react/folder';
-import { FolderOpen } from '@primeicons/react/folder-open';
-import { useTree, type TreeNodeData } from '@primereact/headless/tree';
-
-const data: TreeNodeData[] = [
-    {
-        key: '0',
-        label: 'Documents',
-        icon: 'folder',
-        children: [
-            {
-                key: '0-0',
-                label: 'Work',
-                icon: 'folder',
-                children: [
-                    { key: '0-0-0', label: 'Expenses.doc', icon: 'file' },
-                    { key: '0-0-1', label: 'Resume.doc', icon: 'file' }
-                ]
-            },
-            {
-                key: '0-1',
-                label: 'Home',
-                icon: 'folder',
-                children: [{ key: '0-1-0', label: 'Invoices.txt', icon: 'file' }]
-            }
-        ]
-    },
-    {
-        key: '1',
-        label: 'Events',
-        icon: 'folder',
-        children: [
-            { key: '1-0', label: 'Meeting', icon: 'file' },
-            { key: '1-1', label: 'Product Launch', icon: 'file' },
-            { key: '1-2', label: 'Report Review', icon: 'file' }
-        ]
-    }
-];
-
-export default function BasicDemo() {
-    const tree = useTree({ value: data, defaultExpandedKeys: { '0': true }, selectionMode: 'single' });
-    const { rootProps, getNodesProps, visibleKeys, findNodeByKey, findNodeInfo, getToggleProps, getNodeProps, state } = tree;
-
-    return (
-        <div {...rootProps} className="p-2 w-full max-w-md">
-            <ul {...getNodesProps()} className="m-0 p-0 list-none">
-                {visibleKeys.map((key) => {
-                    const node = findNodeByKey(key);
-                    if (!node) return null;
-
-                    const info = findNodeInfo(key);
-                    const expanded = state.expandedKey?.[key] === true;
-                    const leaf = node.leaf ?? !node.children?.length;
-                    const selected = !!(state.selectedKey as Record<string, boolean> | undefined)?.[key];
-
-                    const nodeProps = getNodeProps(node, info.level, expanded, false, selected, leaf, info.posInSet, info.setSize);
-
-                    return (
-                        <li
-                            key={key}
-                            {...nodeProps}
-                            style={{ ['--p-tree-node-level' as string]: info.level } as React.CSSProperties}
-                            className="group list-none rounded-md transition-colors"
-                        >
-                            <div
-                                className="flex items-center gap-1 py-1 px-2 rounded cursor-pointer select-none hover:bg-surface-100 dark:hover:bg-surface-700 data-[selected]:bg-primary/10 data-[selected]:text-primary"
-                                style={{ paddingInlineStart: `calc(${info.level - 1} * 1rem + 0.5rem)` }}
-                                data-selected={selected || undefined}
-                                onClick={(e) => tree.onClick(e, node)}
-                            >
-                                {leaf ? (
-                                    <span className="inline-block w-6 h-6" aria-hidden />
-                                ) : (
-                                    <button
-                                        {...getToggleProps(node)}
-                                        className="inline-flex items-center justify-center w-6 h-6 rounded cursor-pointer bg-transparent border-none p-0"
-                                    >
-                                        {expanded ? <ChevronDown /> : <ChevronRight />}
-                                    </button>
-                                )}
-                                <span className="inline-flex items-center">
-                                    {node.icon === 'folder' ? (
-                                        expanded ? (
-                                            <FolderOpen className="mr-1" />
-                                        ) : (
-                                            <Folder className="mr-1" />
-                                        )
-                                    ) : (
-                                        <File className="mr-1" />
-                                    )}
-                                </span>
-                                <span className="text-sm">{node.label}</span>
-                            </div>
-                        </li>
-                    );
-                })}
-            </ul>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -202,7 +94,7 @@ const tree = useTree({
     {tree.visibleKeys.map((key) => {
         const node = tree.findNodeByKey(key)!;
         const { level, posInSet, setSize } = tree.findNodeInfo(key);
-        const expanded = tree.state.expandedKey?.[key] === true;
+        const expanded = tree.state.expandedKeys?.[key] === true;
         const leaf = node.leaf ?? !node.children?.length;
 
         return (

@@ -4,47 +4,6 @@ Unstyled, accessible tree primitive with a compound API.
 
 Unstyled compound primitive for rendering hierarchical data with full control over markup.
 
-```tsx
-'use client';
-import { NodeService } from '@/shared/services/node.service';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Tree, type TreeNodeData } from 'primereact/tree';
-import * as React from 'react';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    const [nodes, setNodes] = React.useState<TreeNodeData[]>([]);
-
-    React.useEffect(() => {
-        NodeService.getTreeNodes().then(setNodes);
-    }, []);
-
-    return (
-        <Tree.Root value={nodes} defaultExpandedKeys={{ '0': true }} selectionMode="single" className={styles.root}>
-            <Tree.Nodes>
-                {({ node }) => (
-                    <Tree.Node uKey={node.key}>
-                        <Tree.Content>
-                            <Tree.Toggle>
-                                <Tree.ToggleIndicator match="expanded">
-                                    <ChevronDown />
-                                </Tree.ToggleIndicator>
-                                <Tree.ToggleIndicator match="collapsed">
-                                    <ChevronRight />
-                                </Tree.ToggleIndicator>
-                            </Tree.Toggle>
-                            <Tree.Label>{node.label}</Tree.Label>
-                        </Tree.Content>
-                    </Tree.Node>
-                )}
-            </Tree.Nodes>
-        </Tree.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound parts: _Root_, _Nodes_, _Node_, _Content_, _Toggle_, _ToggleIndicator_, _Selection_, _DropIndicator_, _Label_, _Filter_, _Header_, _Footer_, _Empty_, _Loading_

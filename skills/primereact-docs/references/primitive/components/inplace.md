@@ -4,34 +4,6 @@ An unstyled, accessible inline editing component with compound composition.
 
 Build fully custom inline display-to-edit experiences with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Pencil } from '@primeicons/react/pencil';
-import { Times } from '@primeicons/react/times';
-import { Inplace } from 'primereact/inplace';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Inplace.Root>
-                <Inplace.Display className={styles.display}>
-                    <Pencil className={styles.icon} />
-                    <span>Click to edit</span>
-                </Inplace.Display>
-                <Inplace.Content className={styles.content}>
-                    <input type="text" defaultValue="PrimeReact" className={styles.input} autoFocus />
-                    <Inplace.Close as="button" className={styles.close}>
-                        <Times className={styles.icon} />
-                    </Inplace.Close>
-                </Inplace.Content>
-            </Inplace.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Display`, `Content`, `Close`
@@ -69,7 +41,7 @@ Default elements: `Root`=`div`, `Display`=`div`, `Content`=`div`, `Close`=`div`.
 `Content` accepts a render function as children, providing access to the component instance.
 
 ```tsx
-<Inplace.Content>{(instance) => <span>Active: {String(instance.inplace?.state.active)}</span>}</Inplace.Content>
+<Inplace.Content>{(instance) => <span>Open: {String(instance.inplace?.state.open)}</span>}</Inplace.Content>
 ```
 
 ## Pass Through
@@ -84,8 +56,8 @@ Default elements: `Root`=`div`, `Display`=`div`, `Content`=`div`, `Close`=`div`.
 | --------------- | --------------------- |
 | `data-scope`    | `"inplace"`           |
 | `data-part`     | `"root"`              |
-| `data-active`   | Present when active   |
-| `data-inactive` | Present when inactive |
+| `data-open`     | Present when open     |
+| `data-closed`   | Present when closed   |
 | `data-disabled` | Present when disabled |
 
 | Label | Type | Description |
@@ -103,8 +75,8 @@ Default elements: `Root`=`div`, `Display`=`div`, `Content`=`div`, `Close`=`div`.
 | --------------- | --------------------- |
 | `data-scope`    | `"inplace"`           |
 | `data-part`     | `"display"`           |
-| `data-active`   | Present when active   |
-| `data-inactive` | Present when inactive |
+| `data-open`     | Present when open     |
+| `data-closed`   | Present when closed   |
 | `data-disabled` | Present when disabled |
 
 | Label | Type | Description |
@@ -127,8 +99,8 @@ Default elements: `Root`=`div`, `Display`=`div`, `Content`=`div`, `Close`=`div`.
 | --------------- | --------------------- |
 | `data-scope`    | `"inplace"`           |
 | `data-part`     | `"close"`             |
-| `data-active`   | Present when active   |
-| `data-inactive` | Present when inactive |
+| `data-open`     | Present when open     |
+| `data-closed`   | Present when closed   |
 | `data-disabled` | Present when disabled |
 
 | Label | Type | Description |
