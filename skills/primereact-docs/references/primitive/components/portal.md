@@ -4,37 +4,6 @@ An unstyled utility component that renders content into a DOM node outside the c
 
 Build fully custom overlay containers with SSR-safe portal rendering.
 
-```tsx
-'use client';
-import { Portal } from 'primereact/portal';
-import * as React from 'react';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    const targetRef = React.useRef<HTMLDivElement>(null);
-    const [ready, setReady] = React.useState(false);
-
-    React.useEffect(() => {
-        setReady(true);
-    }, []);
-
-    return (
-        <div className={styles.root}>
-            <div className={styles.target}>
-                <p className={styles.targetLabel}>Portal Target</p>
-                <div ref={targetRef} className={styles.targetContainer} />
-            </div>
-            {ready && targetRef.current && (
-                <Portal appendTo={targetRef.current}>
-                    <p className={styles.portalContent}>This content is rendered inside the target container via a portal.</p>
-                </Portal>
-            )}
-        </div>
-    );
-}
-
-```
-
 For hook-based usage without components, see the [usePortal](../../headless/components/portal.md) hook.
 
 ## Features

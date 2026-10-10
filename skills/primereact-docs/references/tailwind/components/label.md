@@ -2,21 +2,6 @@
 
 Label provides accessible text labels for form controls. Use `htmlFor` to link the label to a form control by its id.
 
-```tsx
-import { InputText } from '@/components/ui/inputtext';
-import { Label } from '@/components/ui/label';
-
-export default function Preview() {
-    return (
-        <div className="flex flex-col gap-2 w-full max-w-3xs mx-auto">
-            <Label htmlFor="tw-username">Username</Label>
-            <InputText id="tw-username" placeholder="Enter username" />
-        </div>
-    );
-}
-
-```
-
 ## Installation
 
     Shadcn CLI
@@ -43,45 +28,9 @@ import { Label } from '@/components/ui/label';
 
 An accessible label element associated with a form control.
 
-```tsx
-import { InputText } from '@/components/ui/inputtext';
-import { Label } from '@/components/ui/label';
-
-export default function BasicDemo() {
-    return (
-        <div className="flex flex-wrap justify-center">
-            <div className="flex flex-col gap-2 w-full max-w-sm">
-                <Label htmlFor="username">Username</Label>
-                <InputText id="username" placeholder="Enter username" />
-            </div>
-        </div>
-    );
-}
-
-```
-
 ### Required
 
 You can display required indicators in the label content while keeping the input semantics with `required` or `aria-required`.
-
-```tsx
-import { InputText } from '@/components/ui/inputtext';
-import { Label } from '@/components/ui/label';
-
-export default function RequiredDemo() {
-    return (
-        <div className="flex flex-wrap justify-center">
-            <div className="flex flex-col gap-2 w-full max-w-sm">
-                <Label htmlFor="email" className="font-medium">
-                    Email <span aria-hidden="true">*</span>
-                </Label>
-                <InputText id="email" type="email" placeholder="name@example.com" required aria-required="true" />
-            </div>
-        </div>
-    );
-}
-
-```
 
 ## Accessibility
 

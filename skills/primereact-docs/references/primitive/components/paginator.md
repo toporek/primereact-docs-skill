@@ -4,53 +4,6 @@ An unstyled, accessible paginator component with compound composition.
 
 Build fully custom paginators with complete control over layout, page rendering, and navigation styling.
 
-```tsx
-'use client';
-
-import { AngleDoubleLeft } from '@primeicons/react/angle-double-left';
-import { AngleDoubleRight } from '@primeicons/react/angle-double-right';
-import { AngleLeft } from '@primeicons/react/angle-left';
-import { AngleRight } from '@primeicons/react/angle-right';
-import { EllipsisH } from '@primeicons/react/ellipsis-h';
-import { Paginator, PaginatorPagesInstance } from 'primereact/paginator';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Paginator.Root className={styles.root} total={100} itemsPerPage={5}>
-            <Paginator.Content className={styles.content}>
-                <Paginator.First className={styles.navButton}>
-                    <AngleDoubleLeft />
-                </Paginator.First>
-                <Paginator.Prev className={styles.navButton}>
-                    <AngleLeft />
-                </Paginator.Prev>
-                <Paginator.Pages className={styles.pages}>
-                    {({ paginator }: PaginatorPagesInstance) =>
-                        paginator?.pages.map((page, index) =>
-                            page.type === 'page' ? (
-                                <Paginator.Page key={index} className={styles.page} value={page.value} />
-                            ) : (
-                                <Paginator.Ellipsis key={index} className={styles.ellipsis}>
-                                    <EllipsisH />
-                                </Paginator.Ellipsis>
-                            )
-                        )
-                    }
-                </Paginator.Pages>
-                <Paginator.Next className={styles.navButton}>
-                    <AngleRight />
-                </Paginator.Next>
-                <Paginator.Last className={styles.navButton}>
-                    <AngleDoubleRight />
-                </Paginator.Last>
-            </Paginator.Content>
-        </Paginator.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with nine sub-components: `Root`, `Content`, `First`, `Prev`, `Pages`, `Page`, `Ellipsis`, `Next`, `Last`

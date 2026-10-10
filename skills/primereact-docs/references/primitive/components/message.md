@@ -4,33 +4,6 @@ An unstyled message component for displaying inline notifications with close and
 
 Build fully custom inline messages with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Sparkles } from '@primeicons/react/sparkles';
-import { Times } from '@primeicons/react/times';
-import { Message } from 'primereact/message';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Message.Root className={styles.root}>
-                <Message.Content className={styles.content}>
-                    <Message.Icon className={styles.icon}>
-                        <Sparkles />
-                    </Message.Icon>
-                    <Message.Text className={styles.text}>Upgrade now and save 5%.</Message.Text>
-                    <Message.Close className={styles.close}>
-                        <Times />
-                    </Message.Close>
-                </Message.Content>
-            </Message.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with five sub-components: `Root`, `Content`, `Icon`, `Text`, `Close`
