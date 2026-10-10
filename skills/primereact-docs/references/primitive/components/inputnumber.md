@@ -4,31 +4,6 @@ An unstyled numeric input with formatting, locale support, and spin button behav
 
 Build fully custom numeric inputs with complete control over layout and styling.
 
-```tsx
-'use client';
-import { AngleDown } from '@primeicons/react/angle-down';
-import { AngleUp } from '@primeicons/react/angle-up';
-import { InputNumber } from 'primereact/inputnumber';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <InputNumber.Root defaultValue={42723} className={styles.root}>
-                <InputNumber.Input className={styles.input} />
-                <InputNumber.Increment className={styles.button}>
-                    <AngleUp />
-                </InputNumber.Increment>
-                <InputNumber.Decrement className={styles.button}>
-                    <AngleDown />
-                </InputNumber.Decrement>
-            </InputNumber.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Locale-aware number formatting with decimal, currency, and custom prefix/suffix modes

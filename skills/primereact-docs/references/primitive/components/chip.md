@@ -4,36 +4,6 @@ An unstyled chip component with compound composition for representing entities.
 
 Build fully custom chip elements with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Times } from '@primeicons/react/times';
-import { Chip } from 'primereact/chip';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Chip.Root className={styles.chip}>
-                <Chip.Label>Apple</Chip.Label>
-            </Chip.Root>
-            <Chip.Root className={styles.chip}>
-                <Chip.Start>
-                    <img src="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" alt="Ioni" className={styles.avatar} />
-                </Chip.Start>
-                <Chip.Label>Ioni Bowcher</Chip.Label>
-            </Chip.Root>
-            <Chip.Root className={styles.chip}>
-                <Chip.Label>Removable</Chip.Label>
-                <Chip.Remove className={styles.remove}>
-                    <Times className="w-3 h-3" />
-                </Chip.Remove>
-            </Chip.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with five sub-components: `Root`, `Start`, `Label`, `End`, `Remove`

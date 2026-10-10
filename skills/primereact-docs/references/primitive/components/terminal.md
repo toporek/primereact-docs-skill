@@ -4,49 +4,6 @@ An unstyled terminal component for building command-line style interfaces with f
 
 Build fully custom terminal interfaces with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Terminal } from 'primereact/terminal';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    const commandHandler = (text: string) => {
-        const command = text.trim().split(/\s+/)[0];
-
-        switch (command) {
-            case 'help':
-                return 'Available commands: date, greet, random, clear';
-            case 'date':
-                return new Date().toLocaleString();
-            case 'greet':
-                return `Hello, ${text.substring(text.indexOf(' ') + 1).trim() || 'World'}!`;
-            case 'random':
-                return `Your random number: ${Math.floor(Math.random() * 100)}`;
-            case 'clear':
-                return null;
-            default:
-                return `Unknown command: ${command}. Type "help" for available commands.`;
-        }
-    };
-
-    return (
-        <div className={styles.wrapper}>
-            <Terminal.Root prompt="$" onCommand={commandHandler} className={styles.root}>
-                <Terminal.Welcome className={styles.welcome}>
-                    Welcome to PrimeReact Terminal. Type &quot;help&quot; for available commands.
-                </Terminal.Welcome>
-                <Terminal.CommandList className={styles.commandList} />
-                <Terminal.Prompt className={styles.prompt}>
-                    <Terminal.PromptLabel className={styles.promptLabel} />
-                    <Terminal.PromptValue className={styles.promptValue} />
-                </Terminal.Prompt>
-            </Terminal.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Welcome`, `CommandList`, `Command`, `CommandValue`, `CommandPromptLabel`, `CommandResponse`, `Prompt`, `PromptLabel`, `PromptValue`
