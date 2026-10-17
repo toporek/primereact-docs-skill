@@ -2,56 +2,6 @@
 
 Rating component is a star based selection input.
 
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Avatar } from '@primereact/ui/avatar';
-import { Rating } from '@primereact/ui/rating';
-
-function Preview() {
-    return (
-        <div className="max-w-sm mx-auto">
-            <div className="flex items-start gap-3">
-                <div className="relative shrink-0">
-                    <Avatar.Root shape="circle" size="large">
-                        <Avatar.Image src="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" alt="Amy Elsner" />
-                        <Avatar.Fallback>A</Avatar.Fallback>
-                    </Avatar.Root>
-                    <span className="absolute bottom-0 right-0 size-3 rounded-full bg-green-500 ring-2 ring-surface-0 dark:ring-surface-900" />
-                </div>
-                <div className="flex-1 min-w-0">
-                    <div className="flex items-baseline gap-2">
-                        <span className="text-color font-semibold text-sm">Amy Elsner</span>
-                        <span className="text-xs text-muted-color">Support · 2m</span>
-                    </div>
-                    <div className="mt-1 rounded-2xl rounded-tl-sm bg-surface-100 dark:bg-surface-800 px-4 py-2.5 text-color">
-                        Glad I could help! How would you rate this conversation?
-                    </div>
-                    <div className="mt-4">
-                        <Rating.Root defaultValue={4}>
-                            {Array(5)
-                                .fill(null)
-                                .map((_, i) => (
-                                    <Rating.Option key={i} index={i}>
-                                        <Rating.On>
-                                            <StarFill />
-                                        </Rating.On>
-                                        <Rating.Off>
-                                            <Star />
-                                        </Rating.Off>
-                                    </Rating.Option>
-                                ))}
-                        </Rating.Root>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-export default Preview;
-
-```
-
 ## Usage
 
 ```tsx
@@ -73,356 +23,37 @@ import { Rating } from '@primereact/ui/rating';
 
 Captures user feedback as a star rating on a numeric scale.
 
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Rating } from '@primereact/ui/rating';
-
-function BasicDemo() {
-    return (
-        <div className="flex justify-center">
-            <Rating.Root defaultValue={3.5}>
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <StarFill />
-                            </Rating.On>
-                            <Rating.Off>
-                                <Star />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default BasicDemo;
-
-```
-
 ### Half Stars
 
 Use `allowHalf` property to allow half stars.
-
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Label } from '@primereact/ui/label';
-import { Rating } from '@primereact/ui/rating';
-
-function AllowHalfDemo() {
-    return (
-        <div className="flex flex-col gap-6 items-center justify-center">
-            <div className="flex flex-col gap-2">
-                <Label>Full Star</Label>
-                <Rating.Root defaultValue={3} allowHalf={false}>
-                    {Array(5)
-                        .fill(null)
-                        .map((_, i) => (
-                            <Rating.Option key={i} index={i}>
-                                <Rating.On>
-                                    <StarFill />
-                                </Rating.On>
-                                <Rating.Off>
-                                    <Star />
-                                </Rating.Off>
-                            </Rating.Option>
-                        ))}
-                </Rating.Root>
-            </div>
-            <div className="flex flex-col gap-2">
-                <Label>Half Star</Label>
-                <Rating.Root defaultValue={3} allowHalf={true}>
-                    {Array(5)
-                        .fill(null)
-                        .map((_, i) => (
-                            <Rating.Option key={i} index={i}>
-                                <Rating.On>
-                                    <StarFill />
-                                </Rating.On>
-                                <Rating.Off>
-                                    <Star />
-                                </Rating.Off>
-                            </Rating.Option>
-                        ))}
-                </Rating.Root>
-            </div>
-        </div>
-    );
-}
-
-export default AllowHalfDemo;
-
-```
 
 ### Controlled
 
 Use `onValueChange` to listen to value changes.
 
-```tsx
-'use client';
-import { Star, StarFill } from '@primeicons/react';
-import { Button } from '@primereact/ui/button';
-import { Rating } from '@primereact/ui/rating';
-import type { RatingRootValueChangeEvent } from '@primereact/ui/rating';
-import React from 'react';
-
-function ControlledDemo() {
-    const [value, setValue] = React.useState<number | undefined>(4);
-
-    return (
-        <div className="flex flex-col items-center justify-center gap-6">
-            <Rating.Root value={value} onValueChange={(e: RatingRootValueChangeEvent) => setValue(e.value)} className="[&_svg]:size-6!">
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <StarFill />
-                            </Rating.On>
-                            <Rating.Off>
-                                <Star />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-            <div className="flex items-center gap-2">
-                <Button onClick={() => setValue(2.5)} severity="secondary" variant="outlined" size="small">
-                    2.5 Star
-                </Button>
-                <Button onClick={() => setValue(3)} severity="secondary" variant="outlined" size="small">
-                    3 Star
-                </Button>
-                <Button onClick={() => setValue(3.5)} severity="secondary" variant="outlined" size="small">
-                    3.5 Star
-                </Button>
-            </div>
-        </div>
-    );
-}
-
-export default ControlledDemo;
-
-```
-
 ### Number of Stars
 
 Number of stars to display is defined with `stars` property.
-
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Rating } from '@primereact/ui/rating';
-
-function StarsDemo() {
-    const stars = 10;
-
-    return (
-        <div className="flex justify-center">
-            <Rating.Root defaultValue={5}>
-                {Array(stars)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <StarFill />
-                            </Rating.On>
-                            <Rating.Off>
-                                <Star />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default StarsDemo;
-
-```
 
 ### Vertical
 
 Use `orientation="vertical"` to display the rating vertically.
 
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Rating } from '@primereact/ui/rating';
-
-function VerticalDemo() {
-    return (
-        <div className="flex justify-center">
-            <Rating.Root defaultValue={3} orientation="vertical">
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <StarFill />
-                            </Rating.On>
-                            <Rating.Off>
-                                <Star />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default VerticalDemo;
-
-```
-
 ### Template
 
 Custom icons are used to override the default icons with `onIcon` and `offIcon` properties.
-
-```tsx
-import { Rating } from '@primereact/ui/rating';
-
-function TemplateDemo() {
-    return (
-        <div className="flex flex-col items-center justify-center gap-6 ">
-            <Rating.Root defaultValue={3}>
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <span className="text-surface-950 dark:text-surface-0 font-medium text-4xl select-none">A</span>
-                            </Rating.On>
-                            <Rating.Off>
-                                <span className="text-surface-300 dark:text-surface-700 font-medium text-4xl select-none">A</span>
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-            <Rating.Root defaultValue={3} allowHalf={false}>
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <span className="size-7">
-                                    <img src="https://primefaces.org/cdn/primevue/images/rating/custom-onicon.png" className="size-7" />
-                                </span>
-                            </Rating.On>
-                            <Rating.Off>
-                                <span className="size-7">
-                                    <img src="https://primefaces.org/cdn/primevue/images/rating/custom-officon.png" className="size-7" />
-                                </span>
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default TemplateDemo;
-
-```
 
 ### Emoji
 
 Use emojis with `data-checked` attribute to highlight only the selected option while keeping others in grayscale.
 
-```tsx
-import { Rating } from '@primereact/ui/rating';
-
-const emojis = ['😡', '😕', '😐', '🙂', '😍'];
-
-function EmojiDemo() {
-    return (
-        <div className="flex justify-center">
-            <Rating.Root defaultValue={3} allowHalf={false}>
-                {emojis.map((emoji, i) => (
-                    <Rating.Option
-                        key={i}
-                        index={i}
-                        className="p-0! grayscale data-checked:grayscale-0 hover:grayscale-0 transition-all text-4xl select-none"
-                    >
-                        <Rating.On />
-                        <Rating.Off>
-                            <span>{emoji}</span>
-                        </Rating.Off>
-                    </Rating.Option>
-                ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default EmojiDemo;
-
-```
-
 ### ReadOnly
 
 When `readOnly` is present, value cannot be edited.
 
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Rating } from '@primereact/ui/rating';
-
-function ReadOnlyDemo() {
-    return (
-        <div className="flex justify-center">
-            <Rating.Root value={3} readOnly>
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <StarFill />
-                            </Rating.On>
-                            <Rating.Off>
-                                <Star />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default ReadOnlyDemo;
-
-```
-
 ### Disabled
 
 When `disabled` is present, value cannot be edited.
-
-```tsx
-import { Star, StarFill } from '@primeicons/react';
-import { Rating } from '@primereact/ui/rating';
-
-function DisabledDemo() {
-    return (
-        <div className="flex justify-center">
-            <Rating.Root value={3} disabled>
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i}>
-                            <Rating.On>
-                                <StarFill />
-                            </Rating.On>
-                            <Rating.Off>
-                                <Star />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-export default DisabledDemo;
-
-```
 
 ## Accessibility
 
@@ -453,9 +84,9 @@ API documentation for Rating component
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: RatingRootInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: RatingRootInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: RatingRootInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: RatingRootInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | RatingRootInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
@@ -498,7 +129,7 @@ Named 'inputName' to avoid collision with withComponent's common.name. |
 | rootProps | UseRatingRootProps | null | Pre-built props for the root element (data attributes + event handlers). |
 | updateValue | (event: SyntheticEvent, value: number) => void | null | Update the rating value. |
 | setHoveringValue | (value: number) => void | null | Set the hover value (called by On/Off on pointer move). |
-| resolvePointerValue | (e: MouseEvent \\| PointerEvent, optionEl: Element, idx: number) => number | null | Resolves the value to set from a pointer event, taking allowHalf and element position into account. |
+| resolvePointerValue | (e: MouseEvent \\| PointerEvent, optionEl: null \\| Element, idx: number) => number | null | Resolves the value to set from a pointer event, taking allowHalf and element position into account. |
 | optionProps | UseRatingRootProps | null | Pre-built data attribute props for the option element. |
 | onProps | UseRatingRootProps | null | Pre-built data attribute props for the on-icon element. |
 | offProps | UseRatingRootProps | null | Pre-built data attribute props for the off-icon element. |
@@ -523,9 +154,9 @@ Named 'inputName' to avoid collision with withComponent's common.name. |
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: RatingOptionInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: RatingOptionInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: RatingOptionInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: RatingOptionInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | RatingOptionInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
@@ -547,16 +178,16 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 | Name | Type | Default | Description |
 |:------|:------|:------|:------|
 | state | UseRatingOptionState | null | Current state of this option. |
-| optionRef | RefObject | null | Ref to the option's root DOM element, used internally for pointer position calculations. |
+| optionRef | RefObject<null \\| Element> | null | Ref to the option's root DOM element, used internally for pointer position calculations. |
 | optionProps | Record<string, string \\| number> | null | Pre-built data attribute props for the option element. |
 | onIconProps | { onMouseDown: (e: MouseEvent) => void; onPointerMove: (e: PointerEvent) => void; onClick: (e: MouseEvent) => void } | null | Pre-built interaction props for the on-icon element. |
 | offIconProps | { onMouseDown: (e: MouseEvent) => void; onPointerMove: (e: PointerEvent) => void; onClick: (e: MouseEvent) => void } | null | Pre-built interaction props for the off-icon element. |
 | onPointerMove | (e: PointerEvent) => void | null | Handle pointer move on On/Off elements (resolves half/full value and sets hovering value). |
 | onClick | (e: MouseEvent) => void | null | Handle click on On/Off elements (resolves half/full value and updates value). |
 | onMouseDown | (e: MouseEvent) => void | null | Prevent default on mouse down (avoids focus shift). |
-| halfInputProps | InputHTMLAttributes | null | Pre-built props for the half-value sr-only radio input. Null when allowHalf is false. |
+| halfInputProps | null \\| InputHTMLAttributes | null | Pre-built props for the half-value sr-only radio input. Null when allowHalf is false. |
 | fullInputProps | InputHTMLAttributes | null | Pre-built props for the full-value sr-only radio input. |
-| rating | RatingRootInstance | null | The parent Rating component instance. |
+| rating | undefined \\| null \\| RatingRootInstance | null | The parent Rating component instance. |
 
 ### Interfaces
 

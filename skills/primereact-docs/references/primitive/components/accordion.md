@@ -4,57 +4,6 @@ An unstyled, accessible accordion component with compound composition.
 
 Build fully custom collapsible content sections with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { Accordion } from 'primereact/accordion';
-import styles from './basic-demo.module.css';
-
-const items = [
-    {
-        value: '1',
-        title: 'What is PrimeReact?',
-        content:
-            'PrimeReact is a rich set of open source UI components for React. It provides a wide range of accessible, themeable components to build modern web applications.'
-    },
-    {
-        value: '2',
-        title: 'How to get started?',
-        content:
-            'Install PrimeReact via npm and import the components you need. Each component is available as a compound primitive or as a styled variant with built-in theming.'
-    },
-    {
-        value: '3',
-        title: 'What about accessibility?',
-        content:
-            'All components follow WAI-ARIA guidelines with full keyboard support. Accordion headers use proper button semantics and aria-expanded attributes automatically.'
-    }
-];
-
-export default function BasicDemo() {
-    return (
-        <Accordion.Root className={styles.root}>
-            {items.map((item) => (
-                <Accordion.Panel key={item.value} value={item.value} className={styles.panel}>
-                    <Accordion.Header className={styles.header}>
-                        <Accordion.Trigger className={styles.trigger}>
-                            {item.title}
-                            <Accordion.Indicator className={styles.indicator}>
-                                <ChevronDown />
-                            </Accordion.Indicator>
-                        </Accordion.Trigger>
-                    </Accordion.Header>
-                    <Accordion.Content className={styles.content}>
-                        <div className={styles.contentInner}>{item.content}</div>
-                    </Accordion.Content>
-                </Accordion.Panel>
-            ))}
-        </Accordion.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with six sub-components: `Root`, `Panel`, `Header`, `Trigger`, `Content`, `Indicator`

@@ -2,53 +2,6 @@
 
 Hooks that manage avatar image loading state and group layout.
 
-```tsx
-'use client';
-import { User } from '@primeicons/react/user';
-import { useAvatar } from '@primereact/headless/avatar';
-import { useAvatarGroup } from '@primereact/headless/avatargroup';
-
-export default function BasicDemo() {
-    const { rootProps: groupRootProps } = useAvatarGroup();
-    const avatar1 = useAvatar();
-    const avatar2 = useAvatar();
-    const avatar3 = useAvatar();
-    const avatar4 = useAvatar();
-
-    return (
-        <div className="flex justify-center">
-            <div {...groupRootProps} className="flex items-center -space-x-3">
-                <div
-                    {...avatar1.rootProps}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-500 ring-2 ring-surface-0 dark:ring-surface-900 text-sm font-medium"
-                >
-                    AB
-                </div>
-                <div
-                    {...avatar2.rootProps}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-500 ring-2 ring-surface-0 dark:ring-surface-900 text-sm font-medium"
-                >
-                    CD
-                </div>
-                <div
-                    {...avatar3.rootProps}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 dark:bg-green-950 text-green-500 ring-2 ring-surface-0 dark:ring-surface-900"
-                >
-                    <User />
-                </div>
-                <div
-                    {...avatar4.rootProps}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-200 dark:bg-surface-700 text-surface-800 dark:text-surface-300 ring-2 ring-surface-0 dark:ring-surface-900 text-sm font-medium"
-                >
-                    +3
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
