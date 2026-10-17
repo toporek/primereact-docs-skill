@@ -134,57 +134,6 @@ var(--p-blue-500)
 $dt('blue.500').value
 ```
 
-```tsx
-export default function ColorsListDemo() {
-    const colors = [
-        'emerald',
-        'green',
-        'lime',
-        'red',
-        'orange',
-        'amber',
-        'yellow',
-        'teal',
-        'cyan',
-        'sky',
-        'blue',
-        'indigo',
-        'violet',
-        'purple',
-        'fuchsia',
-        'pink',
-        'rose',
-        'slate',
-        'gray',
-        'zinc',
-        'neutral',
-        'stone'
-    ];
-    const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
-
-    return (
-        <div>
-            <ul className="p-0 m-0 list-none flex sm:flex-col gap-4 flex-wrap sm:flex-nowrap">
-                {colors.map((color, i) => (
-                    <li key={i} className="flex-auto" style={{ minWidth: '6rem' }}>
-                        <span className="font-medium capitalize block mb-2 text-center sm:text-left">{color}</span>
-                        <div className="flex gap-4 flex-auto flex-col sm:flex-row">
-                            {shades.map((shade, j) => (
-                                <div key={j} className="flex flex-col items-center gap-1 flex-1">
-                                    <div className="rounded h-8 w-full" style={{ backgroundColor: `var(--p-${color}-${shade})` }}></div>
-                                    <span className="text-sm text-surface-500 dark:text-surface-400 font-medium">{shade}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-}
-
-```
-
 ## Dark Mode
 
 PrimeReact uses the `system` as the default `darkModeSelector` in theme configuration. If you have a dark mode switch in your application, set the `darkModeSelector` to the selector you utilize such as `.my-app-dark` so that PrimeReact can fit in
@@ -506,58 +455,6 @@ const MyPreset = definePreset(Aura, {
 
 Design tokens can be scoped to a certain component using the `dt` property. In this example, first switch uses the global tokens whereas second one overrides the global with its own tokens.
 
-```tsx
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-
-export default function ScopedTokensDemo() {
-    const amberSwitch = {
-        handle: {
-            borderRadius: '4px'
-        },
-        colorScheme: {
-            light: {
-                root: {
-                    checkedBackground: '{amber.500}',
-                    checkedHoverBackground: '{amber.600}',
-                    borderRadius: '4px'
-                },
-                handle: {
-                    checkedBackground: '{amber.50}',
-                    checkedHoverBackground: '{amber.100}'
-                }
-            },
-            dark: {
-                root: {
-                    checkedBackground: '{amber.400}',
-                    checkedHoverBackground: '{amber.300}',
-                    borderRadius: '4px'
-                },
-                handle: {
-                    checkedBackground: '{amber.900}',
-                    checkedHoverBackground: '{amber.800}'
-                }
-            }
-        }
-    };
-
-    return (
-        <div className="flex justify-center gap-4">
-            <ToggleSwitch.Root defaultChecked>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-            <ToggleSwitch.Root defaultChecked dt={amberSwitch}>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </div>
-    );
-}
-
-```
-
 ## Utils
 
 ### usePreset
@@ -757,21 +654,6 @@ layer order. This way, your Reset CSS does not get in the way of PrimeReact comp
 
 [CSS modules](https://github.com/css-modules/css-modules) are supported by enabling the `module` property on a style element within your SFC. Use the `$style` keyword to apply classes to a PrimeReact component. It is recommend to enable
 `cssLayer` when using CSS modules so that the PrimeReact styles have low CSS specificity.
-
-```tsx
-import * as React from 'react';
-import { InputText } from '@primereact/ui/inputtext';
-import styles from './css-modules-demo.module.css';
-
-export default function CSSModulesDemo() {
-    return (
-        <div className="flex justify-center">
-            <InputText className={styles.myinput} placeholder="Search" />
-        </div>
-    );
-}
-
-```
 
 ```css
 .myinput {

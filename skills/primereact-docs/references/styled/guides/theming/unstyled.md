@@ -8,21 +8,6 @@ The term `unstyled` is used to define an alternative styling approach instead of
 included. Here is an example of an Unstyled Checkbox, the core functionality and accessibility is provided whereas styling is not included. Unstyled components still need to be styled on your end, in the next sections, we'll cover the
 styling solutions for both modes.
 
-```tsx
-import { Checkbox } from '@primereact/ui/checkbox';
-
-export default function CheckboxDemo() {
-    return (
-        <div className="flex items-center justify-center">
-            <div className="flex items-center gap-2">
-                <Checkbox.Root unstyled />
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Setup
 
 Unstyled mode is enabled for the whole suite by enabling `unstyled` option during PrimeReact installation.
@@ -44,47 +29,10 @@ createRoot(document.getElementById('root')!).render(
 
 Alternatively even in the default styled mode, a particular component can still be used as unstyled by adding the `unstyled` prop of the component.
 
-```tsx
-import { Button } from '@primereact/ui/button';
-import { Check } from '@primeicons/react/check';
-
-export default function AlternativeButtonDemo() {
-    return (
-        <div className="flex justify-center">
-            <Button unstyled>
-                Check
-                <Check />
-            </Button>
-        </div>
-    );
-}
-
-```
-
 ## Example
 
 Here is a sample that styles a button component with Tailwind CSS using [passthrough](https://primereact.dev/docs/passthrough) attributes. Before beginning, head over to the the pass through section at
 [button](https://primereact.dev/docs/button) documentation to learn more about the components internals section. We'll be using the `root` element to add a custom style.
-
-```tsx
-import { Button } from '@primereact/ui/button';
-import { Search } from '@primeicons/react/search';
-
-export default function ButtonDemo() {
-    return (
-        <div className="flex justify-center">
-            <Button
-                unstyled
-                pt-root-className="bg-teal-500 hover:bg-teal-700 active:bg-teal-900 cursor-pointer py-2 px-4 rounded-full border-0 flex gap-2 text-white text-lg font-bold"
-            >
-                Search
-                <Search className="text-lg! font-bold!" />
-            </Button>
-        </div>
-    );
-}
-
-```
 
 ## Global
 
