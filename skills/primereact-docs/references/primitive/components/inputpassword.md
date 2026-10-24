@@ -4,21 +4,6 @@ An unstyled password input with mask toggling and controlled or uncontrolled val
 
 Build fully custom password inputs with complete control over layout and styling.
 
-```tsx
-'use client';
-import { InputPassword } from 'primereact/inputpassword';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <InputPassword className={styles.input} placeholder="Enter password" />
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Dynamic input type toggling between `password` and `text` for visibility control

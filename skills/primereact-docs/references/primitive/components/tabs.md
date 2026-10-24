@@ -4,44 +4,6 @@ An unstyled tab component with keyboard navigation and scrollable overflow suppo
 
 Build fully custom tabbed interfaces with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Tabs } from 'primereact/tabs';
-import styles from './basic-demo.module.css';
-
-const items = [
-    { value: 'tab1', title: 'Account Info', content: 'Update your personal information such as name, email address, and profile picture.' },
-    { value: 'tab2', title: 'Payment', content: 'Manage your subscription plan, view invoices, and update your payment method.' },
-    { value: 'tab3', title: 'Preferences', content: 'Customize how the application looks and behaves to match your personal preferences.' }
-];
-
-export default function BasicDemo() {
-    return (
-        <Tabs.Root defaultValue="tab1" className={styles.root}>
-            <Tabs.List className={styles.list}>
-                <Tabs.Content className={styles.content}>
-                    {items.map((item) => (
-                        <Tabs.Tab key={item.value} value={item.value} className={styles.tab}>
-                            {item.title}
-                        </Tabs.Tab>
-                    ))}
-                    <Tabs.Indicator className={styles.indicator} />
-                </Tabs.Content>
-            </Tabs.List>
-            <Tabs.Panels className={styles.panels}>
-                {items.map((item) => (
-                    <Tabs.Panel key={item.value} value={item.value}>
-                        <h2 className={styles.panelTitle}>{item.title}</h2>
-                        <p className={styles.panelText}>{item.content}</p>
-                    </Tabs.Panel>
-                ))}
-            </Tabs.Panels>
-        </Tabs.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `List`, `Content`, `Tab`, `Indicator`, `Panels`, `Panel`, `Prev`, `Next`

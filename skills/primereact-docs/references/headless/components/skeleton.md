@@ -2,26 +2,6 @@
 
 Hook that provides data attributes for building custom placeholder loading elements.
 
-```tsx
-'use client';
-import { useSkeleton } from '@primereact/headless/skeleton';
-
-export default function BasicDemo() {
-    const { rootProps } = useSkeleton();
-
-    return (
-        <div className="flex gap-4 max-w-xs mx-auto">
-            <div {...rootProps} className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 animate-pulse shrink-0" aria-hidden="true" />
-            <div className="flex-1 flex flex-col gap-2 py-1">
-                <div {...rootProps} className="h-3 w-full rounded bg-gray-200 dark:bg-gray-700 animate-pulse" aria-hidden="true" />
-                <div {...rootProps} className="h-3 w-3/4 rounded bg-gray-200 dark:bg-gray-700 animate-pulse" aria-hidden="true" />
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

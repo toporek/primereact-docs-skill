@@ -2,68 +2,6 @@
 
 Hook that manages speed dial state, keyboard navigation, and directional positioning.
 
-```tsx
-'use client';
-import { Pencil } from '@primeicons/react/pencil';
-import { Plus } from '@primeicons/react/plus';
-import { Refresh } from '@primeicons/react/refresh';
-import { Trash } from '@primeicons/react/trash';
-import { Upload } from '@primeicons/react/upload';
-import { useSpeedDial } from '@primereact/headless/speeddial';
-
-const items = [
-    { icon: Pencil, label: 'Edit' },
-    { icon: Refresh, label: 'Refresh' },
-    { icon: Trash, label: 'Delete' },
-    { icon: Upload, label: 'Upload' }
-];
-
-export default function BasicDemo() {
-    const { rootProps, triggerProps, listProps, getItemProps, actionProps } = useSpeedDial({ direction: 'up' });
-
-    return (
-        <div style={{ position: 'relative', height: '240px' }}>
-            <div
-                {...rootProps}
-                className="inline-flex flex-col-reverse items-center"
-                style={{ ...rootProps.style, position: 'absolute', right: 0, bottom: 0 }}
-            >
-                <button
-                    {...triggerProps}
-                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-contrast border-none cursor-pointer transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary data-[open]:rotate-45"
-                >
-                    <Plus />
-                </button>
-                <ul {...listProps} className="group flex flex-col-reverse items-center gap-2 list-none m-0 p-0 pb-2" style={listProps.style}>
-                    {items.map((item, index) => {
-                        const Icon = item.icon;
-                        const itemProps = getItemProps(index);
-
-                        return (
-                            <li
-                                key={item.label}
-                                {...itemProps}
-                                className="opacity-0 scale-50 transition-all duration-200 group-data-[open]:opacity-100 group-data-[open]:scale-100"
-                                style={itemProps.style}
-                            >
-                                <button
-                                    {...actionProps}
-                                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-surface-0 border border-surface-200 text-surface-600 cursor-pointer hover:bg-surface-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                    aria-label={item.label}
-                                >
-                                    <Icon />
-                                </button>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

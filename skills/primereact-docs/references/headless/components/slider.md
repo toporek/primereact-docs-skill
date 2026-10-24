@@ -2,40 +2,6 @@
 
 Hook that manages slider state, pointer dragging, and accessible range input behavior.
 
-```tsx
-'use client';
-import { useSlider } from '@primereact/headless/slider';
-
-export default function BasicDemo() {
-    const slider = useSlider({ defaultValue: 50 });
-    const values = slider.range() ? (slider.state.value as number[]) : [slider.state.value as number];
-
-    return (
-        <div className="max-w-md mx-auto py-4">
-            <div {...slider.rootProps} className="flex items-center h-5 cursor-pointer" style={{ ...slider.rootProps.style, touchAction: 'none' }}>
-                <div
-                    {...slider.trackProps}
-                    className="relative h-[3px] rounded-md bg-surface-200 dark:bg-surface-700"
-                    style={slider.trackProps.style}
-                >
-                    <span {...slider.getRangeProps()} className="block h-full rounded-md bg-primary" />
-                </div>
-                {values.map((_, index) => (
-                    <span
-                        key={index}
-                        {...slider.getHandleProps(index)}
-                        className="flex items-center justify-center size-5 rounded-full bg-surface-200 dark:bg-surface-700 cursor-grab before:block before:size-4 before:rounded-full before:bg-surface-0 dark:before:bg-surface-950 before:shadow-[0px_0.5px_0px_0px_rgba(0,0,0,0.08),0px_1px_1px_0px_rgba(0,0,0,0.14)] has-focus-visible:outline-1 has-focus-visible:outline-offset-2 has-focus-visible:outline-primary"
-                    >
-                        <input {...slider.getHiddenInputProps(index)} />
-                    </span>
-                ))}
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

@@ -4,38 +4,6 @@ An unstyled avatar component with compound composition and group support.
 
 Build fully custom avatar elements with complete control over layout and styling.
 
-```tsx
-'use client';
-import { User } from '@primeicons/react/user';
-import { Avatar } from 'primereact/avatar';
-import { AvatarGroup } from 'primereact/avatargroup';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <AvatarGroup className={styles.group}>
-                <Avatar.Root className={`${styles.avatar} ${styles.amber}`}>
-                    <Avatar.Fallback>AB</Avatar.Fallback>
-                </Avatar.Root>
-                <Avatar.Root className={`${styles.avatar} ${styles.blue}`}>
-                    <Avatar.Fallback>CD</Avatar.Fallback>
-                </Avatar.Root>
-                <Avatar.Root className={`${styles.avatar} ${styles.green}`}>
-                    <Avatar.Fallback>
-                        <User />
-                    </Avatar.Fallback>
-                </Avatar.Root>
-                <Avatar.Root className={`${styles.avatar} ${styles.muted}`}>
-                    <Avatar.Fallback>+3</Avatar.Fallback>
-                </Avatar.Root>
-            </AvatarGroup>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with three sub-components: `Root`, `Image`, `Fallback`
