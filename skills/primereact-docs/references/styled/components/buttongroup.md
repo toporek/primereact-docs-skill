@@ -2,85 +2,6 @@
 
 ButtonGroup composes related buttons into a connected pill with shared corners and seams.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { ChevronLeft } from '@primeicons/react/chevron-left';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Clock } from '@primeicons/react/clock';
-import { File } from '@primeicons/react/file';
-import { Send } from '@primeicons/react/send';
-import { Trash } from '@primeicons/react/trash';
-import { Times } from '@primeicons/react/times';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-import { Menu } from '@primereact/ui/menu';
-
-export default function Preview() {
-    return (
-        <div className="flex flex-wrap items-center justify-center gap-4">
-            <ButtonGroup>
-                <Button>
-                    <Check />
-                    Save
-                </Button>
-                <Button>
-                    <Times />
-                    Cancel
-                </Button>
-                <Button>
-                    <Trash />
-                    Delete
-                </Button>
-            </ButtonGroup>
-
-            <Menu.Root className="border-0 bg-transparent">
-                <ButtonGroup>
-                    <Button variant="outlined">
-                        <Check />
-                        Save
-                    </Button>
-                    <Menu.Trigger as={Button} variant="outlined" aria-label="More save options" iconOnly>
-                        <ChevronDown />
-                    </Menu.Trigger>
-                </ButtonGroup>
-                <Menu.Portal>
-                    <Menu.Positioner sideOffset={4} align="end">
-                        <Menu.Popup className="w-48">
-                            <Menu.List>
-                                <Menu.Item>
-                                    <File />
-                                    Save as draft
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Send />
-                                    Save and publish
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Clock />
-                                    Save and schedule
-                                </Menu.Item>
-                            </Menu.List>
-                        </Menu.Popup>
-                    </Menu.Positioner>
-                </Menu.Portal>
-            </Menu.Root>
-
-            <ButtonGroup>
-                <Button variant="outlined" severity="secondary" aria-label="Previous" iconOnly>
-                    <ChevronLeft />
-                </Button>
-                <Button variant="outlined" severity="secondary" aria-label="Next" iconOnly>
-                    <ChevronRight />
-                </Button>
-            </ButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -101,500 +22,45 @@ import { ButtonGroup } from '@primereact/ui/buttongroup';
 
 A standard ButtonGroup wraps multiple buttons into a connected unit.
 
-```tsx
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-import { Check } from '@primeicons/react/check';
-import { Times } from '@primeicons/react/times';
-import { Trash } from '@primeicons/react/trash';
-
-export default function BasicDemo() {
-    return (
-        <div className="flex flex-col items-center gap-4">
-            <ButtonGroup>
-                <Button>
-                    <Check />
-                    Save
-                </Button>
-                <Button>
-                    <Times />
-                    Cancel
-                </Button>
-                <Button>
-                    <Trash />
-                    Delete
-                </Button>
-            </ButtonGroup>
-            <ButtonGroup>
-                <Button variant="outlined">
-                    <Check />
-                    Save
-                </Button>
-                <Button variant="outlined">
-                    <Times />
-                    Cancel
-                </Button>
-                <Button variant="outlined">
-                    <Trash />
-                    Delete
-                </Button>
-            </ButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ### Icons
 
 Buttons inside a group support leading and trailing icons.
-
-```tsx
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-import { Check } from '@primeicons/react/check';
-import { Refresh } from '@primeicons/react/refresh';
-import { Search } from '@primeicons/react/search';
-import { User } from '@primeicons/react/user';
-
-export default function IconDemo() {
-    return (
-        <div className="flex flex-col items-center gap-4">
-            <ButtonGroup>
-                <Button>
-                    <User />
-                    Profile
-                </Button>
-                <Button>
-                    <Search />
-                    Search
-                </Button>
-                <Button>
-                    <Refresh />
-                    Update
-                </Button>
-            </ButtonGroup>
-            <ButtonGroup>
-                <Button>
-                    Profile
-                    <User />
-                </Button>
-                <Button>
-                    Search
-                    <Search />
-                </Button>
-                <Button>
-                    Save
-                    <Check />
-                </Button>
-            </ButtonGroup>
-        </div>
-    );
-}
-
-```
 
 ### Severity
 
 Each button in a group can use a different severity to convey intent.
 
-```tsx
-import { ChevronDown, Check } from '@primeicons/react';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-
-const severities = ['primary', 'secondary', 'success', 'info', 'warn', 'help', 'danger', 'contrast'] as const;
-
-export default function SeverityDemo() {
-    return (
-        <div className="flex flex-wrap items-center justify-center gap-4 max-w-xl mx-auto">
-            {severities.map((severity) => (
-                <ButtonGroup key={severity}>
-                    <Button {...(severity !== 'primary' && { severity })}>
-                        <Check />
-                        Save
-                    </Button>
-                    <Button {...(severity !== 'primary' && { severity })} aria-label="More options" iconOnly>
-                        <ChevronDown />
-                    </Button>
-                </ButtonGroup>
-            ))}
-        </div>
-    );
-}
-
-```
-
 ### Raised
 
 Raised buttons display a shadow to indicate elevation.
-
-```tsx
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { Check } from '@primeicons/react/check';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-
-const severities = ['primary', 'secondary', 'success', 'info', 'warn', 'help', 'danger', 'contrast'] as const;
-
-export default function RaisedDemo() {
-    return (
-        <div className="flex flex-wrap items-center justify-center gap-4 max-w-xl mx-auto">
-            {severities.map((severity) => (
-                <ButtonGroup key={severity}>
-                    <Button {...(severity !== 'primary' && { severity })} raised>
-                        <Check />
-                        Save
-                    </Button>
-                    <Button {...(severity !== 'primary' && { severity })} raised aria-label="More options" iconOnly>
-                        <ChevronDown />
-                    </Button>
-                </ButtonGroup>
-            ))}
-        </div>
-    );
-}
-
-```
 
 ### Rounded
 
 Rounded buttons soften the outer corners of the group.
 
-```tsx
-import { ChevronDown, Check } from '@primeicons/react';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-
-const severities = ['primary', 'secondary', 'success', 'info', 'warn', 'help', 'danger', 'contrast'] as const;
-
-export default function RoundedDemo() {
-    return (
-        <div className="flex flex-wrap items-center justify-center gap-4 max-w-xl mx-auto">
-            {severities.map((severity) => (
-                <ButtonGroup key={severity}>
-                    <Button {...(severity !== 'primary' && { severity })} rounded>
-                        <Check />
-                        Save
-                    </Button>
-                    <Button {...(severity !== 'primary' && { severity })} rounded aria-label="More options" iconOnly>
-                        <ChevronDown />
-                    </Button>
-                </ButtonGroup>
-            ))}
-        </div>
-    );
-}
-
-```
-
 ### Text
 
 Text buttons render as textual elements while keeping the connected layout.
-
-```tsx
-import { ChevronDown, Check } from '@primeicons/react';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-
-const severities = ['primary', 'secondary', 'success', 'info', 'warn', 'help', 'danger', 'contrast'] as const;
-
-export default function TextDemo() {
-    return (
-        <div className="flex flex-wrap items-center justify-center gap-4 max-w-xl mx-auto">
-            {severities.map((severity) => (
-                <ButtonGroup key={severity}>
-                    <Button {...(severity !== 'primary' && { severity })} variant="text">
-                        <Check />
-                        Save
-                    </Button>
-                    <Button {...(severity !== 'primary' && { severity })} variant="text" aria-label="More options" iconOnly>
-                        <ChevronDown />
-                    </Button>
-                </ButtonGroup>
-            ))}
-        </div>
-    );
-}
-
-```
 
 ### Outlined
 
 Outlined buttons display a border without a transparent background.
 
-```tsx
-import { ChevronDown, Check } from '@primeicons/react';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-
-const severities = ['primary', 'secondary', 'success', 'info', 'warn', 'help', 'danger', 'contrast'] as const;
-
-export default function OutlinedDemo() {
-    return (
-        <div className="flex flex-wrap items-center justify-center gap-4 max-w-xl mx-auto">
-            {severities.map((severity) => (
-                <ButtonGroup key={severity}>
-                    <Button {...(severity !== 'primary' && { severity })} variant="outlined">
-                        <Check />
-                        Save
-                    </Button>
-                    <Button {...(severity !== 'primary' && { severity })} variant="outlined" aria-label="More options" iconOnly>
-                        <ChevronDown />
-                    </Button>
-                </ButtonGroup>
-            ))}
-        </div>
-    );
-}
-
-```
-
 ### Icon Only
 
 Icon-only buttons can be combined into compact toolbars and pickers.
-
-```tsx
-import { ChevronLeft, ChevronRight } from '@primeicons/react';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-
-const variants = [
-    { key: 'default', props: {} },
-    { key: 'outlined', props: { variant: 'outlined' as const } },
-    { key: 'text', props: { variant: 'text' as const } },
-    { key: 'raised', props: { raised: true } },
-    { key: 'rounded', props: { rounded: true } }
-];
-
-export default function IconOnlyDemo() {
-    return (
-        <div className="flex flex-col items-center gap-4">
-            <div className="flex flex-wrap items-center justify-center gap-4">
-                {variants.map(({ key, props }) => (
-                    <ButtonGroup key={key}>
-                        <Button {...props} aria-label="Previous" iconOnly>
-                            <ChevronLeft />
-                        </Button>
-                        <Button {...props} aria-label="Next" iconOnly>
-                            <ChevronRight />
-                        </Button>
-                    </ButtonGroup>
-                ))}
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-                {variants.map(({ key, props }) => (
-                    <ButtonGroup key={key}>
-                        <Button {...props} severity="secondary" aria-label="Previous" iconOnly>
-                            <ChevronLeft />
-                        </Button>
-                        <Button {...props} severity="secondary" aria-label="Next" iconOnly>
-                            <ChevronRight />
-                        </Button>
-                    </ButtonGroup>
-                ))}
-            </div>
-        </div>
-    );
-}
-
-```
 
 ### Sizes
 
 ButtonGroup supports `small` and `large` sizes alongside the default.
 
-```tsx
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-import { Check } from '@primeicons/react/check';
-import { Times } from '@primeicons/react/times';
-import { Trash } from '@primeicons/react/trash';
-
-export default function SizeDemo() {
-    return (
-        <div className="flex flex-col items-center justify-center gap-4">
-            <ButtonGroup>
-                <Button size="small">
-                    <Check />
-                    Save
-                </Button>
-                <Button size="small">
-                    <Trash />
-                    Delete
-                </Button>
-                <Button size="small">
-                    <Times />
-                    Cancel
-                </Button>
-            </ButtonGroup>
-            <ButtonGroup>
-                <Button>
-                    <Check />
-                    Save
-                </Button>
-                <Button>
-                    <Trash />
-                    Delete
-                </Button>
-                <Button>
-                    <Times />
-                    Cancel
-                </Button>
-            </ButtonGroup>
-            <ButtonGroup>
-                <Button size="large">
-                    <Check />
-                    Save
-                </Button>
-                <Button size="large">
-                    <Trash />
-                    Delete
-                </Button>
-                <Button size="large">
-                    <Times />
-                    Cancel
-                </Button>
-            </ButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ### Disabled
 
 When `disabled` is present on each button, the group becomes non-interactive.
 
-```tsx
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-import { Check } from '@primeicons/react/check';
-import { Times } from '@primeicons/react/times';
-import { Trash } from '@primeicons/react/trash';
-
-export default function DisabledDemo() {
-    return (
-        <div className="flex justify-center">
-            <ButtonGroup>
-                <Button disabled>
-                    <Check />
-                    Save
-                </Button>
-                <Button disabled>
-                    <Trash />
-                    Delete
-                </Button>
-                <Button disabled>
-                    <Times />
-                    Cancel
-                </Button>
-            </ButtonGroup>
-        </div>
-    );
-}
-
-```
-
 ### Split Button
 
 Pair a primary action with a `Menu.Trigger` button to expose related options without crowding the main action.
-
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Clock } from '@primeicons/react/clock';
-import { File } from '@primeicons/react/file';
-import { Send } from '@primeicons/react/send';
-import { Button } from '@primereact/ui/button';
-import { ButtonGroup } from '@primereact/ui/buttongroup';
-import { Menu } from '@primereact/ui/menu';
-
-export default function SplitButtonDemo() {
-    return (
-        <div className="flex flex-wrap items-start justify-center gap-4">
-            <Menu.Root className="border-0 bg-transparent">
-                <ButtonGroup>
-                    <Button>
-                        <Check />
-                        Save
-                    </Button>
-                    <Menu.Trigger as={Button} aria-label="More save options" iconOnly>
-                        <ChevronDown />
-                    </Menu.Trigger>
-                </ButtonGroup>
-                <Menu.Portal>
-                    <Menu.Positioner sideOffset={4} align="end">
-                        <Menu.Popup className="w-48">
-                            <Menu.List>
-                                <Menu.Item>
-                                    <File />
-                                    Save as draft
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Send />
-                                    Save and publish
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Clock />
-                                    Save and schedule
-                                </Menu.Item>
-                            </Menu.List>
-                        </Menu.Popup>
-                    </Menu.Positioner>
-                </Menu.Portal>
-            </Menu.Root>
-
-            <Menu.Root className="border-0 bg-transparent">
-                <ButtonGroup>
-                    <Button variant="outlined" severity="secondary">
-                        Export
-                    </Button>
-                    <Menu.Trigger as={Button} variant="outlined" severity="secondary" aria-label="More export options" iconOnly>
-                        <ChevronDown />
-                    </Menu.Trigger>
-                </ButtonGroup>
-                <Menu.Portal>
-                    <Menu.Positioner sideOffset={4} align="end">
-                        <Menu.Popup className="w-48">
-                            <Menu.List>
-                                <Menu.Submenu>
-                                    <Menu.SubmenuTrigger>
-                                        Download as
-                                        <Menu.SubmenuIndicator>
-                                            <ChevronRight className="size-3.5" />
-                                        </Menu.SubmenuIndicator>
-                                    </Menu.SubmenuTrigger>
-                                    <Menu.Portal>
-                                        <Menu.Positioner>
-                                            <Menu.Popup className="w-40">
-                                                <Menu.List>
-                                                    <Menu.Item>PDF</Menu.Item>
-                                                    <Menu.Item>Word</Menu.Item>
-                                                    <Menu.Item>Markdown</Menu.Item>
-                                                    <Menu.Item>HTML</Menu.Item>
-                                                </Menu.List>
-                                            </Menu.Popup>
-                                        </Menu.Positioner>
-                                    </Menu.Portal>
-                                </Menu.Submenu>
-
-                                <Menu.Separator />
-
-                                <Menu.Item>Send via email</Menu.Item>
-                                <Menu.Item>Copy link</Menu.Item>
-                            </Menu.List>
-                        </Menu.Popup>
-                    </Menu.Positioner>
-                </Menu.Portal>
-            </Menu.Root>
-        </div>
-    );
-}
-
-```
 
 ## Related
 
@@ -632,7 +98,7 @@ List of design tokens.
 | button.padding.x | --p-button-padding-x | Padding x of root |
 | button.padding.y | --p-button-padding-y | Padding y of root |
 | button.icon.only.width | --p-button-icon-only-width | Icon only width of root |
-| button.icon.only.width | --p-button-icon-only-width | Font size of root |
+| button.font.size | --p-button-font-size | Font size of root |
 | button.sm.font.size | --p-button-sm-font-size | Sm font size of root |
 | button.sm.padding.x | --p-button-sm-padding-x | Sm padding x of root |
 | button.sm.padding.y | --p-button-sm-padding-y | Sm padding y of root |
