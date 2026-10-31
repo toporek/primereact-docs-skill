@@ -112,6 +112,16 @@ Controls whether component design tokens are generated as CSS variables or inlin
 
 Scopes the generated CSS variables to the components only instead of the document root and host elements. Defaults to `false`.
 
+#### classPrefix
+
+Sets the prefix of the component class names, `p` by default. With `my`, the `p-button` class becomes `my-button` in both the generated CSS and the rendered markup. The icon classes `p-icon` and `p-icon-*` keep the `p-` name, and classes passed from the app, such as `className`, are not renamed.
+
+```tsx
+options: {
+    classPrefix: 'my';
+}
+```
+
 ### Presets
 
 Aura, Material, Lara and Nora are the available built-in options, created to demonstrate the power of the design-agnostic theming. Aura is PrimeTek's own vision, Material follows Google Material Design v2, Lara is based on Bootstrap and
@@ -132,57 +142,6 @@ var(--p-blue-500)
 
 // With JS
 $dt('blue.500').value
-```
-
-```tsx
-export default function ColorsListDemo() {
-    const colors = [
-        'emerald',
-        'green',
-        'lime',
-        'red',
-        'orange',
-        'amber',
-        'yellow',
-        'teal',
-        'cyan',
-        'sky',
-        'blue',
-        'indigo',
-        'violet',
-        'purple',
-        'fuchsia',
-        'pink',
-        'rose',
-        'slate',
-        'gray',
-        'zinc',
-        'neutral',
-        'stone'
-    ];
-    const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
-
-    return (
-        <div>
-            <ul className="p-0 m-0 list-none flex sm:flex-col gap-4 flex-wrap sm:flex-nowrap">
-                {colors.map((color, i) => (
-                    <li key={i} className="flex-auto" style={{ minWidth: '6rem' }}>
-                        <span className="font-medium capitalize block mb-2 text-center sm:text-left">{color}</span>
-                        <div className="flex gap-4 flex-auto flex-col sm:flex-row">
-                            {shades.map((shade, j) => (
-                                <div key={j} className="flex flex-col items-center gap-1 flex-1">
-                                    <div className="rounded h-8 w-full" style={{ backgroundColor: `var(--p-${color}-${shade})` }}></div>
-                                    <span className="text-sm text-surface-500 dark:text-surface-400 font-medium">{shade}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-}
-
 ```
 
 ## Dark Mode
@@ -462,6 +421,8 @@ The theming system can be extended by adding custom design tokens and additional
 
 The example preset configuration adds a new `accent` button with custom `button.accent.color` and `button.accent.inverse.color` tokens. It is also possible to add tokens globally to share them within the components.
 
+The `css` property is a string, and each `dt('...')` call in it refers to that design token. Plain text keeps the preset serializable, so it can be stored as JSON.
+
 ```tsx
 const MyPreset = definePreset(Aura, {
     components: {
@@ -472,91 +433,56 @@ const MyPreset = definePreset(Aura, {
                     color: '#f59e0b',
                     inverseColor: '#ffffff'
                 }
-            }
-        css: ({ dt }) => \`
+            },
+            css: `
 .p-button-accent {
-    background: \${dt('button.accent.color')};
-    color: \${dt('button.accent.inverse.color')};
-    transition-duration: \${dt('my.transition.fast')};
+    background: dt('button.accent.color');
+    color: dt('button.accent.inverse.color');
+    transition-duration: dt('my.transition.fast');
 }
-\`
+`
         }
     },
     // common tokens and styles
     extend: {
         my: {
             transition: {
-                slow: '0.75s'
-                normal: '0.5s'
+                slow: '0.75s',
+                normal: '0.5s',
                 fast: '0.25s'
             },
             imageDisplay: 'block'
         }
     },
-    css: ({ dt }) => \`
+    css: `
         /* Global CSS */
         img {
-            display: \${dt('my.image.display')};
+            display: dt('my.image.display');
         }
-    \`
+    `
+});
+```
+
+`css` can also be a function that receives `dt` and returns the CSS.
+
+```tsx
+const MyPreset = definePreset(Aura, {
+    components: {
+        button: {
+            css: ({ dt }) => `
+.p-button-accent {
+    background: ${dt('button.accent.color')};
+    color: ${dt('button.accent.inverse.color')};
+}
+`
+        }
+    }
 });
 ```
 
 ## Scoped Tokens
 
 Design tokens can be scoped to a certain component using the `dt` property. In this example, first switch uses the global tokens whereas second one overrides the global with its own tokens.
-
-```tsx
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-
-export default function ScopedTokensDemo() {
-    const amberSwitch = {
-        handle: {
-            borderRadius: '4px'
-        },
-        colorScheme: {
-            light: {
-                root: {
-                    checkedBackground: '{amber.500}',
-                    checkedHoverBackground: '{amber.600}',
-                    borderRadius: '4px'
-                },
-                handle: {
-                    checkedBackground: '{amber.50}',
-                    checkedHoverBackground: '{amber.100}'
-                }
-            },
-            dark: {
-                root: {
-                    checkedBackground: '{amber.400}',
-                    checkedHoverBackground: '{amber.300}',
-                    borderRadius: '4px'
-                },
-                handle: {
-                    checkedBackground: '{amber.900}',
-                    checkedHoverBackground: '{amber.800}'
-                }
-            }
-        }
-    };
-
-    return (
-        <div className="flex justify-center gap-4">
-            <ToggleSwitch.Root defaultChecked>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-            <ToggleSwitch.Root defaultChecked dt={amberSwitch}>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </div>
-    );
-}
-
-```
 
 ## Utils
 
@@ -757,21 +683,6 @@ layer order. This way, your Reset CSS does not get in the way of PrimeReact comp
 
 [CSS modules](https://github.com/css-modules/css-modules) are supported by enabling the `module` property on a style element within your SFC. Use the `$style` keyword to apply classes to a PrimeReact component. It is recommend to enable
 `cssLayer` when using CSS modules so that the PrimeReact styles have low CSS specificity.
-
-```tsx
-import * as React from 'react';
-import { InputText } from '@primereact/ui/inputtext';
-import styles from './css-modules-demo.module.css';
-
-export default function CSSModulesDemo() {
-    return (
-        <div className="flex justify-center">
-            <InputText className={styles.myinput} placeholder="Search" />
-        </div>
-    );
-}
-
-```
 
 ```css
 .myinput {

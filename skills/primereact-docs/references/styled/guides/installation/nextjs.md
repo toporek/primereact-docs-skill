@@ -2,7 +2,7 @@
 
 Setting up PrimeReact in a Next.js project.
 
-Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/nextjs-quickstart-nextgen" target="_blank" rel="noopener noreferrer">Next.js template</a>, pre-configured with PrimeReact.
+Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/nextjs-quickstart" target="_blank" rel="noopener noreferrer">Next.js template</a>, pre-configured with PrimeReact.
 
 ## Installation
 
@@ -11,14 +11,14 @@ Start from our <a href="https://github.com/primefaces/primereact-examples/tree/m
 Install PrimeReact and a theme package using your favorite package manager:
 
 ```bash
-npm install primereact@11.0.0-rc.1 @primeuix/themes@3.0.0-rc.1
+npm install @primereact/ui @primeuix/themes @primeicons/react
 ```
 
 ### PrimeReactProvider
 
 Create a `prime-ssr-provider.tsx` file in the root of your project and add the following code. The provider configuration requires a `theme` to style the components and a `license` key to activate your commercial license, available from your [PrimeUI](https://primeui.dev/pricing) account:
 
-```tsx showLineNumbers {26}
+```tsx title="prime-ssr-provider.tsx" showLineNumbers {2,3,5,26}
 'use client';
 import { PrimeReactProvider, PrimeReactStyleSheet } from '@primereact/core';
 import { useServerInsertedHTML } from 'next/navigation';
@@ -83,22 +83,8 @@ export default function RootLayout({
 To verify that PrimeReact is installed correctly, you can create a simple component such as [Button](/button) and render it in your application.
 Each component can be imported and registered individually so that you only include what you use for bundle optimization. Import path is available in the documentation of the corresponding component.
 
-```tsx
-import { Button } from '@primereact/ui/button';
-
-export default function VerifyDemo() {
-    return (
-        <div className="flex justify-center">
-            <Button>Verify</Button>
-        </div>
-    );
-}
-
-```
-
 ```tsx showLineNumbers {1,6}
-import { Button } from 'primereact/button';
-import { Github } from '@primeicons/react/github';
+import { Button } from '@primereact/ui/button';
 
 export default function VerifyInstallation() {
     return (
@@ -109,17 +95,6 @@ export default function VerifyInstallation() {
 }
 ```
 
-## More Tips
+## Next Steps
 
-- You can import and use only the components you need for a smaller bundle size.
-- For icons, custom themes, and advanced setup, see the [PrimeReact documentation](https://primereact.dev/setup).
-
-## Troubleshooting
-
-If you encounter issues during installation or setup, check the following:
-
-- Ensure that you have the latest version of Vite and Node.js installed.
-- Verify that your project structure is correct and that the `PrimeReactProvider` is properly wrapped around your application.
-- Check the browser console for any errors related to PrimeReact components or themes.
-- If you are using TypeScript, ensure that you have the necessary type definitions installed.
-- Refer to the [PrimeReact GitHub repository](https://github.com/primefaces/primereact) for more information and support.
+Choose how you want to style your components — [Styled](../theming/styled.md), [Tailwind](../theming/tailwind.md), or [Unstyled](../theming/unstyled.md) — then [browse the components](../../components/autocomplete.md) and import only what you need.

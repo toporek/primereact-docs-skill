@@ -2,27 +2,6 @@
 
 Hook that provides data attributes and prop spreading for button elements.
 
-```tsx
-'use client';
-import { useButton } from '@primereact/headless/button';
-
-export default function BasicDemo() {
-    const { rootProps } = useButton();
-
-    return (
-        <div className="flex justify-center">
-            <button
-                {...rootProps}
-                className="px-2.5 py-1.5 bg-primary text-primary-contrast text-sm rounded cursor-pointer hover:bg-primary/90 focus-visible:outline focus-visible:outline-primary focus-visible:outline-offset-2 transition"
-            >
-                Submit
-            </button>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
