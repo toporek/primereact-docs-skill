@@ -2,35 +2,36 @@
 
 Setting up PrimeReact in an Astro project.
 
-Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/astro-quickstart-nextgen" target="_blank" rel="noopener noreferrer">Astro template</a>, pre-configured with PrimeReact.
+Start from our <a href="https://github.com/primefaces/primereact-examples/tree/main/astro-quickstart" target="_blank" rel="noopener noreferrer">Astro template</a>, pre-configured with PrimeReact.
 
 ## Installation
 
 ### Install Packages
 
-Add the React integration, then install PrimeReact and a theme package:
+Install PrimeReact and a theme package using your favorite package manager:
 
 ```bash
-npx astro add react
-npm install primereact@11.0.0-rc.1 @primeuix/themes@3.0.0-rc.1
+npm install @primereact/ui @primeuix/themes @primeicons/react
 ```
 
 ### PrimeReactProvider
 
 Create a React component that wraps your UI with `PrimeReactProvider`, a theme preset such as Aura, and your [PrimeUI](https://primeui.dev/pricing) license key:
 
-```tsx showLineNumbers {2,3,7-9}
-// src/components/Providers.tsx
+```tsx title="src/components/Providers.tsx" showLineNumbers {1,2,9}
 import { PrimeReactProvider } from '@primereact/core';
 import Aura from '@primeuix/themes/aura';
 import type { ReactNode } from 'react';
 
+const primereact = {
+    theme: {
+        preset: Aura
+    },
+    license: 'PrimeUI-Commercial-Key...'
+};
+
 export default function Providers({ children }: { children: ReactNode }) {
-    return (
-        <PrimeReactProvider theme={{ preset: Aura }} license="PrimeUI-Commercial-Key...">
-            {children}
-        </PrimeReactProvider>
-    );
+    return <PrimeReactProvider {...primereact}>{children}</PrimeReactProvider>;
 }
 ```
 
@@ -52,21 +53,8 @@ import VerifyInstallation from '../components/VerifyInstallation';
 To verify that PrimeReact is installed correctly, you can create a simple component such as [Button](/button) and render it in your application.
 Each component can be imported and registered individually so that you only include what you use for bundle optimization. Import path is available in the documentation of the corresponding component.
 
-```tsx
-import { Button } from '@primereact/ui/button';
-
-export default function VerifyDemo() {
-    return (
-        <div className="flex justify-center">
-            <Button>Verify</Button>
-        </div>
-    );
-}
-
-```
-
 ```tsx showLineNumbers {1,6}
-import { Button } from 'primereact/button';
+import { Button } from '@primereact/ui/button';
 
 export default function VerifyInstallation() {
     return (
@@ -77,17 +65,6 @@ export default function VerifyInstallation() {
 }
 ```
 
-## More Tips
+## Next Steps
 
-- You can import and use only the components you need for a smaller bundle size.
-- For icons, custom themes, and advanced setup, see the [PrimeReact documentation](https://primereact.dev/setup).
-
-## Troubleshooting
-
-If you encounter issues during installation or setup, check the following:
-
-- Ensure that you have the latest version of Astro and Node.js installed.
-- Verify that the `@astrojs/react` integration is enabled and that components using PrimeReact are hydrated with a `client:*` directive.
-- Check the browser console for any errors related to PrimeReact components or themes.
-- If you are using TypeScript, ensure that you have the necessary type definitions installed.
-- Refer to the [PrimeReact GitHub repository](https://github.com/primefaces/primereact) for more information and support.
+Choose how you want to style your components — [Styled](../theming/styled.md), [Tailwind](../theming/tailwind.md), or [Unstyled](../theming/unstyled.md) — then [browse the components](../../components/autocomplete.md) and import only what you need.

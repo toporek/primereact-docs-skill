@@ -4,34 +4,6 @@ A utility component that hides content visually while keeping it accessible to s
 
 Build accessible interfaces by providing screen reader text for icon-only actions and decorative elements.
 
-```tsx
-'use client';
-import { VisuallyHidden } from 'primereact/visuallyhidden';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <button className={styles.button}>
-                <i className="pi pi-heart" />
-                <VisuallyHidden>Add to favorites</VisuallyHidden>
-            </button>
-
-            <button className={styles.button}>
-                <i className="pi pi-trash" />
-                <VisuallyHidden>Delete item</VisuallyHidden>
-            </button>
-
-            <button className={styles.button}>
-                <i className="pi pi-cog" />
-                <VisuallyHidden>Open settings</VisuallyHidden>
-            </button>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Hides content from visual display using WAI-ARIA recommended CSS techniques

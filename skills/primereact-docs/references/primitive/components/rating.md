@@ -4,35 +4,6 @@ An unstyled, accessible rating component with compound composition for star-base
 
 Build fully custom rating controls with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Star, StarFill } from '@primeicons/react';
-import { Rating } from 'primereact/rating';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Rating.Root defaultValue={3} className={styles.rating}>
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <Rating.Option key={i} index={i} className={styles.option}>
-                            <Rating.On className={styles.on}>
-                                <StarFill className={styles.icon} />
-                            </Rating.On>
-                            <Rating.Off className={styles.off}>
-                                <Star className={styles.iconOff} />
-                            </Rating.Off>
-                        </Rating.Option>
-                    ))}
-            </Rating.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Option`, `On`, `Off`

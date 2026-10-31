@@ -2,37 +2,6 @@
 
 Hook that manages open/close state, toggle behavior, and ARIA attributes for collapsible content.
 
-```tsx
-'use client';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { useCollapsible } from '@primereact/headless/collapsible';
-
-export default function BasicDemo() {
-    const { rootProps, triggerProps, contentProps, state } = useCollapsible({ defaultOpen: false });
-
-    return (
-        <div className="max-w-lg mx-auto">
-            <div {...rootProps} className="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
-                <button
-                    {...triggerProps}
-                    className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-surface-700 dark:text-surface-0 bg-surface-50 dark:bg-surface-800 hover:bg-surface-100 dark:hover:bg-surface-700 transition-colors cursor-pointer"
-                >
-                    What is PrimeReact?
-                    <ChevronDown className={`w-4 h-4 text-surface-500 transition-transform duration-200 ${state.open ? 'rotate-180' : ''}`} />
-                </button>
-                {state.open && (
-                    <div {...contentProps} className="px-4 py-3 text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
-                        PrimeReact is a rich set of open source UI components for React. It provides a wide range of components like buttons, dialogs,
-                        tables, and more to help you build modern web applications.
-                    </div>
-                )}
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
