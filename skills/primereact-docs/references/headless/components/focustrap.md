@@ -2,43 +2,6 @@
 
 Headless hook for trapping keyboard focus within a container element.
 
-```tsx
-'use client';
-import { useFocusTrap } from '@primereact/headless/focustrap';
-import * as React from 'react';
-
-export default function BasicDemo() {
-    const { containerRef, firstHiddenElementRef, lastHiddenElementRef, firstHiddenProps, lastHiddenProps } = useFocusTrap();
-
-    return (
-        <div className="max-w-xs mx-auto">
-            <span ref={firstHiddenElementRef} tabIndex={0} {...firstHiddenProps} className="sr-only" />
-            <div ref={containerRef as React.RefObject<HTMLDivElement>} className="flex flex-col gap-4 p-5 rounded-lg border border-surface-200">
-                <h5 className="text-sm font-semibold text-surface-900">Register</h5>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full px-3 py-2 text-sm rounded-md border border-surface-200 bg-surface-0 text-surface-900 outline-none focus:ring-1 focus:ring-primary"
-                />
-                <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-3 py-2 text-sm rounded-md border border-surface-200 bg-surface-0 text-surface-900 outline-none focus:ring-1 focus:ring-primary"
-                />
-                <button
-                    type="submit"
-                    className="w-full px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-contrast cursor-pointer hover:bg-primary-emphasis transition"
-                >
-                    Submit
-                </button>
-            </div>
-            <span ref={lastHiddenElementRef} tabIndex={0} {...lastHiddenProps} className="sr-only" />
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

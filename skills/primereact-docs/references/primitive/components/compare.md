@@ -4,32 +4,6 @@ An unstyled, accessible before/after comparison component with compound composit
 
 Build fully custom before/after comparison layouts with complete control over handle, indicator, and item rendering.
 
-```tsx
-'use client';
-import { Code } from '@primeicons/react/code';
-import { Compare } from 'primereact/compare';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Compare.Root className={styles.root}>
-            <Compare.Item position="after">
-                <img src="https://primefaces.org/cdn/primevue/images/compare/island1.jpg" className={styles.image} draggable={false} />
-            </Compare.Item>
-            <Compare.Item position="before">
-                <img src="https://primefaces.org/cdn/primevue/images/compare/island2.jpg" className={styles.image} draggable={false} />
-            </Compare.Item>
-            <Compare.Handle className={styles.handle}>
-                <Compare.Indicator className={styles.indicator}>
-                    <Code />
-                </Compare.Indicator>
-            </Compare.Handle>
-        </Compare.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Item`, `Handle`, `Indicator`

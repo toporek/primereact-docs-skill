@@ -2,26 +2,6 @@
 
 Fluid is a layout component to make descendant components span full width of their container.
 
-```tsx
-import { Fluid } from '@primereact/ui/fluid';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function Preview() {
-    return (
-        <div>
-            <Fluid>
-                <Label htmlFor="with-fluid" className="font-bold mb-2 block">
-                    With Fluid
-                </Label>
-                <InputText id="with-fluid" placeholder="Type..." />
-            </Fluid>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -38,76 +18,11 @@ import { Fluid } from '@primereact/ui/fluid';
 
 Stretches form components to fill the available container width.
 
-```tsx
-import { Fluid } from '@primereact/ui/fluid';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function BasicDemo() {
-    return (
-        <div>
-            <Fluid>
-                <Label htmlFor="with-fluid" className="font-bold mb-2 block">
-                    With Fluid
-                </Label>
-                <InputText id="with-fluid" placeholder="Type..." />
-            </Fluid>
-        </div>
-    );
-}
-
-```
-
 ### Comparison
 
 Components with the _fluid_ option like _InputText_ have the ability to span the full width of their component. Enabling _fluid_ on each component individually may be cumbersome, so wrapping content with _Fluid_ is an easier alternative.
 
 Any component that has the _fluid_ property can be nested inside the _Fluid_ component. The fluid property of a child component has higher precedence than the _fluid_ container as shown in the last sample.
-
-```tsx
-import { Fluid } from '@primereact/ui/fluid';
-import { InputText } from '@primereact/ui/inputtext';
-import { Label } from '@primereact/ui/label';
-
-export default function ComparisionDemo() {
-    return (
-        <div className="flex flex-col gap-6">
-            <div>
-                <Label htmlFor="non-fluid" className="font-bold mb-2 block">
-                    Non-Fluid
-                </Label>
-                <InputText id="non-fluid" />
-            </div>
-
-            <div>
-                <Label htmlFor="fluid" className="font-bold mb-2 block">
-                    Fluid Prop
-                </Label>
-                <InputText id="fluid" fluid />
-            </div>
-
-            <Fluid>
-                <span className="font-bold mb-2 block">Fluid Container</span>
-                <div className="grid grid-cols-2 gap-4">
-                    <div>
-                        <InputText />
-                    </div>
-                    <div>
-                        <InputText />
-                    </div>
-                    <div className="col-span-full">
-                        <InputText />
-                    </div>
-                    <div>
-                        <InputText fluid={false} placeholder="Non-Fluid" />
-                    </div>
-                </div>
-            </Fluid>
-        </div>
-    );
-}
-
-```
 
 ## Accessibility
 
@@ -131,9 +46,9 @@ API documentation for Fluid component
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: FluidInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: FluidInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: FluidInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: FluidInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | FluidInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
