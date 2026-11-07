@@ -2,42 +2,6 @@
 
 ToggleSwitch is used to select a boolean value.
 
-```tsx
-import { Divider } from '@primereact/ui/divider';
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-
-export default function Preview() {
-    return (
-        <div className="flex flex-col justify-center items-center gap-2 max-w-xs mx-auto w-full ">
-            <label className="flex items-center justify-between gap-12  select-none">
-                <div className="flex-1">
-                    <div className="text-color font-bold">Email address</div>
-                    <div className="text-muted-color">Users can add email addresses to their account</div>
-                </div>
-                <ToggleSwitch.Root>
-                    <ToggleSwitch.Control>
-                        <ToggleSwitch.Handle />
-                    </ToggleSwitch.Control>
-                </ToggleSwitch.Root>
-            </label>
-            <Divider />
-            <label className="flex items-center justify-between gap-12 select-none">
-                <div className="flex-1">
-                    <div className="text-color font-bold">Two-factor authentication</div>
-                    <div className="text-muted-color">Require a verification code when signing in</div>
-                </div>
-                <ToggleSwitch.Root defaultChecked>
-                    <ToggleSwitch.Control>
-                        <ToggleSwitch.Handle />
-                    </ToggleSwitch.Control>
-                </ToggleSwitch.Root>
-            </label>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -58,187 +22,29 @@ import { ToggleSwitch } from '@primereact/ui/toggleswitch';
 
 Toggles a boolean setting between enabled and disabled states.
 
-```tsx
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-
-export default function BasicDemo() {
-    return (
-        <div className="flex justify-center items-center gap-2">
-            <label htmlFor="switch">Off</label>
-            <ToggleSwitch.Root inputId="switch">
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-            <label htmlFor="switch">On</label>
-        </div>
-    );
-}
-
-```
-
 ### Controlled
 
 A controlled ToggleSwitch requires managing the checked state with a state variable and handling the change event manually. This allows for complete control over the ToggleSwitch's behavior.
-
-```tsx
-'use client';
-import { ToggleSwitchRootChangeEvent } from '@primereact/ui/toggleswitch';
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-import React from 'react';
-
-export default function ControlledDemo() {
-    const [checked, setChecked] = React.useState(true);
-
-    return (
-        <div className="flex justify-center items-center gap-2">
-            <ToggleSwitch.Root inputId="mode" checked={checked} onCheckedChange={(event: ToggleSwitchRootChangeEvent) => setChecked(event.checked)}>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-            <label htmlFor="mode">Airplane Mode</label>
-        </div>
-    );
-}
-
-```
 
 ### Uncontrolled
 
 For an uncontrolled ToggleSwitch component, `defaultChecked` is used to set the initial state, and the component manages its own state internally.
 
-```tsx
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-
-export default function UncontrolledDemo() {
-    return (
-        <div className="flex justify-center">
-            <ToggleSwitch.Root defaultChecked>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </div>
-    );
-}
-
-```
-
 ### Template
 
 `ToggleSwitch.Handle` also allows displaying custom content inside itself.
-
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { Times } from '@primeicons/react/times';
-import { ToggleSwitch, type ToggleSwitchHandleInstance } from '@primereact/ui/toggleswitch';
-
-export default function TemplateDemo() {
-    return (
-        <div className="flex justify-center">
-            <ToggleSwitch.Root>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle>
-                        {(instance: ToggleSwitchHandleInstance) => {
-                            const { toggleSwitch: toggleSwitchContext } = instance;
-
-                            return <>{toggleSwitchContext?.state.checked ? <Check /> : <Times />}</>;
-                        }}
-                    </ToggleSwitch.Handle>
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </div>
-    );
-}
-
-```
 
 ### Customization
 
 `ToggleSwitch` component supports customization through CSS classes. The appearance, including colors and other visual properties, can be modified by applying custom classes to the component.
 
-```tsx
-'use client';
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-import { ToggleSwitchRootChangeEvent } from '@primereact/ui/toggleswitch';
-import * as React from 'react';
-
-export default function CustomizationDemo() {
-    const [checked, setChecked] = React.useState(true);
-
-    return (
-        <label
-            htmlFor="custom"
-            className="max-w-xs mx-auto flex items-start gap-2 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 hover:dark:bg-slate-700 p-4 rounded-md transition-colors"
-        >
-            <div className="flex flex-col gap-1 flex-1">
-                <p className="text-medium text-slate-900 dark:text-slate-50">Try Beta Features</p>
-                <p className="text-sm text-slate-400">Experience upcoming features before they&apos;re officially released.</p>
-            </div>
-
-            <ToggleSwitch.Root inputId="custom" checked={checked} onCheckedChange={(event: ToggleSwitchRootChangeEvent) => setChecked(event.checked)}>
-                <ToggleSwitch.Control className="data-checked:bg-blue-300! bg-slate-300! dark:bg-slate-600! rounded-md!">
-                    <ToggleSwitch.Handle className="bg-slate-500! data-checked:bg-blue-900!" />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </label>
-    );
-}
-
-```
-
 ### Invalid
 
 Invalid state is displayed using the `invalid` prop to indicate a failed validation. This style is useful when integrating with form validation libraries.
 
-```tsx
-'use client';
-import { ToggleSwitchRootChangeEvent } from '@primereact/ui/toggleswitch';
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-import * as React from 'react';
-
-export default function InvalidDemo() {
-    const [checked, setChecked] = React.useState(false);
-
-    return (
-        <div className="flex justify-center">
-            <ToggleSwitch.Root
-                checked={checked}
-                onCheckedChange={(event: ToggleSwitchRootChangeEvent) => setChecked(event.checked)}
-                invalid={!checked}
-            >
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </div>
-    );
-}
-
-```
-
 ### Disabled
 
 When `disabled` is present, the element cannot be edited and focused.
-
-```tsx
-import { ToggleSwitch } from '@primereact/ui/toggleswitch';
-
-export default function DisabledDemo() {
-    return (
-        <div className="flex justify-center">
-            <ToggleSwitch.Root disabled>
-                <ToggleSwitch.Control>
-                    <ToggleSwitch.Handle />
-                </ToggleSwitch.Control>
-            </ToggleSwitch.Root>
-        </div>
-    );
-}
-
-```
 
 ## Related
 

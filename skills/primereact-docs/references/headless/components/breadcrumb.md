@@ -2,65 +2,6 @@
 
 Hook that provides semantic ARIA attributes and data attributes for breadcrumb navigation.
 
-```tsx
-'use client';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Home } from '@primeicons/react/home';
-import { useBreadcrumb } from '@primereact/headless/breadcrumb';
-
-export default function BasicDemo() {
-    const { rootProps, separatorProps } = useBreadcrumb();
-
-    return (
-        <div className="flex justify-center">
-            <nav {...rootProps} className="bg-surface-0 dark:bg-surface-900 py-3 px-4 rounded-lg overflow-x-auto">
-                <ol className="m-0 p-0 list-none flex items-center flex-nowrap gap-2">
-                    <li className="flex items-center gap-2">
-                        <a
-                            href="/"
-                            className="no-underline flex items-center gap-2 text-surface-500 dark:text-surface-400 hover:text-surface-700 dark:hover:text-surface-0 transition-colors rounded-md focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                        >
-                            <Home className="w-4 h-4" />
-                        </a>
-                    </li>
-                    <li {...separatorProps} className="flex items-center text-surface-400 dark:text-surface-500">
-                        <ChevronRight className="w-3 h-3" />
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <a
-                            href="#"
-                            className="no-underline text-sm text-surface-500 dark:text-surface-400 hover:text-surface-700 dark:hover:text-surface-0 transition-colors rounded-md focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                        >
-                            Products
-                        </a>
-                    </li>
-                    <li {...separatorProps} className="flex items-center text-surface-400 dark:text-surface-500">
-                        <ChevronRight className="w-3 h-3" />
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <a
-                            href="#"
-                            className="no-underline text-sm text-surface-500 dark:text-surface-400 hover:text-surface-700 dark:hover:text-surface-0 transition-colors rounded-md focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                        >
-                            Electronics
-                        </a>
-                    </li>
-                    <li {...separatorProps} className="flex items-center text-surface-400 dark:text-surface-500">
-                        <ChevronRight className="w-3 h-3" />
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <span className="text-sm text-surface-950 dark:text-surface-0" aria-current="page">
-                            Laptops
-                        </span>
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

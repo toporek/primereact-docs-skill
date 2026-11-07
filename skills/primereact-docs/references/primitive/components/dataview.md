@@ -4,42 +4,6 @@ An unstyled data container component for building list and grid layouts with ful
 
 Build fully custom data presentation layouts with complete control over structure and styling.
 
-```tsx
-'use client';
-import { DataView } from 'primereact/dataview';
-import styles from './basic-demo.module.css';
-
-const products = [
-    { name: 'Bamboo Watch', category: 'Accessories', price: 65 },
-    { name: 'Black Watch', category: 'Accessories', price: 72 },
-    { name: 'Blue Band', category: 'Fitness', price: 79 },
-    { name: 'Blue T-Shirt', category: 'Clothing', price: 29 },
-    { name: 'Gaming Set', category: 'Electronics', price: 299 }
-];
-
-export default function BasicDemo() {
-    return (
-        <DataView.Root className={styles.root}>
-            <DataView.Header className={styles.header}>
-                <span>{products.length} products</span>
-            </DataView.Header>
-            <DataView.Content className={styles.content}>
-                {products.map((product) => (
-                    <div key={product.name} className={styles.item}>
-                        <div>
-                            <div className={styles.name}>{product.name}</div>
-                            <div className={styles.category}>{product.category}</div>
-                        </div>
-                        <span className={styles.price}>${product.price}</span>
-                    </div>
-                ))}
-            </DataView.Content>
-        </DataView.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Header`, `Content`, `Footer`, `Empty`

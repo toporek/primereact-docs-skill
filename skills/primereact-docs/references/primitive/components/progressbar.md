@@ -4,29 +4,6 @@ An unstyled progress bar component for displaying process completion status.
 
 Build fully custom progress indicators with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ProgressBar } from 'primereact/progressbar';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <ProgressBar.Root value={50}>
-                <ProgressBar.Track className={styles.track}>
-                    <ProgressBar.Indicator className={styles.indicator}>
-                        <ProgressBar.Label className={styles.label}>
-                            <ProgressBar.Value className={styles.value} />
-                        </ProgressBar.Label>
-                    </ProgressBar.Indicator>
-                </ProgressBar.Track>
-            </ProgressBar.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Track`, `Indicator`, `Label`, `Value`

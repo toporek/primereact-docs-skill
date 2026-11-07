@@ -4,55 +4,6 @@ An unstyled date picker component with calendar navigation, view switching, and 
 
 Build fully custom date pickers with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronLeft } from '@primeicons/react/chevron-left';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { DatePicker, type DatePickerRootProps, type DatePickerRootValueChangeEvent } from 'primereact/datepicker';
-import * as React from 'react';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    const [date, setDate] = React.useState<DatePickerRootProps['value']>(null);
-
-    return (
-        <div className={styles.wrapper}>
-            <DatePicker.Root className={styles.root} value={date} onValueChange={(event: DatePickerRootValueChangeEvent) => setDate(event.value)}>
-                <DatePicker.Input placeholder="mm/dd/yy" className={styles.input} />
-                <DatePicker.Portal>
-                    <DatePicker.Positioner>
-                        <DatePicker.Popup className={styles.popup}>
-                            <DatePicker.Calendar>
-                                <DatePicker.Header className={styles.header}>
-                                    <DatePicker.Prev className={styles.navButton}>
-                                        <ChevronLeft className={styles.navIcon} />
-                                    </DatePicker.Prev>
-                                    <DatePicker.Title className={styles.title}>
-                                        <DatePicker.SelectMonth className={styles.viewButton} />
-                                        <DatePicker.SelectYear className={styles.viewButton} />
-                                        <DatePicker.Decade />
-                                    </DatePicker.Title>
-                                    <DatePicker.Next className={styles.navButton}>
-                                        <ChevronRight className={styles.navIcon} />
-                                    </DatePicker.Next>
-                                </DatePicker.Header>
-                                <DatePicker.Table className={styles.table}>
-                                    <DatePicker.TableHead />
-                                    <DatePicker.TableBody />
-                                    <DatePicker.TableBody view="month" />
-                                    <DatePicker.TableBody view="year" />
-                                </DatePicker.Table>
-                            </DatePicker.Calendar>
-                        </DatePicker.Popup>
-                    </DatePicker.Positioner>
-                </DatePicker.Portal>
-            </DatePicker.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Input`, `Trigger`, `Value`, `Clear`, `ClearTrigger`, `Portal`, `Positioner`, `Arrow`, `Popup`, `Body`, `Panel`, `Calendar`, `Header`, `Prev`, `Next`, `Title`, `SelectMonth`, `SelectYear`, `Decade`, `Table`, `TableHead`, `TableHeadRow`, `TableHeadCell`, `TableHeadWeekCell`, `TableHeadWeekLabel`, `TableHeadWeekHeaderLabel`, `TableBody`, `TableBodyRow`, `TableBodyCell`, `TableBodyWeekCell`, `TableBodyWeekLabel`, `Day`, `Month`, `Year`, `Time`, `Picker`, `Hour`, `Minute`, `Second`, `AmPm`, `Increment`, `Decrement`, `Separator`, `Buttonbar`, `Footer`, `Today`
@@ -825,7 +776,7 @@ The optional datepicker button requires includes `aria-haspopup`, `aria-expanded
 
 Popup has a `dialog` role along with `aria-modal` and `aria-label`. The navigation buttons at the header have an `aria-label` retrieved from the locale aria API. Similarly month picker button uses the `chooseMonth` and year picker button uses the `chooseYear` keys.
 
-Main date table uses `grid` role that contains th elements with `col` as the scope along with `abbr` tag resolving to the full name of the month. Each date cell has an `aria-label` referring to the full date value. Buttons at the footer utilize their readable labels as `aria-label` as well. Selected date also receives the `aria-selected` attribute.
+Main date table uses `grid` role that contains th elements with `col` as the scope along with `abbr` tag resolving to the full name of the month. Each date cell has an `aria-label` referring to the full date value. Buttons at the footer utilize their readable labels as `aria-label` as well. Selected date also receives the `aria-selected` attribute, and a date that cannot be selected receives the `aria-disabled` attribute.
 
 Timepicker spinner buttons get their labels for `aria-label` from the aria locale API using the `prevHour`, `nextHour`, `prevMinute`, `nextMinute`, `prevSecond`, `nextSecond`, `am` and `pm` keys.
 

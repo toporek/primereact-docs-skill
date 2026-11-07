@@ -2,46 +2,6 @@
 
 Hook that manages toggle switch state, checked/unchecked logic, and ARIA attributes.
 
-```tsx
-'use client';
-import * as React from 'react';
-import { useToggleSwitch } from '@primereact/headless/toggleswitch';
-
-export default function BasicDemo() {
-    const { rootProps, inputProps, controlProps, handleProps } = useToggleSwitch({ defaultChecked: false });
-
-    return (
-        <div className="flex justify-center">
-            <div className="flex items-center gap-2">
-                <div
-                    {...rootProps}
-                    className="relative inline-flex items-center has-[input:focus-visible]:outline-1 has-[input:focus-visible]:outline-offset-2 has-[input:focus-visible]:outline-primary has-[input:focus-visible]:outline rounded-full"
-                >
-                    <input
-                        {...(inputProps as unknown as React.InputHTMLAttributes<HTMLInputElement>)}
-                        id="basic-switch"
-                        className="absolute z-2 inset-0 w-full h-full opacity-0 cursor-pointer appearance-none m-0 p-0 border border-transparent rounded-full"
-                    />
-                    <div
-                        {...controlProps}
-                        className="relative w-10 h-6 rounded-full transition-colors duration-200 bg-surface-300 dark:bg-surface-600 data-[checked]:bg-primary"
-                    >
-                        <span
-                            {...handleProps}
-                            className="absolute top-1 block w-4 h-4 rounded-full bg-white shadow transition-transform duration-200 translate-x-1 data-[checked]:translate-x-5"
-                        />
-                    </div>
-                </div>
-                <label htmlFor="basic-switch" className="cursor-pointer select-none text-sm">
-                    Notifications
-                </label>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

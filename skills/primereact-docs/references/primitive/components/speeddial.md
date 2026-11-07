@@ -4,50 +4,6 @@ An unstyled, accessible speed dial component with compound composition.
 
 Build fully custom floating action menus with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Pencil } from '@primeicons/react/pencil';
-import { Plus } from '@primeicons/react/plus';
-import { Refresh } from '@primeicons/react/refresh';
-import { Trash } from '@primeicons/react/trash';
-import { Upload } from '@primeicons/react/upload';
-import { SpeedDial } from 'primereact/speeddial';
-import styles from './basic-demo.module.css';
-
-const items = [
-    { icon: Pencil, label: 'Edit' },
-    { icon: Refresh, label: 'Refresh' },
-    { icon: Trash, label: 'Delete' },
-    { icon: Upload, label: 'Upload' }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.container}>
-            <SpeedDial.Root direction="up" className={styles.root}>
-                <SpeedDial.Trigger className={styles.trigger}>
-                    <Plus />
-                </SpeedDial.Trigger>
-                <SpeedDial.List className={styles.list}>
-                    {items.map((item, index) => {
-                        const Icon = item.icon;
-
-                        return (
-                            <SpeedDial.Item key={item.label} index={index} className={styles.item}>
-                                <SpeedDial.Action className={styles.action} aria-label={item.label}>
-                                    <Icon />
-                                </SpeedDial.Action>
-                            </SpeedDial.Item>
-                        );
-                    })}
-                </SpeedDial.List>
-            </SpeedDial.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Trigger`, `List`, `Item`, `Action`

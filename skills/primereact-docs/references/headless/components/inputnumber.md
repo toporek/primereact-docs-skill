@@ -2,56 +2,6 @@
 
 Hook that manages numeric input with formatting, locale support, and spin button behavior.
 
-```tsx
-'use client';
-import { AngleDown } from '@primeicons/react/angle-down';
-import { AngleUp } from '@primeicons/react/angle-up';
-import { useInputNumber, type UseInputNumberValueChangeEvent } from '@primereact/headless/inputnumber';
-import * as React from 'react';
-
-export default function BasicDemo() {
-    const [value, setValue] = React.useState(50);
-
-    const { rootProps, inputProps, state, incrementProps, decrementProps } = useInputNumber({
-        value,
-        min: 0,
-        max: 100,
-        mode: 'currency',
-        currency: 'EUR',
-        onValueChange: (e: UseInputNumberValueChangeEvent) => setValue(e.value)
-    });
-
-    return (
-        <div className="flex items-center justify-center" {...rootProps}>
-            <div className="flex items-center border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
-                <input
-                    {...inputProps}
-                    value={state.formattedValue as string}
-                    className="w-32 px-3 py-2 text-sm bg-transparent outline-none text-surface-900 dark:text-surface-100"
-                />
-                <div className="flex flex-col border-l border-surface-200 dark:border-surface-700">
-                    <button
-                        type="button"
-                        {...incrementProps}
-                        className="px-2 hover:bg-surface-50 dark:hover:bg-surface-800 cursor-pointer border-b border-surface-200 dark:border-surface-700 text-surface-600 dark:text-surface-400 text-[.5rem] outline-none focus-visible:bg-surface-100 dark:focus-visible:bg-surface-700"
-                    >
-                        <AngleUp />
-                    </button>
-                    <button
-                        type="button"
-                        {...decrementProps}
-                        className="px-2 hover:bg-surface-50 dark:hover:bg-surface-800 cursor-pointer text-surface-600 dark:text-surface-400 text-[.5rem] outline-none focus-visible:bg-surface-100 dark:focus-visible:bg-surface-700"
-                    >
-                        <AngleDown />
-                    </button>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

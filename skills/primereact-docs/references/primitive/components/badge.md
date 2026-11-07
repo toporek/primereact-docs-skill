@@ -4,42 +4,6 @@ An unstyled badge component for displaying status indicators.
 
 Build fully custom status indicators with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Bell } from '@primeicons/react/bell';
-import { Envelope } from '@primeicons/react/envelope';
-import { Badge } from 'primereact/badge';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <div className={styles.row}>
-                <Badge className={`${styles.standalone} ${styles.primary}`}>2</Badge>
-                <Badge className={`${styles.standalone} ${styles.danger}`}>5</Badge>
-                <Badge className={`${styles.standalone} ${styles.success}`}>12</Badge>
-                <Badge className={`${styles.standalone} ${styles.secondary}`}>8</Badge>
-            </div>
-            <div className={styles.row}>
-                <div className={styles.iconWrapper}>
-                    <Bell className={styles.icon} />
-                    <Badge className={`${styles.overlay} ${styles.danger}`} />
-                </div>
-                <div className={styles.iconWrapper}>
-                    <Envelope className={styles.icon} />
-                    <Badge className={`${styles.overlay} ${styles.primary}`} />
-                </div>
-                <div className={styles.iconWrapper}>
-                    <Bell className={styles.icon} />
-                    <Badge className={`${styles.overlay} ${styles.success}`} />
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Single `Badge` component with `OverlayBadge` for positioned overlays

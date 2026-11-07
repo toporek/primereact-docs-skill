@@ -4,25 +4,6 @@ An unstyled resizable panel layout component with pointer and keyboard-driven si
 
 Build fully custom resizable panel layouts with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Splitter } from 'primereact/splitter';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Splitter.Root defaultSizes={[30, 70]} className={styles.root}>
-            <Splitter.Panel className={styles.panel}>Panel 1</Splitter.Panel>
-            <Splitter.Gutter className={styles.gutter}>
-                <Splitter.Handle className={styles.handle} />
-            </Splitter.Gutter>
-            <Splitter.Panel className={styles.panel}>Panel 2</Splitter.Panel>
-        </Splitter.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Panel`, `Gutter`, `Handle`
