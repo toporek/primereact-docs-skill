@@ -145,31 +145,6 @@ However the best practice is combining semantic HTML for accessibility while kee
 
 A working sample is the PrimeReact checkbox that is tabbable, keyboard accessible and is compliant with a screen reader. Instead of ARIA roles it relies on a hidden native checkbox.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { Checkbox } from 'primereact/checkbox';
-import styles from './accessibility-checkbox-demo.module.css';
-
-export default function AccessibilityCheckboxDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Checkbox.Root inputId="chkbox" className={styles.root} inputClassName={styles.input}>
-                <Checkbox.Box className={styles.box}>
-                    <Checkbox.Indicator match="checked" className={styles.indicator}>
-                        <Check className="w-3 h-3" />
-                    </Checkbox.Indicator>
-                </Checkbox.Box>
-            </Checkbox.Root>
-            <label htmlFor="chkbox" className={styles.label}>
-                Remember Me
-            </label>
-        </div>
-    );
-}
-
-```
-
 ## Colors
 
 Colors on a web page should aim a contrast ratio of at least 4.5:1 and consider a selection of colors that do not cause vibration.

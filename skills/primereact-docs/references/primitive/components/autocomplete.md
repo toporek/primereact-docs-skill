@@ -4,65 +4,6 @@ An unstyled autocomplete input component with real-time search, keyboard navigat
 
 Build fully custom autocomplete inputs with complete control over layout and styling.
 
-```tsx
-'use client';
-import { AutoComplete, type AutoCompleteCompleteEvent } from 'primereact/autocomplete';
-import * as React from 'react';
-import styles from './basic-demo.module.css';
-
-const countries = [
-    'Argentina',
-    'Australia',
-    'Brazil',
-    'Canada',
-    'China',
-    'Egypt',
-    'France',
-    'Germany',
-    'India',
-    'Italy',
-    'Japan',
-    'Mexico',
-    'Netherlands',
-    'Norway',
-    'Poland',
-    'South Korea',
-    'Spain',
-    'Sweden',
-    'Switzerland',
-    'Turkey',
-    'United Kingdom',
-    'United States'
-];
-
-export default function BasicDemo() {
-    const [filteredCountries, setFilteredCountries] = React.useState<string[]>([]);
-
-    const search = (event: AutoCompleteCompleteEvent) => {
-        const query = event.query.toLowerCase();
-
-        setFilteredCountries(query ? countries.filter((country) => country.toLowerCase().includes(query)) : [...countries]);
-    };
-
-    return (
-        <div className={styles.wrapper}>
-            <AutoComplete.Root options={filteredCountries} onComplete={search} className={styles.root}>
-                <AutoComplete.Input placeholder="Search a country..." className={styles.input} />
-                <AutoComplete.Portal>
-                    <AutoComplete.Positioner sideOffset={4}>
-                        <AutoComplete.Popup className={styles.popup}>
-                            <AutoComplete.List className={styles.list} style={{ maxHeight: '14rem' }} />
-                            <AutoComplete.Empty className={styles.empty}>No countries found</AutoComplete.Empty>
-                        </AutoComplete.Popup>
-                    </AutoComplete.Positioner>
-                </AutoComplete.Portal>
-            </AutoComplete.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Input`, `Trigger`, `Indicator`, `Clear`, `Portal`, `Positioner`, `Popup`, `List`, `Option`, `OptionIndicator`, `Arrow`, `Header`, `Footer`, `Empty`, `Value`
@@ -241,12 +182,12 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 The positioner element exposes CSS custom properties for layout and transform control.
 
-| CSS Variable                | Description                              |
-| --------------------------- | ---------------------------------------- |
-| `--available-height`        | Available vertical space in pixels       |
-| `--available-width`         | Available horizontal space in pixels     |
-| `--transform-origin`        | Computed transform origin for animations |
-| `--positioner-anchor-width` | Width of the anchor/trigger element      |
+| CSS Variable                   | Description                              |
+| ------------------------------ | ---------------------------------------- |
+| `--px-available-height`        | Available vertical space in pixels       |
+| `--px-available-width`         | Available horizontal space in pixels     |
+| `--px-transform-origin`        | Computed transform origin for animations |
+| `--px-positioner-anchor-width` | Width of the anchor/trigger element      |
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -342,12 +283,12 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 The arrow element exposes CSS custom properties for dynamic positioning:
 
-| CSS Variable          | Description                    |
-| --------------------- | ------------------------------ |
-| `--placer-arrow-x`    | Horizontal offset of arrow     |
-| `--placer-arrow-y`    | Vertical offset of arrow       |
-| `--placer-arrow-left` | Left position of arrow element |
-| `--placer-arrow-top`  | Top position of arrow element  |
+| CSS Variable             | Description                    |
+| ------------------------ | ------------------------------ |
+| `--px-placer-arrow-x`    | Horizontal offset of arrow     |
+| `--px-placer-arrow-y`    | Vertical offset of arrow       |
+| `--px-placer-arrow-left` | Left position of arrow element |
+| `--px-placer-arrow-top`  | Top position of arrow element  |
 
 | Label | Type | Description |
 |:------|:------|:------|

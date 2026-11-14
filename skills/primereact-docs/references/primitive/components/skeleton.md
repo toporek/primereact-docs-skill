@@ -4,25 +4,6 @@ An unstyled placeholder component for displaying loading states.
 
 Build fully custom loading placeholders with complete control over shape, size, and animation.
 
-```tsx
-'use client';
-import { Skeleton } from 'primereact/skeleton';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Skeleton shape="circle" size="2.5rem" className={styles.skeleton} />
-            <div className={styles.lines}>
-                <Skeleton width="100%" className={styles.skeleton} />
-                <Skeleton width="75%" className={styles.skeleton} />
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Built-in `shape`, `width`, `height`, `size`, and `borderRadius` props for common placeholder layouts

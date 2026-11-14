@@ -4,39 +4,6 @@ An unstyled, accessible fieldset component with semantic legend and optional col
 
 Build fully custom fieldset containers with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Minus } from '@primeicons/react/minus';
-import { Plus } from '@primeicons/react/plus';
-import { Fieldset } from 'primereact/fieldset';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Fieldset.Root className={styles.root}>
-            <Fieldset.Legend className={styles.legend}>
-                <Fieldset.Trigger className={styles.trigger}>
-                    <Fieldset.Indicator match="open" className={styles.indicator}>
-                        <Minus />
-                    </Fieldset.Indicator>
-                    <Fieldset.Indicator match="closed" className={styles.indicator}>
-                        <Plus />
-                    </Fieldset.Indicator>
-                    <Fieldset.Title className={styles.title}>Legend</Fieldset.Title>
-                </Fieldset.Trigger>
-            </Fieldset.Legend>
-            <Fieldset.Content className={styles.content}>
-                <div className={styles.contentInner}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-            </Fieldset.Content>
-        </Fieldset.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with six sub-components: `Root`, `Legend`, `Title`, `Trigger`, `Indicator`, `Content`

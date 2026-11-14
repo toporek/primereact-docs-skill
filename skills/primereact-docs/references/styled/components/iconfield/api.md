@@ -10,9 +10,9 @@ API documentation for IconField component
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: IconFieldRootInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: IconFieldRootInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: IconFieldRootInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: IconFieldRootInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | IconFieldRootInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
@@ -58,9 +58,9 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: IconFieldInsetInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: IconFieldInsetInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: IconFieldInsetInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: IconFieldInsetInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | IconFieldInsetInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
@@ -80,7 +80,7 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 
 | Name | Type | Default | Description |
 |:------|:------|:------|:------|
-| iconfield | IconFieldRootInstance | null | The IconField component instance. |
+| iconfield | undefined \\| null \\| IconFieldRootInstance | null | The IconField component instance. |
 
 ### Interfaces
 
