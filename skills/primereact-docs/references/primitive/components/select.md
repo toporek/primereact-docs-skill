@@ -4,71 +4,6 @@ An unstyled select dropdown component with keyboard navigation, filtering, and s
 
 Build fully custom select dropdowns with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { Select } from 'primereact/select';
-import styles from './basic-demo.module.css';
-
-const countries = [
-    { name: 'Argentina', code: 'AR' },
-    { name: 'Australia', code: 'AU' },
-    { name: 'Brazil', code: 'BR' },
-    { name: 'Canada', code: 'CA' },
-    { name: 'China', code: 'CN' },
-    { name: 'Egypt', code: 'EG' },
-    { name: 'France', code: 'FR' },
-    { name: 'Germany', code: 'DE' },
-    { name: 'India', code: 'IN' },
-    { name: 'Italy', code: 'IT' },
-    { name: 'Japan', code: 'JP' },
-    { name: 'Mexico', code: 'MX' },
-    { name: 'Netherlands', code: 'NL' },
-    { name: 'Norway', code: 'NO' },
-    { name: 'Poland', code: 'PL' },
-    { name: 'South Korea', code: 'KR' },
-    { name: 'Spain', code: 'ES' },
-    { name: 'Sweden', code: 'SE' },
-    { name: 'Switzerland', code: 'CH' },
-    { name: 'Turkey', code: 'TR' },
-    { name: 'United Kingdom', code: 'GB' },
-    { name: 'United States', code: 'US' }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Select.Root options={countries} optionLabel="name" className={styles.root}>
-                <Select.Trigger className={styles.trigger}>
-                    <Select.Value placeholder="Select a Country" className={styles.value} />
-                    <Select.Indicator className={styles.indicator}>
-                        <ChevronDown className={styles.chevron} />
-                    </Select.Indicator>
-                </Select.Trigger>
-                <Select.Portal>
-                    <Select.Positioner sideOffset={4}>
-                        <Select.Popup className={styles.popup}>
-                            <Select.List className={styles.list} style={{ maxHeight: '14rem' }}>
-                                {countries.map((country, index) => (
-                                    <Select.Option key={country.code} index={index} uKey={country.code} className={styles.option}>
-                                        <Select.OptionIndicator className={styles.optionIndicator}>
-                                            <Check className={styles.checkIcon} />
-                                        </Select.OptionIndicator>
-                                        {country.name}
-                                    </Select.Option>
-                                ))}
-                            </Select.List>
-                        </Select.Popup>
-                    </Select.Positioner>
-                </Select.Portal>
-            </Select.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Trigger`, `Value`, `Indicator`, `Clear`, `Portal`, `Positioner`, `Popup`, `List`, `Option`, `OptionIndicator`, `Filter`, `Arrow`, `Header`, `Footer`, `Empty`
@@ -247,12 +182,12 @@ Use `as` on any sub-component to change the rendered HTML element.
 
 The positioner element exposes CSS custom properties for layout and transform control.
 
-| CSS Variable                | Description                              |
-| --------------------------- | ---------------------------------------- |
-| `--available-height`        | Available vertical space in pixels       |
-| `--available-width`         | Available horizontal space in pixels     |
-| `--transform-origin`        | Computed transform origin for animations |
-| `--positioner-anchor-width` | Width of the anchor/trigger element      |
+| CSS Variable                   | Description                              |
+| ------------------------------ | ---------------------------------------- |
+| `--px-available-height`        | Available vertical space in pixels       |
+| `--px-available-width`         | Available horizontal space in pixels     |
+| `--px-transform-origin`        | Computed transform origin for animations |
+| `--px-positioner-anchor-width` | Width of the anchor/trigger element      |
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -364,12 +299,12 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 The arrow element exposes CSS custom properties for dynamic positioning:
 
-| CSS Variable          | Description                    |
-| --------------------- | ------------------------------ |
-| `--placer-arrow-x`    | Horizontal offset of arrow     |
-| `--placer-arrow-y`    | Vertical offset of arrow       |
-| `--placer-arrow-left` | Left position of arrow element |
-| `--placer-arrow-top`  | Top position of arrow element  |
+| CSS Variable             | Description                    |
+| ------------------------ | ------------------------------ |
+| `--px-placer-arrow-x`    | Horizontal offset of arrow     |
+| `--px-placer-arrow-y`    | Vertical offset of arrow       |
+| `--px-placer-arrow-left` | Left position of arrow element |
+| `--px-placer-arrow-top`  | Top position of arrow element  |
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -383,13 +318,14 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### Keyboard Support
 
-| Key          | Function                                                            |
-| ------------ | ------------------------------------------------------------------- |
-| `tab`        | Moves focus to the select trigger.                                  |
-| `enter`      | Opens the popup when focused, selects the focused option when open. |
-| `space`      | Opens the popup when focused, selects the focused option when open. |
-| `escape`     | Closes the popup.                                                   |
-| `arrow down` | Opens the popup or moves focus to the next option.                  |
-| `arrow up`   | Opens the popup or moves focus to the previous option.              |
-| `home`       | Moves focus to the first option.                                    |
-| `end`        | Moves focus to the last option.                                     |
+| Key                       | Function                                                                                                                                                                     |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tab`                     | Moves focus to the select trigger.                                                                                                                                           |
+| `enter`                   | Opens the popup when focused, selects the focused option when open.                                                                                                          |
+| `space`                   | Opens the popup when focused, selects the focused option when open.                                                                                                          |
+| `escape`                  | Closes the popup.                                                                                                                                                            |
+| `arrow down`              | Opens the popup or moves focus to the next option.                                                                                                                           |
+| `arrow up`                | Opens the popup or moves focus to the previous option.                                                                                                                       |
+| `home`                    | Moves focus to the first option.                                                                                                                                             |
+| `end`                     | Moves focus to the last option.                                                                                                                                              |
+| `any printable character` | When the popup is open, moves focus to the filter and types the character into it. Without a filter, moves focus to the option whose label starts with the typed characters. |

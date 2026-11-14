@@ -4,24 +4,6 @@ An unstyled, accessible slider component with compound composition.
 
 Build fully custom sliders and range inputs with complete control over track, range, and handle rendering.
 
-```tsx
-'use client';
-import { Slider } from 'primereact/slider';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Slider.Root className={styles.root} defaultValue={50}>
-            <Slider.Track className={styles.track}>
-                <Slider.Range className={styles.range} />
-            </Slider.Track>
-            <Slider.Handle className={styles.handle} />
-        </Slider.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Track`, `Range`, `Handle`

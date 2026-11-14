@@ -4,77 +4,6 @@ An unstyled, accessible toast notification system with compound composition.
 
 Build fully custom toast notifications with complete control over layout, animation, and styling.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { ExclamationTriangle } from '@primeicons/react/exclamation-triangle';
-import { InfoCircle } from '@primeicons/react/info-circle';
-import { Times } from '@primeicons/react/times';
-import { Toast } from 'primereact/toast';
-import { toast, Toaster, ToasterRegionInstance, ToastType } from 'primereact/toaster';
-import styles from './basic-demo.module.css';
-
-function BasicToast() {
-    return (
-        <Toaster.Root group="primitive-basic">
-            <Toaster.Portal>
-                <Toaster.Region className={styles.region}>
-                    {({ toaster }: ToasterRegionInstance) =>
-                        toaster?.toasts.map((t: ToastType) => (
-                            <Toast.Root key={t.id} toast={t} className={styles.toast}>
-                                <Toast.Content className={styles.body}>
-                                    <Toast.Icon match="success">
-                                        <Check />
-                                    </Toast.Icon>
-                                    <Toast.Icon match="error">
-                                        <Times />
-                                    </Toast.Icon>
-                                    <Toast.Icon match="warn">
-                                        <ExclamationTriangle />
-                                    </Toast.Icon>
-                                    <Toast.Icon match="info">
-                                        <InfoCircle />
-                                    </Toast.Icon>
-                                    <Toast.Message className={styles.content}>
-                                        <Toast.Title className={styles.title} />
-                                        <Toast.Description className={styles.description} />
-                                    </Toast.Message>
-                                </Toast.Content>
-                                <Toast.Close className={styles.close}>
-                                    <Times />
-                                </Toast.Close>
-                            </Toast.Root>
-                        ))
-                    }
-                </Toaster.Region>
-            </Toaster.Portal>
-        </Toaster.Root>
-    );
-}
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.demo}>
-            <button
-                className={styles.button}
-                onClick={() =>
-                    toast({
-                        severity: 'success',
-                        title: 'Saved successfully',
-                        description: 'Your changes have been saved.',
-                        group: 'primitive-basic'
-                    })
-                }
-            >
-                Create toast
-            </button>
-            <BasicToast />
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound API: `Toaster` (`Root`, `Portal`, `Region`) and `Toast` (`Root`, `Content`, `Icon`, `Message`, `Title`, `Description`, `Action`, `Close`)
@@ -201,20 +130,21 @@ Defaults: `Toaster.Root`=`div`, `Toaster.Region`=`div`, `Toast.Root`=`li`, `Toas
 
 > **`ToastRoot` API table (`api`)** — TypeScript-derived; not inlined here. See the live table at https://primereact.dev/docs/primitive/components/toast or the installed `@primereact/types`.
 
-| Attribute              | Value                                           |
-| ---------------------- | ----------------------------------------------- |
-| `data-id`              | Toast identifier                                |
-| `data-index`           | Toast index in the stack                        |
-| `data-mounted`         | Present after initial render                    |
-| `data-removed`         | Present during exit animation                   |
-| `data-visible`         | Present when within the visible limit           |
-| `data-front`           | Present on the frontmost toast                  |
-| `data-expanded`        | Present when toaster is expanded                |
-| `data-swiping`         | Present during active swipe                     |
-| `data-swiped`          | Present after swipe delta exceeds zero          |
-| `data-swipe-out`       | Present after swipe threshold exceeded          |
-| `data-swipe-direction` | Swipe direction (`left`, `right`, `up`, `down`) |
-| `data-dismissible`     | Present when toast is dismissible               |
+| Attribute              | Value                                                                      |
+| ---------------------- | -------------------------------------------------------------------------- |
+| `data-id`              | Toast identifier                                                           |
+| `data-index`           | Toast index in the stack                                                   |
+| `data-mounted`         | Present after initial render                                               |
+| `data-removed`         | Present during exit animation                                              |
+| `data-visible`         | Present when within the visible limit                                      |
+| `data-front`           | Present on the frontmost toast                                             |
+| `data-expanded`        | Present when toaster is expanded                                           |
+| `data-swiping`         | Present during active swipe                                                |
+| `data-swiped`          | Present after swipe delta exceeds zero                                     |
+| `data-swipe-out`       | Present after swipe threshold exceeded                                     |
+| `data-swipe-direction` | Swipe direction (`left`, `right`, `up`, `down`)                            |
+| `data-dismissible`     | Present when toast is dismissible                                          |
+| `data-repeat`          | `odd` or `even`, switches each time the toast is shown again with its `id` |
 
 **CSS custom properties**, set on the `Toast.Root` style for swipe gestures and stacked positioning.
 

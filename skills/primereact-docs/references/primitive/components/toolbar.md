@@ -4,39 +4,6 @@ An unstyled toolbar component with compound composition for grouping actions.
 
 Build fully custom toolbar layouts with complete control over content regions and styling.
 
-```tsx
-'use client';
-import { Plus } from '@primeicons/react/plus';
-import { Search } from '@primeicons/react/search';
-import { Upload } from '@primeicons/react/upload';
-import { Toolbar } from 'primereact/toolbar';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Toolbar.Root className={styles.root}>
-            <Toolbar.Start className={styles.start}>
-                <button className={styles.iconButton}>
-                    <Plus />
-                </button>
-                <button className={styles.iconButton}>
-                    <Upload />
-                </button>
-            </Toolbar.Start>
-            <Toolbar.Center>
-                <input type="text" placeholder="Search" className={styles.search} />
-            </Toolbar.Center>
-            <Toolbar.End className={styles.end}>
-                <button className={styles.iconButton}>
-                    <Search />
-                </button>
-            </Toolbar.End>
-        </Toolbar.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Start`, `Center`, `End`

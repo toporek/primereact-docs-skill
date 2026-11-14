@@ -2,41 +2,6 @@
 
 Headless hook for building toolbar containers with custom markup.
 
-```tsx
-'use client';
-import { Plus } from '@primeicons/react/plus';
-import { Search } from '@primeicons/react/search';
-import { Upload } from '@primeicons/react/upload';
-import { useToolbar } from '@primereact/headless/toolbar';
-
-export default function BasicDemo() {
-    const { rootProps } = useToolbar();
-
-    return (
-        <div
-            {...rootProps}
-            role="toolbar"
-            className="flex items-center justify-between gap-2 p-2 border border-surface-200 dark:border-surface-700 rounded-lg"
-        >
-            <div className="flex items-center gap-1">
-                <button className="p-2 rounded cursor-pointer hover:bg-surface-100 dark:hover:bg-surface-800 transition">
-                    <Plus className="w-4 h-4" />
-                </button>
-                <button className="p-2 rounded cursor-pointer hover:bg-surface-100 dark:hover:bg-surface-800 transition">
-                    <Upload className="w-4 h-4" />
-                </button>
-            </div>
-            <div>
-                <button className="p-2 rounded cursor-pointer hover:bg-surface-100 dark:hover:bg-surface-800 transition">
-                    <Search className="w-4 h-4" />
-                </button>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
