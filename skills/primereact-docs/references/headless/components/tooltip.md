@@ -2,97 +2,6 @@
 
 Hook that manages tooltip open state, hover/focus triggers, delay timing, and group transitions.
 
-```tsx
-'use client';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { usePositioner } from '@primereact/headless/positioner';
-import { useTooltip } from '@primereact/headless/tooltip';
-import { useTooltipManager } from '@primereact/headless/tooltipmanager';
-import * as React from 'react';
-import { createPortal } from 'react-dom';
-
-const arrowStyles: Record<string, React.CSSProperties> = {
-    top: { bottom: '-0.25rem', left: 'var(--px-placer-arrow-x)', transform: 'translateX(-50%) rotate(-45deg)' },
-    bottom: { top: '-0.25rem', left: 'var(--px-placer-arrow-x)', transform: 'translateX(-50%) rotate(135deg)' },
-    left: { right: '-0.25rem', top: 'var(--px-placer-arrow-y)', transform: 'translateY(-50%) rotate(-135deg)' },
-    right: { left: '-0.25rem', top: 'var(--px-placer-arrow-y)', transform: 'translateY(-50%) rotate(45deg)' }
-};
-
-const flights = [
-    { from: 'IST', to: 'LHR', airline: 'Turkish Airlines', status: 'ON TIME', color: 'bg-green-600 text-white' },
-    { from: 'IST', to: 'CDG', airline: 'Lufthansa', status: 'DELAYED', color: 'bg-primary text-primary-contrast' },
-    { from: 'IST', to: 'FRA', airline: 'Qatar Airways', status: 'BOARDING', color: 'bg-amber-600 text-white' }
-];
-
-function FlightTooltip({ flight, manager }: { flight: (typeof flights)[0]; manager: ReturnType<typeof useTooltipManager> }) {
-    const { triggerProps, popupProps, arrowProps, positionerProps, state } = useTooltip({
-        tooltipManager: manager,
-        openDelay: 200,
-        closeDelay: 100
-    });
-
-    const positioner = usePositioner({
-        anchor: state.anchorElement,
-        content: state.positionerElement,
-        arrow: state.arrowElement,
-        side: 'top',
-        sideOffset: 8,
-        flip: true,
-        shift: true
-    });
-
-    const side = positioner.state.actualSide ?? 'top';
-
-    return (
-        <>
-            <button
-                {...triggerProps}
-                className="px-2.5 flex items-center justify-center cursor-pointer hover:bg-surface-50 dark:hover:bg-surface-800 transition-colors bg-transparent border-none text-sm text-surface-700 dark:text-surface-0"
-            >
-                {flight.from} <ChevronRight className="w-3 h-3 mx-1 opacity-50" /> {flight.to}
-            </button>
-            {state.rendered &&
-                createPortal(
-                    <div {...positionerProps}>
-                        <div
-                            {...popupProps}
-                            className="relative bg-surface-950 dark:bg-surface-0 text-surface-0 dark:text-surface-950 rounded-lg px-2.5 py-1.5 text-sm font-medium flex items-center gap-1 shadow-md transition-[opacity,scale] duration-200 origin-[var(--px-transform-origin)] opacity-0 scale-95 data-[open]:opacity-100 data-[open]:scale-100 data-[instant]:!duration-0"
-                        >
-                            <div
-                                {...arrowProps}
-                                className="absolute w-2 h-2 bg-surface-900 dark:bg-surface-50 [clip-path:polygon(0_100%,0_0,100%_100%)]"
-                                style={arrowStyles[side]}
-                            />
-                            {flight.airline}{' '}
-                            <span
-                                className={`-mr-1 flex items-center justify-center leading-none px-1.5 py-1 rounded-sm text-xs font-medium ${flight.color}`}
-                            >
-                                {flight.status}
-                            </span>
-                        </div>
-                    </div>,
-                    document.body
-                )}
-        </>
-    );
-}
-
-export default function BasicDemo() {
-    const manager = useTooltipManager();
-
-    return (
-        <div className="flex justify-center">
-            <div className="flex text-sm font-medium border border-surface-200 dark:border-surface-700 rounded-lg h-8 divide-x divide-surface-200 dark:divide-surface-700 [&>*:first-child]:rounded-l-lg [&>*:last-child]:rounded-r-lg overflow-hidden">
-                {flights.map((flight) => (
-                    <FlightTooltip key={flight.to} flight={flight} manager={manager} />
-                ))}
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
@@ -104,7 +13,7 @@ import { createPortal } from 'react-dom';
 
 ```tsx
 const manager = useTooltipManager();
-const { triggerProps, popupProps, arrowProps, positionerProps, setAnchorRef, setPositionerRef, setArrowRef, state, presence } = useTooltip({ tooltipManager: manager });
+const { triggerProps, popupProps, arrowProps, positionerProps, state, setRendered } = useTooltip({ tooltipManager: manager });
 
 usePositioner({
     anchor: state.anchorElement,
@@ -121,11 +30,11 @@ usePositioner({
 ## Features
 
 - **Hover/focus open**, opens on pointer enter or keyboard focus, closes on leave/blur with configurable `openDelay` and `closeDelay`
-- **Presence tracking**, `presence.present` and `presence.ref` keep the popup mounted through exit animations
-- **Interactive hover**, allows the pointer to enter the popup without dismissing, configurable via the `interactive` prop
+- **Presence tracking**, `state.rendered` turns `true` when the tooltip opens and stays `true` until you call `setRendered(false)`, so the popup can stay mounted through an exit animation
+- **Interactive hover**, allows the pointer to enter the popup without dismissing, configurable via the `interactive` prop; this is for pointer users only, popup content is not reachable with the keyboard
 - **Group coordination**, `useTooltipManager` skips the open delay when moving between adjacent tooltips for an "instant" transition
 - **Transition awareness**, `state.instantType` reports the current mode (`'delay'`, `'focus'`, `'dismiss'`, or `undefined`) for styling
-- **Ref callbacks**, `setAnchorRef`, `setPositionerRef`, and `setArrowRef` register elements for positioning without manual ref merging
+- **Ref callbacks**, `triggerProps`, `positionerProps`, `popupProps`, and `arrowProps` each carry a `ref`, so spreading them fills `state` and `popupRef` without manual ref merging
 
 ## Working with callbacks
 
@@ -136,22 +45,27 @@ Pass `open` and `onOpenChange` to drive visibility from external state, useful w
 ```tsx
 const [isOpen, setIsOpen] = React.useState(false);
 
-const tooltip = useTooltip({
+const { triggerProps, positionerProps, popupProps, arrowProps, state, setRendered } = useTooltip({
     open: isOpen,
-    onOpenChange: (e) => setIsOpen(e.open)
+    onOpenChange: (e) => setIsOpen(e.value)
 });
 
+React.useEffect(() => {
+    if (!state.open) setRendered(false);
+}, [state.open]);
+
 <>
-    <button {...triggerProps} ref={setAnchorRef}></button>;
-    {
-        presence.present &&
-            createPortal(
-                <div {...positionerProps} ref={setPositionerRef}>
-                    <div {...popupProps} ref={presence.ref}>
-                        <div {...arrowProps} ref={setArrowRef} />
-                    </div>
-                </div>,
-                document.body
+    <button {...triggerProps}></button>
+    {state.rendered &&
+        createPortal(
+            <div {...positionerProps}>
+                <div {...popupProps}>
+                    <div {...arrowProps} />
+                </div>
+            </div>,
+            document.body
+        )}
+</>;
 ```
 
 ### Tuning open and close delays
@@ -174,7 +88,7 @@ const tooltip2 = useTooltip({ tooltipManager: manager });
 
 ### Non-interactive tooltip
 
-Set `interactive` to `false` when the popup should dismiss immediately on pointer leave, even if the user moves over the tooltip content.
+Set `interactive` to `false` when the popup should dismiss immediately on pointer leave, even if the user moves over the tooltip content. `interactive` only controls pointer behavior, the popup is never part of the tab order, so links or buttons inside it belong in [usePopover](popover.md) instead.
 
 ```tsx
 const tooltip = useTooltip({ interactive: false });
@@ -182,10 +96,10 @@ const tooltip = useTooltip({ interactive: false });
 
 ### Composing with usePositioner
 
-Register the element refs with the positioner so the tooltip flips and offsets against the trigger.
+Pass the elements from `state` to `usePositioner` so the tooltip flips and offsets against the trigger.
 
 ```tsx
-const { state, setAnchorRef, setPositionerRef, setArrowRef } = useTooltip();
+const { state } = useTooltip();
 
 usePositioner({
     anchor: state.anchorElement,
@@ -201,10 +115,10 @@ usePositioner({
 
 The hook exposes state through `data-*` attributes on each part. Use them as CSS selectors, no className juggling.
 
-| Scope     | Part      | States                                     |
-| --------- | --------- | ------------------------------------------ |
-| `tooltip` | `trigger` | `data-popup-open`                          |
-| `tooltip` | `popup`   | `data-open`, `data-closed`, `data-instant` |
+| Scope     | Part      | States                      |
+| --------- | --------- | --------------------------- |
+| `tooltip` | `trigger` | `data-popup-open`           |
+| `tooltip` | `popup`   | `data-open`, `data-instant` |
 
 ```css
 [data-scope='tooltip'][data-part='popup'][data-open] {
@@ -231,4 +145,4 @@ The hook exposes state through `data-*` attributes on each part. Use them as CSS
 
 ## Accessibility
 
-Focus or hover shows the tooltip, Escape hides it, and content is announced via aria-describedby. See [Primitive](../../primitive/components/tooltip.md#accessibility) for full WAI-ARIA compliance details.
+Focus or hover shows the tooltip, Escape hides it, and content is announced via aria-describedby. Popup content is not reachable with the keyboard, so it must not hold links or buttons. See [Primitive](../../primitive/components/tooltip.md#accessibility) for full WAI-ARIA compliance details.

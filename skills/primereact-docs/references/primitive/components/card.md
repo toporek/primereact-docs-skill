@@ -4,36 +4,6 @@ An unstyled, flexible container component with compound composition.
 
 Build fully custom content containers with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Button } from 'primereact/button';
-import { Card } from 'primereact/card';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Card.Root className={styles.root}>
-                <Card.Body className={styles.body}>
-                    <Card.Caption>
-                        <Card.Title className={styles.title}>Pro Subscription</Card.Title>
-                        <Card.Subtitle className={styles.subtitle}>Everything you need to scale your workflow</Card.Subtitle>
-                    </Card.Caption>
-                    <Card.Content className={styles.content}>
-                        <p>Get unlimited access to all features, priority support, and advanced analytics to help your team grow faster.</p>
-                    </Card.Content>
-                    <Card.Footer className={styles.footer}>
-                        <span className={styles.price}>$29 / month</span>
-                        <Button className={styles.button}>Upgrade</Button>
-                    </Card.Footer>
-                </Card.Body>
-            </Card.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with eight sub-components: `Root`, `Header`, `Body`, `Caption`, `Title`, `Subtitle`, `Content`, `Footer`

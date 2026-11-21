@@ -4,21 +4,6 @@ An unstyled text input component with data attributes and native input semantics
 
 Build fully custom text inputs with complete control over layout and styling.
 
-```tsx
-'use client';
-import { InputText } from 'primereact/inputtext';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <InputText placeholder="Enter text" className={styles.input} />
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Single component rendering a native `<input>` with `type="text"` default

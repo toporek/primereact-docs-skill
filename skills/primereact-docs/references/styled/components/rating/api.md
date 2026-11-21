@@ -10,9 +10,9 @@ API documentation for Rating component
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: RatingRootInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: RatingRootInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: RatingRootInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: RatingRootInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | RatingRootInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
@@ -55,7 +55,7 @@ Named 'inputName' to avoid collision with withComponent's common.name. |
 | rootProps | UseRatingRootProps | null | Pre-built props for the root element (data attributes + event handlers). |
 | updateValue | (event: SyntheticEvent, value: number) => void | null | Update the rating value. |
 | setHoveringValue | (value: number) => void | null | Set the hover value (called by On/Off on pointer move). |
-| resolvePointerValue | (e: MouseEvent \\| PointerEvent, optionEl: Element, idx: number) => number | null | Resolves the value to set from a pointer event, taking allowHalf and element position into account. |
+| resolvePointerValue | (e: MouseEvent \\| PointerEvent, optionEl: null \\| Element, idx: number) => number | null | Resolves the value to set from a pointer event, taking allowHalf and element position into account. |
 | optionProps | UseRatingRootProps | null | Pre-built data attribute props for the option element. |
 | onProps | UseRatingRootProps | null | Pre-built data attribute props for the on-icon element. |
 | offProps | UseRatingRootProps | null | Pre-built data attribute props for the off-icon element. |
@@ -80,9 +80,9 @@ Named 'inputName' to avoid collision with withComponent's common.name. |
 |:------|:------|:------|:------|
 | ref | Ref<unknown> | null | The reference to the component instance. |
 | pIf | boolean | true | Whether the component should be rendered. |
-| style | CSSProperties \\| ((instance?: RatingOptionInstance) => CSSProperties) | null | The style to apply to the component. |
-| className | string \\| ((instance?: RatingOptionInstance) => string) | null | The class name to apply to the component. |
-| as | string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
+| style | CSSProperties \\| ((instance?: RatingOptionInstance) => undefined \\| CSSProperties) | null | The style to apply to the component. |
+| className | string \\| ((instance?: RatingOptionInstance) => undefined \\| string) | null | The class name to apply to the component. |
+| as | null \\| string \\| number \\| bigint \\| boolean \\| ComponentClass<any, any> \\| FunctionComponent<any> \\| ReactElement<unknown, string \\| JSXElementConstructor<any>> \\| Iterable \\| ReactPortal \\| Promise | null | The component type to render. |
 | asChild | boolean | false | Whether the component should be rendered as a child component. |
 | instance | RatingOptionInstance | null | The instance to pass to the component. |
 | pt | SafeRecord | null | The pass-through props to pass to the component. |
@@ -104,16 +104,16 @@ Typed as  `any`  to avoid JSX type errors when used directly in templates. |
 | Name | Type | Default | Description |
 |:------|:------|:------|:------|
 | state | UseRatingOptionState | null | Current state of this option. |
-| optionRef | RefObject | null | Ref to the option's root DOM element, used internally for pointer position calculations. |
+| optionRef | RefObject<null \\| Element> | null | Ref to the option's root DOM element, used internally for pointer position calculations. |
 | optionProps | Record<string, string \\| number> | null | Pre-built data attribute props for the option element. |
 | onIconProps | { onMouseDown: (e: MouseEvent) => void; onPointerMove: (e: PointerEvent) => void; onClick: (e: MouseEvent) => void } | null | Pre-built interaction props for the on-icon element. |
 | offIconProps | { onMouseDown: (e: MouseEvent) => void; onPointerMove: (e: PointerEvent) => void; onClick: (e: MouseEvent) => void } | null | Pre-built interaction props for the off-icon element. |
 | onPointerMove | (e: PointerEvent) => void | null | Handle pointer move on On/Off elements (resolves half/full value and sets hovering value). |
 | onClick | (e: MouseEvent) => void | null | Handle click on On/Off elements (resolves half/full value and updates value). |
 | onMouseDown | (e: MouseEvent) => void | null | Prevent default on mouse down (avoids focus shift). |
-| halfInputProps | InputHTMLAttributes | null | Pre-built props for the half-value sr-only radio input. Null when allowHalf is false. |
+| halfInputProps | null \\| InputHTMLAttributes | null | Pre-built props for the half-value sr-only radio input. Null when allowHalf is false. |
 | fullInputProps | InputHTMLAttributes | null | Pre-built props for the full-value sr-only radio input. |
-| rating | RatingRootInstance | null | The parent Rating component instance. |
+| rating | undefined \\| null \\| RatingRootInstance | null | The parent Rating component instance. |
 
 ### Interfaces
 

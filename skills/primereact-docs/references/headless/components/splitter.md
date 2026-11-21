@@ -2,36 +2,6 @@
 
 Hook that manages resizable panel layout with keyboard navigation and pointer-based resizing.
 
-```tsx
-'use client';
-import { useSplitter } from '@primereact/headless/splitter';
-
-export default function BasicDemo() {
-    const { rootProps, getPanelProps, getGutterProps, handleProps } = useSplitter({
-        panels: [{ minSize: 10 }, { minSize: 10 }],
-        defaultSizes: [30, 70]
-    });
-
-    return (
-        <div {...rootProps} className="flex h-60 border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
-            <div {...getPanelProps(0)} className="flex items-center justify-center min-w-0 overflow-hidden text-surface-700 dark:text-surface-100">
-                Panel 1
-            </div>
-            <div
-                {...getGutterProps(0)}
-                className="flex items-center justify-center w-1 z-1 cursor-col-resize bg-surface-200 dark:bg-surface-700 focus-visible:outline-1 focus-visible:-outline-offset-1 focus-visible:outline-primary"
-            >
-                <div {...handleProps} className="w-full h-[1.25rem]" />
-            </div>
-            <div {...getPanelProps(1)} className="flex items-center justify-center min-w-0 overflow-hidden text-surface-700 dark:text-surface-100">
-                Panel 2
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

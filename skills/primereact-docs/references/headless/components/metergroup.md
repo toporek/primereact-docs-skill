@@ -2,50 +2,6 @@
 
 Hook that manages meter value aggregation and percentage calculation within a defined range.
 
-```tsx
-'use client';
-import { useMeterGroup } from '@primereact/headless/metergroup';
-
-const values = [
-    { label: 'Apps', value: 16 },
-    { label: 'Messages', value: 8 },
-    { label: 'Media', value: 24 },
-    { label: 'System', value: 10 }
-];
-
-export default function BasicDemo() {
-    const metergroup = useMeterGroup();
-    const { rootProps, percent, percentAsString } = metergroup;
-
-    return (
-        <div className="flex flex-col gap-4 max-w-md mx-auto">
-            <div {...rootProps} className="flex flex-col gap-3">
-                <div className="flex h-2 rounded-full bg-surface-100 dark:bg-surface-800 overflow-hidden">
-                    {values.map((item, index) => {
-                        const colors = ['bg-primary', 'bg-emerald-500', 'bg-violet-500', 'bg-amber-500'];
-
-                        return <div key={index} className={`${colors[index]} transition-all`} style={{ width: percentAsString(item.value) }} />;
-                    })}
-                </div>
-                <ol className="flex flex-wrap gap-x-4 gap-y-1 list-none p-0 m-0">
-                    {values.map((item, index) => {
-                        const colors = ['bg-primary', 'bg-emerald-500', 'bg-violet-500', 'bg-amber-500'];
-
-                        return (
-                            <li key={index} className="flex items-center gap-1.5 text-sm text-surface-600 dark:text-surface-300">
-                                <span className={`inline-block w-2 h-2 rounded-sm ${colors[index]}`} />
-                                {item.label} ({percent(item.value)}%)
-                            </li>
-                        );
-                    })}
-                </ol>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

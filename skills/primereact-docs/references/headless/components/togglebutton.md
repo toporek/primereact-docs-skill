@@ -2,67 +2,6 @@
 
 Hooks that manage toggle button pressed state and group value selection with single or multiple modes.
 
-```tsx
-'use client';
-import { AlignCenter } from '@primeicons/react/align-center';
-import { AlignJustify } from '@primeicons/react/align-justify';
-import { AlignLeft } from '@primeicons/react/align-left';
-import { AlignRight } from '@primeicons/react/align-right';
-import { Bookmark } from '@primeicons/react/bookmark';
-import { useToggleButton, type UseToggleButtonChangeEvent } from '@primereact/headless/togglebutton';
-import { useToggleButtonGroup } from '@primereact/headless/togglebuttongroup';
-
-const alignOptions = [
-    { value: 'left', icon: AlignLeft },
-    { value: 'center', icon: AlignCenter },
-    { value: 'right', icon: AlignRight },
-    { value: 'justify', icon: AlignJustify }
-];
-
-export default function BasicDemo() {
-    const toggle = useToggleButton();
-    const rootProps = toggle.getRootProps(false, false);
-    const indicatorProps = toggle.getIndicatorProps(false, false);
-
-    const group = useToggleButtonGroup({ allowEmpty: false });
-
-    return (
-        <div className="flex flex-col items-center gap-6">
-            <button
-                {...rootProps}
-                className="inline-flex items-center justify-center size-8 rounded-lg border border-surface-200 dark:border-surface-700 bg-surface-100 dark:bg-surface-900 text-surface-500 dark:text-surface-400 data-[pressed]:text-primary data-[pressed]:border-primary/30 data-[pressed]:bg-primary/10 cursor-pointer select-none transition-colors duration-200 focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-60 disabled:pointer-events-none"
-            >
-                <span {...indicatorProps}>
-                    <Bookmark />
-                </span>
-            </button>
-
-            <div {...group.rootProps} className="inline-flex rounded-lg border border-surface-200 dark:border-surface-700">
-                {alignOptions.map((option) => {
-                    const btn = useToggleButton({
-                        pressed: group.isPressed(group.state.value, option.value),
-                        onPressedChange: (e: UseToggleButtonChangeEvent) => group.updateChange({ ...e, value: option.value })
-                    });
-                    const btnRootProps = btn.getRootProps(false, false);
-                    const Icon = option.icon;
-
-                    return (
-                        <button
-                            key={option.value}
-                            {...btnRootProps}
-                            className="inline-flex items-center justify-center size-8 bg-surface-100 dark:bg-surface-900 text-surface-500 dark:text-surface-400 data-[pressed]:bg-primary data-[pressed]:text-primary-contrast border-r border-surface-200 dark:border-surface-700 last:border-r-0 cursor-pointer select-none transition-colors duration-200 focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:z-10 disabled:opacity-60 disabled:pointer-events-none"
-                        >
-                            <Icon className="size-4" />
-                        </button>
-                    );
-                })}
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx
