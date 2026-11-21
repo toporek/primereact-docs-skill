@@ -2,56 +2,6 @@
 
 Hooks that manage rating state, hover interactions, and value resolution for star-based selection input.
 
-```tsx
-'use client';
-import { Star, StarFill } from '@primeicons/react';
-import { useRating, useRatingOption } from '@primereact/headless/rating';
-
-function RatingOption({ index, context }: { index: number; context: ReturnType<typeof useRating> }) {
-    const option = useRatingOption({ index, context });
-
-    return (
-        <div
-            ref={option.optionRef as React.RefObject<HTMLDivElement>}
-            {...context.optionProps}
-            {...option.optionProps}
-            className="relative cursor-pointer has-[:focus-visible]:outline-1 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-primary has-[:focus-visible]:rounded-sm"
-        >
-            {option.halfInputProps && <input {...option.halfInputProps} />}
-            <input {...option.fullInputProps} />
-            <div
-                {...context.onProps}
-                {...option.onIconProps}
-                className="flex absolute inset-0 overflow-hidden z-1"
-                style={{ clipPath: option.state.half ? 'inset(0 50% 0 0)' : option.state.highlighted ? 'none' : 'inset(0 100% 0 0)' }}
-            >
-                <StarFill className="size-5! text-primary" />
-            </div>
-            <div {...context.offProps} {...option.offIconProps} className="flex">
-                <Star className="size-5! text-surface-300 dark:text-surface-600" />
-            </div>
-        </div>
-    );
-}
-
-export default function BasicDemo() {
-    const rating = useRating({ defaultValue: 3 });
-
-    return (
-        <div className="flex justify-center">
-            <div {...rating.rootProps} className="inline-flex relative">
-                {Array(5)
-                    .fill(null)
-                    .map((_, i) => (
-                        <RatingOption key={i} index={i} context={rating} />
-                    ))}
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

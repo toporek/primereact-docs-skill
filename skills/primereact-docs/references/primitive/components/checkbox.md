@@ -4,33 +4,6 @@ An unstyled, accessible checkbox component with compound composition and group s
 
 Build fully custom checkbox controls with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { Checkbox } from 'primereact/checkbox';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <div className={styles.field}>
-                <Checkbox.Root inputId="basic-cb" defaultChecked className={styles.root} inputClassName={styles.input}>
-                    <Checkbox.Box className={styles.box}>
-                        <Checkbox.Indicator match="checked" className={styles.indicator}>
-                            <Check className="w-3 h-3" />
-                        </Checkbox.Indicator>
-                    </Checkbox.Box>
-                </Checkbox.Root>
-                <label htmlFor="basic-cb" className={styles.label}>
-                    Remember me
-                </label>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with three sub-components: `Root`, `Box`, `Indicator`

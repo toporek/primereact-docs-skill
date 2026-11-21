@@ -29,86 +29,14 @@ PrimeIcons library is now available on [Figma Community](https://www.figma.com/c
 
 Each icon is an SVG React component. Import and render it directly — no additional configuration needed.
 
-```tsx
-import { Check } from '@primeicons/react/check';
-import { Search } from '@primeicons/react/search';
-import { Times } from '@primeicons/react/times';
-import { User } from '@primeicons/react/user';
-
-export default function BasicDemo() {
-    return (
-        <div className="flex justify-center gap-4">
-            <Check />
-            <Times />
-            <Search />
-            <User />
-        </div>
-    );
-}
-
-```
-
 ## Size
 
 Icon size is controlled with the `size` prop, which sets both the width and height in pixels.
-
-```tsx
-import { Check } from '@primeicons/react/check';
-import { Search } from '@primeicons/react/search';
-import { Times } from '@primeicons/react/times';
-import { User } from '@primeicons/react/user';
-
-export default function SizeDemo() {
-    return (
-        <div className="flex justify-center items-center gap-4">
-            <Check size={16} />
-            <Times size={24} />
-            <Search size={32} />
-            <User size={40} />
-        </div>
-    );
-}
-
-```
 
 ## Color
 
 Icon color is set with the `color` prop and is inherited from the parent element by default.
 
-```tsx
-import { Check } from '@primeicons/react/check';
-import { Search } from '@primeicons/react/search';
-import { Times } from '@primeicons/react/times';
-import { User } from '@primeicons/react/user';
-
-export default function ColorDemo() {
-    return (
-        <div className="flex justify-center items-center gap-4">
-            <Check color="#22c55e" />
-            <Times color="#ef4444" />
-            <Search color="#3b82f6" />
-            <User color="#a855f7" />
-        </div>
-    );
-}
-
-```
-
 ## Spin
 
-Use a spin animation utility like `animate-spin` from Tailwind apply rotation.
-
-```tsx
-import { Cog } from '@primeicons/react/cog';
-import { Spinner } from '@primeicons/react/spinner';
-
-export default function SpinDemo() {
-    return (
-        <div className="flex justify-center gap-4">
-            <Spinner className="animate-spin" size={32} />
-            <Cog className="animate-spin" size={32} />
-        </div>
-    );
-}
-
-```
+Use the `spin` property to apply a rotation animation to an icon. Alternatively, a spin animation utility such as `animate-spin` from Tailwind can also be used.

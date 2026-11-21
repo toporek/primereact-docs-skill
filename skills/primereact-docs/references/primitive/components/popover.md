@@ -4,79 +4,6 @@ An unstyled popover component with positioning, focus management, and outside cl
 
 Build fully custom popover overlays with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { Times } from '@primeicons/react/times';
-import { Popover } from 'primereact/popover';
-import * as React from 'react';
-import styles from './basic-demo.module.css';
-
-const team = [
-    { initials: 'AK', name: 'Alex Kim' },
-    { initials: 'MR', name: 'Maya Ross' },
-    { initials: 'SL', name: 'Sam Lee' }
-];
-
-export default function BasicDemo() {
-    const [copied, setCopied] = React.useState(false);
-
-    const handleCopy = () => {
-        navigator.clipboard.writeText('https://acme.io/project/design-system');
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-    };
-
-    return (
-        <div className={styles.wrapper}>
-            <Popover.Root>
-                <Popover.Trigger className={styles.trigger}>Share</Popover.Trigger>
-                <Popover.Portal>
-                    <Popover.Positioner sideOffset={12} side="bottom">
-                        <Popover.Popup className={styles.popup}>
-                            <Popover.Arrow className={styles.arrow} />
-                            <Popover.Header className={styles.header}>
-                                <Popover.Title className={styles.title}>Share Project</Popover.Title>
-                                <Popover.Close as="button" className={styles.close}>
-                                    <Times />
-                                </Popover.Close>
-                            </Popover.Header>
-                            <Popover.Content className={styles.content}>
-                                <div className={styles.linkRow}>
-                                    <input type="text" readOnly value="https://acme.io/project/design-system" className={styles.input} />
-                                    <button onClick={handleCopy} className={styles.copyButton}>
-                                        {copied ? (
-                                            <>
-                                                <Check className={styles.copyIcon} /> Copied!
-                                            </>
-                                        ) : (
-                                            'Copy'
-                                        )}
-                                    </button>
-                                </div>
-                                <p className={styles.sectionLabel}>Team Members</p>
-                                <div className={styles.teamRow}>
-                                    {team.map((member) => (
-                                        <div key={member.initials} title={member.name} className={styles.avatar}>
-                                            {member.initials}
-                                        </div>
-                                    ))}
-                                    <button className={styles.addButton}>+</button>
-                                </div>
-                            </Popover.Content>
-                            <Popover.Footer className={styles.footer}>
-                                <span className={styles.footerText}>Anyone with the link can view this project.</span>
-                            </Popover.Footer>
-                        </Popover.Popup>
-                    </Popover.Positioner>
-                </Popover.Portal>
-            </Popover.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Trigger`, `Portal`, `Positioner`, `Popup`, `Arrow`, `Header`, `Title`, `Close`, `Content`, `Description`, `Footer`
@@ -192,12 +119,12 @@ Sub-components accept a render function as children, providing access to the com
 
 The positioner element exposes CSS custom properties for layout and transform control.
 
-| CSS Variable                | Description                              |
-| --------------------------- | ---------------------------------------- |
-| `--available-height`        | Available vertical space in pixels       |
-| `--available-width`         | Available horizontal space in pixels     |
-| `--transform-origin`        | Computed transform origin for animations |
-| `--positioner-anchor-width` | Width of the anchor/trigger element      |
+| CSS Variable                   | Description                              |
+| ------------------------------ | ---------------------------------------- |
+| `--px-available-height`        | Available vertical space in pixels       |
+| `--px-available-width`         | Available horizontal space in pixels     |
+| `--px-transform-origin`        | Computed transform origin for animations |
+| `--px-positioner-anchor-width` | Width of the anchor/trigger element      |
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -228,12 +155,12 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 The arrow element exposes CSS custom properties for dynamic positioning:
 
-| CSS Variable          | Description                    |
-| --------------------- | ------------------------------ |
-| `--placer-arrow-x`    | Horizontal offset of arrow     |
-| `--placer-arrow-y`    | Vertical offset of arrow       |
-| `--placer-arrow-left` | Left position of arrow element |
-| `--placer-arrow-top`  | Top position of arrow element  |
+| CSS Variable             | Description                    |
+| ------------------------ | ------------------------------ |
+| `--px-placer-arrow-x`    | Horizontal offset of arrow     |
+| `--px-placer-arrow-y`    | Vertical offset of arrow       |
+| `--px-placer-arrow-left` | Left position of arrow element |
+| `--px-placer-arrow-top`  | Top position of arrow element  |
 
 | Label | Type | Description |
 |:------|:------|:------|

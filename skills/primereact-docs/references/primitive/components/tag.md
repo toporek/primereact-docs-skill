@@ -4,36 +4,6 @@ An unstyled, accessible tag component for categorizing content.
 
 Build fully custom categorization labels with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { ExclamationTriangle } from '@primeicons/react/exclamation-triangle';
-import { InfoCircle } from '@primeicons/react/info-circle';
-import { Tag } from 'primereact/tag';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Tag className={`${styles.tag} ${styles.success}`}>
-                <Check className={styles.icon} />
-                Active
-            </Tag>
-            <Tag className={`${styles.tag} ${styles.info}`}>
-                <InfoCircle className={styles.icon} />
-                Info
-            </Tag>
-            <Tag className={`${styles.tag} ${styles.warn}`}>
-                <ExclamationTriangle className={styles.icon} />
-                Warning
-            </Tag>
-            <Tag className={`${styles.tag} ${styles.primary}`}>Default</Tag>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Single component with children-based composition for label and icon content
