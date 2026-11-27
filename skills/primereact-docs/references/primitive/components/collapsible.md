@@ -4,31 +4,6 @@ An unstyled collapsible component for building expand/collapse interfaces with f
 
 Build fully custom expand/collapse interfaces with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronDown } from '@primeicons/react/chevron-down';
-import { Collapsible } from 'primereact/collapsible';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Collapsible.Root className={styles.root}>
-                <Collapsible.Trigger className={styles.trigger}>
-                    What is PrimeReact?
-                    <ChevronDown className={styles.icon} />
-                </Collapsible.Trigger>
-                <Collapsible.Content className={styles.content}>
-                    PrimeReact is a rich set of open source UI components for React. It provides a wide range of components like buttons, dialogs,
-                    tables, and more to help you build modern web applications.
-                </Collapsible.Content>
-            </Collapsible.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Trigger`, `Content`
