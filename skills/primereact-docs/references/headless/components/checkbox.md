@@ -2,46 +2,6 @@
 
 Hooks that manage checkbox and checkbox group state, indeterminate logic, and ARIA attributes.
 
-```tsx
-'use client';
-import { Check } from '@primeicons/react/check';
-import { useCheckbox } from '@primereact/headless/checkbox';
-
-export default function BasicDemo() {
-    const { rootProps, inputProps, boxProps, indicatorProps } = useCheckbox({ defaultChecked: true });
-
-    return (
-        <div className="flex justify-center">
-            <div className="flex items-center gap-2">
-                <div
-                    {...rootProps}
-                    className="relative inline-flex items-center has-[input:focus-visible]:outline-1 has-[input:focus-visible]:outline-offset-2 has-[input:focus-visible]:outline-primary has-[input:focus-visible]:outline rounded"
-                >
-                    <input
-                        {...inputProps}
-                        value={inputProps.value as string}
-                        id="basic-cb"
-                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none m-0 p-0 border border-transparent rounded"
-                    />
-                    <div
-                        {...boxProps}
-                        className="flex items-center justify-center w-5 h-5 rounded-sm border-2 data-checked:bg-primary data-checked:border-primary data-unchecked:border-gray-300 data-unchecked:hover:border-primary"
-                    >
-                        <span {...indicatorProps} className="data-unchecked:hidden">
-                            <Check className="w-3 h-3 text-primary-contrast" />
-                        </span>
-                    </div>
-                </div>
-                <label htmlFor="basic-cb" className="cursor-pointer select-none text-sm">
-                    Remember me
-                </label>
-            </div>
-        </div>
-    );
-}
-
-```
-
 ## Usage
 
 ```tsx

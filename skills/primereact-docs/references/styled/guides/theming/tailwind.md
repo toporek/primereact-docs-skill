@@ -44,6 +44,31 @@ In the CSS file that contains the tailwindcss import, add the `tailwindcss-prime
 @import 'tailwindcss-primeui';
 ```
 
+### Cascade layer
+
+PrimeReact resets the browser defaults on the native elements it renders (preflight, see the [configuration guide](../configuration.md)), and those rules live in `primeui.base`, a cascade layer nested under `primeui`. A CSS layer is ordered where its name is first declared, not where its rules are written, so when `tailwindcss` declares its layers first, `primeui` ends up after them and the reset wins over utility classes.
+
+This only shows up in server-rendered apps, and only before hydration: PrimeReact injects the layer declaration at runtime, which lands after the application's own CSS on the first server-rendered response. Utility classes meant to override the reset lose until the client takes over, so the first paint is visibly wrong and corrects itself once React hydrates.
+
+Fix the order by declaring the layer above the `tailwindcss` import:
+
+```css
+@layer primeui;
+
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+```
+
+Declaring `primeui` is enough on its own: `primeui.base`, where the reset lives, is nested inside it, and a nested layer's order is fixed by its parent's. Declaring it after the `tailwindcss` import does nothing, since the order is already fixed by then. This applies to any framework that declares its own layers, not just Tailwind.
+
+An application with `theme.options.cssLayer` enabled has already declared this layer: that option wraps PrimeReact's component styles, variables and global style in a layer named `primeui` by default, or in whatever name is passed to it (`{ name: 'myui' }` produces `myui`), and `@layer primeui;` covers the reset and that layer with the same line.
+
+Where Tailwind's own preflight is already in use, or another reset such as normalize.css or Bootstrap's reboot, turn off PrimeReact's instead of maintaining two resets:
+
+```tsx
+<PrimeReactProvider preflight={false}>
+```
+
 ### Tailwind v3
 
 Use the plugins option in your Tailwind config file to configure the plugin.
@@ -252,50 +277,6 @@ Example uses cases with PrimeReact and Tailwind CSS.
 ### Color Palette
 
 PrimeReact color palette as utility classes.
-
-```tsx
-export default function ColorPaletteDemo() {
-    const colors = ['primary', 'surface'];
-    const shades = [0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
-
-    return (
-        <div>
-            <div className="flex flex-col gap-12">
-                <ul className="p-0 m-0 list-none flex sm:flex-col gap-4 flex-wrap sm:flex-nowrap">
-                    {colors.map((color, i) => (
-                        <li key={i} className="flex-auto" style={{ minWidth: '6rem' }}>
-                            <span className="font-medium capitalize block mb-2 text-center sm:text-left">{color}</span>
-                            <div className="flex gap-4 flex-auto flex-col sm:flex-row">
-                                {shades.map((shade) => (
-                                    <div
-                                        key={shade}
-                                        className={`flex flex-col items-center gap-1 flex-1 ${color === 'primary' && shade === 0 ? 'invisible' : ''}`}
-                                    >
-                                        <div className="rounded h-8 w-full" style={{ backgroundColor: `var(--p-${color}-${shade})` }}></div>
-                                        <span className="text-sm text-surface-500 dark:text-surface-400 font-medium">{shade}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-                <div className="flex gap-6 flex-wrap">
-                    <div className="rounded-border p-4 border border-transparent flex items-center justify-center bg-primary hover:bg-primary-emphasis text-primary-contrast font-medium flex-auto transition-colors">
-                        primary
-                    </div>
-                    <div className="rounded-border p-4 border border-transparent flex items-center justify-center bg-highlight hover:bg-highlight-emphasis font-medium flex-auto transition-colors">
-                        highlight
-                    </div>
-                    <div className="rounded-border p-4 border border-surface flex items-center justify-center text-muted-color hover:text-color hover:bg-emphasis font-medium flex-auto transition-colors">
-                        box
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-```
 
 ```tsx
 <div className="flex flex-col gap-12">

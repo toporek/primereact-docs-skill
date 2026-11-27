@@ -4,51 +4,11 @@ An unstyled tooltip component with hover/focus triggers, delay management, and g
 
 Build fully custom tooltips with complete control over layout and styling.
 
-```tsx
-'use client';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Tooltip } from 'primereact/tooltip';
-import styles from './basic-demo.module.css';
-
-const flights = [
-    { from: 'IST', to: 'LHR', airline: 'Turkish Airlines', status: 'ON TIME', statusClass: 'onTime' as const },
-    { from: 'IST', to: 'CDG', airline: 'Lufthansa', status: 'DELAYED', statusClass: 'delayed' as const },
-    { from: 'IST', to: 'FRA', airline: 'Qatar Airways', status: 'BOARDING', statusClass: 'boarding' as const }
-];
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Tooltip.Manager>
-                <div className={styles.flightBar}>
-                    {flights.map((flight) => (
-                        <Tooltip.Root key={flight.to} openDelay={200} closeDelay={100}>
-                            <Tooltip.Trigger className={styles.trigger}>
-                                {flight.from} <ChevronRight className={styles.chevron} /> {flight.to}
-                            </Tooltip.Trigger>
-                            <Tooltip.Portal>
-                                <Tooltip.Positioner sideOffset={8}>
-                                    <Tooltip.Popup className={styles.popup}>
-                                        <Tooltip.Arrow className={styles.arrow} />
-                                        {flight.airline} <span className={styles[flight.statusClass]}>{flight.status}</span>
-                                    </Tooltip.Popup>
-                                </Tooltip.Positioner>
-                            </Tooltip.Portal>
-                        </Tooltip.Root>
-                    ))}
-                </div>
-            </Tooltip.Manager>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Configurable `openDelay` and `closeDelay` for timing control
 - `Manager` enables instant transitions when hovering between adjacent tooltips
-- Interactive popup: hovering the tooltip content keeps it open by default
+- Interactive popup: hovering the tooltip content keeps it open by default, for pointer users only
 - Arrow element with automatic per-side positioning via CSS custom properties
 
 ## Usage
@@ -153,12 +113,12 @@ Sub-components accept a render function as children, providing access to the com
 
 The positioner element exposes CSS custom properties for layout and transform control.
 
-| CSS Variable                | Description                              |
-| --------------------------- | ---------------------------------------- |
-| `--available-height`        | Available vertical space in pixels       |
-| `--available-width`         | Available horizontal space in pixels     |
-| `--transform-origin`        | Computed transform origin for animations |
-| `--positioner-anchor-width` | Width of the anchor/trigger element      |
+| CSS Variable                   | Description                              |
+| ------------------------------ | ---------------------------------------- |
+| `--px-available-height`        | Available vertical space in pixels       |
+| `--px-available-width`         | Available horizontal space in pixels     |
+| `--px-transform-origin`        | Computed transform origin for animations |
+| `--px-positioner-anchor-width` | Width of the anchor/trigger element      |
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -193,12 +153,12 @@ The positioner element exposes CSS custom properties for layout and transform co
 
 The arrow element exposes CSS custom properties for dynamic positioning:
 
-| CSS Variable          | Description                    |
-| --------------------- | ------------------------------ |
-| `--placer-arrow-x`    | Horizontal offset of arrow     |
-| `--placer-arrow-y`    | Vertical offset of arrow       |
-| `--placer-arrow-left` | Left position of arrow element |
-| `--placer-arrow-top`  | Top position of arrow element  |
+| CSS Variable             | Description                    |
+| ------------------------ | ------------------------------ |
+| `--px-placer-arrow-x`    | Horizontal offset of arrow     |
+| `--px-placer-arrow-y`    | Vertical offset of arrow       |
+| `--px-placer-arrow-left` | Left position of arrow element |
+| `--px-placer-arrow-top`  | Top position of arrow element  |
 
 | Label | Type | Description |
 |:------|:------|:------|
@@ -208,11 +168,15 @@ The arrow element exposes CSS custom properties for dynamic positioning:
 
 ### Screen Reader
 
-Tooltip popup content should be descriptive and associated with a meaningful trigger label.
+Tooltip popup content should be descriptive and associated with a meaningful trigger label. The popup has `role="tooltip"`, and while it is open the trigger's `aria-describedby` points to it.
+
+### Interactive Content
+
+Tooltip content is not reachable with the keyboard. The popup is portaled to the end of the document and closes when the trigger loses focus, so links or buttons inside it are only available to pointer users. Place interactive content in a [Popover](popover.md) instead.
 
 ### Keyboard Support
 
-| Key      | Function                                                          |
-| -------- | ----------------------------------------------------------------- |
-| `tab`    | Focuses the trigger, opening the tooltip with instant transition. |
-| `escape` | Closes the tooltip and returns focus to the trigger.              |
+| Key      | Function                                                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `tab`    | Focuses the trigger, opening the tooltip with instant transition.                                                                     |
+| `escape` | Closes the open tooltip wherever focus is, without moving focus. Inside a dialog or popover, the first press closes only the tooltip. |

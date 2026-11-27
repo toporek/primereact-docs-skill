@@ -4,46 +4,6 @@ An unstyled, accessible carousel component with compound composition.
 
 Build fully custom content sliders with complete control over layout, navigation, and indicators.
 
-```tsx
-'use client';
-import { ChevronLeft } from '@primeicons/react/chevron-left';
-import { ChevronRight } from '@primeicons/react/chevron-right';
-import { Carousel } from 'primereact/carousel';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <Carousel.Root className={styles.root} align="center">
-            <Carousel.Content className={styles.content}>
-                {Array.from({ length: 5 }).map((_, i) => (
-                    <Carousel.Item key={i} className={styles.item}>
-                        <div className={styles.itemInner}>
-                            <span>{i + 1}</span>
-                        </div>
-                    </Carousel.Item>
-                ))}
-            </Carousel.Content>
-            <div className={styles.controls}>
-                <Carousel.Indicators className={styles.indicators}>
-                    {Array.from({ length: 5 }).map((_, i) => (
-                        <Carousel.Indicator key={i} page={i} className={styles.indicator} />
-                    ))}
-                </Carousel.Indicators>
-                <div className={styles.nav}>
-                    <Carousel.Prev className={styles.navButton}>
-                        <ChevronLeft />
-                    </Carousel.Prev>
-                    <Carousel.Next className={styles.navButton}>
-                        <ChevronRight />
-                    </Carousel.Next>
-                </div>
-            </div>
-        </Carousel.Root>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with sub-components: `Root`, `Content`, `Item`, `Prev`, `Next`, `Indicators`, `Indicator`

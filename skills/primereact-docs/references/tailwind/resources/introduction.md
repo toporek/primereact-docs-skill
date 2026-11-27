@@ -10,6 +10,6 @@ Everything around the library, where to get help, find older versions, and stay 
 
 - **Support**, get help on Discord, the community forum, or through premium support.
 - **Legacy**, documentation for previous major versions.
-- **Discover**, the store, social channels and newsletter.
+- **Discover**, the store and social channels.
 
 Pick a category from the sidebar to jump in.

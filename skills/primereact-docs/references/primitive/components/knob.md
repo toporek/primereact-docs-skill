@@ -4,25 +4,6 @@ An unstyled circular dial component for numeric input with SVG-based rendering.
 
 Build fully custom circular dial controls with complete control over layout and styling.
 
-```tsx
-'use client';
-import { Knob } from 'primereact/knob';
-import styles from './basic-demo.module.css';
-
-export default function BasicDemo() {
-    return (
-        <div className={styles.wrapper}>
-            <Knob.Root defaultValue={50} ariaLabel="Volume" className={styles.root}>
-                <Knob.Range className={styles.range} />
-                <Knob.Value className={styles.value} />
-                <Knob.Text className={styles.text} />
-            </Knob.Root>
-        </div>
-    );
-}
-
-```
-
 ## Features
 
 - Compound component API with four sub-components: `Root`, `Range`, `Value`, `Text`
